@@ -1,0 +1,72 @@
+/* A/B Test Urgency Messaging */
+/* Only show when Convert adds data-stock-message="true" to HTML element */
+
+.urgency-message,
+.urgency-message--selected {
+  display: none;
+}
+
+html[data-stock-message="true"] .urgency-message.show {
+  display: inline-block !important;
+}
+
+/* Permanent message for selected variant */
+.urgency-message--selected {
+  color: #ef612e;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Hover tooltip using CSS pseudo-elements - only for low stock options */
+html[data-stock-message="true"] .size-variant-picker label[data-low-stock="true"]:hover::after {
+  content: "Only a few left!";
+  position: absolute;
+  font-family: var(--font-body-family);
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%);
+  background: #373537;
+  color: #fff;
+  padding: 6px 10px;
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px #00000026;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+html[data-stock-message="true"] .size-variant-picker label[data-low-stock="true"]:hover::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #373537;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+/* Mobile-specific styling */
+@media (max-width: 749px) {
+  .urgency-message--selected {
+    margin-left: 8px;
+  }
+
+  /* Hide tooltips on mobile */
+  html[data-stock-message="true"] .size-variant-picker label[data-low-stock="true"]:hover::after,
+  html[data-stock-message="true"] .size-variant-picker label[data-low-stock="true"]:hover::before {
+    display: none !important;
+  }
+}
+
+.form__label--flex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
