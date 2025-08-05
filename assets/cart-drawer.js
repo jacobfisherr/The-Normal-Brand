@@ -111,8 +111,6 @@ class CartDrawer extends HTMLElement {
   }
 
   renderContents(parsedState) {
-    console.log('renderContents', parsedState);
-
     this.querySelector('.drawer__inner').classList.contains('is-empty') &&
       this.querySelector('.drawer__inner').classList.remove('is-empty');
     this.productId = parsedState.id;
@@ -143,6 +141,7 @@ class CartDrawer extends HTMLElement {
   }
 
   getSectionInnerHTML(html, selector = '.shopify-section') {
+    console.log(html, selector);
     return new DOMParser().parseFromString(html, 'text/html').querySelector(selector).innerHTML;
   }
 
