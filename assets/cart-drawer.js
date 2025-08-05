@@ -5,6 +5,7 @@ class CartDrawer extends HTMLElement {
     this.addEventListener('keyup', (evt) => evt.code === 'Escape' && this.close());
     this.querySelector('#CartDrawer-Overlay').addEventListener('click', this.close.bind(this));
     this.setHeaderCartIconAccessibility();
+    this.initCartNotificationLink();
 
     // Add MutationObserver to monitor body class changes
     this.observer = new MutationObserver((mutations) => {
@@ -20,7 +21,7 @@ class CartDrawer extends HTMLElement {
     this.observer.observe(document.body, {
       attributes: true,
       attributeOldValue: true,
-      attributeFilter: ['class']
+      attributeFilter: ['class'],
     });
   }
 
@@ -33,6 +34,24 @@ class CartDrawer extends HTMLElement {
     cartLink.addEventListener('click', (event) => {
       event.preventDefault();
       this.open(cartLink);
+    });
+    cartLink.addEventListener('keydown', (event) => {
+      if (event.code.toUpperCase() === 'SPACE') {
+        event.preventDefault();
+        this.open(cartLink);
+      }
+    });
+  }
+
+  initCartNotificationLink() {
+    const cartNotificationLink = document.querySelector('#cart-notification-button');
+    if (!cartNotificationLink) return;
+
+    cartLink.setAttribute('role', 'button');
+    cartLink.setAttribute('aria-haspopup', 'dialog');
+    cartNotificationLink.addEventListener('click', (event) => {
+      event.preventDefault();
+      this.open(cartNotificationLink);
     });
     cartLink.addEventListener('keydown', (event) => {
       if (event.code.toUpperCase() === 'SPACE') {
@@ -107,14 +126,16 @@ class CartDrawer extends HTMLElement {
     setTimeout(() => {
       this.querySelector('#CartDrawer-Overlay').addEventListener('click', this.close.bind(this));
       this.open();
-      
+
       // Dispatch custom event for cart update
-      window.dispatchEvent(new CustomEvent('cart-updated', {
-        detail: {
-          type: 'drawer',
-          cartData: parsedState
-        }
-      }));
+      window.dispatchEvent(
+        new CustomEvent('cart-updated', {
+          detail: {
+            type: 'drawer',
+            cartData: parsedState,
+          },
+        })
+      );
     });
   }
 
