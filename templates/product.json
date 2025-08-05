@@ -165,6 +165,13 @@
             "product": "{{product}}"
           }
         },
+        "custom_liquid_DnUpYB": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "<style>\n\n</style>\n\n<div class=\"uvp-icons-row-2\">\n    <div class=\"uvp-icon\">\n      <img src=\"//cdn.shopify.com/s/files/1/0749/3241/files/shipping.png?v=1749048981\" class=\"uvp-img\">\n      <span class=\"uvp-desc\">Sent From our Team in St. Louis</span>\n      <span class=\"uvp-details\">Free Shipping over $150 - packed &amp; shipped same or next business day.</span>\n    </div>\n    <div class=\"uvp-icon\">\n      <img src=\"//cdn.shopify.com/s/files/1/0749/3241/files/return.png?v=1749048982\" class=\"uvp-img\">\n      <span class=\"uvp-desc\">30 Day Returns &amp; Exchanges</span>\n      <span class=\"uvp-details\">Unworn items can be returned or exchanged within 30 days of purchase.</span>\n    </div>\n  </div>"
+          }
+        },
         "custom_liquid_47C9XV": {
           "type": "custom_liquid",
           "settings": {
@@ -220,6 +227,7 @@
         "buy_buttons",
         "custom_liquid_pBnGte",
         "afterpay_on_site_messaging_payments_messaging_wcAwHg",
+        "custom_liquid_DnUpYB",
         "custom_liquid_47C9XV",
         "collapsible_tab_gcD7wr",
         "collapsible-row-0",
@@ -307,6 +315,24 @@
         "padding_bottom": 36
       }
     },
+    "17532236734d6439ab": {
+      "type": "apps",
+      "blocks": {
+        "okendo_reviews_widget_YjH9bw": {
+          "type": "shopify://apps/okendo/blocks/reviews-widget/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}",
+            "widget_type": "reviews_widget"
+          }
+        }
+      },
+      "block_order": [
+        "okendo_reviews_widget_YjH9bw"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -332,24 +358,6 @@
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
-      }
-    },
-    "17532236734d6439ab": {
-      "type": "apps",
-      "blocks": {
-        "okendo_reviews_widget_YjH9bw": {
-          "type": "shopify://apps/okendo/blocks/reviews-widget/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
-          "settings": {
-            "product": "{{product}}",
-            "widget_type": "reviews_widget"
-          }
-        }
-      },
-      "block_order": [
-        "okendo_reviews_widget_YjH9bw"
-      ],
-      "settings": {
-        "include_margins": true
       }
     }
   },
