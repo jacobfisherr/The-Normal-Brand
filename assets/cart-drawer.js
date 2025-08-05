@@ -47,8 +47,8 @@ class CartDrawer extends HTMLElement {
     const cartNotificationLink = document.querySelector('#cart-notification-button');
     if (!cartNotificationLink) return;
 
-    cartLink.setAttribute('role', 'button');
-    cartLink.setAttribute('aria-haspopup', 'dialog');
+    cartNotificationLink.setAttribute('role', 'button');
+    cartNotificationLink.setAttribute('aria-haspopup', 'dialog');
     cartNotificationLink.addEventListener('click', (event) => {
       event.preventDefault();
       this.open(cartNotificationLink);
