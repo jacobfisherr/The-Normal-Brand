@@ -1,1 +1,247 @@
-{"sections":{"breadcrumbs":{"type":"breadcrumbs","settings":{"padding_top":24,"padding_bottom":0}},"main":{"type":"main-product","blocks":{"title":{"type":"title","settings":{}},"caption":{"type":"text","settings":{"text":"{{ product.metafields.descriptors.subtitle.value }}","text_style":"subtitle"}},"okendo_star_rating_NtcfjJ":{"type":"shopify:\/\/apps\/okendo\/blocks\/star-rating\/bb689e69-ea70-4661-8fb7-ad24a2e23c29","settings":{"product":"{{product}}"}},"price":{"type":"price","settings":{}},"notice_CwUGnW":{"type":"notice","settings":{"notice_text":"This clearance style is final sale and eligible for exchange only","icon":"discount","color_scheme":"tnb-light","product_tag":"clearance","product_list":["james-canvas-overshirt-pine-needle"]}},"afterpay_on_site_messaging_payments_messaging_wcAwHg":{"type":"shopify:\/\/apps\/afterpay-on-site-messaging\/blocks\/payments-messaging\/f45a5524-d177-4475-bf59-281efd2215a8","settings":{"text_align":"inherit","margin_top":10,"margin_bottom":20,"color":"#000000","size":"sm","intro_text":"or","show_interest_free":true,"payment_amount_is_bold":true,"show_with":true,"logo_type":"compact-badge","logo_theme":"black-on-white","modal_link_style":"circled-info-icon","modal_theme":"white","breakpoint":749,"text_align_mobile":"inherit","margin_top_mobile":16,"margin_bottom_mobile":16,"show_lower_limit":true,"show_upper_limit":true,"show_if_outside_limits":true,"product":"{{product}}"}},"variant_picker":{"type":"variant_picker","settings":{"picker_type":"button","swatch_shape":"circle"}},"quantity_selector":{"type":"quantity_selector","disabled":true,"settings":{}},"buy_buttons":{"type":"buy_buttons","settings":{"show_dynamic_checkout":true,"show_gift_card_recipient":true,"popup_message":"This clearance style is final sale and eligible for exchange only","accept_text":"Sounds good","cancel_text":"Cancel","popup_message_tags":"","product_list":[]}},"collapsible_tab_gcD7wr":{"type":"collapsible_tab","settings":{"heading":"Description","icon":"none","content":"","page":"","liquid":"{%- if product.description != blank -%}\n{{ product.description }}\n{%- endif -%}"}},"collapsible-row-0":{"type":"collapsible_tab","settings":{"heading":"Model Sizing","icon":"none","content":"<p>{{ product.metafields.custom.model_sizing.value }}<\/p>","page":"","liquid":""}},"collapsible_tab_trXCdM":{"type":"collapsible_tab","settings":{"heading":"Specifications","icon":"none","content":"{{ product.metafields.custom.specifications | metafield_tag }}","page":"","liquid":""}}},"block_order":["title","caption","okendo_star_rating_NtcfjJ","price","notice_CwUGnW","afterpay_on_site_messaging_payments_messaging_wcAwHg","variant_picker","quantity_selector","buy_buttons","collapsible_tab_gcD7wr","collapsible-row-0","collapsible_tab_trXCdM"],"settings":{"enable_sticky_info":true,"color_scheme":"","media_size":"large","constrain_to_viewport":false,"media_fit":"cover","gallery_layout":"thumbnail_slider","media_position":"left","image_zoom":"lightbox","mobile_thumbnails":"hide","hide_variants":true,"enable_video_looping":false,"padding_top":12,"padding_bottom":12}},"custom_liquid_8YyEfQ":{"type":"custom-liquid","settings":{"custom_liquid":"{% render 'product-size-chart', page_handle: product.metafields.custom.size_chart %}","color_scheme":"","padding_top":40,"padding_bottom":52}},"related-products":{"type":"related-products","settings":{"heading":"You May Also Like","heading_size":"h2","products_to_show":5,"columns_desktop":4,"color_scheme":"scheme-1","image_ratio":"portrait","image_shape":"default","show_secondary_image":true,"show_vendor":false,"show_rating":true,"columns_mobile":"2","padding_top":36,"padding_bottom":28}},"17236029474cb66284":{"type":"apps","blocks":{"yotpo_product_reviews_ugc_reviews_JaqKKj":{"type":"shopify:\/\/apps\/yotpo-product-reviews\/blocks\/reviews\/eb7dfd7d-db44-4334-bc49-c893b51b36cf","settings":{"product":"{{product}}"}}},"block_order":["yotpo_product_reviews_ugc_reviews_JaqKKj"],"settings":{"include_margins":true}},"custom_liquid_txD6dg":{"type":"custom-liquid","settings":{"custom_liquid":"<script>\n  window.addEventListener('load', function() {\n  var _learnq = window._learnq || [];\n  function addedToCart() {\n   fetch(`${window.location.origin}\/cart.js`)\n   .then(res => res.clone().json().then(data => {\n    var cart = {\n      total_price: data.total_price\/100,\n      $value: data.total_price\/100,\n      total_discount: data.total_discount,\n      original_total_price: data.original_total_price\/100,\n      items: data.items\n    }\n    if (item !== 'undefined') {\n      cart = Object.assign(cart, item)\n    }\n    if (klAjax) {\n       _learnq.push(['track', 'Added to Cart', cart]);\n       klAjax = false;\n      }\n   }))\n  };\n  (function (ns, fetch) {\n    ns.fetch = function() {\n      const response = fetch.apply(this, arguments);\n      response.then(res => {\n        if (`${window.location.origin}\/cart\/add.js`\n          .includes(res.url) && res.url !== '') {\n              addedToCart()\n        }\n      });\n      return response\n     }\n  }(window, window.fetch));\n  var klAjax = true;\n  var atcButtons = document.querySelectorAll(\"form[action*='\/cart\/add'] button[type='submit']\");\n  for (var i = 0; i < atcButtons.length; i++) { \n    atcButtons[i].addEventListener(\"click\", function() {\n      if (klAjax) {\n        _learnq.push(['track', 'Added to Cart', item]);\n        klAjax = false;\n      }\n    })\n  }\n  });\n<\/script>","color_scheme":"","padding_top":40,"padding_bottom":52}},"1753223864dea05846":{"type":"apps","blocks":{"okendo_reviews_widget_ptJz3E":{"type":"shopify:\/\/apps\/okendo\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29","settings":{"product":"{{product}}","widget_type":"reviews_widget"}}},"block_order":["okendo_reviews_widget_ptJz3E"],"settings":{"include_margins":true}}},"order":["breadcrumbs","main","custom_liquid_8YyEfQ","1753223864dea05846","related-products","17236029474cb66284","custom_liquid_txD6dg"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "padding_top": 24,
+        "padding_bottom": 0
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "caption": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "okendo_star_rating_NtcfjJ": {
+          "type": "shopify://apps/okendo/blocks/star-rating/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "notice_CwUGnW": {
+          "type": "notice",
+          "settings": {
+            "notice_text": "This clearance style is final sale and eligible for exchange only",
+            "icon": "discount",
+            "color_scheme": "tnb-light",
+            "product_tag": "clearance",
+            "product_list": [
+              "james-canvas-overshirt-pine-needle"
+            ]
+          }
+        },
+        "afterpay_on_site_messaging_payments_messaging_wcAwHg": {
+          "type": "shopify://apps/afterpay-on-site-messaging/blocks/payments-messaging/f45a5524-d177-4475-bf59-281efd2215a8",
+          "settings": {
+            "text_align": "inherit",
+            "margin_top": 10,
+            "margin_bottom": 20,
+            "color": "#000000",
+            "size": "sm",
+            "intro_text": "or",
+            "show_interest_free": true,
+            "payment_amount_is_bold": true,
+            "show_with": true,
+            "logo_type": "compact-badge",
+            "logo_theme": "black-on-white",
+            "modal_link_style": "circled-info-icon",
+            "modal_theme": "white",
+            "breakpoint": 749,
+            "text_align_mobile": "inherit",
+            "margin_top_mobile": 16,
+            "margin_bottom_mobile": 16,
+            "show_lower_limit": true,
+            "show_upper_limit": true,
+            "show_if_outside_limits": true,
+            "product": "{{product}}"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true,
+            "popup_message": "This clearance style is final sale and eligible for exchange only",
+            "accept_text": "Sounds good",
+            "cancel_text": "Cancel",
+            "popup_message_tags": "",
+            "product_list": []
+          }
+        },
+        "collapsible_tab_gcD7wr": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Description",
+            "icon": "none",
+            "content": "",
+            "page": "",
+            "liquid": "{%- if product.description != blank -%}\n{{ product.description }}\n{%- endif -%}"
+          }
+        },
+        "collapsible-row-0": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Model Sizing",
+            "icon": "none",
+            "content": "<p>{{ product.metafields.custom.model_sizing.value }}</p>",
+            "page": "",
+            "liquid": ""
+          }
+        },
+        "collapsible_tab_trXCdM": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Specifications",
+            "icon": "none",
+            "content": "{{ product.metafields.custom.specifications | metafield_tag }}",
+            "page": "",
+            "liquid": ""
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "caption",
+        "okendo_star_rating_NtcfjJ",
+        "price",
+        "notice_CwUGnW",
+        "afterpay_on_site_messaging_payments_messaging_wcAwHg",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "collapsible_tab_gcD7wr",
+        "collapsible-row-0",
+        "collapsible_tab_trXCdM"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "",
+        "media_size": "large",
+        "constrain_to_viewport": false,
+        "media_fit": "cover",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
+    "custom_liquid_8YyEfQ": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% render 'product-size-chart', page_handle: product.metafields.custom.size_chart %}",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "You May Also Like",
+        "heading_size": "h2",
+        "products_to_show": 5,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "17236029474cb66284": {
+      "type": "apps",
+      "blocks": {
+        "yotpo_product_reviews_ugc_reviews_JaqKKj": {
+          "type": "shopify://apps/yotpo-product-reviews/blocks/reviews/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "settings": {
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "yotpo_product_reviews_ugc_reviews_JaqKKj"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "custom_liquid_txD6dg": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<script>\n  window.addEventListener('load', function() {\n  var _learnq = window._learnq || [];\n  function addedToCart() {\n   fetch(`${window.location.origin}/cart.js`)\n   .then(res => res.clone().json().then(data => {\n    var cart = {\n      total_price: data.total_price/100,\n      $value: data.total_price/100,\n      total_discount: data.total_discount,\n      original_total_price: data.original_total_price/100,\n      items: data.items\n    }\n    if (item !== 'undefined') {\n      cart = Object.assign(cart, item)\n    }\n    if (klAjax) {\n       _learnq.push(['track', 'Added to Cart', cart]);\n       klAjax = false;\n      }\n   }))\n  };\n  (function (ns, fetch) {\n    ns.fetch = function() {\n      const response = fetch.apply(this, arguments);\n      response.then(res => {\n        if (`${window.location.origin}/cart/add.js`\n          .includes(res.url) && res.url !== '') {\n              addedToCart()\n        }\n      });\n      return response\n     }\n  }(window, window.fetch));\n  var klAjax = true;\n  var atcButtons = document.querySelectorAll(\"form[action*='/cart/add'] button[type='submit']\");\n  for (var i = 0; i < atcButtons.length; i++) { \n    atcButtons[i].addEventListener(\"click\", function() {\n      if (klAjax) {\n        _learnq.push(['track', 'Added to Cart', item]);\n        klAjax = false;\n      }\n    })\n  }\n  });\n</script>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "1753223864dea05846": {
+      "type": "apps",
+      "blocks": {
+        "okendo_reviews_widget_ptJz3E": {
+          "type": "shopify://apps/okendo/blocks/reviews-widget/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}",
+            "widget_type": "reviews_widget"
+          }
+        }
+      },
+      "block_order": [
+        "okendo_reviews_widget_ptJz3E"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main",
+    "custom_liquid_8YyEfQ",
+    "1753223864dea05846",
+    "related-products",
+    "17236029474cb66284",
+    "custom_liquid_txD6dg"
+  ]
+}
