@@ -118,6 +118,7 @@ class CartDrawer extends HTMLElement {
     this.productId = parsedState.id;
     this.getSectionsToRender().forEach((section) => {
       console.log('section', section);
+      const html = parsedState.sections[section.htmlID] || parsedState.sections[section.id];
       const sectionElement = section.selector
         ? document.querySelector(section.selector)
         : document.getElementById(section.id);
@@ -151,6 +152,7 @@ class CartDrawer extends HTMLElement {
       {
         id: 'cart-drawer',
         selector: 'cart-drawer',
+        htmlID: 'cart-notification-product',
       },
       {
         id: 'cart-icon-bubble',
