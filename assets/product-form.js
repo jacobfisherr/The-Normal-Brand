@@ -9,7 +9,6 @@ if (!customElements.get('product-form')) {
         this.variantIdInput.disabled = false;
         this.form.addEventListener('submit', this.onSubmitHandler.bind(this));
         this.cart = document.querySelector('cart-notification');
-        this.cartDrawer = document.querySelector('cart-drawer');
         this.submitButton = this.querySelector('.product-form__submit');
         this.submitButtonText = this.submitButton.querySelector('span');
         this.popupNotice = this.querySelector('.popup-notice');
@@ -102,7 +101,7 @@ if (!customElements.get('product-form')) {
                 'modalClosed',
                 () => {
                   setTimeout(() => {
-                    this.cartDrawer.renderContents(response);
+                    this.renderCartDrawer();
                     this.cart.renderContents(response);
                   });
                 },
@@ -110,31 +109,8 @@ if (!customElements.get('product-form')) {
               );
               quickAddModal.hide(true);
             } else {
-              // this.cartDrawer.renderContents(response);
+              this.renderCartDrawer();
               this.cart.renderContents(response);
-
-              fetch(`${routes.cart_url}?sections=cart-drawer`)
-                .then((response) => response.json())
-                .then((sections) => {
-                  const sectionIds = ['cart-drawer'];
-                  for (const sectionId of sectionIds) {
-                    const htmlString = sections[sectionId];
-                    const html = new DOMParser().parseFromString(htmlString, 'text/html');
-                    const sourceElement = html.querySelector(`${sectionId}`);
-                    const targetElement = document.querySelector(`${sectionId}`);
-                    if (targetElement && sourceElement) {
-                      targetElement.replaceWith(sourceElement);
-                    }
-                  }
-                  document.body.classList.add('overflow-hidden');
-                  const theme_cart =
-                    document.querySelector('cart-notification') || document.querySelector('cart-drawer');
-                  if (theme_cart && theme_cart.classList.contains('is-empty')) theme_cart.classList.remove('is-empty');
-                  theme_cart.classList.add('active');
-                })
-                .catch((e) => {
-                  console.error('Error updating cart sections:', e);
-                });
             }
           })
           .catch((e) => {
@@ -152,6 +128,30 @@ if (!customElements.get('product-form')) {
             }
 
             this.querySelectorAll('.loading__spinner').forEach((el) => el.classList.add('hidden'));
+          });
+      }
+
+      renderCartDrawer() {
+        fetch(`${routes.cart_url}?sections=cart-drawer`)
+          .then((response) => response.json())
+          .then((sections) => {
+            const sectionIds = ['cart-drawer'];
+            for (const sectionId of sectionIds) {
+              const htmlString = sections[sectionId];
+              const html = new DOMParser().parseFromString(htmlString, 'text/html');
+              const sourceElement = html.querySelector(`${sectionId}`);
+              const targetElement = document.querySelector(`${sectionId}`);
+              if (targetElement && sourceElement) {
+                targetElement.replaceWith(sourceElement);
+              }
+            }
+            document.body.classList.add('overflow-hidden');
+            const theme_cart = document.querySelector('cart-notification') || document.querySelector('cart-drawer');
+            if (theme_cart && theme_cart.classList.contains('is-empty')) theme_cart.classList.remove('is-empty');
+            theme_cart.classList.add('active');
+          })
+          .catch((e) => {
+            console.error('Error updating cart sections:', e);
           });
       }
 
