@@ -149,7 +149,7 @@ class CartDrawer extends HTMLElement {
     return [
       {
         id: 'cart-drawer',
-        selector: '#CartDrawer',
+        selector: 'cart-drawer',
       },
       {
         id: 'cart-icon-bubble',
