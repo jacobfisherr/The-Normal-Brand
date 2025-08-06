@@ -92,7 +92,7 @@ if (!customElements.get('product-form')) {
                 'modalClosed',
                 () => {
                   setTimeout(() => {
-                    this.renderCartDrawer();
+                    // this.renderCartDrawer();
                     this.cart.renderContents(response);
                   });
                 },
@@ -100,7 +100,7 @@ if (!customElements.get('product-form')) {
               );
               quickAddModal.hide(true);
             } else {
-              this.renderCartDrawer();
+              // this.renderCartDrawer();
               this.cart.renderContents(response);
             }
           })
