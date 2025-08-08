@@ -177,7 +177,7 @@
           {%- endif -%}
         </fieldset>
       {%- elsif picker_type == 'button' -%}
-        <fieldset class="js product-form__input product-form__input--pill {%- if option_is_color -%}product-form__input--color{%- endif -%}">
+        <fieldset class="js product-form__input product-form__input--pill {%- if option_is_color -%}product-form__input--color{%- endif -%} {% if option_is_size %} size-variant-picker{% endif %}">
           <legend class="form__label {% if option_is_size %}form__label--flex{% endif %}">
             {{ option.name }}:
             {%- if color_categories.size == 0 -%}
@@ -187,6 +187,7 @@
               </span>
             {%- endif -%}
             {% if option_is_size %}
+              <div class="urgency-message urgency-message--selected">Only a few left!</div>
               <button
                 id="size-chart-toggle"
                 class="size-chart__toggle link focus-inset modal__toggle"

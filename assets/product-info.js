@@ -15,6 +15,8 @@ if (!customElements.get('product-info')) {
         super();
 
         this.quantityInput = this.querySelector('.quantity__input');
+        this.urgencyMessage = null;
+        this.productVariantsData = null;
       }
 
       connectedCallback() {
@@ -26,6 +28,7 @@ if (!customElements.get('product-info')) {
         );
 
         this.initQuantityHandlers();
+        this.initUrgencyMessaging();
         this.dispatchEvent(new CustomEvent('product-info:loaded', { bubbles: true }));
       }
 
@@ -77,6 +80,8 @@ if (!customElements.get('product-info')) {
             ? this.handleSwapProduct(productUrl, shouldFetchFullPage)
             : this.handleUpdateProductInfo(productUrl),
         });
+        
+        this.initUrgencyMessaging();
       }
 
       resetProductFormState() {
@@ -133,6 +138,9 @@ if (!customElements.get('product-info')) {
                 yotpo.initWidgets();
               }
             }, 100);
+
+            // Reinitialize urgency messaging after product info is updated
+            this.initUrgencyMessaging();
           })
           .catch((error) => {
             if (error.name === 'AbortError') {
@@ -416,6 +424,78 @@ if (!customElements.get('product-info')) {
 
       get sectionId() {
         return this.dataset.originalSection || this.dataset.section;
+      }
+
+      // Urgency Messaging Methods
+      initUrgencyMessaging() {
+        this.urgencyMessage = this.querySelector('.urgency-message--selected');
+        
+        if (this.urgencyMessage) {
+          // Initialize the selected variant message
+          this.updateSelectedVariantMessage();
+        }
+        
+        // Check if any variant has low stock
+        this.checkForLowStockVariants();
+      }
+
+      checkForLowStockVariants() {
+        // Find all labels with low stock attribute
+        const lowStockLabels = this.querySelectorAll('.size-variant-picker label[data-low-stock="true"]');
+        
+        if (lowStockLabels.length > 0) {
+          console.log(`Triggering urgency message test`);
+            window._conv_q = window._conv_q || [];
+            window._conv_q.push({
+              what: "triggerLocation",
+              params: {
+                locationId: "1004125413"
+              }
+            });
+        }
+      }
+      
+      updateSelectedVariantMessage() {
+        if (!this.urgencyMessage) {
+          return;
+        }
+
+        // Find the currently selected size option
+        const selectedSizeOption = this.querySelector('.size-variant-picker input[type="radio"]:checked');
+        
+        if (!selectedSizeOption) {
+          this.hideSelectedVariantMessage();
+          return;
+        }
+
+        // Find the label associated with the selected option
+        const selectedLabel = this.querySelector(`label[for="${selectedSizeOption.id}"]`);
+        
+        if (!selectedLabel) {
+          this.hideSelectedVariantMessage();
+          return;
+        }
+
+        // Check if the selected option has low stock
+        const hasLowStock = selectedLabel.hasAttribute('data-low-stock');
+        
+        if (hasLowStock) {
+          this.showSelectedVariantMessage();
+        } else {
+          this.hideSelectedVariantMessage();
+        }
+      }
+
+      showSelectedVariantMessage() {
+        if (this.urgencyMessage) {
+          this.urgencyMessage.classList.add('show');
+        }
+      }
+
+      hideSelectedVariantMessage() {
+        if (this.urgencyMessage) {
+          this.urgencyMessage.classList.remove('show');
+        }
       }
     }
   );

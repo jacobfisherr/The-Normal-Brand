@@ -162,6 +162,12 @@
             data-tall-size
             class="hide"
           {% endif %}
+          {% if value.available
+            and value.variant.inventory_quantity != null
+            and value.variant.inventory_quantity < 10
+          %}
+            data-low-stock="true"
+          {% endif %}
         >
           {{ value }}
           {{ label_unavailable }}
