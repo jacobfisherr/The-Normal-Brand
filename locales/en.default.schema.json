@@ -362,6 +362,9 @@
         "show_cart_note": {
           "label": "Enable cart note"
         },
+        "show_additional_checkout_buttons": {
+          "label": "Show additional checkout buttons"
+        },
         "cart_drawer": {
           "header": "Cart drawer",
           "collection": {

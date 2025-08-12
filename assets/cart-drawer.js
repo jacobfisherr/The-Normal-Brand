@@ -78,6 +78,19 @@ class CartDrawer extends HTMLElement {
           : document.getElementById('CartDrawer');
         const focusElement = this.querySelector('.drawer__inner') || this.querySelector('.drawer__close');
         trapFocus(containerToTrapFocusOn, focusElement);
+        
+        // Dispatch custom event when cart drawer opens and has items
+        if (!this.classList.contains('is-empty')) {
+          window.dispatchEvent(
+            new CustomEvent('cart-drawer-opened-with-items', {
+              detail: {
+                type: 'drawer',
+                hasItems: true,
+                cartDrawer: this
+              },
+            })
+          );
+        }
       },
       { once: true }
     );

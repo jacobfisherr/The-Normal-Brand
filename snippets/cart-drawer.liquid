@@ -575,6 +575,10 @@
           >
             {{ 'sections.cart.checkout' | t }}
           </button>
+
+          {%- if settings.show_additional_checkout_buttons -%}
+            {{ content_for_additional_checkout_buttons }}
+          {%- endif -%}
         </div>
       </div>
     </div>

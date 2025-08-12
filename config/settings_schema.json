@@ -1492,6 +1492,12 @@
         "default": false
       },
       {
+        "type": "checkbox",
+        "id": "show_additional_checkout_buttons",
+        "label": "t:settings_schema.cart.settings.show_additional_checkout_buttons.label",
+        "default": true
+      },
+      {
         "type": "header",
         "content": "t:settings_schema.cart.settings.cart_drawer.header"
       },

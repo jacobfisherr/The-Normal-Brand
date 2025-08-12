@@ -118,7 +118,7 @@
         "custom_liquid_HP3Brq": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<style>\nshop-pay-wallet-button,\nmore-payment-options-link {\n  display: none !important;\n}\n\n.product__info-container .product-form {\n  margin: 2.5rem 0 1.5rem 0;\n}\n</style>"
+            "custom_liquid": "<style>\n.product-form__buttons shop-pay-wallet-button,\n.product-form__buttons more-payment-options-link {\n  display: none !important;\n}\n\n.product__info-container .product-form {\n  margin: 2.5rem 0 1.5rem 0;\n}\n</style>"
           }
         },
         "buy_buttons": {
