@@ -292,14 +292,13 @@
       "blocks": {
         "column_3Cc7dq": {
           "type": "column",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/homepage_slice.jpg",
-            "title": "Enter Now to win!",
-            "text": "<p>Sign up for a chance to win a beautiful ski trip for two + a $500 TNB shopping trip!</p>",
+            "image": "shopify://shop_images/Homepage-Collection_2_7bd0b1a7-be3c-4a3d-86de-f82cc28c8fd6.jpg",
+            "title": "New Closet Must-Haves",
+            "text": "<p>Equal parts polished and relaxed. For workdays, weekends, and everything in between.</p>",
             "liquid": "",
-            "link_label": "Click Here to Enter",
-            "link": "https://thenormalbrand.com/pages/tnb-ski-trip-giveaway-2024",
+            "link_label": "Shop Women's Tops",
+            "link": "https://thenormalbrand.com/collections/button-ups-and-blouses",
             "text_alignment": "left",
             "text_alignment_mobile": "left"
           }
@@ -307,12 +306,12 @@
         "column_qyTCPm": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Homepage-Collection_ba915f6c-0c6c-4af0-809f-4cbf39064faf.jpg",
-            "title": "Perfect Summer Shirt",
-            "text": "<p>A modern take on a retro staple—soft slub cotton, effortless fit, and 10 colors to choose from. Pick your favorite, or grab more than one.</p>",
+            "image": "shopify://shop_images/Homepage-Collection_1_9c01ce47-06da-44c4-aadb-73aef5a1b632.jpg",
+            "title": "Puremeso Essential Hoodie",
+            "text": "<p>\"I love this sweatshirt! So comfortable and versatile as we transition from late Summer to early Fall.\"</p>",
             "liquid": "",
-            "link_label": "Shop Vintage Slub",
-            "link": "https://thenormalbrand.com/collections/polos",
+            "link_label": "Shop the Hoodie",
+            "link": "https://thenormalbrand.com/collections/puremeso-essential-hoodie?_pos=1&_psq=puremeso%20essential&_ss=e&_v=1.0&_kx=SDFJk4cEFP456YgT4IhYxg.HKV8fB",
             "text_alignment": "left",
             "text_alignment_mobile": "left"
           }
@@ -320,12 +319,12 @@
         "column_746rwt": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Homepage-Collection2.jpg",
-            "title": "BACK BY POPULAR DEMAND",
-            "text": "<p>Featherlight, soft, and perfectly flattering. This fan favorite won't stick around—grab it while you can. The hardest part? Picking a color.</p>",
+            "image": "shopify://shop_images/Homepage-Collection_3.jpg",
+            "title": "Clearance: last call",
+            "text": "<p>Best-selling styles. Once they’re gone, they’re not coming back.</p>",
             "liquid": "",
-            "link_label": "Shop Deep V Button Thru Dress",
-            "link": "https://thenormalbrand.com/products/deep-v-button-thru-dress-clay",
+            "link_label": "Shop Last Call",
+            "link": "https://thenormalbrand.com/collections/sale",
             "text_alignment": "left",
             "text_alignment_mobile": "left"
           }
@@ -341,7 +340,7 @@
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
-        "columns_desktop": 2,
+        "columns_desktop": 3,
         "column_alignment": "left",
         "background_style": "none",
         "button_label": "",
