@@ -70,7 +70,7 @@
         "description": "<p>You pick the size, we'll handle the rest.</p>",
         "show_description": false,
         "description_style": "body",
-        "collection": "wanderlust",
+        "collection": "the-mystery-box",
         "products_to_show": 2,
         "columns_desktop": 2,
         "full_width": false,
