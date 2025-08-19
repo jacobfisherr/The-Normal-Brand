@@ -15,7 +15,7 @@
         "heading_E7qDbw": {
           "type": "heading",
           "settings": {
-            "heading": "Summer House",
+            "heading": "Stillwater Bridge",
             "heading_size": "h2"
           }
         },
@@ -29,11 +29,11 @@
         "buttons_R3BrRf": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop Men's Summer House",
-            "button_link_1": "https://thenormalbrand.com/collections/summer-house?sort_by=best-selling&filter.p.m.custom.gender=gid%3A%2F%2Fshopify%2FMetaobject%2F75598921900",
+            "button_label_1": "Shop Men's Stillwater Bridge",
+            "button_link_1": "https://thenormalbrand.com/collections/stillwater-bridge?sort_by=manual&filter.p.m.custom.gender=gid%3A%2F%2Fshopify%2FMetaobject%2F75598921900",
             "button_style_secondary_1": false,
-            "button_label_2": "Shop Women's Summer House",
-            "button_link_2": "https://thenormalbrand.com/collections/summer-house?sort_by=best-selling&filter.p.m.custom.gender=gid%3A%2F%2Fshopify%2FMetaobject%2F75653972140",
+            "button_label_2": "Shop Women's Stillwater Bridge",
+            "button_link_2": "https://thenormalbrand.com/collections/stillwater-bridge?sort_by=manual&filter.p.m.custom.gender=gid%3A%2F%2Fshopify%2FMetaobject%2F75653972140",
             "button_style_secondary_2": false
           }
         }
@@ -106,7 +106,8 @@
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 36,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "custom_class": ""
       }
     },
     "image_banner_bTDqPH": {
@@ -313,7 +314,8 @@
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 0,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "custom_class": ""
       }
     },
     "video_AxQiai": {
