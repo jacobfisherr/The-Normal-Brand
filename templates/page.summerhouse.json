@@ -15,25 +15,25 @@
         "heading_E7qDbw": {
           "type": "heading",
           "settings": {
-            "heading": "Stillwater Bridge",
+            "heading": "Summer House",
             "heading_size": "h2"
           }
         },
         "text_BTNiyM": {
           "type": "text",
           "settings": {
-            "text": "This collection was inspired by that quiet shift between seasons—when the sun still lingers, but the breeze starts to bite. Easy layers and softened textures bring comfort to cooler mornings and long, golden evenings. These are the pieces that ease you into fall, without rushing the end of summer.",
+            "text": "This collection was inspired by the places that just feel like summer—sun-warmed porches, salty air, and that effortless ease of days by the water. Light, breathable fabrics and sun-faded hues bring a sense of comfort that’s both timeless and lived-in. These are the pieces you’ll reach for again and again.",
             "text_style": "body"
           }
         },
         "buttons_R3BrRf": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop Men's Stillwater Bridge",
-            "button_link_1": "https://thenormalbrand.com/collections/stillwater-bridge?sort_by=manual&filter.p.m.custom.gender=gid%3A%2F%2Fshopify%2FMetaobject%2F75598921900",
+            "button_label_1": "Shop Men's Summer House",
+            "button_link_1": "https://thenormalbrand.com/collections/summer-house?sort_by=manual&filter.p.m.custom.gender=gid%3A%2F%2Fshopify%2FMetaobject%2F75598921900",
             "button_style_secondary_1": false,
-            "button_label_2": "Shop Women's Stillwater Bridge",
-            "button_link_2": "https://thenormalbrand.com/collections/stillwater-bridge?sort_by=manual&filter.p.m.custom.gender=gid%3A%2F%2Fshopify%2FMetaobject%2F75653972140",
+            "button_label_2": "Shop Women's Summer House",
+            "button_link_2": "https://thenormalbrand.com/collections/summer-house?sort_by=manual&filter.p.m.custom.gender=gid%3A%2F%2Fshopify%2FMetaobject%2F75653972140",
             "button_style_secondary_2": false
           }
         }
@@ -84,12 +84,12 @@
     "featured_collection_FmAHab": {
       "type": "featured-collection",
       "settings": {
-        "title": "Shop Stillwater Bridge",
+        "title": "Shop Summer House",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "stillwater-bridge",
+        "collection": "summer-house",
         "products_to_show": 12,
         "columns_desktop": 4,
         "full_width": false,
@@ -544,8 +544,8 @@
         "button_AFgNg4": {
           "type": "button",
           "settings": {
-            "button_label": "Shop the Fall 2025 Line",
-            "button_link": "shopify://collections/fall-24-collection",
+            "button_label": "Shop the Spring 2025 Line",
+            "button_link": "shopify://collections/spring-2025",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",
