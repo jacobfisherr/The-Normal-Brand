@@ -22,7 +22,7 @@
         "text_BTNiyM": {
           "type": "text",
           "settings": {
-            "text": "This collection was inspired by the places that just feel like summer—sun-warmed porches, salty air, and that effortless ease of days by the water. Light, breathable fabrics and sun-faded hues bring a sense of comfort that’s both timeless and lived-in. These are the pieces you’ll reach for again and again.",
+            "text": "This collection was inspired by that quiet shift between seasons—when the sun still lingers, but the breeze starts to bite. Easy layers and softened textures bring comfort to cooler mornings and long, golden evenings. These are the pieces that ease you into fall, without rushing the end of summer.",
             "text_style": "body"
           }
         },
@@ -84,12 +84,12 @@
     "featured_collection_FmAHab": {
       "type": "featured-collection",
       "settings": {
-        "title": "Shop Summer House",
+        "title": "Shop Stillwater Bridge",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "summer-house",
+        "collection": "stillwater-bridge",
         "products_to_show": 12,
         "columns_desktop": 4,
         "full_width": false,
@@ -228,7 +228,7 @@
         "featured_collection_4HeCDj"
       ],
       "settings": {
-        "title": "More Spring Styles Everyone Loves",
+        "title": "More Styles Everyone Loves",
         "heading_size": "h2",
         "image_ratio": "square",
         "columns_desktop": 3,
@@ -544,8 +544,8 @@
         "button_AFgNg4": {
           "type": "button",
           "settings": {
-            "button_label": "Shop the Spring 2025 Line",
-            "button_link": "shopify://collections/spring-2025",
+            "button_label": "Shop the Fall 2025 Line",
+            "button_link": "shopify://collections/fall-24-collection",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",
