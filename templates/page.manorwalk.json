@@ -84,12 +84,12 @@
     "featured_collection_FmAHab": {
       "type": "featured-collection",
       "settings": {
-        "title": "Shop Stillwater Bridge",
+        "title": "Shop Manor Walk",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "stillwater-bridge",
+        "collection": "manor-walk",
         "products_to_show": 12,
         "columns_desktop": 4,
         "full_width": false,
