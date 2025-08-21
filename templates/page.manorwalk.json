@@ -15,7 +15,7 @@
         "heading_E7qDbw": {
           "type": "heading",
           "settings": {
-            "heading": "Stillwater Bridge",
+            "heading": "Manor Walk",
             "heading_size": "h2"
           }
         },
@@ -29,10 +29,10 @@
         "buttons_R3BrRf": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop Men's Stillwater Bridge",
+            "button_label_1": "Shop Men's Manor Walk",
             "button_link_1": "https://thenormalbrand.com/collections/stillwater-bridge?sort_by=manual&filter.p.m.custom.gender=gid%3A%2F%2Fshopify%2FMetaobject%2F75598921900",
             "button_style_secondary_1": false,
-            "button_label_2": "Shop Women's Stillwater Bridge",
+            "button_label_2": "Shop Women's Manor Walk",
             "button_link_2": "https://thenormalbrand.com/collections/stillwater-bridge?sort_by=manual&filter.p.m.custom.gender=gid%3A%2F%2Fshopify%2FMetaobject%2F75653972140",
             "button_style_secondary_2": false
           }
@@ -182,7 +182,7 @@
         "featured_collection_tCmyiW": {
           "type": "featured_collection",
           "settings": {
-            "collection": "mens-shorts"
+            "collection": "pants"
           }
         },
         "featured_collection_MdKNrd": {
