@@ -69,30 +69,31 @@
         "slide_QBadaG": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/10year-Desktop-Template_1_STEEL.jpg",
-            "mobile_image": "shopify://shop_images/Mobile-Template-1_STEEL_b4b8eacb-bad7-4944-8c37-3a2ba7ede457.jpg",
-            "heading": "Made for Everyday",
+            "image": "shopify://shop_images/1_web.jpg",
+            "mobile_image": "shopify://shop_images/2_mobile_602717ae-ffd9-4313-b5d3-3a1be9e4b37a.jpg",
+            "heading": "Mystery Boxes are Back",
             "heading_size": "h0",
             "mobile_heading_size": "h0",
             "subheading": "",
             "button_size": "small",
             "mobile_button_size": "small",
             "button_label": "Shop Men's",
-            "link": "https://thenormalbrand.com/collections/new-mens",
+            "link": "https://thenormalbrand.com/products/mens-mystery-box-s25",
             "button_label_2": "Shop Women's",
-            "link_2": "https://thenormalbrand.com/collections/new-womens",
+            "link_2": "https://thenormalbrand.com/products/womens-mystery-box-s25",
             "button_style_secondary": true,
-            "box_align": "middle-right",
+            "box_align": "middle-center",
             "show_text_box": false,
-            "text_alignment": "right",
+            "text_alignment": "center",
             "image_overlay_opacity": 0,
             "color_scheme": "scheme-7eca2d75-45a3-4024-b69d-17de1ca4d726",
             "text_alignment_mobile": "center",
-            "mobile_box_align": "middle"
+            "mobile_box_align": "bottom"
           }
         },
         "slide_ey3yPc": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/10year-Desktop-Template_2_bf35db06-a8e6-4492-8187-e62d56ea4c36.jpg",
             "mobile_image": "shopify://shop_images/Mobile-Template-2_STEEL.jpg",
@@ -118,6 +119,7 @@
         },
         "slide_rHJLX8": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/10year-Desktop-Template_4_STEEL.jpg",
             "mobile_image": "shopify://shop_images/Mobile-Template-4_STEEL.jpg",
