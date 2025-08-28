@@ -301,59 +301,6 @@
         "padding_bottom": 52
       }
     },
-    "image_banner_YpWyjY": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_qpjTbp": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1"
-          }
-        },
-        "text_y3THEp": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "buttons_kjtiJh": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_qpjTbp",
-        "text_y3THEp",
-        "buttons_kjtiJh"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/size_chart_mens_1.png",
-        "mobile_image": "shopify://shop_images/size_chart_mens_mobile.png",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "mobile_color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
     "image_banner_xBYLUR": {
       "type": "image-banner",
       "blocks": {
@@ -394,6 +341,59 @@
       "settings": {
         "image": "shopify://shop_images/size_chart_womens_1.png",
         "mobile_image": "shopify://shop_images/size_chart_womens_mobile.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "mobile_color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "image_banner_YpWyjY": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_qpjTbp": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "text_y3THEp": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "buttons_kjtiJh": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_qpjTbp",
+        "text_y3THEp",
+        "buttons_kjtiJh"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/size_chart_mens_1.png",
+        "mobile_image": "shopify://shop_images/size_chart_mens_mobile.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-center",
@@ -466,8 +466,8 @@
     "main",
     "multicolumn_jEzLCh",
     "rich_text_BWfpKf",
-    "image_banner_YpWyjY",
     "image_banner_xBYLUR",
+    "image_banner_YpWyjY",
     "custom_liquid_8YyEfQ",
     "related-products",
     "17236029474cb66284",
