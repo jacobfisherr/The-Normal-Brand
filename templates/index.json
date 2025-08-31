@@ -295,12 +295,12 @@
         "column_3Cc7dq": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Homepage-Collection_2_7bd0b1a7-be3c-4a3d-86de-f82cc28c8fd6.jpg",
+            "image": "shopify://shop_images/Homepage-Collection_1_ee5e627f-7052-44b1-a9b6-9398fafe6bc4.jpg",
             "title": "New Closet Must-Haves",
             "text": "<p>Equal parts polished and relaxed. For workdays, weekends, and everything in between.</p>",
             "liquid": "",
-            "link_label": "Shop Women's Tops",
-            "link": "https://thenormalbrand.com/collections/button-ups-and-blouses",
+            "link_label": "Shop New Arrivals",
+            "link": "https://thenormalbrand.com/collections/new",
             "text_alignment": "left",
             "text_alignment_mobile": "left"
           }
@@ -308,12 +308,12 @@
         "column_qyTCPm": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Homepage-Collection_1_9c01ce47-06da-44c4-aadb-73aef5a1b632.jpg",
-            "title": "Puremeso Essential Hoodie",
-            "text": "<p>\"I love this sweatshirt! So comfortable and versatile as we transition from late Summer to early Fall.\"</p>",
+            "image": "shopify://shop_images/Homepage-Collection_3_5ae517be-24ce-41de-8e4e-304a4f776dbe.jpg",
+            "title": "Denim Debut",
+            "text": "<p>Our new Normal Straight Jeans were designed with all-day comfort in mind. Crafted from soft, breathable denim that moves with you.</p>",
             "liquid": "",
-            "link_label": "Shop the Hoodie",
-            "link": "https://thenormalbrand.com/collections/puremeso-essential-hoodie?_pos=1&_psq=puremeso%20essential&_ss=e&_v=1.0&_kx=SDFJk4cEFP456YgT4IhYxg.HKV8fB",
+            "link_label": "Shop Men's Pants",
+            "link": "https://thenormalbrand.com/collections/pants",
             "text_alignment": "left",
             "text_alignment_mobile": "left"
           }
@@ -321,12 +321,12 @@
         "column_746rwt": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Homepage-Collection_3.jpg",
-            "title": "Clearance: last call",
-            "text": "<p>Best-selling styles. Once they’re gone, they’re not coming back.</p>",
+            "image": "shopify://shop_images/Homepage-Collection_4.jpg",
+            "title": "Seasonal Shift",
+            "text": "<p>Soft, breathable, and versatile. These sweaters are as comfortable as they are easy, so wearing them constantly just makes sense.</p>",
             "liquid": "",
-            "link_label": "Shop Last Call",
-            "link": "https://thenormalbrand.com/collections/sale",
+            "link_label": "Shop Sweaters",
+            "link": "https://thenormalbrand.com/collections/womens-sweaters",
             "text_alignment": "left",
             "text_alignment_mobile": "left"
           }
