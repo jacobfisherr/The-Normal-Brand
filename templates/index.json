@@ -71,7 +71,7 @@
           "settings": {
             "image": "shopify://shop_images/10year-Desktop-Template_1_STEEL.jpg",
             "mobile_image": "shopify://shop_images/Mobile-Template-1_STEEL.jpg",
-            "heading": "The New Classics",
+            "heading": "Early Fall Icons",
             "heading_size": "h0",
             "mobile_heading_size": "h0",
             "subheading": "",
@@ -87,7 +87,7 @@
             "text_alignment": "left",
             "image_overlay_opacity": 0,
             "color_scheme": "scheme-7eca2d75-45a3-4024-b69d-17de1ca4d726",
-            "text_alignment_mobile": "center",
+            "text_alignment_mobile": "left",
             "mobile_box_align": "middle"
           }
         },
