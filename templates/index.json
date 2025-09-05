@@ -87,8 +87,8 @@
             "text_alignment": "left",
             "image_overlay_opacity": 0,
             "color_scheme": "tnb-light",
-            "text_alignment_mobile": "center",
-            "mobile_box_align": "middle"
+            "text_alignment_mobile": "left",
+            "mobile_box_align": "top"
           }
         },
         "slide_ey3yPc": {
