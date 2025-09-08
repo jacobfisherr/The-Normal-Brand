@@ -188,6 +188,7 @@
     },
     "featured_collection_LbyiNp": {
       "type": "featured-collection",
+      "disabled": true,
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
         "title": "Men's Styles",
@@ -354,6 +355,7 @@
     },
     "featured_collection_WWrF9m": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Women's Styles",
         "heading_size": "h2",
