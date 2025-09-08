@@ -355,7 +355,6 @@
     },
     "featured_collection_WWrF9m": {
       "type": "featured-collection",
-      "disabled": true,
       "settings": {
         "title": "Women's Styles",
         "heading_size": "h2",
@@ -650,8 +649,8 @@
     "featured_collection_LbyiNp",
     "enavi_collection_list_dLxaBA",
     "multicolumn_CnFgTJ",
-    "featured_collection_WWrF9m",
     "enavi_collection_list_Ack9A3",
+    "featured_collection_WWrF9m",
     "rich_text_tUVHa8",
     "image_banner_Vr9rJH",
     "spacer_MAXKax",
