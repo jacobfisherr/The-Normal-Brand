@@ -84,12 +84,12 @@
     "featured_collection_FmAHab": {
       "type": "featured-collection",
       "settings": {
-        "title": "Fall '24 Dresses Collection",
+        "title": "Sweaters You’ll Live In",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "womens-dresses",
+        "collection": "womens-sweaters",
         "products_to_show": 10,
         "columns_desktop": 3,
         "full_width": true,
@@ -266,7 +266,7 @@
         "featured_collection_LnfTNf": {
           "type": "featured_collection",
           "settings": {
-            "collection": "womens-pants"
+            "collection": "womens-sweaters"
           }
         },
         "featured_collection_KHnp4T": {
@@ -278,25 +278,25 @@
         "featured_collection_tCmyiW": {
           "type": "featured_collection",
           "settings": {
-            "collection": "womens-sweaters"
+            "collection": "womens-tops"
           }
         },
         "featured_collection_cyBY6W": {
           "type": "featured_collection",
           "settings": {
-            "collection": "womens-tops"
+            "collection": "womens-pants"
           }
         },
         "featured_collection_MdKNrd": {
           "type": "featured_collection",
           "settings": {
-            "collection": "womens-bottoms"
+            "collection": "womens-hoodies-pullovers"
           }
         },
         "featured_collection_gVegQz": {
           "type": "featured_collection",
           "settings": {
-            "collection": "womens-hoodies-pullovers"
+            "collection": "skirts"
           }
         },
         "featured_collection_rbUM3G": {
@@ -646,7 +646,7 @@
         "button_AFgNg4": {
           "type": "button",
           "settings": {
-            "button_label": "Shop the Fall 2024 Collection",
+            "button_label": "Shop the Fall Collection",
             "button_link": "shopify://collections/fall-24-collection",
             "button_style_secondary": false,
             "button_label_2": "",
