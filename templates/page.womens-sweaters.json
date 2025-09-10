@@ -175,8 +175,8 @@
         "column_8eadpj": {
           "type": "column",
           "settings": {
-            "title": "★★★★★ Tara",
-            "text": "<p>\"These are <strong>THE best joggers</strong>. I own 3 pairs. They are so comfortable. PLEEEEASSEEEE RESTOCK SO I CAN BUY MORE!\"</p>",
+            "title": "★★★★★ Jennifer",
+            "text": "<p>\"<strong>So soft and cozy.</strong> Definitely that sweater you will grab over and over. Can be dressed up or down. Wear it over a t shirt with jeans for a casual look or with a necklace or scarf and nice pair of pants for work or dinner.\" - on the Marianna Crewneck Sweater</p>",
             "liquid": "",
             "link_label": "",
             "link": "",
@@ -187,8 +187,8 @@
         "column_aUUXjb": {
           "type": "column",
           "settings": {
-            "title": "★★★★★ Michele",
-            "text": "<p>\"So pretty and easy to dress up but also <strong>incredibly comfortable</strong> and casual. Will be needing more colors of this!\"</p>",
+            "title": "★★★★★ Elizabeth",
+            "text": "<p>\"Absolutely <strong>love this sweater</strong>!! High quality material. Received many compliments when wearing it. Good job to the QC dept with this sweater!!\" - on the Lola Everyday Quarter Zip</p>",
             "liquid": "",
             "link_label": "",
             "link": "",
@@ -199,8 +199,8 @@
         "column_PGiUFf": {
           "type": "column",
           "settings": {
-            "title": "★★★★★ Laura S.",
-            "text": "<p>\"Comfy and cute, <strong>an essential!</strong> The Puremeso fabric is everything. I get away with wearing this to work and yet it’s as comfy as a sweatshirt. Can’t wait to add more of these dresses to my wardrobe!\"</p>",
+            "title": "★★★★★ Erika",
+            "text": "<p>\"This sweater is a classic. The texture of the sweater says quality. I’ve received compliments every time I’ve worn it. Love it!\" - on the Josefine Henley Sweater</p>",
             "liquid": "",
             "link_label": "",
             "link": "",
@@ -222,8 +222,8 @@
         "columns_desktop": 3,
         "column_alignment": "left",
         "background_style": "primary",
-        "button_label": "Shop our Exclusive Fabric",
-        "button_link": "shopify://collections/womens-puremeso",
+        "button_label": "Shop our Sweaters",
+        "button_link": "shopify://collections/womens-sweaters",
         "color_scheme": "",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
