@@ -15,22 +15,22 @@
         "heading_E7qDbw": {
           "type": "heading",
           "settings": {
-            "heading": "Fall '24 Plaids Collection",
+            "heading": "Better Button Ups Start Here",
             "heading_size": "h2"
           }
         },
         "text_BTNiyM": {
           "type": "text",
           "settings": {
-            "text": "Find your perfect plaid. Lightweight or heavyweight, our button-ups are all about comfort.",
+            "text": "Classic shirts built with premium fabrics and the right details so you stay comfortable no matter where the day takes you.",
             "text_style": "body"
           }
         },
         "buttons_R3BrRf": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop Plaid Button Ups",
-            "button_link_1": "shopify://collections/plaids",
+            "button_label_1": "Shop Button Ups",
+            "button_link_1": "shopify://collections/button-up-shirts",
             "button_style_secondary_1": false,
             "button_label_2": "Shop Best Sellers",
             "button_link_2": "shopify://collections/bestsellers",
@@ -84,12 +84,12 @@
     "featured_collection_FmAHab": {
       "type": "featured-collection",
       "settings": {
-        "title": "Favorite Plaids",
+        "title": "Go-To Button Ups",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "plaids",
+        "collection": "button-up-shirts",
         "products_to_show": 8,
         "columns_desktop": 4,
         "full_width": false,
@@ -106,7 +106,8 @@
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 36,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "custom_class": ""
       }
     },
     "image_banner_bTDqPH": {
@@ -167,7 +168,9 @@
             "text": "<p>\"This is the best flannel that I have ever bought! Incredible quality and feels great.\"</p>",
             "liquid": "",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "text_alignment": "left",
+            "text_alignment_mobile": "left"
           }
         },
         "column_aUUXjb": {
@@ -177,7 +180,9 @@
             "text": "<p>\"The TNB Mountain Overshirt is an absolute must-have, and I love it so much that I own it in five different colors! The material is fantastic—thick, durable, and perfect for layering, whether I'm heading outdoors or just adding an extra layer for warmth.\"</p>",
             "liquid": "",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "text_alignment": "left",
+            "text_alignment_mobile": "left"
           }
         },
         "column_PGiUFf": {
@@ -187,7 +192,9 @@
             "text": "<p>\"My husband, who historically is quite the label/material/cut snob, loved this shirt. Super soft and the plaid was carefully matched to line up across the button line. Super well and an excellent price!\"</p>",
             "liquid": "",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "text_alignment": "left",
+            "text_alignment_mobile": "left"
           }
         }
       },
@@ -238,7 +245,8 @@
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 24,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "custom_class": ""
       }
     },
     "collection_list_YDwnTk": {
@@ -397,7 +405,8 @@
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 0,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "custom_class": ""
       }
     },
     "video_AxQiai": {
