@@ -65,7 +65,7 @@
         "text_VHA98C": {
           "type": "text",
           "settings": {
-            "text": "<p><a href=\"https://thenormalbrand.com/collections/mens\" title=\"https://thenormalbrand.com/collections/mens\">Men's Collection</a> | <a href=\"https://thenormalbrand.com/collections/outerwear\" title=\"https://thenormalbrand.com/collections/outerwear\">Outerwear</a> | <a href=\"https://thenormalbrand.com/collections/button-up-shirts\" title=\"https://thenormalbrand.com/collections/button-up-shirts\">Button Ups</a> | <a href=\"https://thenormalbrand.com/collections/hoodies-pullovers-1\" title=\"https://thenormalbrand.com/collections/hoodies-pullovers-1\">Hoodies</a> | <a href=\"https://thenormalbrand.com/collections/pants\" title=\"https://thenormalbrand.com/collections/pants\">Pants</a></p>"
+            "text": "<p><a href=\"https://thenormalbrand.com/collections/mens\" title=\"https://thenormalbrand.com/collections/mens\">Men's Collection</a> | <a href=\"https://thenormalbrand.com/collections/button-up-shirts\" title=\"https://thenormalbrand.com/collections/button-up-shirts\">Button Ups</a> | <a href=\"https://thenormalbrand.com/collections/hoodies-pullovers-1\" title=\"https://thenormalbrand.com/collections/hoodies-pullovers-1\">Hoodies</a> | <a href=\"https://thenormalbrand.com/collections/pants\" title=\"https://thenormalbrand.com/collections/pants\">Pants </a>| <a href=\"https://thenormalbrand.com/collections/outerwear\" title=\"https://thenormalbrand.com/collections/outerwear\">Outerwear</a> </p>"
           }
         }
       },
@@ -635,7 +635,7 @@
         "button_AFgNg4": {
           "type": "button",
           "settings": {
-            "button_label": "Shop the Fall 2024 Collection",
+            "button_label": "Shop the Fall Collection",
             "button_link": "shopify://collections/fall-24-collection",
             "button_style_secondary": false,
             "button_label_2": "",
