@@ -15,25 +15,25 @@
         "heading_E7qDbw": {
           "type": "heading",
           "settings": {
-            "heading": "Manor Walk",
+            "heading": "Field & Forge",
             "heading_size": "h2"
           }
         },
         "text_BTNiyM": {
           "type": "text",
           "settings": {
-            "text": "This collection was inspired by the quiet rhythm of the countryside—worn paths, crisp mornings, and tradition passed down with every step. Rugged textures meet tailored fits, striking a balance between movement and ease. These are the pieces that carry you through the season, grounded in heritage and made for today.",
+            "text": "This collection was inspired by the grit of the everyday—long days, steady work, and the strength found in utility. Durable fabrics meet refined design, creating timeless pieces that hold their ground. These are the layers built to last, made for seasons of wear.",
             "text_style": "body"
           }
         },
         "buttons_R3BrRf": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop Men's Manor Walk",
-            "button_link_1": "https://thenormalbrand.com/collections/manor-walk?sort_by=best-selling&filter.p.m.custom.gender=gid%3A%2F%2Fshopify%2FMetaobject%2F75598921900",
+            "button_label_1": "Shop Men's Field & Forge",
+            "button_link_1": "https://thenormalbrand.com/collections/field-forge?sort_by=title-ascending&filter.p.m.custom.gender=gid%3A%2F%2Fshopify%2FMetaobject%2F75598921900",
             "button_style_secondary_1": false,
-            "button_label_2": "Shop Women's Manor Walk",
-            "button_link_2": "https://thenormalbrand.com/collections/manor-walk?sort_by=best-selling&filter.p.m.custom.gender=gid%3A%2F%2Fshopify%2FMetaobject%2F75653972140",
+            "button_label_2": "Shop Women's Field & Forge",
+            "button_link_2": "https://thenormalbrand.com/collections/field-forge?sort_by=title-ascending&filter.p.m.custom.gender=gid%3A%2F%2Fshopify%2FMetaobject%2F75653972140",
             "button_style_secondary_2": false
           }
         }
@@ -65,7 +65,7 @@
         "text_VHA98C": {
           "type": "text",
           "settings": {
-            "text": "<p><a href=\"/collections/mens\" title=\"Men's Collection\">Men's Collection</a> | <a href=\"/collections/womens\" title=\"Women's Collection\">Women's Collection</a> | <a href=\"/collections/button-up-shirts\" title=\"Button Ups\">Button Ups</a> | <a href=\"/collections/womens-dresses\" title=\"Dresses\">Dresses</a></p>"
+            "text": "<p><a href=\"/collections/mens\" title=\"Men's Collection\">Men's Collection</a> | <a href=\"/collections/womens\" title=\"Women's Collection\">Women's Collection</a> | <a href=\"/collections/button-up-shirts\" title=\"Button Ups\">Button Ups</a> | <a href=\"/collections/womens-sweaters\" title=\"Sweaters\">Sweaters</a></p>"
           }
         }
       },
