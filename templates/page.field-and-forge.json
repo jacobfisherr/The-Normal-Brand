@@ -84,12 +84,12 @@
     "featured_collection_FmAHab": {
       "type": "featured-collection",
       "settings": {
-        "title": "Shop Manor Walk",
+        "title": "Shop Field & Forge",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "manor-walk",
+        "collection": "field-forge",
         "products_to_show": 12,
         "columns_desktop": 4,
         "full_width": false,
@@ -182,25 +182,25 @@
         "featured_collection_tCmyiW": {
           "type": "featured_collection",
           "settings": {
-            "collection": "pants"
+            "collection": "womens-outerwear"
           }
         },
         "featured_collection_MdKNrd": {
           "type": "featured_collection",
           "settings": {
-            "collection": "womens-tops"
+            "collection": "outerwear"
           }
         },
         "featured_collection_dgpj8H": {
           "type": "featured_collection",
           "settings": {
-            "collection": "t-shirts-henleys"
+            "collection": "womens-sweaters"
           }
         },
         "featured_collection_rbUM3G": {
           "type": "featured_collection",
           "settings": {
-            "collection": "polos-9"
+            "collection": "pants"
           }
         },
         "featured_collection_gVegQz": {
