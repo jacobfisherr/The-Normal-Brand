@@ -15,7 +15,7 @@
         "caption_gcDj7Y": {
           "type": "caption",
           "settings": {
-            "caption": "Des moines, IA",
+            "caption": "{{ page.metafields.custom.page_subtitle.value }}",
             "text_style": "caption-with-letter-spacing",
             "text_size": "large"
           }
