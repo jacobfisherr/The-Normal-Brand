@@ -228,6 +228,14 @@
             "custom_image": "shopify://shop_images/M_Hoodie.jpg"
           }
         },
+        "featured_collection_f94kY8": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "t-shirts-henleys",
+            "custom_title": "",
+            "custom_image": "shopify://shop_images/Untitled-7.jpg"
+          }
+        },
         "featured_collection_LdNq8P": {
           "type": "featured_collection",
           "settings": {
@@ -267,24 +275,16 @@
             "custom_title": "",
             "custom_image": "shopify://shop_images/Untitled-9.jpg"
           }
-        },
-        "featured_collection_f94kY8": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "t-shirts-henleys",
-            "custom_title": "",
-            "custom_image": "shopify://shop_images/Untitled-7.jpg"
-          }
         }
       },
       "block_order": [
         "featured_collection_tzCdTE",
+        "featured_collection_f94kY8",
         "featured_collection_LdNq8P",
         "featured_collection_gd9VFq",
         "featured_collection_JQFfzG",
         "featured_collection_m9KmVy",
-        "featured_collection_bhEd3K",
-        "featured_collection_f94kY8"
+        "featured_collection_bhEd3K"
       ],
       "name": "Enavi Collection List",
       "settings": {
