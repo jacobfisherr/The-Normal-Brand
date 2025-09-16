@@ -236,20 +236,20 @@
             "custom_image": "shopify://shop_images/Untitled-7.jpg"
           }
         },
-        "featured_collection_LdNq8P": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "button-up-shirts",
-            "custom_title": "",
-            "custom_image": "shopify://shop_images/Untitled-3_195fb087-88c4-4a48-9f36-ad471b346f68.jpg"
-          }
-        },
         "featured_collection_gd9VFq": {
           "type": "featured_collection",
           "settings": {
             "collection": "sweaters",
             "custom_title": "Sweaters",
             "custom_image": "shopify://shop_images/Untitled-4_8bb5570e-305e-434b-8a6b-fda82af5c8a8.jpg"
+          }
+        },
+        "featured_collection_LdNq8P": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "button-up-shirts",
+            "custom_title": "",
+            "custom_image": "shopify://shop_images/Untitled-3_195fb087-88c4-4a48-9f36-ad471b346f68.jpg"
           }
         },
         "featured_collection_JQFfzG": {
@@ -260,14 +260,6 @@
             "custom_image": "shopify://shop_images/Untitled-5.jpg"
           }
         },
-        "featured_collection_m9KmVy": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "outerwear",
-            "custom_title": "Outerwear",
-            "custom_image": "shopify://shop_images/Untitled-6.jpg"
-          }
-        },
         "featured_collection_bhEd3K": {
           "type": "featured_collection",
           "settings": {
@@ -275,16 +267,24 @@
             "custom_title": "",
             "custom_image": "shopify://shop_images/Untitled-9.jpg"
           }
+        },
+        "featured_collection_m9KmVy": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "outerwear",
+            "custom_title": "Outerwear",
+            "custom_image": "shopify://shop_images/Untitled-6.jpg"
+          }
         }
       },
       "block_order": [
         "featured_collection_tzCdTE",
         "featured_collection_f94kY8",
-        "featured_collection_LdNq8P",
         "featured_collection_gd9VFq",
+        "featured_collection_LdNq8P",
         "featured_collection_JQFfzG",
-        "featured_collection_m9KmVy",
-        "featured_collection_bhEd3K"
+        "featured_collection_bhEd3K",
+        "featured_collection_m9KmVy"
       ],
       "name": "Enavi Collection List",
       "settings": {
