@@ -223,33 +223,25 @@
         "featured_collection_tzCdTE": {
           "type": "featured_collection",
           "settings": {
+            "collection": "hoodies-pullovers-1",
+            "custom_title": "",
+            "custom_image": "shopify://shop_images/M_Hoodies.jpg"
+          }
+        },
+        "featured_collection_LdNq8P": {
+          "type": "featured_collection",
+          "settings": {
             "collection": "button-up-shirts",
             "custom_title": "",
-            "custom_image": "shopify://shop_images/shortstache__TNB_2023_Michigan_-491_1.png"
+            "custom_image": "shopify://shop_images/M_Button-Up.jpg"
           }
         },
-        "featured_collection_bhEd3K": {
+        "featured_collection_gd9VFq": {
           "type": "featured_collection",
           "settings": {
-            "collection": "polos-9",
-            "custom_title": "",
-            "custom_image": "shopify://shop_images/polo_TNB_1.png"
-          }
-        },
-        "featured_collection_f94kY8": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "t-shirts-henleys",
-            "custom_title": "",
-            "custom_image": "shopify://shop_images/t-shirtTNB_1.png"
-          }
-        },
-        "featured_collection_m9KmVy": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "mens-shorts",
-            "custom_title": "Shorts",
-            "custom_image": "shopify://shop_images/shortstache__TNB_Spring23_PS_Reshoot-375_1.png"
+            "collection": "sweaters",
+            "custom_title": "Sweaters",
+            "custom_image": "shopify://shop_images/M_Sweaters.jpg"
           }
         },
         "featured_collection_JQFfzG": {
@@ -257,16 +249,42 @@
           "settings": {
             "collection": "pants",
             "custom_title": "",
-            "custom_image": "shopify://shop_images/Shortstache__TNB_Fall24_Upstate_Web-125_1_9a4d345c-fefc-45de-8619-367ad48551fd.png"
+            "custom_image": "shopify://shop_images/M_Pants.jpg"
+          }
+        },
+        "featured_collection_m9KmVy": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "outerwear",
+            "custom_title": "Outerwear",
+            "custom_image": "shopify://shop_images/M_Outerwear.jpg"
+          }
+        },
+        "featured_collection_bhEd3K": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "polos-9",
+            "custom_title": "",
+            "custom_image": "shopify://shop_images/M_Polo.jpg"
+          }
+        },
+        "featured_collection_f94kY8": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "t-shirts-henleys",
+            "custom_title": "",
+            "custom_image": "shopify://shop_images/M_Shirts.jpg"
           }
         }
       },
       "block_order": [
         "featured_collection_tzCdTE",
-        "featured_collection_bhEd3K",
-        "featured_collection_f94kY8",
+        "featured_collection_LdNq8P",
+        "featured_collection_gd9VFq",
+        "featured_collection_JQFfzG",
         "featured_collection_m9KmVy",
-        "featured_collection_JQFfzG"
+        "featured_collection_bhEd3K",
+        "featured_collection_f94kY8"
       ],
       "name": "Enavi Collection List",
       "settings": {
@@ -391,15 +409,7 @@
           "settings": {
             "collection": "womens-dresses",
             "custom_title": "",
-            "custom_image": "shopify://shop_images/Lived-In_Cotton_Camille_Button_Thru_Mini_Dress_in_Navy_Railroad_Stripe.png"
-          }
-        },
-        "featured_collection_hNmRX4": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "button-ups-and-blouses",
-            "custom_title": "",
-            "custom_image": "shopify://shop_images/Featherweight_Short_Sleeve_Blouse_in_Mist.png"
+            "custom_image": "shopify://shop_images/W_Dresses.jpg"
           }
         },
         "featured_collection_aeaXhP": {
@@ -407,15 +417,23 @@
           "settings": {
             "collection": "womens-sweaters",
             "custom_title": "",
-            "custom_image": "shopify://shop_images/Cole_Terry_Vintage_Crewneck_in_Sunglow.png"
+            "custom_image": "shopify://shop_images/W_Sweaters.jpg"
           }
         },
-        "featured_collection_FNQ8d7": {
+        "featured_collection_XMxTXN": {
           "type": "featured_collection",
           "settings": {
-            "collection": "shorts-skirts",
+            "collection": "womens-hoodies-pullovers",
+            "custom_title": "Hoodies & Pullovers",
+            "custom_image": "shopify://shop_images/W_Pullovers.jpg"
+          }
+        },
+        "featured_collection_hNmRX4": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "button-ups-and-blouses",
             "custom_title": "",
-            "custom_image": "shopify://shop_images/TNB_NCSpring25_-936_1.png"
+            "custom_image": "shopify://shop_images/W_Blouse.jpg"
           }
         },
         "featured_collection_UNqmEY": {
@@ -423,16 +441,25 @@
           "settings": {
             "collection": "womens-pants",
             "custom_title": "",
-            "custom_image": "shopify://shop_images/womenTrouser_TNB_1.png"
+            "custom_image": "shopify://shop_images/W_Pants.jpg"
+          }
+        },
+        "featured_collection_FNQ8d7": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "womens-outerwear",
+            "custom_title": "Outerwear",
+            "custom_image": "shopify://shop_images/W_Outerwear.jpg"
           }
         }
       },
       "block_order": [
         "featured_collection_V7gCqN",
-        "featured_collection_hNmRX4",
         "featured_collection_aeaXhP",
-        "featured_collection_FNQ8d7",
-        "featured_collection_UNqmEY"
+        "featured_collection_XMxTXN",
+        "featured_collection_hNmRX4",
+        "featured_collection_UNqmEY",
+        "featured_collection_FNQ8d7"
       ],
       "name": "Enavi Collection List",
       "settings": {
