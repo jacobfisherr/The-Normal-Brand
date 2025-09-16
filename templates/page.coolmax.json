@@ -15,22 +15,22 @@
         "heading_E7qDbw": {
           "type": "heading",
           "settings": {
-            "heading": "The Jimmy Sweater Collection",
+            "heading": "The COOLMAX® Collection",
             "heading_size": "h2"
           }
         },
         "text_BTNiyM": {
           "type": "text",
           "settings": {
-            "text": "The perfect, flattering fit in a soft and comfortable fabric - this fabric will turn you into a sweater guy. Made with a special knit that brings a little bit of variation into the color for added dimension. Comes in a mid-weight feel with lounge-level comfort and a tailored fit.",
+            "text": "Lightweight breathable and built for comfort this fabric keeps you cool dry and moving with ease. Blended with cotton for softness and stretch it delivers durability style and everyday wearability all in one.",
             "text_style": "body"
           }
         },
         "buttons_R3BrRf": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop the Jimmy Collection",
-            "button_link_1": "shopify://collections/sweaters",
+            "button_label_1": "Shop the COOLMAX® Collection",
+            "button_link_1": "shopify://collections/coolmax",
             "button_style_secondary_1": false,
             "button_label_2": "Shop Best Sellers",
             "button_link_2": "shopify://collections/bestsellers",
@@ -84,12 +84,12 @@
     "featured_collection_FmAHab": {
       "type": "featured-collection",
       "settings": {
-        "title": "Sweater Weather",
+        "title": "Cool Comfort Ahead",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "jimmy-collection",
+        "collection": "coolmax",
         "products_to_show": 6,
         "columns_desktop": 2,
         "full_width": false,
@@ -106,7 +106,8 @@
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 36,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "custom_class": ""
       }
     },
     "image_banner_bTDqPH": {
@@ -227,7 +228,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "fall-outfits",
+        "collection": "new",
         "products_to_show": 5,
         "columns_desktop": 5,
         "full_width": false,
@@ -244,7 +245,8 @@
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 24,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "custom_class": ""
       }
     },
     "collection_list_YDwnTk": {
@@ -403,7 +405,8 @@
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 0,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "custom_class": ""
       }
     },
     "video_AxQiai": {
@@ -632,7 +635,7 @@
         "button_AFgNg4": {
           "type": "button",
           "settings": {
-            "button_label": "Shop the Fall 2024 Collection",
+            "button_label": "Shop the Fall Collection",
             "button_link": "shopify://collections/fall-24-collection",
             "button_style_secondary": false,
             "button_label_2": "",
