@@ -15,14 +15,14 @@
         "heading_E7qDbw": {
           "type": "heading",
           "settings": {
-            "heading": "Warm Weather Prep",
+            "heading": "Cold Weather Ready",
             "heading_size": "h2"
           }
         },
         "text_BTNiyM": {
           "type": "text",
           "settings": {
-            "text": "Warmer days are ahead. Time to stock up on lightweight, versatile essentials that look sharp and feel comfortable.",
+            "text": "Colder days call for layers that work as hard as you do. Stock up on warm versatile essentials designed to keep you comfortable all season long.",
             "text_style": "body"
           }
         },
@@ -84,12 +84,12 @@
     "featured_collection_FmAHab": {
       "type": "featured-collection",
       "settings": {
-        "title": "The Spring 2025 Collection",
+        "title": "The Fall 2025 Collection",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "spring-2025",
+        "collection": "fall-24-collection",
         "products_to_show": 7,
         "columns_desktop": 4,
         "full_width": false,
@@ -106,7 +106,8 @@
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 36,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "custom_class": ""
       }
     },
     "image_banner_bTDqPH": {
@@ -244,7 +245,8 @@
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 24,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "custom_class": ""
       }
     },
     "collection_list_YDwnTk": {
@@ -403,7 +405,8 @@
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 0,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "custom_class": ""
       }
     },
     "video_AxQiai": {
