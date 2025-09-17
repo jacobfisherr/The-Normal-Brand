@@ -1,0 +1,71 @@
+{% comment %}
+  Renders free shipping progress bar
+
+  Usage:
+  {% render 'free-shipping-progress',
+    threshold: 15000,
+    show_message: true,
+    show_progress_bar: true
+  %}
+
+  Parameters:
+  - threshold: Free shipping threshold in cents (default: 15000 = $150)
+  - show_message: Whether to show the message (default: true)
+  - show_progress_bar: Whether to show the progress bar (default: true)
+{% endcomment %}
+
+{%- liquid
+  assign threshold = threshold | default: 15000
+  assign show_message = show_message | default: true
+  assign show_progress_bar = show_progress_bar | default: true
+
+  assign cart_total = cart.total_price
+  assign remaining_amount = threshold | minus: cart_total
+  assign progress_percentage = cart_total | times: 100 | divided_by: threshold
+  assign progress_percentage = progress_percentage | at_most: 100
+
+  if remaining_amount <= 0
+    assign remaining_amount = 0
+  endif
+-%}
+
+{%- if show_message or show_progress_bar -%}
+  <free-shipping-progress class="free-shipping-progress" data-free-shipping-threshold="{{ threshold }}">
+    {%- if show_message -%}
+      <div class="free-shipping-message">
+        {%- if remaining_amount > 0 -%}
+          <p class="free-shipping-text">
+            {%- if cart_total > 0 -%}
+              HOORAY! YOU ARE JUST
+              {{ remaining_amount | money_without_currency | remove: '$' | append: ' AWAY FROM FREE SHIPPING' -}}
+            {%- else -%}
+              ADD {{ threshold | money_without_currency | remove: '$' | append: ' TO YOUR CART FOR FREE SHIPPING' -}}
+            {%- endif -%}
+          </p>
+        {%- else -%}
+          <p class="free-shipping-text free-shipping-achieved">Congratulations! You have unlocked free shipping</p>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+
+    {%- if show_progress_bar -%}
+      <div class="free-shipping-progress-bar">
+        <div class="progress-track">
+          <div
+            class="progress-fill"
+            style="width: {{ progress_percentage }}%"
+            data-progress="{{ progress_percentage }}"
+          ></div>
+          <div
+            class="progress-truck"
+            style="left: {{ progress_percentage }}%"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="12" viewBox="0 0 17 12" fill="none">
+              <path d="M14.625 3H12.375V0H1.875C1.04625 0 0.375 0.67125 0.375 1.5V9.75H1.875C1.875 10.9913 2.88375 12 4.125 12C5.36625 12 6.375 10.9913 6.375 9.75H10.875C10.875 10.9913 11.8837 12 13.125 12C14.3663 12 15.375 10.9913 15.375 9.75H16.875V6L14.625 3ZM4.125 10.875C3.5025 10.875 3 10.3725 3 9.75C3 9.1275 3.5025 8.625 4.125 8.625C4.7475 8.625 5.25 9.1275 5.25 9.75C5.25 10.3725 4.7475 10.875 4.125 10.875ZM14.25 4.125L15.7238 6H12.375V4.125H14.25ZM13.125 10.875C12.5025 10.875 12 10.3725 12 9.75C12 9.1275 12.5025 8.625 13.125 8.625C13.7475 8.625 14.25 9.1275 14.25 9.75C14.25 10.3725 13.7475 10.875 13.125 10.875Z" fill="#22242A"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    {%- endif -%}
+  </free-shipping-progress>
+{%- endif -%}

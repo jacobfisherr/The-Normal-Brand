@@ -1,0 +1,84 @@
+/* Free Shipping Progress Bar Styles */
+.free-shipping-progress {
+  padding: 0 0 1.5rem;
+  display: none;
+}
+
+[data-cart-progress-bar="true"] .free-shipping-progress {
+  display: block;
+}
+
+.free-shipping-message {
+  margin-bottom: 1rem;
+}
+
+.free-shipping-text {
+  margin: 0;
+  line-height: 1.4;
+  text-align: center;
+  font-weight: 600;
+  font-size: 10px;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  color: #22242ABF;
+}
+
+
+.free-shipping-achieved {
+  color: rgb(var(--color-success));
+}
+
+.free-shipping-progress-bar {
+  margin-top: 1rem;
+}
+
+.progress-track {
+  position: relative;
+  height: 9px;
+  background: #fff;
+  border-radius: 0.6rem;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #ef612e;
+  display: block !important;
+  border-radius: 0.6rem;
+  transition: width 0.6s ease;
+  position: relative;
+}
+
+.progress-truck {
+  position: absolute;
+  top: -0.8rem;
+  transform: translateX(-50%);
+  font-size: 1.6rem;
+  transition: left 0.6s ease;
+  z-index: 2;
+}
+
+
+/* Dynamic update animations */
+.progress-updated .progress-fill {
+  transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.progress-updated .progress-truck {
+  transition: left 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.free-shipping-achieved {
+  animation: celebration 0.8s ease-in-out;
+}
+
+@keyframes celebration {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+}
