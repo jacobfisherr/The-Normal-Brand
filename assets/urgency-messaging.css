@@ -1,14 +1,9 @@
 /* A/B Test Urgency Messaging */
 /* Only show when Convert adds data-stock-message="true" to HTML element */
 
-/* .urgency-message,
-.urgency-message--selected {
-  display: none;
+.urgency-message {
+  display: inline-block;
 }
-
-html[data-stock-message="true"] .urgency-message.show {
-  display: inline-block !important;
-} */
 
 /* Permanent message for selected variant */
 .urgency-message--selected {
