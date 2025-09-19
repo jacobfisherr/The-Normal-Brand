@@ -434,25 +434,6 @@ if (!customElements.get('product-info')) {
           // Initialize the selected variant message
           this.updateSelectedVariantMessage();
         }
-        
-        // Check if any variant has low stock
-        this.checkForLowStockVariants();
-      }
-
-      checkForLowStockVariants() {
-        // Find all labels with low stock attribute
-        const lowStockLabels = this.querySelectorAll('.size-variant-picker label[data-low-stock="true"]');
-        
-        if (lowStockLabels.length > 0) {
-          console.log(`Triggering urgency message test`);
-            window._conv_q = window._conv_q || [];
-            window._conv_q.push({
-              what: "triggerLocation",
-              params: {
-                locationId: "1004125413"
-              }
-            });
-        }
       }
       
       updateSelectedVariantMessage() {
