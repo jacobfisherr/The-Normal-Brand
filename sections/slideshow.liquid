@@ -183,8 +183,10 @@
           {%- endif -%}
         </div>
         <div class="slideshow__text-wrapper banner__content banner__content--{{ block.settings.box_align }} banner__content--mobile-{{ block.settings.mobile_box_align }} page-width{% if block.settings.show_text_box == false %} banner--desktop-transparent{% endif %}{% if settings.animations_reveal_on_scroll and forloop.index == 1 %} scroll-trigger animate--slide-in{% endif %}">
-          {% if block.settings.button_label_2 == blank and block.settings.button_label != blank%}
-            {% comment %} <a href=> {% endcomment %}
+          {% if block.settings.button_label_2 == blank and block.settings.link != blank%}
+            <a href="{{ block.settings.link }}" class="banner-link-cover">
+              <span>{{ block.settings.heading }}{% if block.settings.button_label != blank %}: {{ block.settings.button_label }}{% endif %}</span>  
+            </a>
           {% endif %}
           <div class="slideshow__text banner__box content-container content-container--full-width-mobile color-{{ block.settings.color_scheme }} gradient slideshow__text--{{ block.settings.text_alignment }} slideshow__text-mobile--{{ block.settings.text_alignment_mobile }}">
             {%- if block.settings.heading != blank -%}
