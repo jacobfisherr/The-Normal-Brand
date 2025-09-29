@@ -87,7 +87,7 @@
         "column_bi7d4p": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/AMB-1.jpg",
+            "image": "shopify://shop_images/1_Big-Square.jpg",
             "title": "Who We Are Looking For",
             "text": "<p>Down to earth individuals who know the value of family, hard work, and elevated casual styles. We believe in hard work, family, and integrity.</p>",
             "liquid": "",
@@ -100,7 +100,7 @@
         "column_Y6HxRk": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/AMB-2.jpg",
+            "image": "shopify://shop_images/2_Big-Square.jpg",
             "title": "What to Expect",
             "text": "<p>TNB Ambassadors can expect to become a part of our TNB family. This includes being the first to know about upcoming sales, in-store and online events, and community engagement.</p>",
             "liquid": "",
