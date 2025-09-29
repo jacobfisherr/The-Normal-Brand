@@ -161,7 +161,7 @@
         "column_pteixK": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/SMALL_PIC-1.jpg",
+            "image": "shopify://shop_images/1_Small-Square.jpg",
             "title": "Perks",
             "text": "<p>Complete challenges to earn rewards</p>",
             "liquid": "",
@@ -174,7 +174,7 @@
         "column_tdk8ae": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/SMALL_PIC-2.jpg",
+            "image": "shopify://shop_images/3_Small-Square.jpg",
             "title": "Community",
             "text": "<p>Share a 15% discount to your audience</p>",
             "liquid": "",
@@ -187,7 +187,7 @@
         "column_V3PX8A": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/SMALL_PIC-3.jpg",
+            "image": "shopify://shop_images/2_Small-Square.jpg",
             "title": "Commission",
             "text": "<p>Earn up to 10% commission on all orders made using your unique affiliate link</p>",
             "liquid": "",
