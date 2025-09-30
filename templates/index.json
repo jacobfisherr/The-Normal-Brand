@@ -339,12 +339,12 @@
         "column_3Cc7dq": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Homepage-Collection_013531ee-f3fc-4675-8185-1cea5c91780d.jpg",
-            "title": "New Closet Must-Haves",
-            "text": "<p>Equal parts polished and relaxed. For workdays, weekends, and everything in between.</p>",
+            "image": "shopify://shop_images/Multicolumn-Template_A_4c292f2f-aaef-45f2-9da2-022ae7f31692.jpg",
+            "title": "Field & Forge",
+            "text": "<p>Rugged fabrics, versatile fits, and timeless design—made to carry you through the season with ease.</p>",
             "liquid": "",
-            "link_label": "Shop New Arrivals",
-            "link": "https://thenormalbrand.com/collections/new",
+            "link_label": "Shop the Collection",
+            "link": "https://thenormalbrand.com/collections/field-forge",
             "text_alignment": "left",
             "text_alignment_mobile": "left"
           }
@@ -352,12 +352,12 @@
         "column_qyTCPm": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Homepage-Collection_3_5ae517be-24ce-41de-8e4e-304a4f776dbe.jpg",
-            "title": "Denim Debut",
-            "text": "<p>Our new Normal Straight Jeans were designed with all-day comfort in mind. Crafted from soft, breathable denim that moves with you.</p>",
+            "image": "shopify://shop_images/Multicolumn-Template-a.jpg",
+            "title": "One For All",
+            "text": "<p>Built to layer, designed to last, and versatile enough for workdays or weekends</p>",
             "liquid": "",
-            "link_label": "Shop Men's Pants",
-            "link": "https://thenormalbrand.com/collections/pants",
+            "link_label": "Shop Button Ups",
+            "link": "https://thenormalbrand.com/collections/button-up-shirts",
             "text_alignment": "left",
             "text_alignment_mobile": "left"
           }
@@ -365,12 +365,12 @@
         "column_746rwt": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Homepage-Collection_4.jpg",
-            "title": "Seasonal Shift",
-            "text": "<p>Soft, breathable, and versatile. These sweaters are as comfortable as they are easy, so wearing them constantly just makes sense.</p>",
+            "image": "shopify://shop_images/Multicolumn-Template_C_66d6a02b-9834-4795-b659-7ec049716437.jpg",
+            "title": "Most Valuable Layers",
+            "text": "<p>Comfort, quality, and versatility—our newest hoodies and pullovers are here.</p>",
             "liquid": "",
-            "link_label": "Shop Sweaters",
-            "link": "https://thenormalbrand.com/collections/womens-sweaters",
+            "link_label": "Shop Hoodies & Pullovers",
+            "link": "https://thenormalbrand.com/collections/womens-hoodies-pullovers",
             "text_alignment": "left",
             "text_alignment_mobile": "left"
           }
