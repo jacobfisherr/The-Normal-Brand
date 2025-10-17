@@ -36,6 +36,30 @@
             "text_alignment_mobile": "left"
           }
         },
+        "column_e439bJ": {
+          "type": "column",
+          "settings": {
+            "title": "Jogger",
+            "text": "<p>Jogger description</p>",
+            "liquid": "",
+            "link_label": "",
+            "link": "",
+            "text_alignment": "left",
+            "text_alignment_mobile": "left"
+          }
+        },
+        "column_hTxm6n": {
+          "type": "column",
+          "settings": {
+            "title": "Chino",
+            "text": "<p>Chino description</p>",
+            "liquid": "",
+            "link_label": "",
+            "link": "",
+            "text_alignment": "left",
+            "text_alignment_mobile": "left"
+          }
+        },
         "column_QAgxjr": {
           "type": "column",
           "settings": {
@@ -52,6 +76,8 @@
       "block_order": [
         "column_RC3Ekj",
         "column_AQLeUG",
+        "column_e439bJ",
+        "column_hTxm6n",
         "column_QAgxjr"
       ],
       "name": "t:sections.multicolumn.presets.name",
@@ -60,7 +86,7 @@
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
-        "columns_desktop": 3,
+        "columns_desktop": 5,
         "column_alignment": "left",
         "background_style": "primary",
         "button_label": "Button label",
