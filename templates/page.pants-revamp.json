@@ -12,6 +12,18 @@
     "multicolumn_bMtPhC": {
       "type": "multicolumn",
       "blocks": {
+        "column_AQLeUG": {
+          "type": "column",
+          "settings": {
+            "title": "Jeans",
+            "text": "<p>denim description</p>",
+            "liquid": "",
+            "link_label": "",
+            "link": "",
+            "text_alignment": "left",
+            "text_alignment_mobile": "left"
+          }
+        },
         "column_RC3Ekj": {
           "type": "column",
           "settings": {
@@ -24,11 +36,11 @@
             "text_alignment_mobile": "left"
           }
         },
-        "column_AQLeUG": {
+        "column_hTxm6n": {
           "type": "column",
           "settings": {
-            "title": "Denim",
-            "text": "<p>denim description</p>",
+            "title": "Dress Pants",
+            "text": "<p>Chino description</p>",
             "liquid": "",
             "link_label": "",
             "link": "",
@@ -47,38 +59,13 @@
             "text_alignment": "left",
             "text_alignment_mobile": "left"
           }
-        },
-        "column_hTxm6n": {
-          "type": "column",
-          "settings": {
-            "title": "Chino",
-            "text": "<p>Chino description</p>",
-            "liquid": "",
-            "link_label": "",
-            "link": "",
-            "text_alignment": "left",
-            "text_alignment_mobile": "left"
-          }
-        },
-        "column_QAgxjr": {
-          "type": "column",
-          "settings": {
-            "title": "Cord",
-            "text": "<p>Cord description</p>",
-            "liquid": "",
-            "link_label": "",
-            "link": "",
-            "text_alignment": "left",
-            "text_alignment_mobile": "left"
-          }
         }
       },
       "block_order": [
-        "column_RC3Ekj",
         "column_AQLeUG",
-        "column_e439bJ",
+        "column_RC3Ekj",
         "column_hTxm6n",
-        "column_QAgxjr"
+        "column_e439bJ"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
@@ -86,34 +73,16 @@
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
-        "columns_desktop": 5,
+        "columns_desktop": 4,
         "column_alignment": "left",
         "background_style": "primary",
-        "button_label": "Button label",
+        "button_label": "",
         "button_link": "",
         "color_scheme": "",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "image_banner_bTDqPH": {
-      "type": "image-banner",
-      "settings": {
-        "image": "shopify://shop_images/Pic_2_3fc89bd8-3602-4ca7-9a2c-6ec9ea912074.jpg",
-        "mobile_image": "shopify://shop_images/ASI_Mobile.png",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "desktop_content_position": "middle-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "mobile_color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
       }
     },
     "multicolumn_3wYGpA": {
@@ -161,6 +130,7 @@
         "column_aUUXjb",
         "column_PGiUFf"
       ],
+      "disabled": true,
       "settings": {
         "title": "Crazy About Comfort Terry",
         "heading_size": "h2",
@@ -176,6 +146,35 @@
         "swipe_on_mobile": false,
         "padding_top": 24,
         "padding_bottom": 24
+      }
+    },
+    "featured_collection_FmAHab": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Jeans",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "jeans",
+        "products_to_show": 25,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 0,
+        "custom_class": ""
       }
     },
     "featured_collection_HbFgt7": {
@@ -207,75 +206,10 @@
         "custom_class": ""
       }
     },
-    "image_banner_6TE9WQ": {
-      "type": "image-banner",
-      "settings": {
-        "image": "shopify://shop_images/Pic_2_3fc89bd8-3602-4ca7-9a2c-6ec9ea912074.jpg",
-        "mobile_image": "shopify://shop_images/ASI_Mobile.png",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "desktop_content_position": "middle-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "mobile_color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
-    "featured_collection_FmAHab": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Denim",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "jeans",
-        "products_to_show": 25,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "standard",
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 0,
-        "custom_class": ""
-      }
-    },
-    "image_banner_cVprkg": {
-      "type": "image-banner",
-      "settings": {
-        "image": "shopify://shop_images/Pic_2_3fc89bd8-3602-4ca7-9a2c-6ec9ea912074.jpg",
-        "mobile_image": "shopify://shop_images/ASI_Mobile.png",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "desktop_content_position": "middle-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "mobile_color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
     "featured_collection_4z6pQX": {
       "type": "featured-collection",
       "settings": {
-        "title": "Cord",
+        "title": "Dress Pants",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
@@ -301,44 +235,15 @@
         "custom_class": ""
       }
     },
-    "featured_collection_yYknGt": {
+    "featured_collection_MCpcfx": {
       "type": "featured-collection",
       "settings": {
-        "title": "Chino",
+        "title": "Joggers",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "chino",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "custom_class": ""
-      }
-    },
-    "featured_collection_tTHdUJ": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Trouser",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "trouser",
+        "collection": "cord-1",
         "products_to_show": 8,
         "columns_desktop": 4,
         "full_width": false,
@@ -370,15 +275,11 @@
   },
   "order": [
     "multicolumn_bMtPhC",
-    "image_banner_bTDqPH",
     "multicolumn_3wYGpA",
-    "featured_collection_HbFgt7",
-    "image_banner_6TE9WQ",
     "featured_collection_FmAHab",
-    "image_banner_cVprkg",
+    "featured_collection_HbFgt7",
     "featured_collection_4z6pQX",
-    "featured_collection_yYknGt",
-    "featured_collection_tTHdUJ",
+    "featured_collection_MCpcfx",
     "main"
   ]
 }
