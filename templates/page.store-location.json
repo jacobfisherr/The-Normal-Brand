@@ -670,6 +670,54 @@
         "padding_bottom": 36
       }
     },
+    "image_with_text_ByTcgk": {
+      "type": "image-with-text",
+      "blocks": {
+        "caption_XhCYjH": {
+          "type": "caption",
+          "settings": {
+            "caption": "Southlake",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "large"
+          }
+        },
+        "heading_EQy3dA": {
+          "type": "heading",
+          "settings": {
+            "heading": "<a href=\"/pages/the-normal-brand-store-franklin\" title=\"/pages/the-normal-brand-store-franklin\">CoolSprings Galleria</a>",
+            "heading_size": "h1"
+          }
+        },
+        "text_JndXbN": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>1800 Galleria Boulevard, Space 1270<br/>Franklin, TN 37067</strong></p><p>(629) 654-0910</p><p>Mon-Sat: 10am - 8pm<br/>Sun: 11am - 6pm</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "caption_XhCYjH",
+        "heading_EQy3dA",
+        "text_JndXbN"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/FRANKLIN_8785a4ba-3064-4817-9216-50a7b5e2abda.jpg",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "full_width": false,
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "rich_text_LeBzta": {
       "type": "rich-text",
       "blocks": {
@@ -821,6 +869,7 @@
     "rich_text_zUPUiG",
     "image_with_text_fiHBHQ",
     "image_with_text_G3A78L",
+    "image_with_text_ByTcgk",
     "rich_text_LeBzta",
     "multicolumn_ExbEyA",
     "rich_text_BXfm89",
