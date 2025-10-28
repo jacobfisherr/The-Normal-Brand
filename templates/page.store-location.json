@@ -691,7 +691,7 @@
         "text_JndXbN": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>1800 Galleria Boulevard, Space 1270<br/>Franklin, TN 37067</strong></p><p>(629) 654-0910</p><p>Mon-Sat: 10am - 8pm<br/>Sun: 11am - 6pm</p>",
+            "text": "<p><strong>1232 Main Street<br/>Southlake, TX 76092</strong></p><p>(817) 823-0971</p><p>Mon-Sat: 10am - 8pm<br/>Sun: 11am - 6pm</p>",
             "text_style": "body"
           }
         }
@@ -702,7 +702,7 @@
         "text_JndXbN"
       ],
       "settings": {
-        "image": "shopify://shop_images/FRANKLIN_8785a4ba-3064-4817-9216-50a7b5e2abda.jpg",
+        "image": "shopify://shop_images/SOUTHLAKE.jpg",
         "height": "adapt",
         "desktop_image_width": "small",
         "layout": "image_first",
