@@ -304,6 +304,7 @@
     <meta name="facebook-domain-verification" content="p6tf6l50gan0ramd981cpln7zp7m3u">
 
     {% comment %} Google Tag Manager {% endcomment %}
+    {% comment %}
     <script>
       (function (w, d, s, l, i) {
         w[l] = w[l] || [];
@@ -316,8 +317,10 @@
         f.parentNode.insertBefore(j, f);
       })(window, document, 'script', 'dataLayer', 'GTM-MNRPC8C');
     </script>
+    {% endcomment %}
 
     {% comment %} Global site tag (gtag.js) - Google Ads: 943621954 {% endcomment %}
+     {% comment %}
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-943621954"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -328,7 +331,9 @@
       gtag('js', new Date());
       gtag('config', 'AW-943621954');
     </script>
-
+    {% endcomment %}
+    
+    {% comment %}
     <script type="text/javascript">
       (function (c, l, a, r, i, t, y) {
         c[a] =
@@ -343,10 +348,12 @@
         y.parentNode.insertBefore(t, y);
       })(window, document, 'clarity', 'script', 'rrsgsqalr7');
     </script>
+    {% endcomment %}
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
     {% comment %} Google Tag Manager (noscript) {% endcomment %}
+     {% comment %}
     <noscript
       ><iframe
         src="https://www.googletagmanager.com/ns.html?id=GTM-MNRPC8C"
@@ -355,6 +362,7 @@
         style="display:none;visibility:hidden"
       ></iframe
     ></noscript>
+    {% endcomment %}
 
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
