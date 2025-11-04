@@ -414,6 +414,7 @@ summary.list-menu__item {
   position: relative;
   z-index: 2;
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   gap: 0.7rem;
   margin-top: 1rem !important;
@@ -441,7 +442,11 @@ summary.list-menu__item {
 
 .product_tile_color_holder .product_tile_color_holder__more-colors {
   display: none;
-  padding: 2px;
+  aspect-ratio: auto;
+  padding: 0;
+  border: none;
+  border-radius: none;
+  line-height: 0.9;
 }
 
 .product_tile_color_holder .product_tile_color_holder__more-colors svg {

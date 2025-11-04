@@ -511,8 +511,7 @@
                       data-color-count="{{ color_option.values.size | minus: 7 }}"
                     >
                       <span class="visually-hidden">View more colors</span>
-                      {% render 'icon-plus' %}
-                      <span aria-hidden="true" style="display: none;">+ {{ color_option.values.size | minus: 7 }}</span>
+                      <span aria-hidden="true">+ {{ color_option.values.size | minus: 7 }}</span>
                     </a>
                   </div>
                 {% endif %}
