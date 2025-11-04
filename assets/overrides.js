@@ -128,6 +128,26 @@ function init() {
   TNB.tallSizingControls();
   TNB.megaMenuHover();
   TNB.sliderArrows();
+
+  const productCount = document.querySelector('#ProductCount');
+  const productCountDesktop = document.querySelector('#ProductCountDesktop');
+  const outOfStockProducts = document.querySelectorAll('.product-grid [data-in-stock="false"]');
+
+  if (productCount) {
+    const count = productCount.innerText;
+    const parsedCount = parseInt(count);
+
+    productCount.innerText = parsedCount - outOfStockProducts.length;
+    productCount.style.display = "block";
+  }
+
+  if (productCountDesktop) {
+    const count = productCountDesktop.innerText;
+    const parsedCount = parseInt(count);
+
+    productCountDesktop.innerText = parsedCount - outOfStockProducts.length;
+    productCountDesktop.style.display = "block";
+  }
 }
 
 window.addEventListener('DOMContentLoaded', function () {
