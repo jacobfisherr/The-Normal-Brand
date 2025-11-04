@@ -448,6 +448,7 @@ summary.list-menu__item {
   border-radius: none;
   line-height: 0.9;
   width: auto;
+  text-decoration: none;
 }
 
 .product_tile_color_holder .product_tile_color_holder__more-colors svg {
