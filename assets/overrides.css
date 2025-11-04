@@ -451,7 +451,7 @@ summary.list-menu__item {
   text-decoration: none;
 }
 
-.product-card:hover .product_tile_color_holder .product_tile_color_holder__more-colors {
+.product-card-wrapper:hover .product_tile_color_holder .product_tile_color_holder__more-colors {
   text-decoration: none;
 }
 
