@@ -137,7 +137,7 @@ function init() {
     const count = productCount.innerText;
     const parsedCount = parseInt(count);
 
-    productCount.innerText = parsedCount - outOfStockProducts.length;
+    productCount.innerText = parsedCount - outOfStockProducts.length + " products";
     productCount.style.display = "block";
   }
 
@@ -145,7 +145,7 @@ function init() {
     const count = productCountDesktop.innerText;
     const parsedCount = parseInt(count);
 
-    productCountDesktop.innerText = parsedCount - outOfStockProducts.length;
+    productCountDesktop.innerText = parsedCount - outOfStockProducts.length + " products";
     productCountDesktop.style.display = "block";
   }
 }
