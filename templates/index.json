@@ -341,12 +341,12 @@
         "column_3Cc7dq": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Multicolumn-Template_A_4c292f2f-aaef-45f2-9da2-022ae7f31692.jpg",
-            "title": "Field & Forge",
-            "text": "<p>Rugged fabrics, versatile fits, and timeless design—made to carry you through the season with ease.</p>",
+            "image": "shopify://shop_images/A_d0f17601-077c-44ee-ad58-1c4c73e5b331.jpg",
+            "title": "New Arrivals",
+            "text": "<p>Inspired by timeless classics, our collection features durable yet soft, vintage-inspired fabrics. Each piece reflects quiet sophistication through thoughtful details, celebrating the enduring value of quality craftsmanship.</p>",
             "liquid": "",
             "link_label": "Shop the Collection",
-            "link": "https://thenormalbrand.com/collections/field-forge",
+            "link": "https://thenormalbrand.com/collections/new",
             "text_alignment": "left",
             "text_alignment_mobile": "left"
           }
@@ -354,12 +354,12 @@
         "column_qyTCPm": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Multicolumn-Template-a.jpg",
-            "title": "One For All",
-            "text": "<p>Built to layer, designed to last, and versatile enough for workdays or weekends</p>",
+            "image": "shopify://shop_images/B_38710903-539a-4705-a8fa-b6029feba4d5.jpg",
+            "title": "The Normal Trouser",
+            "text": "<p>The Normal Trouser is what happens when timeless menswear meets everyday ease. The elevated pant you’ll reach for on days you want to look sharp without overdoing it.</p>",
             "liquid": "",
-            "link_label": "Shop Button Ups",
-            "link": "https://thenormalbrand.com/collections/button-up-shirts",
+            "link_label": "Shop the Normal Trouser",
+            "link": "https://thenormalbrand.com/products/stretch-suiting-trouser-in-dark-olive?_pos=1&_psq=normal+trouser&_ss=e&_v=1.0",
             "text_alignment": "left",
             "text_alignment_mobile": "left"
           }
@@ -367,12 +367,12 @@
         "column_746rwt": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Multicolumn-Template_C_66d6a02b-9834-4795-b659-7ec049716437.jpg",
-            "title": "Most Valuable Layers",
-            "text": "<p>Comfort, quality, and versatility—our newest hoodies and pullovers are here.</p>",
+            "image": "shopify://shop_images/C_5b0a55fd-19ee-4d01-b2fd-561bc012ad7b.jpg",
+            "title": "Sweater forever",
+            "text": "<p>With soft knits, versatile fits, and timeless details, these are the pieces that make layering effortless. Perfect for mornings on the go, dinners out, and everything in between.</p>",
             "liquid": "",
-            "link_label": "Shop Hoodies & Pullovers",
-            "link": "https://thenormalbrand.com/collections/womens-hoodies-pullovers",
+            "link_label": "Shop Sweaters",
+            "link": "https://thenormalbrand.com/collections/womens-sweaters",
             "text_alignment": "left",
             "text_alignment_mobile": "left"
           }
