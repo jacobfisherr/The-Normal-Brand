@@ -43,14 +43,17 @@
 
     <script>
     (function () {
-      if (window.__okBindOnce) return;
+      if (window.__okBindOnce) return; // still keep this
       window.__okBindOnce = true;
 
+      // one-time delegation guard
+      let delegationBound = false;
+
       function bindOkendoInteractions(root = document) {
-        // 1) Star rating near the title -> scroll to reviews widget
+        // 1) Make title stars clickable (rebinds per render, guarded per element)
         root.querySelectorAll('[data-oke-star-rating],[data-oke-stars],[data-oke-reviews-star-rating]').forEach(el => {
           if (el.__okeBound) return;
-          el.addEventListener('click', e => {
+          el.addEventListener('click', () => {
             const widget = document.querySelector('[data-oke-widget]');
             if (widget) widget.scrollIntoView({ behavior: 'smooth', block: 'start' });
           });
@@ -58,65 +61,68 @@
           el.__okeBound = true;
         });
 
-        // 2) “Show more” inside the widget (event delegation so it survives re-renders)
-        document.addEventListener('click', function (e) {
-          const btn = e.target.closest('[data-oke-widget] [data-oke-action="show-more"], [data-oke-widget] [data-oke-show-more]');
-          if (!btn) return;
-          // Let Okendo’s own handler run; this ensures the event is caught even after re-render
-          // No custom code needed here; delegation keeps it alive.
-        }, { passive: true });
+        // 2) Document-level delegation (bind ONCE)
+        if (!delegationBound) {
+          delegationBound = true;
 
-        // 3) “Filters” toggle (same idea)
-        document.addEventListener('click', function (e) {
-          const btn = e.target.closest('[data-oke-widget] [data-oke-action="open-filters"], [data-oke-widget] [data-oke-filters-toggle]');
-          if (!btn) return;
-        }, { passive: true });
+          document.addEventListener('click', function (e) {
+            const btn = e.target.closest('[data-oke-widget] [data-oke-action="show-more"], [data-oke-widget] [data-oke-show-more]');
+            if (!btn) return;
+            // let Okendo's handler run
+          }, { passive: true });
+
+          document.addEventListener('click', function (e) {
+            const btn = e.target.closest('[data-oke-widget] [data-oke-action="open-filters"], [data-oke-widget] [data-oke-filters-toggle]');
+            if (!btn) return;
+          }, { passive: true });
+        }
       }
 
-      // Initial bind
-      document.addEventListener('DOMContentLoaded', () => bindOkendoInteractions());
+      document.addEventListener('DOMContentLoaded', () => {
+        bindOkendoInteractions();
 
-      // Re-bind when Shopify re-renders product info / sections
-      document.addEventListener('shopify:section:load', e => bindOkendoInteractions(e.target));
-      document.addEventListener('shopify:section:unload', () => {}); // no-op, keeps symmetry
-
-      // Fallback: observe variant-driven DOM swaps inside the main product component
-      const pi = document.querySelector('product-info') || document.querySelector('[data-section-type="product"]') || document;
-      const mo = new MutationObserver(muts => {
-        if (muts.some(m => m.addedNodes && m.addedNodes.length)) bindOkendoInteractions(pi);
+        // Observe dynamic re-renders AFTER DOM is ready
+        const pi = document.querySelector('product-info') ||
+                  document.querySelector('[data-section-type="product"]') ||
+                  document;
+        const mo = new MutationObserver(muts => {
+          if (muts.some(m => m.addedNodes && m.addedNodes.length)) bindOkendoInteractions(pi);
+        });
+        mo.observe(pi, { childList: true, subtree: true });
       });
-      mo.observe(pi, { childList: true, subtree: true });
+
+      // Theme editor section loads (kept)
+      document.addEventListener('shopify:section:load', e => bindOkendoInteractions(e.target));
     })();
     </script>
+
     <script>
     (() => {
       function remountOkendo() {
         const old = document.querySelector('[data-oke-widget]');
         if (!old || !old.parentNode) return;
-
-        // Preserve full content + attributes (including the ReviewsWidgetSnippet HTML)
-        const neo = old.cloneNode(true); // keep innerHTML
+        const neo = old.cloneNode(true); // preserve innerHTML + attrs
         old.parentNode.replaceChild(neo, old);
-
-        // Nudge layout/observers
         requestAnimationFrame(() => {
           window.dispatchEvent(new Event('resize'));
           document.dispatchEvent(new Event('scroll'));
         });
       }
 
-      // Hook common variant change signals (themes differ)
+      // Variant change hooks
       document.addEventListener('variant:changed', remountOkendo);
       document.addEventListener('product:variant-change', remountOkendo);
       document.addEventListener('shopify:section:load', remountOkendo);
 
-      // Fallback: watch the variant id input
-      const idInput = document.querySelector('form[action*="/cart/add"] input[name="id"]');
-      if (idInput) {
-        new MutationObserver(remountOkendo).observe(idInput, { attributes: true, attributeFilter: ['value'] });
-      }
+      // Watch variant id input after DOM is ready
+      document.addEventListener('DOMContentLoaded', () => {
+        const idInput = document.querySelector('form[action*="/cart/add"] input[name="id"]');
+        if (idInput) {
+          new MutationObserver(remountOkendo).observe(idInput, { attributes: true, attributeFilter: ['value'] });
+        }
+      });
 
-      // Fallback: watch URL ?variant=
+      // Watch URL ?variant=
       let lastSearch = location.search;
       setInterval(() => {
         if (location.search !== lastSearch && /[?&]variant=/.test(location.search)) {
