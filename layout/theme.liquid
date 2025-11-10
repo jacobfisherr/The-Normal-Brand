@@ -94,28 +94,29 @@
         const old = document.querySelector('[data-oke-widget]');
         if (!old || !old.parentNode) return;
 
-        // preserve product attribute if present
-        const pid = old.getAttribute('data-oke-reviews-product-id');
-        const neo = old.cloneNode(false); // empty clone so Okendo can re-hydrate
-        if (pid) neo.setAttribute('data-oke-reviews-product-id', pid);
-
+        // Preserve full content + attributes (including the ReviewsWidgetSnippet HTML)
+        const neo = old.cloneNode(true); // keep innerHTML
         old.parentNode.replaceChild(neo, old);
-        // small layout nudge to wake any lazy loaders
-        void neo.offsetHeight;
+
+        // Nudge layout/observers
+        requestAnimationFrame(() => {
+          window.dispatchEvent(new Event('resize'));
+          document.dispatchEvent(new Event('scroll'));
+        });
       }
 
-      // Hook common theme events
+      // Hook common variant change signals (themes differ)
       document.addEventListener('variant:changed', remountOkendo);
       document.addEventListener('product:variant-change', remountOkendo);
       document.addEventListener('shopify:section:load', remountOkendo);
 
-      // Fallback: watch the variant id input value
+      // Fallback: watch the variant id input
       const idInput = document.querySelector('form[action*="/cart/add"] input[name="id"]');
       if (idInput) {
         new MutationObserver(remountOkendo).observe(idInput, { attributes: true, attributeFilter: ['value'] });
       }
 
-      // Fallback 2: watch URL ?variant= changes
+      // Fallback: watch URL ?variant=
       let lastSearch = location.search;
       setInterval(() => {
         if (location.search !== lastSearch && /[?&]variant=/.test(location.search)) {
