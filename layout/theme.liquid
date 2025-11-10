@@ -41,6 +41,54 @@
 
     <script src="{{ 'popup-notice.js' | asset_url }}" defer="defer"></script>
 
+    <script>
+    (function () {
+      if (window.__okBindOnce) return;
+      window.__okBindOnce = true;
+
+      function bindOkendoInteractions(root = document) {
+        // 1) Star rating near the title -> scroll to reviews widget
+        root.querySelectorAll('[data-oke-star-rating],[data-oke-stars],[data-oke-reviews-star-rating]').forEach(el => {
+          if (el.__okeBound) return;
+          el.addEventListener('click', e => {
+            const widget = document.querySelector('[data-oke-widget]');
+            if (widget) widget.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          });
+          el.style.cursor = 'pointer';
+          el.__okeBound = true;
+        });
+
+        // 2) “Show more” inside the widget (event delegation so it survives re-renders)
+        document.addEventListener('click', function (e) {
+          const btn = e.target.closest('[data-oke-widget] [data-oke-action="show-more"], [data-oke-widget] [data-oke-show-more]');
+          if (!btn) return;
+          // Let Okendo’s own handler run; this ensures the event is caught even after re-render
+          // No custom code needed here; delegation keeps it alive.
+        }, { passive: true });
+
+        // 3) “Filters” toggle (same idea)
+        document.addEventListener('click', function (e) {
+          const btn = e.target.closest('[data-oke-widget] [data-oke-action="open-filters"], [data-oke-widget] [data-oke-filters-toggle]');
+          if (!btn) return;
+        }, { passive: true });
+      }
+
+      // Initial bind
+      document.addEventListener('DOMContentLoaded', () => bindOkendoInteractions());
+
+      // Re-bind when Shopify re-renders product info / sections
+      document.addEventListener('shopify:section:load', e => bindOkendoInteractions(e.target));
+      document.addEventListener('shopify:section:unload', () => {}); // no-op, keeps symmetry
+
+      // Fallback: observe variant-driven DOM swaps inside the main product component
+      const pi = document.querySelector('product-info') || document.querySelector('[data-section-type="product"]') || document;
+      const mo = new MutationObserver(muts => {
+        if (muts.some(m => m.addedNodes && m.addedNodes.length)) bindOkendoInteractions(pi);
+      });
+      mo.observe(pi, { childList: true, subtree: true });
+    })();
+    </script>
+
     {%- if settings.animations_reveal_on_scroll -%}
       <script src="{{ 'animations.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
