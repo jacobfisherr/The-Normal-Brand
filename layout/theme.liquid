@@ -89,28 +89,40 @@
     })();
     </script>
     <script>
-    (function() {
-      // Try to “nudge” Okendo to rebind after product section DOM swaps
+    (() => {
       function remountOkendo() {
-        const w = document.querySelector('[data-oke-widget]');
-        if (!w) return;
+        const old = document.querySelector('[data-oke-widget]');
+        if (!old || !old.parentNode) return;
 
-        // Tactic 1: toggle a harmless attribute to trigger MO-based mount logic
-        w.setAttribute('data-oke-ping', Date.now());
+        // preserve product attribute if present
+        const pid = old.getAttribute('data-oke-reviews-product-id');
+        const neo = old.cloneNode(false); // empty clone so Okendo can re-hydrate
+        if (pid) neo.setAttribute('data-oke-reviews-product-id', pid);
 
-        // Tactic 2: force layout (some libs rebind on layout thrash)
-        void w.offsetHeight;
+        old.parentNode.replaceChild(neo, old);
+        // small layout nudge to wake any lazy loaders
+        void neo.offsetHeight;
       }
 
+      // Hook common theme events
+      document.addEventListener('variant:changed', remountOkendo);
+      document.addEventListener('product:variant-change', remountOkendo);
       document.addEventListener('shopify:section:load', remountOkendo);
 
-      // Fallback if your theme doesn’t emit section events
-      const host = document.querySelector('product-info') || document.querySelector('[data-section-type="product"]');
-      if (host) {
-        new MutationObserver((m)=> {
-          if (m.some(x => x.addedNodes && x.addedNodes.length)) remountOkendo();
-        }).observe(host, { childList: true, subtree: true });
+      // Fallback: watch the variant id input value
+      const idInput = document.querySelector('form[action*="/cart/add"] input[name="id"]');
+      if (idInput) {
+        new MutationObserver(remountOkendo).observe(idInput, { attributes: true, attributeFilter: ['value'] });
       }
+
+      // Fallback 2: watch URL ?variant= changes
+      let lastSearch = location.search;
+      setInterval(() => {
+        if (location.search !== lastSearch && /[?&]variant=/.test(location.search)) {
+          lastSearch = location.search;
+          remountOkendo();
+        }
+      }, 400);
     })();
     </script>
 
