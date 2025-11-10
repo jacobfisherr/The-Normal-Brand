@@ -846,13 +846,6 @@
   </div>
 </product-info>
 
-{%- comment -%} Keep the reviews widget OUTSIDE product-info so variant swaps don't touch it {%- endcomment -%}
-{% if product %}
-  <div id="oke-reviews" data-oke-widget data-oke-reviews-product-id="shopify-{{ product.id }}">
-    {{ product.metafields.okendo.ReviewsWidgetSnippet }}
-  </div>
-{% endif %}
-
 {% schema %}
 {
   "name": "t:sections.main-product.name",
