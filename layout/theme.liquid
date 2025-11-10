@@ -88,6 +88,31 @@
       mo.observe(pi, { childList: true, subtree: true });
     })();
     </script>
+    <script>
+    (function() {
+      // Try to “nudge” Okendo to rebind after product section DOM swaps
+      function remountOkendo() {
+        const w = document.querySelector('[data-oke-widget]');
+        if (!w) return;
+
+        // Tactic 1: toggle a harmless attribute to trigger MO-based mount logic
+        w.setAttribute('data-oke-ping', Date.now());
+
+        // Tactic 2: force layout (some libs rebind on layout thrash)
+        void w.offsetHeight;
+      }
+
+      document.addEventListener('shopify:section:load', remountOkendo);
+
+      // Fallback if your theme doesn’t emit section events
+      const host = document.querySelector('product-info') || document.querySelector('[data-section-type="product"]');
+      if (host) {
+        new MutationObserver((m)=> {
+          if (m.some(x => x.addedNodes && x.addedNodes.length)) remountOkendo();
+        }).observe(host, { childList: true, subtree: true });
+      }
+    })();
+    </script>
 
     {%- if settings.animations_reveal_on_scroll -%}
       <script src="{{ 'animations.js' | asset_url }}" defer="defer"></script>
