@@ -69,8 +69,8 @@
         "slide_ey3yPc": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/4ds-Desktop-Header2.jpg",
-            "mobile_image": "shopify://shop_images/Sale-Mobile-Header-Template_b.jpg",
+            "image": "shopify://shop_images/4ds-Desktop-Header-Extended.jpg",
+            "mobile_image": "shopify://shop_images/4ds-Mobile-Header-Extended.jpg",
             "heading": "",
             "heading_size": "h0",
             "mobile_heading_size": "h0",
