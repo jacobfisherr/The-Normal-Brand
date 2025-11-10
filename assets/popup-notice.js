@@ -73,4 +73,9 @@ class CustomPopup extends HTMLElement {
   }
 }
 
-customElements.define('popup-notice', CustomPopup);
+//customElements.define('popup-notice', CustomPopup);
+
+
+if (!customElements.get('popup-notice')) {
+  customElements.define('popup-notice', CustomPopup);
+}
