@@ -338,12 +338,12 @@
         "column_3Cc7dq": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/A_d0f17601-077c-44ee-ad58-1c4c73e5b331.jpg",
-            "title": "New Arrivals",
-            "text": "<p>Inspired by timeless classics, our collection features durable yet soft, vintage-inspired fabrics. Each piece reflects quiet sophistication through thoughtful details, celebrating the enduring value of quality craftsmanship.</p>",
+            "image": "shopify://shop_images/Multicolumn-Template.jpg",
+            "title": "The legacy collection",
+            "text": "<p>The Anthony Suede Trucker is the debut piece in our Legacy Collection. With its quality construction and premium materials, this jacket is more than just a layer—it’s a piece to wear, keep, and eventually pass down.</p>",
             "liquid": "",
             "link_label": "Shop the Collection",
-            "link": "https://thenormalbrand.com/collections/new",
+            "link": "https://thenormalbrand.com/products/anthony-type-2-trucker-in-toasted-chestnut?_pos=1&_psq=anthony&_ss=e&_v=1.0",
             "text_alignment": "left",
             "text_alignment_mobile": "left"
           }
