@@ -132,7 +132,7 @@
             "button_label_2": "Shop Fleece",
             "link_2": "https://thenormalbrand.com/collections/normal-fleece?sort_by=best-selling&filter.p.m.custom.gender=gid%3A%2F%2Fshopify%2FMetaobject%2F75653972140",
             "button_style_secondary": true,
-            "box_align": "middle-left",
+            "box_align": "middle-center",
             "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
