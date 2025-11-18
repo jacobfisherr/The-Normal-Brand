@@ -66,31 +66,6 @@
     "slideshow_nnbpCq": {
       "type": "slideshow",
       "blocks": {
-        "slide_ey3yPc": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Web_1_446949af-c403-4c1c-aa15-9342d1289a11.jpg",
-            "mobile_image": "shopify://shop_images/mobile_1_10caf177-5da8-488b-a83d-22a0674ec053.jpg",
-            "heading": "",
-            "heading_size": "h0",
-            "mobile_heading_size": "h0",
-            "subheading": "",
-            "button_size": "small",
-            "mobile_button_size": "small",
-            "button_label": "Shop the Collection",
-            "link": "https://thenormalbrand.com/products/anthony-type-2-trucker-in-toasted-chestnut?_pos=1&_psq=anthony&_ss=e&_v=1.0",
-            "button_label_2": "",
-            "link_2": "",
-            "button_style_secondary": true,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-7eca2d75-45a3-4024-b69d-17de1ca4d726",
-            "text_alignment_mobile": "center",
-            "mobile_box_align": "middle"
-          }
-        },
         "slide_GgzTMR": {
           "type": "slide",
           "settings": {
@@ -106,6 +81,31 @@
             "link": "https://thenormalbrand.com/collections/outerwear",
             "button_label_2": "Shop Women's",
             "link_2": "https://thenormalbrand.com/collections/womens-outerwear",
+            "button_style_secondary": true,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-7eca2d75-45a3-4024-b69d-17de1ca4d726",
+            "text_alignment_mobile": "center",
+            "mobile_box_align": "middle"
+          }
+        },
+        "slide_ey3yPc": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Web_1_446949af-c403-4c1c-aa15-9342d1289a11.jpg",
+            "mobile_image": "shopify://shop_images/mobile_1_10caf177-5da8-488b-a83d-22a0674ec053.jpg",
+            "heading": "",
+            "heading_size": "h0",
+            "mobile_heading_size": "h0",
+            "subheading": "",
+            "button_size": "small",
+            "mobile_button_size": "small",
+            "button_label": "Shop the Collection",
+            "link": "https://thenormalbrand.com/products/anthony-type-2-trucker-in-toasted-chestnut?_pos=1&_psq=anthony&_ss=e&_v=1.0",
+            "button_label_2": "",
+            "link_2": "",
             "button_style_secondary": true,
             "box_align": "middle-center",
             "show_text_box": false,
@@ -168,8 +168,8 @@
         }
       },
       "block_order": [
-        "slide_ey3yPc",
         "slide_GgzTMR",
+        "slide_ey3yPc",
         "slide_QBadaG",
         "slide_rHJLX8"
       ],
