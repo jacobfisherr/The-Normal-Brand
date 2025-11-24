@@ -101,12 +101,12 @@
     "featured_collection_FmAHab": {
       "type": "featured-collection",
       "settings": {
-        "title": "The Spring 2025 Line",
+        "title": "The Fall Line",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "spring-2025",
+        "collection": "fall-24-collection",
         "products_to_show": 7,
         "columns_desktop": 4,
         "full_width": false,
@@ -123,7 +123,8 @@
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 36,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "custom_class": ""
       }
     },
     "image_banner_bTDqPH": {
@@ -239,12 +240,12 @@
     "featured_collection_HbFgt7": {
       "type": "featured-collection",
       "settings": {
-        "title": "Comfortable, Sharp Outfits Ready for Spring",
+        "title": "Comfortable, Sharp Outfits Ready for Fall",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "spring-outfits",
+        "collection": "new",
         "products_to_show": 5,
         "columns_desktop": 5,
         "full_width": false,
@@ -261,7 +262,8 @@
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 24,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "custom_class": ""
       }
     },
     "collection_list_YDwnTk": {
@@ -288,25 +290,25 @@
         "featured_collection_tCmyiW": {
           "type": "featured_collection",
           "settings": {
-            "collection": "mens-shorts"
+            "collection": "pants"
           }
         },
         "featured_collection_MdKNrd": {
           "type": "featured_collection",
           "settings": {
-            "collection": "womens-tops"
+            "collection": "womens-sweaters"
           }
         },
         "featured_collection_dgpj8H": {
           "type": "featured_collection",
           "settings": {
-            "collection": "t-shirts-henleys"
+            "collection": "outerwear"
           }
         },
         "featured_collection_rbUM3G": {
           "type": "featured_collection",
           "settings": {
-            "collection": "polos-9"
+            "collection": "womens-outerwear"
           }
         },
         "featured_collection_gVegQz": {
@@ -420,7 +422,8 @@
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 0,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "custom_class": ""
       }
     },
     "video_AxQiai": {
@@ -649,8 +652,8 @@
         "button_AFgNg4": {
           "type": "button",
           "settings": {
-            "button_label": "Shop the Spring 2025 Line",
-            "button_link": "shopify://collections/spring-2025",
+            "button_label": "Shop the Fall Line",
+            "button_link": "shopify://collections/fall-24-collection",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",
