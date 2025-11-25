@@ -428,9 +428,9 @@
       <div class="card__content">
         <div class="card__information">
           <div class="card__badge">
-            {% comment %} {% if card_product.metafields.custom.product_announcement.value %}
+            {% if card_product.metafields.custom.product_announcement.value %}
               <div class="product-announcement-label">{{ card_product.metafields.custom.product_announcement }}</div>
-            {% endif %} {% endcomment %}
+            {% endif %}
             {%- render 'product-badges', product: card_product -%}
           </div>
           <h3
