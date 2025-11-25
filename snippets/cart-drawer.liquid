@@ -225,7 +225,7 @@
                               aria-label="{{ 'customer.order.discount' | t }}"
                             >
                               {%- for discount in item.line_level_discount_allocations -%}
-                                <li class="discounts__discount" data-test="Save {{ item.original_price | minus: item.final_price | money_without_currency }}">
+                                <li class="discounts__discount">
                                   {%- render 'icon-discount' -%}
                                   {{ discount.discount_application.title }}
                                 </li>
@@ -241,6 +241,9 @@
                               data-final="{{ item.final_line_price }}"
                             >
                               {%- render 'price', product: item.product, use_variant: true, show_badges: false -%}
+                              {% if item.final_price !== item.original_price %}
+                              <span style="display: none;" class="discount-price">{{ item.original_price | minus: item.final_price | money }}</span>
+                              {% endif %}
 
                               {%- if item.variant.available and item.unit_price_measurement -%}
                                 <div class="unit-price caption">
