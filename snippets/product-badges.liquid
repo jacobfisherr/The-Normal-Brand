@@ -32,7 +32,7 @@
     assign money_price = 'products.product.price.from_price_html' | t: price: money_price
   endif
 
-  unless available == false or product.price_varies or has_tag_badges 
+  unless available == false or product.price_varies or has_tag_badges or coming_soon
     assign is_empty = true
   endunless
 -%}
