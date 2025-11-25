@@ -39,7 +39,7 @@
     assign money_price = 'products.product.price.from_price_html' | t: price: money_price
   endif
 
-  assign percent_off = 100 | times: (compare_at_price | minus: price) | divided_by: product.compare_at_price | round
+  
   
   # Most products in this store are structured as combined listings.
   # This block determines if the price of a combined listing product
