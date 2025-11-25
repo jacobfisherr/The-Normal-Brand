@@ -990,7 +990,3 @@ details[open] > .modal__content {
 .product .slider-buttons {
   display: none !important;
 }
-
-.cart-drawer__recommended-products .product-badges .badge {
-  margin-top: 0.5rem;
-}
