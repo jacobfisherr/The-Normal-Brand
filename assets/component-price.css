@@ -116,3 +116,7 @@
     margin-right: 0.4rem;
   }
 }
+
+.product__info-wrapper .price .price-item {
+  font-size: 1.8rem;
+}
