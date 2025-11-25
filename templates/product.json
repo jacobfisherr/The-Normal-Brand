@@ -19,6 +19,12 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "custom_liquid_yEwKtz": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% if product.metafields.custom.product_announcement.value %}\n<div style=\"color: var(--color-orange); margin-bottom: 1rem; font-weight: 500;\">{{ product.metafields.custom.product_announcement }}</div>\n{% endif %}"
+          }
+        },
         "custom_liquid_RDTPJb": {
           "type": "custom_liquid",
           "disabled": true,
@@ -210,6 +216,7 @@
         }
       },
       "block_order": [
+        "custom_liquid_yEwKtz",
         "custom_liquid_RDTPJb",
         "title",
         "custom_liquid_kfhCax",
