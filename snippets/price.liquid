@@ -38,8 +38,6 @@
   if target == product and product.price_varies
     assign money_price = 'products.product.price.from_price_html' | t: price: money_price
   endif
-
-  
   
   # Most products in this store are structured as combined listings.
   # This block determines if the price of a combined listing product
@@ -143,6 +141,7 @@
         <span class="price-item price-item--sale price-item--last">
           {{ money_price }}
         </span>
+        
         <span class="sale-label" data->Save 30%</span>
       </div>
       <small class="unit-price caption{% if product.selected_or_first_available_variant.unit_price_measurement == nil %} hidden{% endif %}">
