@@ -428,7 +428,7 @@
       <div class="card__content">
         <div class="card__information">
           <div class="card__badge">
-            {% if card_product.metafields.custom.product_announcement.value %}
+            {% if card_product.metafields.custom.product_announcement.value and card_product.metafields.custom.product_announcement contains "friday" %}
               <div class="product-announcement-label">{{ card_product.metafields.custom.product_announcement }}</div>
             {% endif %}
             {%- render 'product-badges', product: card_product -%}
