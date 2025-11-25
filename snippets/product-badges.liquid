@@ -15,6 +15,7 @@
   assign money_price = price | money
   assign coming_soon = false
   assign has_tag_badges = false
+  assign is_empty = false
 
   for tag in target.tags
     assign lowercase_tag = tag | downcase
@@ -31,9 +32,7 @@
     assign money_price = 'products.product.price.from_price_html' | t: price: money_price
   endif
 
-  unless not available and product.price_varies and has_tag_badges
-    assign is_empty = true
-  endunless
+  
 -%}
 
 {%- unless target == null and placeholder == null -%}
