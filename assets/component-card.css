@@ -612,6 +612,10 @@
   margin-top: 0.5rem;
 }
 
+.product-card-wrapper .product-announcement-label + .product-badges.is-empty {
+  margin-top: -0.5rem;
+}
+
 @media (max-width: 768px) {
   .product-card-wrapper .product-announcement-label {
     font-size: 1rem;
