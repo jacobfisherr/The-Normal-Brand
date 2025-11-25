@@ -603,10 +603,13 @@
 
 .product-card-wrapper .product-announcement-label {
   color: var(--color-orange);
-  margin-bottom: 0.5rem;
   font-weight: 500;
   font-size: 1.2rem;
   text-transform: uppercase;
+}
+
+.product-card-wrapper .product-announcement-label + .product-badges {
+  margin-top: 0.5rem;
 }
 
 @media (max-width: 768px) {
