@@ -123,4 +123,5 @@
 
 .price-item--sale {
   color: var(--color-orange);
+  font-weight: 700;
 }
