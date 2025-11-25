@@ -600,3 +600,10 @@
     clip-path: polygon(var(--shape--blob-5));
   }
 }
+
+.product-card-wrapper .product-announcement-label {
+  color: var(--color-orange);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
