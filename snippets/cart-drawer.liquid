@@ -241,7 +241,7 @@
                               data-final="{{ item.final_line_price }}"
                             >
                               {%- render 'price', product: item.product, use_variant: true, show_badges: false -%}
-                              {% if item.final_price !== item.original_price %}
+                              {% if item.final_price != item.original_price %}
                               <span style="display: none;" class="discount-price">{{ item.original_price | minus: item.final_price | money }}</span>
                               {% endif %}
 
