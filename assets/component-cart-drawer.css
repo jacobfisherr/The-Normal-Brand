@@ -279,8 +279,8 @@ cart-drawer-items {
   margin-top: 0.5rem;
 }
 
-.cart-drawer.cart-drawer .cart-item__price-wrapper:has(.discount-price) .price .price-item {
-  /* text-decoration: line-through; */
+.cart-drawer.cart-drawer .cart-item__price-wrapper:has(.discount-price) .price:first-child .price-item {
+  text-decoration: line-through;
 }
 
 .cart-drawer .cart-item__price-wrapper .cart-item__discounted-prices {
