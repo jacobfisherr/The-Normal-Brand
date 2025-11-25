@@ -993,7 +993,6 @@ details[open] > .modal__content {
 }
 
 .product__info-wrapper .sale-label {
-  display: none;
   font-size: 1.2rem;
   background-color: var(--color-orange);
   padding: 0.2rem 0.5rem;
