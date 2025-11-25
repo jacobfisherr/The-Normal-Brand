@@ -19,12 +19,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "custom_liquid_yEwKtz": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "{% if product.metafields.custom.product_announcement.value and product.metafields.custom.product_announcement.value contains \"Black Friday\" %}\n<div style=\"color: var(--color-orange); margin-bottom: 1rem; font-weight: 500; text-transform: uppercase; font-size: .875em;\">{{ product.metafields.custom.product_announcement }}</div>\n{% endif %}"
-          }
-        },
         "custom_liquid_RDTPJb": {
           "type": "custom_liquid",
           "disabled": true,
@@ -35,6 +29,12 @@
         "title": {
           "type": "title",
           "settings": {}
+        },
+        "custom_liquid_yEwKtz": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% if product.metafields.custom.product_announcement.value and product.metafields.custom.product_announcement.value contains \"Black Friday\" %}\n<div style=\"color: var(--color-orange); margin-bottom: 1rem; font-weight: 500; text-transform: uppercase; font-size: .875em;\">{{ product.metafields.custom.product_announcement }}</div>\n{% endif %}"
+          }
         },
         "custom_liquid_kfhCax": {
           "type": "custom_liquid",
@@ -216,9 +216,9 @@
         }
       },
       "block_order": [
-        "custom_liquid_yEwKtz",
         "custom_liquid_RDTPJb",
         "title",
+        "custom_liquid_yEwKtz",
         "custom_liquid_kfhCax",
         "caption",
         "okendo_star_rating_6iTwd3",
