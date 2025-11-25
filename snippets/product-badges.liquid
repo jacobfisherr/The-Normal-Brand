@@ -32,7 +32,9 @@
     assign money_price = 'products.product.price.from_price_html' | t: price: money_price
   endif
 
-  
+  unless available or product.price_varies or has_tag_badges 
+    assign is_empty = true
+  endunless
 -%}
 
 {%- unless target == null and placeholder == null -%}
