@@ -429,7 +429,7 @@
         <div class="card__information">
           <div class="card__badge">
             {% if card_product.metafields.custom.product_announcement.value %}
-              <div class="product-announcement-label">{{ product.metafields.custom.product_announcement }}</div>
+              <div class="product-announcement-label">{{ card_product.metafields.custom.product_announcement }}</div>
             {% endif %}
             {%- render 'product-badges', product: card_product -%}
           </div>
