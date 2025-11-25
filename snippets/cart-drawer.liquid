@@ -225,7 +225,7 @@
                               aria-label="{{ 'customer.order.discount' | t }}"
                             >
                               {%- for discount in item.line_level_discount_allocations -%}
-                                <li class="discounts__discount">
+                                <li class="discounts__discount" data-test="{{ item.final_price }}" data-test-2="{{ item.original_price }}">
                                   {%- render 'icon-discount' -%}
                                   {{ discount.discount_application.title }}
                                 </li>
