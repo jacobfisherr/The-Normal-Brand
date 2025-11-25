@@ -143,7 +143,7 @@
         </span>
         {% assign base = compare_at_price | minus: price %}
         {% assign percent_off = 100 | times: base %}
-        {% assign percent_off = percent_off | divided_by: compare_at_price | round %}
+        {% assign percent_off = percent_off | divided_by: compare_at_price | ceil %}
         <span class="sale-label" data->Save {{ percent_off }}%</span>
       </div>
       <small class="unit-price caption{% if product.selected_or_first_available_variant.unit_price_measurement == nil %} hidden{% endif %}">
