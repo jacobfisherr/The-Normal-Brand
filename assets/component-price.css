@@ -120,3 +120,7 @@
 .product__info-wrapper .price .price-item {
   font-size: 1.8rem;
 }
+
+.price-item--sale {
+  color: var(--color-orange);
+}
