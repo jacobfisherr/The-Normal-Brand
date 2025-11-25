@@ -609,6 +609,12 @@
   text-transform: uppercase;
 }
 
+@media (max-width: 768px) {
+  .product-card-wrapper .product-announcement-label {
+    font-size: 1rem;
+  }
+}
+
 .product-card-wrapper .sale-label {
   display: none;
   font-size: 1.2rem;
