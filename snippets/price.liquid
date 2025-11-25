@@ -141,7 +141,7 @@
         <span class="price-item price-item--sale price-item--last">
           {{ money_price }}
         </span>
-        {% assign percent_off = compare_at_price | divided_by: price %}
+        {% assign percent_off = compare_at_price | divided_by: price | times: 100 %}
 
         {% comment %} {% assign percent_off = 100 | times: (compare_at_price | minus: price) | divided_by: product.compare_at_price | round %} {% endcomment %}
         <span class="sale-label" data->Save {{ percent_off }}%</span>
