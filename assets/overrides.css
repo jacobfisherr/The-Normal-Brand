@@ -994,4 +994,12 @@ details[open] > .modal__content {
 
 .product__info-wrapper .sale-label {
   display: none;
+  font-size: 1.2rem;
+  background-color: var(--color-orange);
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  color: white;
+  position: relative;
+  top: -0.1rem;
+  left: 0.4rem;
 }
