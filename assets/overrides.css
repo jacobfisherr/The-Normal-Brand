@@ -1004,3 +1004,9 @@ details[open] > .modal__content {
   font-family: var(--font-body-family);
   font-weight: 500;
 }
+
+@media (min-width: 750px) {
+  .product__info-wrapper .sale-label {
+    top: -0.2rem;
+  }
+}
