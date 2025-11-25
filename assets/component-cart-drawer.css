@@ -280,7 +280,7 @@ cart-drawer-items {
 }
 
 .cart-drawer.cart-drawer .cart-item__price-wrapper:has(.discount-price) .price .price-item {
-  text-decoration: strikethrough;
+  text-decoration: line-through;
 }
 
 .cart-drawer .cart-item__price-wrapper .cart-item__discounted-prices {
