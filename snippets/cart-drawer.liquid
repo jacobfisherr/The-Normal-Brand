@@ -242,7 +242,9 @@
                             >
                               {%- render 'price', product: item.product, use_variant: true, show_badges: false -%}
                               {% if item.final_price != item.original_price %}
-                                <div style="display: none;" class="discount-price price">{{ item.original_price | minus: item.final_price | money }}</div>
+                                <div style="display: none;" class="discount-price price">
+                                  <span class="price-item">{{ item.original_price | minus: item.final_price | money }}</span>
+                                </div>
                               {% endif %}
 
                               {%- if item.variant.available and item.unit_price_measurement -%}
