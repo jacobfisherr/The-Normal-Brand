@@ -436,6 +436,6 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
   top: 0.3rem;
 }
 
-.cart-drawer related-products .price__sale {
+.cart-drawer .related-products .price__sale {
   white-space: nowrap;
 }
