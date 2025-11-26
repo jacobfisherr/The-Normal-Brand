@@ -338,6 +338,19 @@
     "multicolumn_CnFgTJ": {
       "type": "multicolumn",
       "blocks": {
+        "column_qyTCPm": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Column.jpg",
+            "title": "Black Friday Sale",
+            "text": "<p>Your favorites, now a little easier to say yes to. Our Black Friday lineup brings together comfortable basics, winter-ready layers, and a few things that make perfect gifts. Whether you’re shopping for yourself or getting ahead on your list, these are deals worth grabbing while they last.</p>",
+            "liquid": "",
+            "link_label": "Shop Black Friday",
+            "link": "https://thenormalbrand.com/collections/bfcm?sort_by=manual&filter.p.m.custom.gender=gid%3A%2F%2Fshopify%2FMetaobject%2F75598921900",
+            "text_alignment": "left",
+            "text_alignment_mobile": "left"
+          }
+        },
         "column_746rwt": {
           "type": "column",
           "settings": {
@@ -363,25 +376,12 @@
             "text_alignment": "left",
             "text_alignment_mobile": "left"
           }
-        },
-        "column_qyTCPm": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/B_38710903-539a-4705-a8fa-b6029feba4d5.jpg",
-            "title": "The Normal Trouser",
-            "text": "<p>The Normal Trouser is what happens when timeless menswear meets everyday ease. The elevated pant you’ll reach for on days you want to look sharp without overdoing it.</p>",
-            "liquid": "",
-            "link_label": "Shop the Normal Trouser",
-            "link": "https://thenormalbrand.com/products/stretch-suiting-trouser-in-dark-olive?_pos=1&_psq=normal+trouser&_ss=e&_v=1.0",
-            "text_alignment": "left",
-            "text_alignment_mobile": "left"
-          }
         }
       },
       "block_order": [
+        "column_qyTCPm",
         "column_746rwt",
-        "column_3Cc7dq",
-        "column_qyTCPm"
+        "column_3Cc7dq"
       ],
       "settings": {
         "title": "",
