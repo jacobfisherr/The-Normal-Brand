@@ -425,3 +425,14 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
 cart-drawer .price .price-item {
   margin-right: 0;
 }
+
+.cart-drawer .sale-label {
+  font-size: 1.2rem;
+  background-color: var(--color-orange);
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  color: white;
+  position: relative;
+  top: -0.1rem;
+  left: 0.4rem;
+}
