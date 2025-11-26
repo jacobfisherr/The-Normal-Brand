@@ -69,20 +69,20 @@
         "slide_GgzTMR": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/10year-Desktop-Template_3_66cc0592-4b9d-4ea0-84db-1d21754c66f6.jpg",
-            "mobile_image": "shopify://shop_images/Mobile-Template-3_db01f822-6157-4e60-bafd-9777c99b92b1.jpg",
-            "heading": "Winter Classics",
+            "image": "shopify://shop_images/BF-Desktop-Header-Template_4a342e47-db76-4f44-82db-47a134dd5e95.jpg",
+            "mobile_image": "shopify://shop_images/BF-Mobile-Header-Template_e1e3d185-3a0a-4869-b57a-bdae23e7c0ac.jpg",
+            "heading": "",
             "heading_size": "h0",
             "mobile_heading_size": "h0",
             "subheading": "",
             "button_size": "small",
             "mobile_button_size": "small",
             "button_label": "Shop Men's",
-            "link": "https://thenormalbrand.com/collections/outerwear",
+            "link": "https://thenormalbrand.com/collections/bfcm?sort_by=manual&filter.p.m.custom.gender=gid%3A%2F%2Fshopify%2FMetaobject%2F75598921900",
             "button_label_2": "Shop Women's",
-            "link_2": "https://thenormalbrand.com/collections/womens-outerwear",
+            "link_2": "https://thenormalbrand.com/collections/bfcm?sort_by=manual&filter.p.m.custom.gender=gid%3A%2F%2Fshopify%2FMetaobject%2F75653972140",
             "button_style_secondary": true,
-            "box_align": "middle-center",
+            "box_align": "bottom-center",
             "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
@@ -93,6 +93,7 @@
         },
         "slide_ey3yPc": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Web_1_446949af-c403-4c1c-aa15-9342d1289a11.jpg",
             "mobile_image": "shopify://shop_images/mobile_1_10caf177-5da8-488b-a83d-22a0674ec053.jpg",
@@ -118,6 +119,7 @@
         },
         "slide_QBadaG": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/10year-Desktop-Template_2_d6222fbe-6c31-4568-b886-4333bf585b9e.jpg",
             "mobile_image": "shopify://shop_images/Mobile-Template-2_c554104c-b035-4eec-a8d7-e17a34019410.jpg",
@@ -143,6 +145,7 @@
         },
         "slide_rHJLX8": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/10year-Desktop-Template_1_STEEL_675ad82c-955f-445d-8a68-1b24efa54eb7.jpg",
             "mobile_image": "shopify://shop_images/Mobile-Template-1_c76f6595-4229-486c-ac07-dfa49a12b6e1.jpg",
