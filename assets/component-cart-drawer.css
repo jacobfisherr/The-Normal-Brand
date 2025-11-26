@@ -433,6 +433,5 @@ cart-drawer .price .price-item {
   border-radius: 3px;
   color: white;
   position: relative;
-  top: -0.1rem;
-  left: 0.4rem;
+  top: 0.3rem;
 }
