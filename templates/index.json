@@ -343,7 +343,7 @@
           "settings": {
             "image": "shopify://shop_images/Column.jpg",
             "title": "Black Friday Sale",
-            "text": "<p>Your favorites, now a little easier to say yes to. Our Black Friday lineup brings together comfortable basics, winter-ready layers, and a few things that make perfect gifts. Whether you’re shopping for yourself or getting ahead on your list, these are deals worth grabbing while they last.</p>",
+            "text": "<p>Our Black Friday lineup brings together comfortable basics, winter-ready layers, and a few things that make perfect gifts. These are deals worth grabbing while they last.</p>",
             "liquid": "",
             "link_label": "Shop Black Friday",
             "link": "https://thenormalbrand.com/collections/bfcm?sort_by=manual",
