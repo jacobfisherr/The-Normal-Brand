@@ -259,7 +259,7 @@
         "button_jFd64r"
       ],
       "settings": {
-        "image": "shopify://shop_images/1.3_95e1183a-6885-43bd-bdf1-cf4f585d4a9a.png",
+        "image": "shopify://shop_images/56.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -271,7 +271,7 @@
         "color_scheme": "",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
-        "padding_top": 8,
+        "padding_top": 0,
         "padding_bottom": 0
       }
     },
