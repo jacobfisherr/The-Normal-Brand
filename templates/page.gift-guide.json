@@ -387,19 +387,6 @@
     "multicolumn_MRqpq7": {
       "type": "multicolumn",
       "blocks": {
-        "column_84HNdd": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/58.png",
-            "title": "Hats",
-            "text": "",
-            "liquid": "",
-            "link_label": "Shop Now",
-            "link": "https://thenormalbrand.com/collections/womens-hats",
-            "text_alignment": "left",
-            "text_alignment_mobile": "left"
-          }
-        },
         "column_6Wjm3b": {
           "type": "column",
           "settings": {
@@ -409,6 +396,19 @@
             "liquid": "",
             "link_label": "Shop Now",
             "link": "https://thenormalbrand.com/collections/bags-belts",
+            "text_alignment": "left",
+            "text_alignment_mobile": "left"
+          }
+        },
+        "column_84HNdd": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/58.png",
+            "title": "Hats",
+            "text": "",
+            "liquid": "",
+            "link_label": "Shop Now",
+            "link": "https://thenormalbrand.com/collections/womens-hats",
             "text_alignment": "left",
             "text_alignment_mobile": "left"
           }
@@ -467,8 +467,8 @@
         }
       },
       "block_order": [
-        "column_84HNdd",
         "column_6Wjm3b",
+        "column_84HNdd",
         "column_kmLCqx",
         "column_rxdiCJ",
         "column_LU4JBw",
