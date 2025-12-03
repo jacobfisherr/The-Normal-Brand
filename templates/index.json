@@ -364,8 +364,22 @@
             "text_alignment_mobile": "left"
           }
         },
+        "column_jMQNUb": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Multicolumn-Template-3.jpg",
+            "title": "New and Now: Fleece Puremeso",
+            "text": "<p>Our signature knit on the outside and warm fleece on the inside. It’s soft, durable, and made for the kind of comfort you’ll want every day of the season.</p>",
+            "liquid": "",
+            "link_label": "Shop Fleece Puremeso",
+            "link": "https://thenormalbrand.com/collections/fleece-puremeso",
+            "text_alignment": "left",
+            "text_alignment_mobile": "left"
+          }
+        },
         "column_3Cc7dq": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Multicolumn-Template.jpg",
             "title": "The legacy collection",
@@ -381,6 +395,7 @@
       "block_order": [
         "column_746rwt",
         "column_qyTCPm",
+        "column_jMQNUb",
         "column_3Cc7dq"
       ],
       "settings": {
