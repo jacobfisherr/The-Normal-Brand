@@ -338,19 +338,6 @@
     "multicolumn_CnFgTJ": {
       "type": "multicolumn",
       "blocks": {
-        "column_qyTCPm": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Multicolumn-Template_3c231396-5a81-4590-bce6-942269df9e6a.jpg",
-            "title": "Cyber Monday Sale",
-            "text": "<p>Our Cyber Monday lineup brings together comfortable basics, winter-ready layers, and a few things that make the perfect gift. These are deals worth grabbing while they last.</p>",
-            "liquid": "",
-            "link_label": "Shop Cyber Monday",
-            "link": "https://thenormalbrand.com/collections/bfcm",
-            "text_alignment": "left",
-            "text_alignment_mobile": "left"
-          }
-        },
         "column_746rwt": {
           "type": "column",
           "settings": {
@@ -360,6 +347,19 @@
             "liquid": "",
             "link_label": "Shop the Gift Guide",
             "link": "https://thenormalbrand.com/collections/bestsellers?sort_by=manual",
+            "text_alignment": "left",
+            "text_alignment_mobile": "left"
+          }
+        },
+        "column_qyTCPm": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Multicolumn-Template-2.jpg",
+            "title": "Warm Regards",
+            "text": "<p>Your perfect coat is waiting. Soft textures, timeless shapes, and warmth that never goes out of style.</p>",
+            "liquid": "",
+            "link_label": "Shop Women's Outerwear",
+            "link": "https://thenormalbrand.com/collections/womens-outerwear",
             "text_alignment": "left",
             "text_alignment_mobile": "left"
           }
@@ -379,8 +379,8 @@
         }
       },
       "block_order": [
-        "column_qyTCPm",
         "column_746rwt",
+        "column_qyTCPm",
         "column_3Cc7dq"
       ],
       "settings": {
