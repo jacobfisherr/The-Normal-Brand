@@ -1,1 +1,136 @@
-{"sections":{"breadcrumbs":{"type":"breadcrumbs","settings":{"padding_top":8,"padding_bottom":0}},"banner":{"type":"main-collection-banner","settings":{"show_collection_description":true,"show_collection_image":false,"color_scheme":"scheme-1"}},"product-grid":{"type":"main-collection-product-grid","settings":{"products_per_page":36,"columns_desktop":3,"hide_out_of_stock":true,"color_scheme":"tnb-light","image_ratio":"portrait","image_shape":"default","show_secondary_image":true,"show_vendor":false,"show_rating":true,"quick_add":"standard","enable_filtering":true,"filter_type":"horizontal","enable_sorting":true,"columns_mobile":"2","padding_top":0,"padding_bottom":36}}},"order":["breadcrumbs","banner","product-grid"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "padding_top": 8,
+        "padding_bottom": 0
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "scheme-1"
+      }
+    },
+    "pants-style-filter": {
+      "type": "pants-style-filter",
+      "blocks": {
+        "comfort-terry": {
+          "type": "style_card",
+          "settings": {
+            "image": "shopify://shop_images/Comfort_Terry_Pant_-_Dark_Brown_5.jpg",
+            "title": "COMFORT TERRY",
+            "features": "Looks polished, feels like sweats\nNow in extended sizes\nAvailable in Pant, Jean, Jogger",
+            "button_label": "Shop Now",
+            "button_link": "filter.p.m.custom.style=Comfort+Terry"
+          }
+        },
+        "denim": {
+          "type": "style_card",
+          "settings": {
+            "image": "shopify://shop_images/Normal_Jean_-_Medium_Greyson_Wash_460.jpg",
+            "title": "DENIM",
+            "features": "No frills, made to last\nNow in extended sizes\nAvailable in Classic, Straight, Comfort Terry",
+            "button_label": "Shop Now",
+            "button_link": "filter.p.m.custom.style=Denim"
+          }
+        },
+        "cord": {
+          "type": "style_card",
+          "settings": {
+            "image": "shopify://shop_images/image_1_5.png",
+            "title": "COMFORT CORD",
+            "features": "Slim fit\nClassic 5-pocket jean styling\nHeavy stretch corduroy",
+            "button_label": "Shop Now",
+            "button_link": "filter.p.m.custom.style=Cord"
+          }
+        },
+        "chino": {
+          "type": "style_card",
+          "settings": {
+            "image": "shopify://shop_images/image_1_6.png",
+            "title": "CHINO",
+            "features": "Straight fit\nSoft, peached stretch chino fabric\nContour waistband with elastic interior for the perfect fit",
+            "button_label": "Shop Now",
+            "button_link": "filter.p.m.custom.style=Chino"
+          }
+        },
+        "jogger": {
+          "type": "style_card",
+          "settings": {
+            "image": "shopify://shop_images/Comfort_Terry_Everyday_Jogger_-_Steel_2945.jpg",
+            "title": "JOGGER",
+            "features": "Elastic waistband\nAlpha sizing\nAvailable in Comfort Terry, Puremeso, COOLMAX®",
+            "button_label": "Shop Now",
+            "button_link": "filter.p.m.custom.style=Jogger"
+          }
+        },
+        "trouser": {
+          "type": "style_card",
+          "settings": {
+            "image": "shopify://shop_images/Normal_Trouser_-_Navy_2510.jpg",
+            "title": "TROUSER",
+            "features": "Straight fit\nFully lined\nOur most tailored look",
+            "button_label": "Shop Now",
+            "button_link": "filter.p.m.custom.style=Trouser"
+          }
+        }
+      },
+      "block_order": [
+        "comfort-terry",
+        "denim",
+        "cord",
+        "chino",
+        "jogger",
+        "trouser"
+      ],
+      "settings": {
+        "columns_desktop": 5,
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 20
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 36,
+        "columns_desktop": 3,
+        "hide_out_of_stock": true,
+        "color_scheme": "tnb-light",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "quick_add": "standard",
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "banner",
+    "pants-style-filter",
+    "product-grid"
+  ]
+}

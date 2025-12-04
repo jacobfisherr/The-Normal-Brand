@@ -1,0 +1,310 @@
+{%- if collection.handle == 'pants' -%}
+  {{ 'section-pants-style-filter.css' | asset_url | stylesheet_tag }}
+  {{ 'component-slider.css' | asset_url | stylesheet_tag }}
+  <script src="{{ 'pants-style-filter.js' | asset_url }}" defer="defer"></script>
+
+  {%- style -%}
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+      padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    }
+
+    @media screen and (min-width: 750px) {
+      .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+      }
+    }
+  {%- endstyle -%}
+
+  {%- liquid
+    assign columns_mobile_int = section.settings.columns_mobile | plus: 0
+    assign show_mobile_slider = false
+    if section.settings.swipe_on_mobile and section.blocks.size > columns_mobile_int
+      assign show_mobile_slider = true
+    endif
+
+    assign show_desktop_slider = false
+    if section.settings.columns_desktop < section.blocks.size
+      assign show_desktop_slider = true
+    endif
+  -%}
+
+  <div class="pants-style-filter color-{{ section.settings.color_scheme }} gradient">
+    <div class="page-width section-{{ section.id }}-padding isolate">
+      <pants-style-filter>
+        <slider-component class="slider-mobile-gutter">
+          <ul
+            class="pants-style-filter-list grid grid--{{ section.settings.columns_mobile }}-col-tablet-down{% if show_mobile_slider %} slider slider--tablet grid--peek{% endif %}{% if show_desktop_slider %} slider--desktop grid--peek{% endif %}"
+            id="Slider-{{ section.id }}"
+            role="list"
+          >
+            {%- for block in section.blocks -%}
+              <li
+                id="Slide-{{ section.id }}-{{ forloop.index }}"
+                class="pants-style-filter-card slider__slide grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                {{ block.shopify_attributes }}
+                {% if settings.animations_reveal_on_scroll %}
+                  data-cascade
+                  style="--animation-order: {{ forloop.index }};"
+                {% endif %}
+              >
+                <div class="pants-style-card">
+                  {%- if block.settings.image != blank -%}
+                    <div class="pants-style-card__image-wrapper">
+                      <div class="media media--portrait">
+                        {{
+                          block.settings.image
+                          | image_url: width: 500
+                          | image_tag:
+                            loading: 'lazy',
+                            class: 'pants-style-card__image',
+                            widths: '165, 360, 535, 750, 1000',
+                            sizes: '(min-width: 990px) 220px, (min-width: 750px) calc((100vw - 11.5rem) / 2), calc(100vw - 4rem)'
+                        }}
+                      </div>
+                    </div>
+                  {%- endif -%}
+
+                  <div class="pants-style-card__content">
+                    {%- if block.settings.title != blank -%}
+                      <h3 class="pants-style-card__title">{{ block.settings.title }}</h3>
+                    {%- endif -%}
+
+                    {%- if block.settings.features != blank -%}
+                      <ul class="pants-style-card__features">
+                        {%- assign features = block.settings.features | newline_to_br | split: '<br />' -%}
+                        {%- for feature in features -%}
+                          {%- assign trimmed_feature = feature | strip -%}
+                          {%- if trimmed_feature != blank -%}
+                            <li>{{ trimmed_feature }}</li>
+                          {%- endif -%}
+                        {%- endfor -%}
+                      </ul>
+                    {%- endif -%}
+
+                    {%- if block.settings.button_label != blank -%}
+                      <button
+                        type="button"
+                        data-filter="{{ block.settings.button_link }}"
+                        class="pants-style-card__button {{ block.settings.title | handleize }}-quicklink-btn"
+                      >
+                        {{ block.settings.button_label }}
+                      </button>
+                    {%- endif -%}
+                  </div>
+                </div>
+              </li>
+            {%- endfor -%}
+          </ul>
+
+          {%- if show_mobile_slider or show_desktop_slider -%}
+            <div class="slider-buttons">
+              <button
+                type="button"
+                class="slider-button slider-button--prev"
+                name="previous"
+                aria-label="{{ 'general.slider.previous_slide' | t }}"
+              >
+                {% render 'icon-caret' %}
+              </button>
+              <button
+                type="button"
+                class="slider-button slider-button--next"
+                name="next"
+                aria-label="{{ 'general.slider.next_slide' | t }}"
+              >
+                {% render 'icon-caret' %}
+              </button>
+            </div>
+          {%- endif -%}
+
+          {%- if show_mobile_slider or show_desktop_slider -%}
+            <div class="pants-style-scrollbar">
+              <div class="pants-style-scrollbar__track">
+                <div class="pants-style-scrollbar__thumb"></div>
+              </div>
+            </div>
+          {%- endif -%}
+        </slider-component>
+      </pants-style-filter>
+    </div>
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Pants Style Filter",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "default": 5,
+      "label": "Number of columns on desktop"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "Mobile"
+    },
+    {
+      "type": "select",
+      "id": "columns_mobile",
+      "options": [
+        {
+          "value": "1",
+          "label": "1 column"
+        },
+        {
+          "value": "2",
+          "label": "2 columns"
+        }
+      ],
+      "default": "1",
+      "label": "Number of columns on mobile"
+    },
+    {
+      "type": "checkbox",
+      "id": "swipe_on_mobile",
+      "default": true,
+      "label": "Enable swipe on mobile"
+    },
+    {
+      "type": "header",
+      "content": "Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "style_card",
+      "name": "Style Card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Style Name"
+        },
+        {
+          "type": "textarea",
+          "id": "features",
+          "label": "Features (one per line)",
+          "default": "Feature 1\nFeature 2\nFeature 3"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button label",
+          "default": "Shop Now"
+        },
+        {
+          "type": "text",
+          "id": "button_link",
+          "label": "Filter parameter",
+          "info": "Example: filter.p.m.custom.style=Comfort+Terry",
+          "placeholder": "filter.p.m.custom.style=Value"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Pants Style Filter",
+      "blocks": [
+        {
+          "type": "style_card",
+          "settings": {
+            "title": "COMFORT TERRY",
+            "features": "Looks polished, feels like sweats\nNow in extended sizes\nAvailable in Pant, Jean, Jogger",
+            "button_label": "Shop Now",
+            "button_link": "filter.p.m.custom.style=Comfort+Terry"
+          }
+        },
+        {
+          "type": "style_card",
+          "settings": {
+            "title": "DENIM",
+            "features": "No frills, made to last\nNow in extended sizes\nAvailable in Classic, Straight, Comfort Terry",
+            "button_label": "Shop Now",
+            "button_link": "filter.p.m.custom.style=Denim"
+          }
+        },
+        {
+          "type": "style_card",
+          "settings": {
+            "title": "CORD",
+            "features": "Slim fit\nClassic 5-pocket jean styling\nHeavy stretch corduroy",
+            "button_label": "Shop Now",
+            "button_link": "filter.p.m.custom.style=Cord"
+          }
+        },
+        {
+          "type": "style_card",
+          "settings": {
+            "title": "CHINO",
+            "features": "Straight fit\nSoft, peached stretch chino fabric\nContour waistband with elastic interior for the perfect fit",
+            "button_label": "Shop Now",
+            "button_link": "filter.p.m.custom.style=Chino"
+          }
+        },
+        {
+          "type": "style_card",
+          "settings": {
+            "title": "TROUSER",
+            "features": "Straight fit\nFully lined\nOur most tailored look",
+            "button_label": "Shop Now",
+            "button_link": "filter.p.m.custom.style=Trouser"
+          }
+        },
+        {
+          "type": "style_card",
+          "settings": {
+            "title": "JOGGER",
+            "features": "Elastic waistband\nAlpha sizing\nAvailable in Comfort Terry, Puremeso, COOLMAX®",
+            "button_label": "Shop Now",
+            "button_link": "filter.p.m.custom.style=Jogger"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
