@@ -17,14 +17,14 @@
           "settings": {
             "caption": "{{ page.metafields.custom.page_subtitle.value }}",
             "text_style": "caption-with-letter-spacing",
-            "text_size": "large"
+            "text_size": "medium"
           }
         },
         "heading_rUTwa4": {
           "type": "heading",
           "settings": {
             "heading": "{{ page.metafields.custom.page_title.value }}",
-            "heading_size": "hxl"
+            "heading_size": "h0"
           }
         }
       },
@@ -39,41 +39,6 @@
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
-      }
-    },
-    "multirow_DVh3UW": {
-      "type": "multirow",
-      "blocks": {
-        "row_MV9wVX": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/Denver.jpg",
-            "caption": "Holiday Festivities",
-            "heading": "Smores & Spiked Cocoa",
-            "text": "<p>We’re celebrating the season in Denver with s’mores and spiked hot cocoa 🎄 Join us this Saturday from 10–4 for a cozy Christmas party and last-minute shopping made easy.</p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "row_MV9wVX"
-      ],
-      "name": "t:sections.multirow.presets.name",
-      "settings": {
-        "image_height": "adapt",
-        "desktop_image_width": "medium",
-        "heading_size": "h1",
-        "text_style": "body",
-        "button_style": "secondary",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "image_layout": "alternate-left",
-        "section_color_scheme": "",
-        "row_color_scheme": "",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "multirow_6cArib": {
@@ -177,6 +142,41 @@
         "padding_bottom": 16
       }
     },
+    "multirow_DVh3UW": {
+      "type": "multirow",
+      "blocks": {
+        "row_MV9wVX": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Denver_1.jpg",
+            "caption": "Saturday, December  12th",
+            "heading": "Smores & Spiked Cocoa",
+            "text": "<p>We’re celebrating the season in Denver with s’mores and spiked hot cocoa 🎄 Join us this Saturday from 10am–4pm for a cozy Christmas party and last-minute shopping made easy.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_MV9wVX"
+      ],
+      "name": "t:sections.multirow.presets.name",
+      "settings": {
+        "image_height": "adapt",
+        "desktop_image_width": "medium",
+        "heading_size": "h2",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "multicolumn_miAtnC": {
       "type": "multicolumn",
       "blocks": {
@@ -260,9 +260,9 @@
   },
   "order": [
     "rich_text_bUBwGn",
-    "multirow_DVh3UW",
     "multirow_6cArib",
     "multicolumn_JChV49",
+    "multirow_DVh3UW",
     "multicolumn_miAtnC",
     "image_banner_wMHaMp",
     "main"
