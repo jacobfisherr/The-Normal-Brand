@@ -60,6 +60,7 @@
         "row_JyY3qm"
       ],
       "disabled": true,
+      "custom_css": [],
       "name": "t:sections.multirow.presets.name",
       "settings": {
         "image_height": "adapt",
