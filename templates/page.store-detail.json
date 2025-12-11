@@ -160,6 +160,7 @@
       "block_order": [
         "row_MV9wVX"
       ],
+      "disabled": true,
       "name": "t:sections.multirow.presets.name",
       "settings": {
         "image_height": "adapt",
@@ -262,9 +263,9 @@
     "rich_text_bUBwGn",
     "multirow_6cArib",
     "multicolumn_JChV49",
+    "image_banner_wMHaMp",
     "multirow_DVh3UW",
     "multicolumn_miAtnC",
-    "image_banner_wMHaMp",
     "main"
   ]
 }
