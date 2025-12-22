@@ -124,6 +124,7 @@
       "block_order": [
         "row_JyY3qm"
       ],
+      "disabled": true,
       "custom_css": [
         "> div:has(.image-with-text__text:empty) {display: none !important;}"
       ],
@@ -266,8 +267,8 @@
     "multicolumn_JChV49",
     "multirow_6cArib",
     "multirow_DVh3UW",
-    "multicolumn_miAtnC",
     "image_banner_wMHaMp",
+    "multicolumn_miAtnC",
     "main"
   ]
 }
