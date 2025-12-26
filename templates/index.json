@@ -68,10 +68,9 @@
       "blocks": {
         "slide_GgzTMR": {
           "type": "slide",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/10year-Desktop-Template_1_sale_adb7cafb-bedd-4815-b28a-c223a30d9c0c.jpg",
-            "mobile_image": "shopify://shop_images/Mobile-Template-1_Sale.jpg",
+            "image": "shopify://shop_images/HHS-Desktop-Header1.jpg",
+            "mobile_image": "shopify://shop_images/HHS-Mobile-Header1.jpg",
             "heading": "",
             "heading_size": "h0",
             "mobile_heading_size": "h0",
@@ -83,9 +82,9 @@
             "button_label_2": "Shop Women's",
             "link_2": "https://thenormalbrand.com/collections/sale?sort_by=manual&filter.p.m.custom.gender=gid%3A%2F%2Fshopify%2FMetaobject%2F75653972140",
             "button_style_secondary": true,
-            "box_align": "middle-right",
+            "box_align": "bottom-center",
             "show_text_box": false,
-            "text_alignment": "left",
+            "text_alignment": "center",
             "image_overlay_opacity": 0,
             "color_scheme": "scheme-7eca2d75-45a3-4024-b69d-17de1ca4d726",
             "text_alignment_mobile": "center",
@@ -94,6 +93,7 @@
         },
         "slide_ey3yPc": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/10year-Desktop-Template_C_73db74c3-1d26-45ee-9e97-e4b9f097501f.jpg",
             "mobile_image": "shopify://shop_images/Mobile-Template-C_57d86ce0-aea1-43c2-ac38-3536c7933dbb.jpg",
@@ -119,6 +119,7 @@
         },
         "slide_QBadaG": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/10year-Desktop-Template_A_3a7b65d1-a2df-4999-973d-45ed13b05e70.jpg",
             "mobile_image": "shopify://shop_images/Mobile-Template-A_cc0ee1d9-022a-4312-affd-f0bd9b89d1be.jpg",
@@ -144,6 +145,7 @@
         },
         "slide_rHJLX8": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/10year-Desktop-Template_1_STEELa.jpg",
             "mobile_image": "shopify://shop_images/Mobile-Template-B_d9c313a5-dc82-46c7-a65c-d079766f02a9.jpg",
