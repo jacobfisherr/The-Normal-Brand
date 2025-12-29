@@ -341,11 +341,11 @@
         "column_746rwt": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Column_2_25689627-d0c0-47f2-a553-c6a7c901fbf7.png",
-            "title": "Holiday Gift Guide",
-            "text": "<p>Finding the right gift doesn’t have to be complicated. Shop our curated lineup of well-made essentials they'll wear again and again. You may even find something for yourself.</p>",
+            "image": "shopify://shop_images/Multicolumn-Template_8c2c6701-3af6-4e95-b813-c24130218069.jpg",
+            "title": "Gold Standard",
+            "text": "<p>From flannel-lined workwear to classic wool coats, our outerwear is made to handle it all. Tough enough for the outdoors, sharp enough for everywhere else.</p>",
             "liquid": "",
-            "link_label": "Shop the Gift Guide",
+            "link_label": "Shop Men's Outerwear",
             "link": "https://thenormalbrand.com/collections/bestsellers?sort_by=manual",
             "text_alignment": "left",
             "text_alignment_mobile": "left"
