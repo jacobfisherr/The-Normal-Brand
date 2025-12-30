@@ -439,3 +439,37 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
 .cart-drawer .related-products .price__sale {
   white-space: nowrap;
 }
+
+/* A/B Test: Cart Drawer UVP */
+.cart-drawer-uvp-row {
+  display: none;
+  flex-direction: row;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  padding: 0 1rem;
+}
+
+html[data-cart-drawer-usp="true"] .cart-drawer-uvp-row {
+  display: flex;
+}
+
+.cart-drawer-uvp-item {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  align-items: center;
+  flex: 1;
+}
+
+.cart-drawer-uvp-img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.cart-drawer-uvp-text {
+  font-size: 1.6rem;
+  color: rgb(var(--color-foreground));
+  line-height: 1.3;
+}
