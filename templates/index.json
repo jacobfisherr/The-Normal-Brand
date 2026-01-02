@@ -68,6 +68,7 @@
       "blocks": {
         "slide_GgzTMR": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/HHS-Desktop-Header-Template_da7d25b2-800a-47f2-889b-6997be161950.jpg",
             "mobile_image": "shopify://shop_images/HHS-Mobile-Header-Template_67bf3629-5e76-4529-a81c-359fc74342c7.jpg",
@@ -93,7 +94,6 @@
         },
         "slide_ey3yPc": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/10year-Desktop-Template_C_73db74c3-1d26-45ee-9e97-e4b9f097501f.jpg",
             "mobile_image": "shopify://shop_images/Mobile-Template-C_57d86ce0-aea1-43c2-ac38-3536c7933dbb.jpg",
@@ -119,7 +119,6 @@
         },
         "slide_QBadaG": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/10year-Desktop-Template_A_3a7b65d1-a2df-4999-973d-45ed13b05e70.jpg",
             "mobile_image": "shopify://shop_images/Mobile-Template-A_cc0ee1d9-022a-4312-affd-f0bd9b89d1be.jpg",
@@ -145,7 +144,6 @@
         },
         "slide_rHJLX8": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/10year-Desktop-Template_1_STEELa.jpg",
             "mobile_image": "shopify://shop_images/Mobile-Template-B_d9c313a5-dc82-46c7-a65c-d079766f02a9.jpg",
