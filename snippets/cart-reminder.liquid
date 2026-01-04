@@ -1,0 +1,15 @@
+{% comment %}
+  Renders a reminder near the cart icon prompting users to view their cart
+  Shows on page arrival when cart has items
+
+  Usage:
+  {% render 'cart-reminder' %}
+{% endcomment %}
+
+{%- if cart.item_count > 0 -%}
+  <cart-reminder
+    data-cart-count="{{ cart.item_count }}"
+    data-cart-url="{{ routes.cart_url }}"
+  >
+  </cart-reminder>
+{%- endif -%}
