@@ -1476,3 +1476,86 @@ a.product__text {
     border: none;
   }
 }
+
+/* Product description clamp/collapse */
+.pdp-brief-desc {
+  margin: 12px 0 8px;
+  line-height: 1.5;
+  position: relative;
+}
+.pdp-brief-desc__text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 4; /* desktop default */
+  position: relative;
+  font-size: 0.9em;
+}
+
+@media (max-width: 749px) {
+  .pdp-brief-desc__text.is-clamped {
+    -webkit-line-clamp: 3;
+  }
+}
+.pdp-brief-desc__toggle {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 0.9em;
+  text-decoration: underline;
+  cursor: pointer;
+  color: rgba(var(--color-foreground), 0.75);
+}
+.pdp-brief-desc.is-expanded .pdp-brief-desc__text {
+  -webkit-line-clamp: unset;
+}
+.pdp-brief-desc.is-expanded .pdp-brief-desc__text:after {
+  display: none;
+}
+
+.pdp-brief-desc__text p > br:first-child {
+  display: none;
+}
+
+.pdp-brief-desc__text > p:first-child {
+  margin-top: 0 !important;
+}
+
+.pdp-brief-desc__text.is-clamped * {
+  display: inline;
+}
+.pdp-brief-desc__text.is-clamped h1,
+.pdp-brief-desc__text.is-clamped h2,
+.pdp-brief-desc__text.is-clamped h3,
+.pdp-brief-desc__text.is-clamped h4,
+.pdp-brief-desc__text.is-clamped h5,
+.pdp-brief-desc__text.is-clamped h6 {
+  font-weight: 600;
+}
+.pdp-brief-desc__text.is-clamped strong,
+.pdp-brief-desc__text.is-clamped b {
+  font-weight: 600;
+}
+.pdp-brief-desc__text.is-clamped em,
+.pdp-brief-desc__text.is-clamped i {
+  font-style: italic;
+}
+.pdp-brief-desc__text.is-clamped h1,
+.pdp-brief-desc__text.is-clamped h2,
+.pdp-brief-desc__text.is-clamped h3,
+.pdp-brief-desc__text.is-clamped h4 {
+  font-size: 1em;
+}
+.pdp-brief-desc__text.is-clamped p,
+.pdp-brief-desc__text.is-clamped h1,
+.pdp-brief-desc__text.is-clamped h2,
+.pdp-brief-desc__text.is-clamped h3,
+.pdp-brief-desc__text.is-clamped h4,
+.pdp-brief-desc__text.is-clamped h5,
+.pdp-brief-desc__text.is-clamped h6 {
+  margin: 0;
+}
+.pdp-brief-desc__text.is-clamped img,
+.pdp-brief-desc__text.is-clamped picture,
+.pdp-brief-desc__text.is-clamped video {
+  display: none !important;
+}
