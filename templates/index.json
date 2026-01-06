@@ -46,10 +46,15 @@
         "benefit_linktext_yaAYKj",
         "benefit_linktext_gtiRF3"
       ],
+      "custom_css": [
+        ".uvp-flag-icon-hero{width: 22px; height: auto; margin-right: 9px;}",
+        ".enavi-uvp-item .message__link{color: #000 !important;}",
+        "@media screen and (min-width: 989px){.shoplift-offer--bar .offer__container {justify-content: space-around; } .shoplift-offer--bar .offer__container .benefit__text-wrap {opacity: 1 !important; z-index: 2 !important; position: relative !important; }}"
+      ],
       "settings": {
         "devices": "all",
         "sticky_on_scroll": true,
-        "desktop_layout": "alternate_timer",
+        "desktop_layout": "inline",
         "timer_length": 6,
         "pattern_select": "062a0b83-8bde-4a82-9728-74463a4639a9",
         "bar_height": "small",
