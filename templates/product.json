@@ -61,14 +61,14 @@
           "settings": {
             "layout": "vertical",
             "icon_1": "none",
-            "image_1": "{{ product.metafields.custom.icon_with_text_icon_1.value }}",
-            "heading_1": "{{ product.metafields.custom.icon_with_text_heading_1.value }}",
+            "image_1": "{{ product.metafields.custom.icon_list.value.icon_1.value }}",
+            "heading_1": "{{ product.metafields.custom.icon_list.value.heading_1.value }}",
             "icon_2": "none",
-            "image_2": "{{ product.metafields.custom.icon_with_text_icon_2.value }}",
-            "heading_2": "{{ product.metafields.custom.icon_with_text_heading_2.value }}",
+            "image_2": "{{ product.metafields.custom.icon_list.value.icon_2.value }}",
+            "heading_2": "{{ product.metafields.custom.icon_list.value.heading_2.value }}",
             "icon_3": "none",
-            "image_3": "{{ product.metafields.custom.icon_with_text_icon_3.value }}",
-            "heading_3": "{{ product.metafields.custom.icon_with_text_heading_3.value }}"
+            "image_3": "{{ product.metafields.custom.icon_list.value.icon_3.value }}",
+            "heading_3": ""
           }
         },
         "price": {
