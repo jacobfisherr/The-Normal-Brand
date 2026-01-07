@@ -1266,6 +1266,7 @@ a.product__text {
 .icon-with-text--vertical .icon-with-text__item {
   margin-bottom: calc(var(--icon-size) * 0.6);
   line-height: 1.3;
+  font-size: 0.85em;
 }
 
 /* SKU block */
