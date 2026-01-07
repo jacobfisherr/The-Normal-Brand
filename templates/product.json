@@ -68,7 +68,7 @@
             "heading_2": "{{ product.metafields.custom.icon_list.value.heading_2.value }}",
             "icon_3": "none",
             "image_3": "{{ product.metafields.custom.icon_list.value.icon_3.value }}",
-            "heading_3": ""
+            "heading_3": "{{ product.metafields.custom.icon_list.value.heading_3_new.value }}"
           }
         },
         "price": {
