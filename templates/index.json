@@ -14,12 +14,12 @@
       "blocks": {
         "benefit_linktext_fNyAjz": {
           "type": "benefit_linktext",
-          "disabled": true,
           "settings": {
             "devices": "all",
             "text": "Family-Owned - St. Louis Based",
             "message_link": "shopify://pages/our-story",
-            "message_icon": "bolt"
+            "message_icon": "",
+            "message_icon_image": "shopify://shop_images/image_26.png"
           }
         },
         "benefit_linktext_yaAYKj": {
@@ -48,7 +48,8 @@
       ],
       "custom_css": [
         ".uvp-flag-icon-hero {width: 22px; height: auto; margin-right: 9px;}",
-        ".enavi-uvp-item .message__link {color: #000 !important;}",
+        ".message__link {color: #000 !important;}",
+        ".banner__heading img {margin: 0 0.5em;}",
         "@media screen and (min-width: 989px) {.shoplift-offer--bar .offer__container {justify-content: space-around; } .shoplift-offer--bar .offer__container .benefit__text-wrap {opacity: 1 !important; z-index: 2 !important; position: relative !important; }}"
       ],
       "settings": {
