@@ -48,7 +48,7 @@
       ],
       "custom_css": [
         ".uvp-flag-icon-hero {width: 22px; height: auto; margin-right: 9px;}",
-        ".message__link {color: #000 !important; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px;}",
+        ".message__link {color: #000 !important;}",
         ".banner__heading img {margin: 0 0.5em;}",
         "@media screen and (min-width: 989px) {.shoplift-offer--bar .offer__container {justify-content: space-around; } .shoplift-offer--bar .offer__container .benefit__text-wrap {opacity: 1 !important; z-index: 2 !important; position: relative !important; }}"
       ],
