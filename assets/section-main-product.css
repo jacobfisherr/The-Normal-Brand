@@ -1481,10 +1481,11 @@ a.product__text {
 
 /* Product description clamp/collapse */
 .pdp-brief-desc {
-  margin: 1.2rem 0 2rem !important;
+  margin: 1.2rem 0 2.5rem !important;
   line-height: 1.5;
   position: relative;
 }
+
 .pdp-brief-desc__text {
   display: -webkit-box;
   -webkit-box-orient: vertical;
