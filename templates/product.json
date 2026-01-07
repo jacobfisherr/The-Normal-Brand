@@ -56,6 +56,18 @@
             "product": "{{product}}"
           }
         },
+        "icon_with_text_Cf3Knd": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "vertical",
+            "icon_1": "none",
+            "heading_1": "Heading",
+            "icon_2": "none",
+            "heading_2": "Heading",
+            "icon_3": "none",
+            "heading_3": "Heading"
+          }
+        },
         "price": {
           "type": "price",
           "settings": {}
@@ -223,6 +235,7 @@
         "custom_liquid_kfhCax",
         "caption",
         "okendo_star_rating_6iTwd3",
+        "icon_with_text_Cf3Knd",
         "price",
         "bold_discounts_the_sales_app_sale_clock_Hi3ULR",
         "popup_notice_6PL4GD",
