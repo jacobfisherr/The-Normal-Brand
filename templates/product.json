@@ -71,12 +71,6 @@
             "heading_3": "{{ product.metafields.custom.icon_list.value.heading_3_new.value }}"
           }
         },
-        "custom_liquid_47C9XV": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "{%- if product.description != blank -%}\n<div class=\"pdp-brief-desc\" data-injected=\"true\">\n  <div class=\"pdp-brief-desc__text is-clamped\">\n  {{ product.description }}\n</div>\n<a href=\"#\" class=\"pdp-brief-desc__toggle\" role=\"button\" aria-expanded=\"false\"\n    >Read more</a\n  >\n</div>\n{%- endif -%}"
-          }
-        },
         "price": {
           "type": "price",
           "settings": {}
@@ -199,6 +193,12 @@
             "custom_liquid": "<style type=\"text/css\">\n.uvp-icons-row-2 {\n    display: flex; \n    justify-content: space-between;\n    gap: 15px;\n    margin-top: 24px;\n    text-align: center;\n    flex-direction: column;\n}\n\n.uvp-icon {\n    display: grid;\n    grid-template-columns: auto 1fr;\n    grid-template-rows: auto;\n    grid-column-gap: 15px;\n    grid-row-gap: 0px;\n    text-align: left;\n}\n\n.uvp-img {\n    margin: auto;\n    width: 23px;\n    height: auto;\n    grid-area: 1 / 1 / 3 / 2;\n}\n\n.uvp-desc {\n    font-weight: 500;\n    font-size: 13.5px;\n    line-height: 18px;\n    letter-spacing: 0%;\n    color: #000;\n}\n\n.uvp-details {\n    font-weight: 400;\n    font-size: 12.5px;\n    line-height: 18px;\n    letter-spacing: 0%;\n    color: #000;\n}</style>\n\n<div class=\"uvp-icons-row-2\">\n    <div class=\"uvp-icon\">\n      <img src=\"//cdn.shopify.com/s/files/1/0749/3241/files/shipping.png?v=1749048981\" class=\"uvp-img\">\n      <span class=\"uvp-desc\">Sent From our Team in St. Louis</span>\n      <span class=\"uvp-details\">Free Shipping over $150 - packed &amp; shipped same or next business day.</span>\n    </div>\n    <div class=\"uvp-icon\">\n      <img src=\"//cdn.shopify.com/s/files/1/0749/3241/files/return.png?v=1749048982\" class=\"uvp-img\">\n      <span class=\"uvp-desc\">30 Day Returns &amp; Exchanges</span>\n      <span class=\"uvp-details\">Unworn items can be returned or exchanged within 30 days of purchase.</span>\n    </div>\n  </div>"
           }
         },
+        "custom_liquid_47C9XV": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- if product.description != blank -%}\n<div class=\"product_form_desc\" style=\"margin: 2.5rem 0; font-size: 0.9em;\">\n  {{ product.description }}\n</div>\n{%- endif -%}"
+          }
+        },
         "collapsible_tab_gcD7wr": {
           "type": "collapsible_tab",
           "disabled": true,
@@ -239,7 +239,6 @@
         "caption",
         "okendo_star_rating_6iTwd3",
         "icon_with_text_Cf3Knd",
-        "custom_liquid_47C9XV",
         "price",
         "bold_discounts_the_sales_app_sale_clock_Hi3ULR",
         "popup_notice_6PL4GD",
@@ -252,6 +251,7 @@
         "custom_liquid_pBnGte",
         "afterpay_on_site_messaging_payments_messaging_wcAwHg",
         "custom_liquid_DnUpYB",
+        "custom_liquid_47C9XV",
         "collapsible_tab_gcD7wr",
         "collapsible-row-0",
         "collapsible_tab_trXCdM"
