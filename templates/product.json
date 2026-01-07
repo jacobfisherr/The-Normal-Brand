@@ -58,7 +58,6 @@
         },
         "icon_with_text_Cf3Knd": {
           "type": "icon-with-text",
-          "disabled": true,
           "settings": {
             "layout": "vertical",
             "icon_1": "none",
