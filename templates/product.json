@@ -61,11 +61,14 @@
           "settings": {
             "layout": "vertical",
             "icon_1": "none",
-            "heading_1": "Heading",
+            "image_1": "{{ product.metafields.custom.icon_with_text_icon_1.value }}",
+            "heading_1": "{{ product.metafields.custom.icon_with_text_heading_1.value }}",
             "icon_2": "none",
-            "heading_2": "Heading",
+            "image_2": "{{ product.metafields.custom.icon_with_text_icon_2.value }}",
+            "heading_2": "{{ product.metafields.custom.icon_with_text_heading_2.value }}",
             "icon_3": "none",
-            "heading_3": "Heading"
+            "image_3": "{{ product.metafields.custom.icon_with_text_icon_3.value }}",
+            "heading_3": "{{ product.metafields.custom.icon_with_text_heading_3.value }}"
           }
         },
         "price": {
