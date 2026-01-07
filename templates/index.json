@@ -17,8 +17,8 @@
           "disabled": true,
           "settings": {
             "devices": "all",
-            "text": "Up to 60% Off Fall+Winter Styles",
-            "message_link": "",
+            "text": "Family-Owned - St. Louis Based",
+            "message_link": "shopify://pages/our-story",
             "message_icon": "bolt"
           }
         },
@@ -47,9 +47,9 @@
         "benefit_linktext_gtiRF3"
       ],
       "custom_css": [
-        ".uvp-flag-icon-hero{width: 22px; height: auto; margin-right: 9px;}",
-        ".enavi-uvp-item .message__link{color: #000 !important;}",
-        "@media screen and (min-width: 989px){.shoplift-offer--bar .offer__container {justify-content: space-around; } .shoplift-offer--bar .offer__container .benefit__text-wrap {opacity: 1 !important; z-index: 2 !important; position: relative !important; }}"
+        ".uvp-flag-icon-hero {width: 22px; height: auto; margin-right: 9px;}",
+        ".enavi-uvp-item .message__link {color: #000 !important;}",
+        "@media screen and (min-width: 989px) {.shoplift-offer--bar .offer__container {justify-content: space-around; } .shoplift-offer--bar .offer__container .benefit__text-wrap {opacity: 1 !important; z-index: 2 !important; position: relative !important; }}"
       ],
       "settings": {
         "devices": "all",
