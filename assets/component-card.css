@@ -378,7 +378,7 @@
   outline: 0.2rem solid rgba(var(--color-foreground), 0.5);
 }
 
-.card__heading a:focus:not(:focus-visible):after {
+/* .card__heading a:focus:not(:focus-visible):after {
   box-shadow: none;
   outline: 0;
 }
@@ -386,7 +386,7 @@
 .card__heading a:focus {
   box-shadow: none;
   outline: 0;
-}
+} */
 
 @media screen and (min-width: 990px) {
   .card .media.media--hover-effect > img:only-child,
