@@ -70,13 +70,14 @@ class HTMLUpdateUtility {
 
 document.querySelectorAll('[id^="Details-"] summary').forEach((summary) => {
   // Check if summary contains focusable children (excluding the summary itself)
-  const focusableChildren = getFocusableElements(summary).filter(
+  const parent = summary.closest('details');
+  const focusableChildren = getFocusableElements(parent).filter(
     (el) => el !== summary && !summary.contains(el.closest('summary'))
   );
 
   // Only add role="button" if there are no focusable children
   // This prevents accessibility issues when summary contains links
-  console.log(focusableChildren, summary);
+  console.log(focusableChildren, summary, parent);
   if (focusableChildren.length === 0) {
     summary.setAttribute('role', 'button');
   }
