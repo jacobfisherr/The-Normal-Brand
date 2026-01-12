@@ -144,6 +144,7 @@
       },
       "okendo-loyalty-top-row": {
         "type": "okendo-loyalty-top-row",
+        "custom_css": [],
         "settings": {
           "toprow_image": "shopify://shop_images/Web_71b9dd08-6a2a-4ef1-9228-30a2274cc240.jpg",
           "row_heading_li": "The Normal Brand Rewards",
