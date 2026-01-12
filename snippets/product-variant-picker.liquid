@@ -124,7 +124,7 @@
                 </span>
               </legend>
               <div class="color-category">
-                <div class="form__label" data-test-2>
+                <div class="form__label">
                   {{ category_name[1] }}:
                   <span class="option-name-label" data-selected-value>
                     {%- if grouped_colors[forloop.index0] contains option.selected_value -%}
@@ -149,7 +149,7 @@
             {% comment %} Colors not assigned to a group {% endcomment %}
             {% if ungrouped_colors_array.size > 0 %}
               <div class="color-category">
-                <div class="form__label" data-test>
+                <div class="form__label">
                   {{ settings.default_color_category }}:
                   <span class="option-name-label" data-selected-value>
                     {%- if ungrouped_colors_array contains option.selected_value -%}
@@ -213,7 +213,7 @@
               {%- for category in color_categories_array -%}
                 {% assign category_name = category | split: ':' %}
                 <div class="color-category">
-                  <div class="form__label" data-test-1>
+                  <div class="form__label">
                     {{ category_name[1] }}:
                     {%- if grouped_colors[forloop.index0] contains option.selected_value -%}
                       <span class="option-name-label" data-selected-value
