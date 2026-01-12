@@ -126,6 +126,7 @@
                     {%- endif -%}
                   </span>
                 </div>
+
                 <div class="product-form-colors">
                   {%
                     render 'product-variant-options',
@@ -139,7 +140,9 @@
               </div>
             {%- endfor -%}
 
-            {% comment %} Colors not assigned to a group {% endcomment %}
+            {% comment %}
+              Colors that have not been assigned to a group
+            {% endcomment %}
             {% if ungrouped_colors_array.size > 0 %}
               <div class="color-category">
                 <div class="form__label">
