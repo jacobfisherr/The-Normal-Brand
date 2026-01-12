@@ -1033,3 +1033,7 @@ details[open] > .modal__content {
   position: relative;
   z-index: 2;
 }
+
+div.okeReviews {
+  --oke-highlightColor: #d33800;
+}
