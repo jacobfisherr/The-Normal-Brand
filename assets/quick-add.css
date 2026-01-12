@@ -8,7 +8,8 @@
 }
 
 @media (pointer: fine) {
-  .card:hover .quick-add {
+  .card:hover .quick-add,
+  .card .quick-add:focus-within {
     opacity: 1;
   }
 }
