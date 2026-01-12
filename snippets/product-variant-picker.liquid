@@ -141,7 +141,7 @@
             {% comment %} Colors not assigned to a group {% endcomment %}
             {% if ungrouped_colors_array.size > 0 %}
               <div class="color-category">
-                <div class="form__label">
+                <div class="form__label" data-test>
                   {{ settings.default_color_category }}:
                   <span class="option-name-label" data-selected-value>
                     {%- if ungrouped_colors_array contains option.selected_value -%}
