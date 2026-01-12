@@ -48,22 +48,33 @@ var TNB = {
   },
   megaMenuHover: function () {
     const inlineMenu = document.querySelector('.header__inline-menu');
+    if (!inlineMenu) return;
+
     const detailsItems = inlineMenu.querySelectorAll('details');
 
     detailsItems.forEach((item) => {
+      const summary = item.querySelector('summary');
       const ulElement = item.querySelector('ul');
 
-      item.addEventListener('mouseover', () => {
+      const openMenu = () => {
         item.setAttribute('open', true);
+        if (summary) {
+          summary.setAttribute('aria-expanded', 'true');
+        }
+      };
 
-        ulElement.addEventListener('mouseleave', () => {
-          item.removeAttribute('open');
-        });
+      const closeMenu = () => {
+        item.removeAttribute('open');
+        if (summary) {
+          summary.setAttribute('aria-expanded', 'false');
+        }
+      };
 
-        item.addEventListener('mouseleave', () => {
-          item.removeAttribute('open');
-        });
-      });
+      item.addEventListener('mouseenter', openMenu);
+      item.addEventListener('mouseleave', closeMenu);
+      if (ulElement) {
+        ulElement.addEventListener('mouseleave', closeMenu);
+      }
     });
   },
   tallSizingControls: function () {
@@ -117,7 +128,7 @@ var TNB = {
     if (TNB.state.tallSizingActive) {
       $('[data-button-tall]').click();
     }
-  }
+  },
 };
 
 function init() {
@@ -137,16 +148,16 @@ function init() {
     const count = productCount.innerText;
     const parsedCount = parseInt(count);
 
-    productCount.innerText = parsedCount - outOfStockProducts.length + " products";
-    productCount.style.display = "block";
+    productCount.innerText = parsedCount - outOfStockProducts.length + ' products';
+    productCount.style.display = 'block';
   }
 
   if (productCountDesktop) {
     const count = productCountDesktop.innerText;
     const parsedCount = parseInt(count);
 
-    productCountDesktop.innerText = parsedCount - outOfStockProducts.length + " products";
-    productCountDesktop.style.display = "block";
+    productCountDesktop.innerText = parsedCount - outOfStockProducts.length + ' products';
+    productCountDesktop.style.display = 'block';
   }
 }
 
