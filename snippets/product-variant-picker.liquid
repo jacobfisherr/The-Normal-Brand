@@ -114,7 +114,7 @@
             {% comment %} Colors assigned to a group {% endcomment %}
             {%- for category in color_categories_array -%}
               {% assign category_name = category | split: ':' %}
-              <legend class="form__label" style="display: none; margin-top: 1.5rem;" data-test>
+              <legend class="form__label" style="margin-top: 1.5rem;" data-test>
                 {{ category_name[1] }}:
                 <span class="option-name-label" data-selected-value>
                   {%- if grouped_colors[forloop.index0] contains option.selected_value -%}
@@ -124,15 +124,17 @@
                 </span>
               </legend>
               <div class="color-category">
-                <div class="form__label">
-                  {{ category_name[1] }}:
-                  <span class="option-name-label" data-selected-value>
-                    {%- if grouped_colors[forloop.index0] contains option.selected_value -%}
-                      &nbsp;
-                      {{- option.selected_value -}}
-                    {%- endif -%}
-                  </span>
-                </div>
+                {% comment %}
+                  <div class="form__label">
+                    {{ category_name[1] }}:
+                    <span class="option-name-label" data-selected-value>
+                      {%- if grouped_colors[forloop.index0] contains option.selected_value -%}
+                        &nbsp;
+                        {{- option.selected_value -}}
+                      {%- endif -%}
+                    </span>
+                  </div>
+                {% endcomment %}
                 <div class="product-form-colors">
                   {%
                     render 'product-variant-options',
