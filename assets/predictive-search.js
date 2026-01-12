@@ -247,7 +247,7 @@ class PredictiveSearch extends SearchForm {
   open() {
     this.predictiveSearchResults.style.maxHeight = this.resultsMaxHeight || `${this.getResultsMaxHeight()}px`;
     this.setAttribute('open', true);
-    this.input.setAttribute('aria-expanded', true);
+    // this.input.setAttribute('aria-expanded', true);
     this.isOpen = true;
   }
 
@@ -268,7 +268,7 @@ class PredictiveSearch extends SearchForm {
     this.input.setAttribute('aria-activedescendant', '');
     this.removeAttribute('loading');
     this.removeAttribute('open');
-    this.input.setAttribute('aria-expanded', false);
+    // this.input.setAttribute('aria-expanded', false);
     this.resultsMaxHeight = false;
     this.predictiveSearchResults.removeAttribute('style');
   }
