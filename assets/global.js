@@ -77,7 +77,6 @@ document.querySelectorAll('[id^="Details-"] summary').forEach((summary) => {
 
   // Only add role="button" if there are no focusable children
   // This prevents accessibility issues when summary contains links
-  console.log(focusableChildren, summary, parent);
   if (focusableChildren.length === 0) {
     summary.setAttribute('role', 'button');
   }
