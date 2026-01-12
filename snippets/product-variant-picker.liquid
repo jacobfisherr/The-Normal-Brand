@@ -19,7 +19,7 @@
       Added 7/25/25 by Jacob Fisher
     {% endcomment %}
     {% if product.options_with_values.size == 1 and product.options_with_values[0].values.size == 1 %}
-    data-hidden
+      data-hidden
     {% endif %}
   >
     {%- for option in product.options_with_values -%}
@@ -114,6 +114,7 @@
             {% comment %} Colors assigned to a group {% endcomment %}
             {%- for category in color_categories_array -%}
               {% assign category_name = category | split: ':' %}
+              <legend class="form__label" style="display: none;">{{ category_name[1] }}:</legend>
               <div class="color-category">
                 <div class="form__label">
                   {{ category_name[1] }}:
