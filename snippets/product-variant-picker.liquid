@@ -116,7 +116,7 @@
               {% assign category_name = category | split: ':' %}
               <legend class="form__label" style="display: none;">{{ category_name[1] }}:</legend>
               <div class="color-category">
-                <div class="form__label">
+                <div class="form__label" data-test-2>
                   {{ category_name[1] }}:
                   <span class="option-name-label" data-selected-value>
                     {%- if grouped_colors[forloop.index0] contains option.selected_value -%}
