@@ -1047,3 +1047,7 @@ div.okeReviews {
   object-fit: cover;
   object-position: center center;
 }
+
+.product-grid .grid__item--image.two-column {
+  width: 50%;
+}
