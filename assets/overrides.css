@@ -1037,3 +1037,13 @@ details[open] > .modal__content {
 div.okeReviews {
   --oke-highlightColor: #d33800;
 }
+
+.product-grid .grid__item--image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
