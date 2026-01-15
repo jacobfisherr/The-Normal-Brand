@@ -182,9 +182,13 @@
                       {% endif %}
                     >
                       {%- liquid
+                        assign image_width = 533
+
                         if block.type == 'two_column_image'
+                          assign image_width = 700
                           assign ratio = 1.67
                         elsif block.type == 'full_width_image'
+                          assign image_width = 1400
                           assign ratio = 0.3
                         endif
                       -%}
@@ -201,7 +205,7 @@
                               {%- if block.settings.image.width >= 1066 -%}{{ block.settings.image | image_url: width: 1066 }} 1066w,{%- endif -%}
                               {{ block.settings.image | image_url }} {{ block.settings.image.width }}w
                             "
-                            src="{{ block.settings.image | image_url: width: 533 }}"
+                            src="{{ block.settings.image | image_url: width: image_width }}"
                             alt="{{ block.settings.image.alt | default: product.title }}"
                             width="{{ block.settings.image.width }}"
                             height="{{ block.settings.image.height }}"
