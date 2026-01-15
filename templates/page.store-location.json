@@ -377,18 +377,6 @@
     },
     "rich_text_rcXhLM": {
       "type": "rich-text",
-      "blocks": {
-        "heading_brF3BD": {
-          "type": "heading",
-          "settings": {
-            "heading": "Minnesota",
-            "heading_size": "h1"
-          }
-        }
-      },
-      "block_order": [
-        "heading_brF3BD"
-      ],
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
@@ -396,54 +384,6 @@
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 0
-      }
-    },
-    "image_with_text_h7pehY": {
-      "type": "image-with-text",
-      "blocks": {
-        "caption_VbJ9QJ": {
-          "type": "caption",
-          "settings": {
-            "caption": "Bloomington",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        },
-        "heading_FAEKDi": {
-          "type": "heading",
-          "settings": {
-            "heading": "<a href=\"/pages/the-normal-brand-store-mall-of-america\" title=\"/pages/the-normal-brand-store-mall-of-america\">Mall of America</a>",
-            "heading_size": "h1"
-          }
-        },
-        "text_QEzTgC": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>142 South Avenue, Space S142<br/>Bloomington, MN 55425</strong></p><p>(952) 256-1300</p><p>Mon-Sat: 10am - 9pm<strong><br/></strong>Sun: 11am - 7pm<br/></p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "caption_VbJ9QJ",
-        "heading_FAEKDi",
-        "text_QEzTgC"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/BLOOMINGTON_1.jpg",
-        "height": "adapt",
-        "desktop_image_width": "small",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "full_width": false,
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "rich_text_dCmBBk": {
@@ -886,7 +826,6 @@
     "rich_text_t9xaHW",
     "image_with_text_36PecB",
     "rich_text_rcXhLM",
-    "image_with_text_h7pehY",
     "rich_text_dCmBBk",
     "multirow_fikqhk",
     "rich_text_zUPUiG",
