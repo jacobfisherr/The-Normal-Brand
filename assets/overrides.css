@@ -1065,7 +1065,7 @@ div.okeReviews {
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 990px) {
   .product-grid .grid__item--image.full-width .ratio {
     --ratio-percent: 60% !important;
   }
