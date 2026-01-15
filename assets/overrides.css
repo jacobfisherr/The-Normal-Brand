@@ -1049,5 +1049,6 @@ div.okeReviews {
 }
 
 .product-grid .grid__item--image.two-column {
-  width: 50%;
+  width: calc(50% - var(--grid-desktop-horizontal-spacing) * 2 / 3);
+  max-width: calc(50% - var(--grid-desktop-horizontal-spacing) * 2 / 3);
 }
