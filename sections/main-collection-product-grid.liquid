@@ -160,7 +160,13 @@
 
                 {% for block in section.blocks %}
                   {% if block.position == forloop.index %}
-                    <li class="grid__item grid__item--image {% if block.type == 'two_column_image' %} two-column {% elsif block.type == 'full_width_image' %} full-width {% endif %} {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+                    <li
+                      class="grid__item grid__item--image{% if block.type == 'two_column_image' %} two-column {% elsif block.type == 'full_width_image' %} full-width {% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                      {% if settings.animations_reveal_on_scroll %}
+                        data-cascade
+                        style="--animation-order: {{ forloop.index }};"
+                      {% endif %}
+                    >
                       <img src="{{ block.image | image_url }}" alt="{{ block.image.alt }}" width="100%" height="100%">
                     </li>
                   {% endif %}
@@ -173,6 +179,7 @@
                     style="--animation-order: {{ forloop.index }};"
                   {% endif %}
                   data-in-stock="{{ product.selected_or_first_available_variant.available }}"
+                  data-index="{{ forloop.index }}"
                 >
                   {% render 'card-product',
                     card_product: product,
