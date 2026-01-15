@@ -102,6 +102,13 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "blocks": {
+        "two_column_image_WJGGzB": {
+          "type": "two_column_image",
+          "settings": {
+            "position": 7,
+            "image": "shopify://shop_images/NB_Fall18_Day1_-155_0c48c0f8-f663-4616-89f0-9989ee8de9bf.jpg"
+          }
+        },
         "one_column_image_gREFV7": {
           "type": "one_column_image",
           "settings": {
@@ -111,6 +118,7 @@
         }
       },
       "block_order": [
+        "two_column_image_WJGGzB",
         "one_column_image_gREFV7"
       ],
       "settings": {
