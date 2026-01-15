@@ -1057,8 +1057,8 @@ div.okeReviews {
   .product-grid .grid__item--image.two-column {
     /* width: calc(50% - var(--grid-desktop-horizontal-spacing) * 2 / 3);
     max-width: calc(50% - var(--grid-desktop-horizontal-spacing) * 2 / 3); */
-    width: calc((33.33% - var(--grid-desktop-horizontal-spacing) * 2 / 3) * 2);
-    max-width: calc((33.33% - var(--grid-desktop-horizontal-spacing) * 2 / 3) * 2);
+    width: calc((33.33% - var(--grid-desktop-horizontal-spacing) * 2 / 3) * 2 + var(--grid-desktop-horizontal-spacing));
+    max-width: calc((33.33% - var(--grid-desktop-horizontal-spacing) * 2 / 3) * 2 + var(--grid-desktop-horizontal-spacing));
   }
 
   .product-grid .grid__item--image.full-width {
