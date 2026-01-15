@@ -181,12 +181,12 @@
                         style="--animation-order: {{ product_index }};"
                       {% endif %}
                     >
-                      {% liquid
+                      {%- liquid
                         if block.type == 'two_column_image'
                           assign ratio = 0.6
                         {% comment %} elsif block.type == 'full_width_image' {% endcomment %}
                         endif
-                      %}
+                      -%}
                       
                       <a href="{{ product.url }}">
                         <span class="visually-hidden">{{ product.title }}</span>
