@@ -157,6 +157,15 @@
                 {%- if forloop.index > 2 -%}
                   {%- assign lazy_load = true -%}
                 {%- endif -%}
+
+                {% for block in section.blocks %}
+                  {% if block.position == forloop.index %}
+                    <li class="grid__item grid__item--image {% if block.type == 'two_column_image' %} two-column {% elsif block.type == 'full_width_image' %} full-width {% endif %} {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+                      <img src="{{ block.image | image_url }}" alt="{{ block.image.alt }}" width="100%" height="100%">
+                    </li>
+                  {% endif %}
+                {% endfor %}
+
                 <li
                   class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                   {% if settings.animations_reveal_on_scroll %}
@@ -423,8 +432,8 @@
   ],
   "blocks": [
     {
-      "name": "Single Column Image",
-      "type": "single_column_image",
+      "name": "One Column Image",
+      "type": "one_column_image",
       "settings": [
         {
           "type": "number",
@@ -439,8 +448,8 @@
       ]
     },
     {
-      "name": "Double Column Image",
-      "type": "double_column_image",
+      "name": "Two Column Image",
+      "type": "two_column_image",
       "settings": [
         {
           "type": "number",
@@ -455,8 +464,8 @@
       ]
     },
     {
-      "name": "Full Column Image",
-      "type": "full_column_image",
+      "name": "Full Width Image",
+      "type": "full_width_image",
       "settings": [
         {
           "type": "number",
