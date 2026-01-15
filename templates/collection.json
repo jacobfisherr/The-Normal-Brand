@@ -30,7 +30,6 @@
         "comfort-terry": {
           "type": "style_card",
           "settings": {
-            "image": "shopify://shop_images/Comfort_Terry_Pant_-_Dark_Brown_5.jpg",
             "title": "COMFORT TERRY",
             "features": "Looks polished, feels like sweats\nNow in extended sizes\nAvailable in Pant, Jean, Jogger",
             "button_label": "Shop Now",
@@ -40,7 +39,6 @@
         "denim": {
           "type": "style_card",
           "settings": {
-            "image": "shopify://shop_images/Normal_Jean_-_Medium_Greyson_Wash_460.jpg",
             "title": "DENIM",
             "features": "No frills, made to last\nNow in extended sizes\nAvailable in Classic, Straight, Comfort Terry",
             "button_label": "Shop Now",
@@ -50,7 +48,6 @@
         "cord": {
           "type": "style_card",
           "settings": {
-            "image": "shopify://shop_images/image_1_5.png",
             "title": "COMFORT CORD",
             "features": "Slim fit\nClassic 5-pocket jean styling\nHeavy stretch corduroy",
             "button_label": "Shop Now",
@@ -60,7 +57,6 @@
         "chino": {
           "type": "style_card",
           "settings": {
-            "image": "shopify://shop_images/image_1_6.png",
             "title": "CHINO",
             "features": "Straight fit\nSoft, peached stretch chino fabric\nContour waistband with elastic interior for the perfect fit",
             "button_label": "Shop Now",
@@ -70,7 +66,6 @@
         "jogger": {
           "type": "style_card",
           "settings": {
-            "image": "shopify://shop_images/Comfort_Terry_Everyday_Jogger_-_Steel_2945.jpg",
             "title": "JOGGER",
             "features": "Elastic waistband\nAlpha sizing\nAvailable in Comfort Terry, Puremeso, COOLMAX®",
             "button_label": "Shop Now",
@@ -80,7 +75,6 @@
         "trouser": {
           "type": "style_card",
           "settings": {
-            "image": "shopify://shop_images/Normal_Trouser_-_Navy_2510.jpg",
             "title": "TROUSER",
             "features": "Straight fit\nFully lined\nOur most tailored look",
             "button_label": "Shop Now",
@@ -107,6 +101,18 @@
     },
     "product-grid": {
       "type": "main-collection-product-grid",
+      "blocks": {
+        "single_column_image_HQgX8J": {
+          "type": "single_column_image",
+          "settings": {
+            "position": 4,
+            "image": "shopify://shop_images/lifestyle_41b2a7d6-f60e-4b2c-97ea-eef4a6f389da.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "single_column_image_HQgX8J"
+      ],
       "settings": {
         "products_per_page": 36,
         "columns_desktop": 3,
