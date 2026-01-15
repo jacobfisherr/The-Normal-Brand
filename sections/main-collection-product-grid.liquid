@@ -175,19 +175,20 @@
                 {% for block in section.blocks %}
                   {% if block.settings.position == product_index %}
                     <li
-                      class="grid__item grid__item--image{% if block.type == 'two_column_image' %} two-column {% elsif block.type == 'full_width_image' %} full-width {% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %} ratio"
+                      class="grid__item grid__item--image{% if block.type == 'two_column_image' %} two-column {% elsif block.type == 'full_width_image' %} full-width {% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                       {% if settings.animations_reveal_on_scroll %}
                         data-cascade
                         style="--animation-order: {{ product_index }};"
                       {% endif %}
-                      style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
                     >
-                      <img
-                        src="{{ block.settings.image | image_url }}"
-                        alt="{{ block.settings.image.alt }}"
-                        width="100%"
-                        height="auto"
-                      >
+                      <div class="ratio" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
+                        <img
+                          src="{{ block.settings.image | image_url }}"
+                          alt="{{ block.settings.image.alt }}"
+                          width="100%"
+                          height="auto"
+                        >
+                      </div>
                     </li>
                   {% endif %}
                 {% endfor %}
