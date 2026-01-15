@@ -1037,3 +1037,36 @@ details[open] > .modal__content {
 div.okeReviews {
   --oke-highlightColor: #d33800;
 }
+
+.product-grid .grid__item--image a {
+  display: block;
+}
+
+.product-grid .grid__item--image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.product-grid .grid__item--image.two-column,
+.product-grid .grid__item--image.full-width {
+  width: 100%;
+  max-width: 100%;
+}
+
+@media screen and (min-width: 990px) {
+  .product-grid .grid__item--image.two-column {
+    width: calc((33.33% - var(--grid-desktop-horizontal-spacing) * 2 / 3) * 2 + var(--grid-desktop-horizontal-spacing));
+    max-width: calc((33.33% - var(--grid-desktop-horizontal-spacing) * 2 / 3) * 2 + var(--grid-desktop-horizontal-spacing));
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .product-grid .grid__item--image.full-width .ratio {
+    --ratio-percent: 60% !important;
+  }
+}
