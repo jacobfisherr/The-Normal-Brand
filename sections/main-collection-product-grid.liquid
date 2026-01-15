@@ -159,6 +159,11 @@
                 {%- endif -%}
 
                 {% for block in section.blocks %}
+                  <div
+                    style="display: none;"
+                    data-position="{{ block.settings.position }}"
+                    data-index="{{ forloop.index }}"
+                  ></div>
                   {% if block.settings.position == forloop.index %}
                     <li
                       class="grid__item grid__item--image{% if block.type == 'two_column_image' %} two-column {% elsif block.type == 'full_width_image' %} full-width {% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
