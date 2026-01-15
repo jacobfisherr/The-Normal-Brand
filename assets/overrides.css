@@ -1064,3 +1064,9 @@ div.okeReviews {
     max-width: calc((33.33% - var(--grid-desktop-horizontal-spacing) * 2 / 3) * 2 + var(--grid-desktop-horizontal-spacing));
   }
 }
+
+@media screen and (max-width: 750px) {
+  .product-grid .grid__item--image.full-width .ratio {
+    --ratio-percent: 0.6 !important;
+  }
+}
