@@ -102,8 +102,8 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "blocks": {
-        "single_column_image_HQgX8J": {
-          "type": "single_column_image",
+        "one_column_image_gREFV7": {
+          "type": "one_column_image",
           "settings": {
             "position": 4,
             "image": "shopify://shop_images/lifestyle_41b2a7d6-f60e-4b2c-97ea-eef4a6f389da.jpg"
@@ -111,7 +111,7 @@
         }
       },
       "block_order": [
-        "single_column_image_HQgX8J"
+        "one_column_image_gREFV7"
       ],
       "settings": {
         "products_per_page": 36,
