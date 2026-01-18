@@ -16,7 +16,8 @@
   {%- assign t = template | split: '.' | first -%}
   <div class="breadcrumbs section-{{ section.id }}-padding">
     <div class="page-width">
-      <nav class="breadcrumbs" role="navigation" aria-label="breadcrumbs">
+      {%- comment -%} CONTROL Original Breadcrumbs {%- endcomment -%}
+      <nav class="breadcrumbs breadcrumbs--back" role="navigation" aria-label="breadcrumbs">
         <ol class="breadcrumbs__list" itemscope itemtype="https://schema.org/BreadcrumbList">
           <li class="breadcrumbs__item">
             <a class="breadcrumbs__link" href="javascript: history.back();">&larr; Back</a>
@@ -31,18 +32,20 @@
                 <span class="breadcrumbs__separator">/</span>
               </li>
             {%- when 'product' -%}
-              {%- if collection.url -%}
-                <li
-                  class="breadcrumbs__item"
-                  itemprop="itemListElement"
-                  itemscope
-                  itemtype="https://schema.org/ListItem"
-                >
-                  <span itemprop="name">{{ collection.title | link_to: collection.url }}</span>
-                  <meta itemprop="position" content="1">
-                  <span class="breadcrumbs__separator">/</span>
-                </li>
-              {%- endif -%}
+              {%- comment -%}
+                {%- if collection.url -%}
+                  <li
+                    class="breadcrumbs__item"
+                    itemprop="itemListElement"
+                    itemscope
+                    itemtype="https://schema.org/ListItem"
+                  >
+                    <span itemprop="name">{{ collection.title | link_to: collection.url }}</span>
+                    <meta itemprop="position" content="1">
+                    <span class="breadcrumbs__separator">/</span>
+                  </li>
+                {%- endif -%}
+              {%- endcomment -%}
               <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
                 <a class="breadcrumbs__link" itemprop="item" href="{{ product.url }}" aria-current="page">
                   <span itemprop="name">{{- product.title -}}</span>
@@ -148,6 +151,175 @@
                   <meta itemprop="position" content="1">
                 </a>
                 <span class="breadcrumbs__separator">/</span>
+              </li>
+          {%- endcase -%}
+        </ol>
+      </nav>
+
+      {%- comment -%} AB Test VARIANT Breadcrumbs {%- endcomment -%}
+      <nav class="breadcrumbs breadcrumbs--path" role="navigation" aria-label="breadcrumbs">
+        <ol class="breadcrumbs__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+          <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a class="breadcrumbs__link" itemprop="item" href="/">
+              <span itemprop="name">Home</span>
+              <meta itemprop="position" content="1">
+            </a>
+            <span class="breadcrumbs__separator">/</span>
+          </li>
+
+          {%- case t -%}
+            {%- when 'page' -%}
+              <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a class="breadcrumbs__link" itemprop="item" href="{{ page.url }}" aria-current="page">
+                  <span itemprop="name">{{- page.title -}}</span>
+                  <meta itemprop="position" content="2">
+                </a>
+              </li>
+
+            {%- when 'product' -%}
+              {%- comment -%} Home / Collection / Product {%- endcomment -%}
+              {%- if collection.url -%}
+                <li
+                  class="breadcrumbs__item"
+                  itemprop="itemListElement"
+                  itemscope
+                  itemtype="https://schema.org/ListItem"
+                >
+                  <a class="breadcrumbs__link" itemprop="item" href="{{ collection.url }}">
+                    <span itemprop="name">{{- collection.title -}}</span>
+                    <meta itemprop="position" content="2">
+                  </a>
+                  <span class="breadcrumbs__separator">/</span>
+                </li>
+                <li
+                  class="breadcrumbs__item"
+                  itemprop="itemListElement"
+                  itemscope
+                  itemtype="https://schema.org/ListItem"
+                >
+                  <a class="breadcrumbs__link" itemprop="item" href="{{ product.url }}" aria-current="page">
+                    <span itemprop="name">{{- product.title -}}</span>
+                    <meta itemprop="position" content="3">
+                  </a>
+                </li>
+              {%- else -%}
+                {%- comment -%}  Home / Product {%- endcomment -%}
+                <li
+                  class="breadcrumbs__item"
+                  itemprop="itemListElement"
+                  itemscope
+                  itemtype="https://schema.org/ListItem"
+                >
+                  <a class="breadcrumbs__link" itemprop="item" href="{{ product.url }}" aria-current="page">
+                    <span itemprop="name">{{- product.title -}}</span>
+                    <meta itemprop="position" content="2">
+                  </a>
+                </li>
+              {%- endif -%}
+
+            {%- when 'collection' and collection.handle -%}
+              {%- comment -%} Home / Collection {%- endcomment -%}
+              {%- if current_tags -%}
+                <li
+                  class="breadcrumbs__item"
+                  itemprop="itemListElement"
+                  itemscope
+                  itemtype="https://schema.org/ListItem"
+                >
+                  <a class="breadcrumbs__link" itemprop="item" href="{{ collection.url }}">
+                    <span itemprop="name">{{- collection.title -}}</span>
+                    <meta itemprop="position" content="2">
+                  </a>
+                  <span class="breadcrumbs__separator">/</span>
+                </li>
+                <li
+                  class="breadcrumbs__item"
+                  itemprop="itemListElement"
+                  itemscope
+                  itemtype="https://schema.org/ListItem"
+                >
+                  {%- capture tag_url -%}{{ collection.url }}/{{ current_tags | join: "+"}}{%- endcapture -%}
+                  <a class="breadcrumbs__link" itemprop="item" href="{{ tag_url }}" aria-current="page">
+                    <span itemprop="name">{{- current_tags | join: ' + ' -}}</span>
+                    <meta itemprop="position" content="3">
+                  </a>
+                </li>
+              {%- else -%}
+                <li
+                  class="breadcrumbs__item"
+                  itemprop="itemListElement"
+                  itemscope
+                  itemtype="https://schema.org/ListItem"
+                >
+                  <a class="breadcrumbs__link" itemprop="item" href="{{ collection.url }}" aria-current="page">
+                    <span itemprop="name">{{- collection.title -}}</span>
+                    <meta itemprop="position" content="2">
+                  </a>
+                </li>
+              {%- endif -%}
+
+            {%- when 'blog' -%}
+              {%- if current_tags -%}
+                <li
+                  class="breadcrumbs__item"
+                  itemprop="itemListElement"
+                  itemscope
+                  itemtype="https://schema.org/ListItem"
+                >
+                  <a class="breadcrumbs__link" itemprop="item" href="{{ blog.url }}">
+                    <span itemprop="name">{{- blog.title -}}</span>
+                    <meta itemprop="position" content="2">
+                  </a>
+                  <span class="breadcrumbs__separator">/</span>
+                </li>
+                <li
+                  class="breadcrumbs__item"
+                  itemprop="itemListElement"
+                  itemscope
+                  itemtype="https://schema.org/ListItem"
+                >
+                  {%- capture tag_url -%}{{blog.url}}/tagged/{{ current_tags | join: "+" }}{%- endcapture -%}
+                  <a class="breadcrumbs__link" itemprop="item" href="{{ tag_url }}" aria-current="page">
+                    <span itemprop="name">{{- current_tags | join: ' + ' -}}</span>
+                    <meta itemprop="position" content="3">
+                  </a>
+                </li>
+              {%- else -%}
+                <li
+                  class="breadcrumbs__item"
+                  itemprop="itemListElement"
+                  itemscope
+                  itemtype="https://schema.org/ListItem"
+                >
+                  <a class="breadcrumbs__link" itemprop="item" href="{{ blog.url }}" aria-current="page">
+                    <span itemprop="name">{{- blog.title -}}</span>
+                    <meta itemprop="position" content="2">
+                  </a>
+                </li>
+              {%- endif -%}
+
+            {%- when 'article' -%}
+              {%- comment -%} Home / Blog / Article {%- endcomment -%}
+              <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a class="breadcrumbs__link" itemprop="item" href="{{ blog.url }}">
+                  <span itemprop="name">{{- blog.title -}}</span>
+                  <meta itemprop="position" content="2">
+                </a>
+                <span class="breadcrumbs__separator">/</span>
+              </li>
+              <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a class="breadcrumbs__link" itemprop="item" href="{{ article.url }}" aria-current="page">
+                  <span itemprop="name">{{- article.title -}}</span>
+                  <meta itemprop="position" content="3">
+                </a>
+              </li>
+
+            {%- else -%}
+              <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a class="breadcrumbs__link" itemprop="item" href="{{ request.path }}" aria-current="page">
+                  <span itemprop="name">{{- page_title -}}</span>
+                  <meta itemprop="position" content="2">
+                </a>
               </li>
           {%- endcase -%}
         </ol>
