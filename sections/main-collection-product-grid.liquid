@@ -189,10 +189,9 @@
                           assign ratio = 1.67
                         elsif block.type == 'full_width_image'
                           assign image_width = 1400
-                          assign ratio = 0.3
+                          assign ratio = 3.33
                         endif
                       -%}
-
                       <a href="{{ product.url }}">
                         <span class="visually-hidden">{{ product.title }}</span>
                         <div class="ratio" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
@@ -207,7 +206,7 @@
                               {{ block.settings.image | image_url }} {{ block.settings.image.width }}w
                             "
                             src="{{ block.settings.image | image_url: width: image_width }}"
-                            alt="{{ block.settings.image.alt }}"
+                            alt="{{ block.settings.image.alt | default: product.title }}"
                             width="{{ block.settings.image.width }}"
                             height="{{ block.settings.image.height }}"
                             loading="lazy"

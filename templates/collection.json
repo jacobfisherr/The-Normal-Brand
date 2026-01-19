@@ -102,6 +102,13 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "blocks": {
+        "full_width_image_VUtYyb": {
+          "type": "full_width_image",
+          "settings": {
+            "position": 13,
+            "image": "shopify://shop_images/TNB_Spring19-361.jpg"
+          }
+        },
         "two_column_image_WJGGzB": {
           "type": "two_column_image",
           "settings": {
@@ -118,6 +125,7 @@
         }
       },
       "block_order": [
+        "full_width_image_VUtYyb",
         "two_column_image_WJGGzB",
         "one_column_image_gREFV7"
       ],
