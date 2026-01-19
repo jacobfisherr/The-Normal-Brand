@@ -182,12 +182,17 @@
                       {% endif %}
                     >
                       {%- liquid
+                        assign image_width = 533
+
                         if block.type == 'two_column_image'
-                          assign ratio = 0.6
-                        {% comment %} elsif block.type == 'full_width_image' {% endcomment %}
+                          assign image_width = 700
+                          assign ratio = 1.67
+                        elsif block.type == 'full_width_image'
+                          assign image_width = 1400
+                          assign ratio = 0.3
                         endif
                       -%}
-                      
+
                       <a href="{{ product.url }}">
                         <span class="visually-hidden">{{ product.title }}</span>
                         <div class="ratio" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
@@ -201,7 +206,7 @@
                               {%- if block.settings.image.width >= 1066 -%}{{ block.settings.image | image_url: width: 1066 }} 1066w,{%- endif -%}
                               {{ block.settings.image | image_url }} {{ block.settings.image.width }}w
                             "
-                            src="{{ block.settings.image | image_url: width: 533 }}"
+                            src="{{ block.settings.image | image_url: width: image_width }}"
                             alt="{{ block.settings.image.alt }}"
                             width="{{ block.settings.image.width }}"
                             height="{{ block.settings.image.height }}"
