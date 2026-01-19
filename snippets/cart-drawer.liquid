@@ -127,7 +127,13 @@
 
                     <tbody role="rowgroup">
                       {%- for item in cart.items -%}
-                        <tr id="CartDrawer-Item-{{ item.index | plus: 1 }}" class="cart-item" role="row">
+                        <tr
+                          data-la-dn-cart-item-row
+                          data-la-dn-cart-item-key="{{ item.key }}"
+                          id="CartDrawer-Item-{{ item.index | plus: 1 }}"
+                          class="cart-item"
+                          role="row"
+                        >
                           <td class="cart-item__media" role="cell" headers="CartDrawer-ColumnProductImage">
                             {% if item.image %}
                               {% comment %} Leave empty space due to a:empty CSS display: none rule {% endcomment %}
@@ -151,6 +157,8 @@
                             <a href="{{ item.url }}" class="cart-item__name h4 break">
                               {{- item.product.title | escape -}}
                             </a>
+
+                            <div data-la-dn-cart-item-text></div>
 
                             {% comment %}
                               {%- if item.original_price != item.final_price -%}
@@ -235,7 +243,9 @@
 
                           <td class="cart-item__totals right" role="cell" headers="CartDrawer-ColumnTotal">
                             {%- render 'loading-spinner' -%}
+                            <span data-la-dn-cart-item-line-price></span>
                             <div
+                              data-la-dn-cart-item-hide-if-dynamic-pricing-isshown
                               class="cart-item__price-wrapper"
                               data-original="{{ item.original_line_price }}"
                               data-final="{{ item.final_line_price }}"

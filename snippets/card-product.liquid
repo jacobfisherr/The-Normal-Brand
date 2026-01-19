@@ -56,6 +56,17 @@
   <product-card
     data-product-name="{{ card_product.title | escape }}"
     class="card-wrapper product-card-wrapper underline-links-hover"
+    data-la-dn-product-handle="{{ card_product.handle }}"
+    data-la-dn-product-id="{{ card_product.id }}"
+    data-la-dn-product-collection-handles="{{ card_product.collections | map: 'handle' | join: ',' | default: '[[--NONE--]]' }}"
+    data-la-dn-product-collection-ids="{{ card_product.collections | map: 'id' | join: ',' | default: '[[--NONE--]]' }}"
+    data-la-dn-product-available="{{ card_product.available}}"
+    data-la-dn-product-price="{{ card_product.first_available_variant.price | default: card_product.price }}"
+    data-la-dn-product-compare-at-price="{{ card_product.first_available_variant.compare_at_price | default: card_product.first_available_variant.price | default: card_product.compare_at_price | default: card_product.price }}"
+    data-la-dn-product-price-varies="{{ card_product.price_varies }}"
+    data-la-dn-product-compare-at-price-varies="{{ card_product.compare_at_price_varies }}"
+    data-la-dn-product-price-min="{{ card_product.price_min }}"
+    data-la-dn-product-tags="{{ card_product.tags | join: ',' | escape | default: '[[--NONE--]]' }}"
   >
     <div
       class="
@@ -451,7 +462,9 @@
 
             <span class="caption-large light">{{ block.settings.description | escape }}</span>
 
-            {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %}
+            <span data-la-dn-price>
+              {% render 'price', product: card_product, price_class: '', show_compare_at_price: true -%}
+            </span>
 
             {%- if settings.show_swatches -%}
               {% if card_product.selected_or_first_available_variant %}
