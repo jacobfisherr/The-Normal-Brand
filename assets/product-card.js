@@ -34,6 +34,22 @@ class ProductCard extends HTMLElement {
     }
   }
 
+  getUrlWithCollectionContext(url) {
+    if (url.includes('/collections/')) {
+      return url;
+    }
+    
+    // Preserve collection path if present in current URL
+    const currentPath = window.location.pathname;
+    const collectionMatch = currentPath.match(/^(\/collections\/[^\/]+)/);
+    
+    if (collectionMatch && url.startsWith('/products/')) {
+      return `${collectionMatch[1]}${url}`;
+    }
+    
+    return url;
+  }
+
   onSwatchChange(e) {
     const {
       dataset: { productName, productImage, productPrice, productCompareAtPrice, productUrl },
@@ -47,8 +63,9 @@ class ProductCard extends HTMLElement {
     }
 
     if (productUrl) {
+      const urlWithCollection = this.getUrlWithCollectionContext(productUrl);
       this.elements.links.forEach((el) => {
-        el.href = productUrl;
+        el.href = urlWithCollection;
       });
     }
 

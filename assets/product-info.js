@@ -157,6 +157,10 @@ if (!customElements.get('product-info')) {
       }
 
       getUrlWithCollectionContext(url) {
+        if (url.includes('/collections/')) {
+          return url;
+        }
+        
         // Preserve collection path if present in current URL
         const currentPath = window.location.pathname;
         const collectionMatch = currentPath.match(/^(\/collections\/[^\/]+)/);
