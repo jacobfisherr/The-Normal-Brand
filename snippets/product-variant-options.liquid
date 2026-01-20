@@ -82,7 +82,7 @@
     {%- endcapture -%}
 
     {%- capture input_dataset -%}
-      data-product-url="{{ value.product_url }}"
+      data-product-url="{% if collection != blank and value.product_url != blank %}{{ value.product_url | within: collection }}{% else %}{{ value.product_url }}{% endif %}"
       data-option-value-id="{{ value.id }}"
       data-product-name="{{ product_name[0] }}"
       {% if value.variant.featured_image %}
