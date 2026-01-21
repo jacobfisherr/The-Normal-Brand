@@ -156,6 +156,22 @@ if (!customElements.get('product-info')) {
         return !!selectedVariant ? JSON.parse(selectedVariant) : null;
       }
 
+      getUrlWithCollectionContext(url) {
+        if (url.includes('/collections/')) {
+          return url;
+        }
+        
+        // Preserve collection path if present in current URL
+        const currentPath = window.location.pathname;
+        const collectionMatch = currentPath.match(/^(\/collections\/[^\/]+)/);
+        
+        if (collectionMatch && url.startsWith('/products/')) {
+          return `${collectionMatch[1]}${url}`;
+        }
+        
+        return url;
+      }
+
       buildRequestUrlWithParams(url, optionValues, shouldFetchFullPage = false) {
         const params = [];
 
@@ -165,7 +181,8 @@ if (!customElements.get('product-info')) {
           params.push(`option_values=${optionValues.join(',')}`);
         }
 
-        return `${url}?${params.join('&')}`;
+        const requestUrl = this.getUrlWithCollectionContext(url);
+        return `${requestUrl}?${params.join('&')}`;
       }
 
       updateOptionValues(html) {
@@ -236,12 +253,14 @@ if (!customElements.get('product-info')) {
       }
 
       updateURL(url, variantId) {
+        const newUrl = this.getUrlWithCollectionContext(url);
+
         this.querySelector('share-button')?.updateUrl(
-          `${window.shopUrl}${url}${variantId ? `?variant=${variantId}` : ''}`
+          `${window.shopUrl}${newUrl}${variantId ? `?variant=${variantId}` : ''}`
         );
 
         if (this.dataset.updateUrl === 'false') return;
-        window.history.replaceState({}, '', `${url}${variantId ? `?variant=${variantId}` : ''}`);
+        window.history.replaceState({}, '', `${newUrl}${variantId ? `?variant=${variantId}` : ''}`);
       }
 
       setUnavailable() {
