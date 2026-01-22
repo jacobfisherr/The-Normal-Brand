@@ -81,7 +81,7 @@
                     | t: terms: collection.terms, count: collection.results_count
                   }}
                 {%- elsif collection.products_count == collection.all_products_count -%}
-                  ({{ 'products.facets.product_count_simple' | t: count: collection.products_count }})
+                  {{ 'products.facets.product_count_simple' | t: count: collection.products_count }}
                 {%- else -%}
                   {{
                     'products.facets.product_count'
