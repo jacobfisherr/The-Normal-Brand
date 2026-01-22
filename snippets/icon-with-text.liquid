@@ -36,6 +36,7 @@
     assign text_only_all_items = false
   endif
 -%}
+{% unless heading_1_empty and heading_2_empty and heading_3_empty %}
 <ul
   class="icon-with-text icon-with-text--{{ block.settings.layout }} list-unstyled{% if text_only_all_items %} icon-with-text--text-only{% endif %}"
   {{ block.shopify_attributes }}
@@ -110,3 +111,4 @@
     </li>
   {%- endunless -%}
 </ul>
+{% endunless %}
