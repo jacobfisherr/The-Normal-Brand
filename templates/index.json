@@ -101,22 +101,22 @@
         "slide_ey3yPc": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/10year-Desktop-Template_1_dfa51528-e1ac-40a2-aaf0-126dab73f618.jpg",
-            "mobile_image": "shopify://shop_images/Mobile-Template-1_d2d58387-aecf-4564-8329-55c71309705b.jpg",
-            "heading": "New Neutrals",
+            "image": "shopify://shop_images/10year-Desktop-Template_1_97fa5ebc-1ddc-49a2-a4a3-315fe85ba664.jpg",
+            "mobile_image": "shopify://shop_images/Mobile-Template-1_8234f696-6f71-48d4-83e3-ef2e923f3ff4.jpg",
+            "heading": "New Arrivals",
             "heading_size": "h0",
             "mobile_heading_size": "h0",
             "subheading": "",
             "button_size": "small",
             "mobile_button_size": "small",
             "button_label": "Shop Men's",
-            "link": "https://thenormalbrand.com/collections/mens",
+            "link": "https://thenormalbrand.com/collections/new?sort_by=manual&filter.p.m.custom.gender=gid%3A%2F%2Fshopify%2FMetaobject%2F75598921900",
             "button_label_2": "Shop Women's",
-            "link_2": "https://thenormalbrand.com/collections/womens",
+            "link_2": "https://thenormalbrand.com/collections/new?sort_by=manual&filter.p.m.custom.gender=gid%3A%2F%2Fshopify%2FMetaobject%2F75653972140",
             "button_style_secondary": true,
-            "box_align": "middle-left",
+            "box_align": "middle-right",
             "show_text_box": false,
-            "text_alignment": "left",
+            "text_alignment": "right",
             "image_overlay_opacity": 0,
             "color_scheme": "scheme-7eca2d75-45a3-4024-b69d-17de1ca4d726",
             "text_alignment_mobile": "center",
@@ -126,9 +126,9 @@
         "slide_QBadaG": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/10year-Desktop-Template_2_da1d5d41-55d5-4658-91db-895751b747cb.jpg",
-            "mobile_image": "shopify://shop_images/Mobile-Template-2_09352213-7367-49ba-85bc-acfe43a580ed.jpg",
-            "heading": "Top Classics",
+            "image": "shopify://shop_images/10year-Desktop-Template_2_814c5bda-8cf0-4f7f-a4d1-42011ae5dd22.jpg",
+            "mobile_image": "shopify://shop_images/Mobile-Template-2_12317d36-c650-4ef0-9552-1741f5ffa807.jpg",
+            "heading": "Timeless Comfort",
             "heading_size": "h0",
             "mobile_heading_size": "h0",
             "subheading": "",
@@ -136,7 +136,7 @@
             "mobile_button_size": "small",
             "button_label": "Shop Men's",
             "link": "https://thenormalbrand.com/collections/mens",
-            "button_label_2": "Shop Button Ups",
+            "button_label_2": "Shop Outerwear",
             "link_2": "https://thenormalbrand.com/collections/button-up-shirts",
             "button_style_secondary": true,
             "box_align": "middle-left",
@@ -151,9 +151,9 @@
         "slide_rHJLX8": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/10year-Desktop-Template_3_3aefa836-aac1-4b31-8e44-f74a4b13cd09.jpg",
-            "mobile_image": "shopify://shop_images/Mobile-Template-3_357db8d9-b2c1-422c-b319-95f8cac83089.jpg",
-            "heading": "Most Valuable Layer",
+            "image": "shopify://shop_images/10year-Desktop-Template_3_1604588f-4fbf-440e-b497-690ec0493d8c.jpg",
+            "mobile_image": "shopify://shop_images/W_Pullovers_585e5b52-df87-4390-95d8-0ab939a543cd.jpg",
+            "heading": "Welcome to Set",
             "heading_size": "h0",
             "mobile_heading_size": "h0",
             "subheading": "",
@@ -258,7 +258,7 @@
           "settings": {
             "collection": "hoodies-pullovers-1",
             "custom_title": "",
-            "custom_image": "shopify://shop_images/A_8105f7bf-738e-46dd-8373-bee47dae13e9.jpg"
+            "custom_image": "shopify://shop_images/M_Hoodies_fd49c5bf-ff50-4184-bfd9-5b9f5d9fc9e8.jpg"
           }
         },
         "featured_collection_f94kY8": {
@@ -266,7 +266,7 @@
           "settings": {
             "collection": "t-shirts-henleys",
             "custom_title": "",
-            "custom_image": "shopify://shop_images/Homepage-Category-Template.jpg"
+            "custom_image": "shopify://shop_images/M_Henley.jpg"
           }
         },
         "featured_collection_gd9VFq": {
@@ -274,7 +274,7 @@
           "settings": {
             "collection": "sweaters",
             "custom_title": "Sweaters",
-            "custom_image": "shopify://shop_images/Homepage-Category-Template_C_83a8e336-8219-4b57-b901-a6b4342d1d64.jpg"
+            "custom_image": "shopify://shop_images/M_Sweaters_133e9faa-743b-4bd2-9f38-8c6512ae5433.jpg"
           }
         },
         "featured_collection_LdNq8P": {
@@ -282,7 +282,7 @@
           "settings": {
             "collection": "button-up-shirts",
             "custom_title": "",
-            "custom_image": "shopify://shop_images/Homepage-Category-Template_C_5ab043a1-7187-4c21-8064-b12bc54896e8.jpg"
+            "custom_image": "shopify://shop_images/M_Button_Ups.jpg"
           }
         },
         "featured_collection_JQFfzG": {
@@ -290,7 +290,7 @@
           "settings": {
             "collection": "pants",
             "custom_title": "",
-            "custom_image": "shopify://shop_images/Homepage-Category-Template_caf4e598-5697-489f-91d0-c2f708155d90.jpg"
+            "custom_image": "shopify://shop_images/M_Pants_a65bd7bc-14ff-4c56-9fd8-13ec0b5fd33d.jpg"
           }
         },
         "featured_collection_bhEd3K": {
@@ -298,7 +298,7 @@
           "settings": {
             "collection": "polos",
             "custom_title": "",
-            "custom_image": "shopify://shop_images/Homepage-Category-Template_A_7b70b4db-fe95-47db-b730-aafc2181c6ae.jpg"
+            "custom_image": "shopify://shop_images/M_Polos_6abc6692-6821-43ef-9f13-3eae7d4a4fe9.jpg"
           }
         },
         "featured_collection_m9KmVy": {
@@ -306,7 +306,7 @@
           "settings": {
             "collection": "outerwear",
             "custom_title": "Outerwear",
-            "custom_image": "shopify://shop_images/Homepage-Category-Template_F_9c2d5960-ced1-49c6-971a-710f1b51070e.jpg"
+            "custom_image": "shopify://shop_images/M_Outerwear_4f6b3c41-0dc6-40b3-843e-4709284a33d1.jpg"
           }
         }
       },
@@ -457,7 +457,7 @@
           "settings": {
             "collection": "womens-dresses",
             "custom_title": "",
-            "custom_image": "shopify://shop_images/Homepage-Category-Template_a_dadb296b-f1ec-456f-8dec-ad6d82de5d6c.jpg"
+            "custom_image": "shopify://shop_images/W_Dresses_cdd110be-4ef1-419e-9e15-6797109a24ec.jpg"
           }
         },
         "featured_collection_aeaXhP": {
@@ -465,7 +465,7 @@
           "settings": {
             "collection": "womens-sweaters",
             "custom_title": "",
-            "custom_image": "shopify://shop_images/Homepage-Category-Template_b_95cf0241-126e-461c-b3be-3c7d2fad0cc1.jpg"
+            "custom_image": "shopify://shop_images/W_Sweaters_f624d9f2-0583-4fb7-bf6d-e4ea99245290.jpg"
           }
         },
         "featured_collection_XMxTXN": {
@@ -473,7 +473,7 @@
           "settings": {
             "collection": "womens-hoodies-pullovers",
             "custom_title": "Hoodies & Pullovers",
-            "custom_image": "shopify://shop_images/Homepage-Category-Template_C_57649ba5-1a30-4fda-8988-ba3836bfcf06.jpg"
+            "custom_image": "shopify://shop_images/W_Pullovers_585e5b52-df87-4390-95d8-0ab939a543cd.jpg"
           }
         },
         "featured_collection_hNmRX4": {
@@ -481,7 +481,7 @@
           "settings": {
             "collection": "button-ups-and-blouses",
             "custom_title": "",
-            "custom_image": "shopify://shop_images/Homepage-Category-Template_D_3ef20083-fb89-4405-9eaa-263c143a9e36.jpg"
+            "custom_image": "shopify://shop_images/W_Tops.jpg"
           }
         },
         "featured_collection_UNqmEY": {
@@ -489,7 +489,7 @@
           "settings": {
             "collection": "womens-pants",
             "custom_title": "",
-            "custom_image": "shopify://shop_images/E1.jpg"
+            "custom_image": "shopify://shop_images/W_Pants_ece44e87-4b41-42b0-8cd5-2f5951424f50.jpg"
           }
         },
         "featured_collection_FNQ8d7": {
@@ -497,7 +497,7 @@
           "settings": {
             "collection": "womens-outerwear",
             "custom_title": "Outerwear",
-            "custom_image": "shopify://shop_images/Homepage-Category-Template_F_e5ba683e-aa8b-440f-b7b4-ba660925f138.jpg"
+            "custom_image": "shopify://shop_images/W_Outerwear_859fa7fe-74e6-4738-a03f-1d0cb5032c9d.jpg"
           }
         }
       },
