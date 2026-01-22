@@ -79,6 +79,7 @@
         {%- endif -%}
         <main-search>
           <form action="{{ routes.search_url }}" method="get" role="search" class="search">
+            <input type="hidden" name="options[unavailable_products]" value="hide" />
             <div class="field">
               <input
                 class="search__input field__input"
