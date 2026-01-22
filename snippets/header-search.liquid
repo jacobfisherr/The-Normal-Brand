@@ -51,7 +51,7 @@
               value="{{ search.terms | escape }}"
               placeholder="{{ 'general.search.search' | t }}"
               {%- if settings.predictive_search_enabled -%}
-                role="combobox"
+                {% comment %} role="combobox" {% endcomment %}
                 aria-owns="predictive-search-results"
                 aria-controls="predictive-search-results"
                 aria-haspopup="listbox"
