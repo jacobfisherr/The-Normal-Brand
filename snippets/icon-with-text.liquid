@@ -50,7 +50,8 @@
           {% if block.settings.image_1.alt != blank %}
             alt="{{ block.settings.image_1.alt | escape }}"
           {% else %}
-            role="presentation"
+            {% comment %} role="presentation" {% endcomment %}
+            alt=""
           {% endif %}
           height="auto"
           width="auto"
