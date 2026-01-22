@@ -345,12 +345,12 @@
         "column_746rwt": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Multicolumn-Template_8c2c6701-3af6-4e95-b813-c24130218069.jpg",
-            "title": "Gold Standard",
-            "text": "<p>From flannel-lined workwear to classic wool coats, our outerwear is made to handle it all. Tough enough for the outdoors, sharp enough for everywhere else.</p>",
+            "image": "shopify://shop_images/Multicolumn-Template_1.jpg",
+            "title": "Quiet Anticipation",
+            "text": "<p>Pieces that live in the in-between, chosen with what's next in mind.</p>",
             "liquid": "",
-            "link_label": "Shop Men's Outerwear",
-            "link": "https://thenormalbrand.com/collections/outerwear",
+            "link_label": "Shop New Arrivals",
+            "link": "https://thenormalbrand.com/collections/new",
             "text_alignment": "left",
             "text_alignment_mobile": "left"
           }
@@ -358,9 +358,9 @@
         "column_qyTCPm": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Multicolumn-Template-2.jpg",
-            "title": "Warm Regards",
-            "text": "<p>Your perfect coat is waiting. Soft textures, timeless shapes, and warmth that never goes out of style.</p>",
+            "image": "shopify://shop_images/Multicolumn-Template_2.jpg",
+            "title": "newness you need",
+            "text": "<p>New Puremeso colors are here, along with seasonal favorites back in stock.</p>",
             "liquid": "",
             "link_label": "Shop Women's Outerwear",
             "link": "https://thenormalbrand.com/collections/womens-outerwear",
@@ -371,12 +371,12 @@
         "column_jMQNUb": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Multicolumn-Template-3.jpg",
-            "title": "Fleece puremeso",
-            "text": "<p>Our signature knit on the outside and warm fleece on the inside. It’s soft, durable, and made for the kind of comfort you’ll want every day of the season.</p>",
+            "image": "shopify://shop_images/Multicolumn-Template_3.jpg",
+            "title": "Sweater weather",
+            "text": "<p>Soft knits, versatile fits, and timeless details, these are the pieces that make layering effortless.</p>",
             "liquid": "",
-            "link_label": "Shop Fleece Puremeso",
-            "link": "https://thenormalbrand.com/collections/fleece-puremeso",
+            "link_label": "Shop Sweaters",
+            "link": "https://thenormalbrand.com/collections/womens-sweaters",
             "text_alignment": "left",
             "text_alignment_mobile": "left"
           }
