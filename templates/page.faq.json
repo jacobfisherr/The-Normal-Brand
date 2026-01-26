@@ -71,7 +71,7 @@
           "settings": {
             "heading": "Where can I find TNB in a store?",
             "icon": "none",
-            "row_content": "<p>Check out a list of all Normal Brand Store locations <a href=\"https://thenormalbrand.com/pages/the-normal-brand-store\" title=\"https://thenormalbrand.com/pages/the-normal-brand-store\">here</a> </p><p>You can also find a retailer near you by checking our directory <a href=\"https://thenormalbrand.com/pages/store-locator\">here</a>.</p>",
+            "row_content": "<p>Check out a list of all Normal Brand Store locations <a href=\"https://thenormalbrand.com/pages/the-normal-brand-store\" title=\"The Normal Brand locations\">here</a> </p><p>You can also find a retailer near you by checking our directory <a href=\"https://thenormalbrand.com/pages/store-locator\" title=\"Online store directory\">here</a>.</p>",
             "page": ""
           }
         },
@@ -80,7 +80,7 @@
           "settings": {
             "heading": "I want to carry The Normal Brand in my store. What do I need to do?",
             "icon": "none",
-            "row_content": "<p>To apply to become a retailer please fill out this application form <a href=\"https://www.powr.io/form-builder/i/24343510#page\" target=\"_blank\">here</a>, or email us at <a href=\"mailto:sales@thenormalbrand.com\" title=\"mailto:sales@thenormalbrand.com\">sales@thenormalbrand.com</a>.</p>",
+            "row_content": "<p>To apply to become a retailer please fill out this application form <a href=\"https://www.powr.io/form-builder/i/24343510#page\" target=\"_blank\" title=\"Retailer application form\">here</a>, or email us at <a href=\"mailto:sales@thenormalbrand.com\" title=\"mailto:sales@thenormalbrand.com\">sales@thenormalbrand.com</a>.</p>",
             "page": ""
           }
         },
@@ -98,7 +98,7 @@
           "settings": {
             "heading": "Do you offer gift cards?",
             "icon": "none",
-            "row_content": "<p>We sure do. You can purchase common amounts <a href=\"https://thenormalbrand.com/products/gift-card?_pos=1&_sid=f840fe24c&_ss=r\">here</a>, or email at us at <a href=\"mailto:thebear@thenormalbrand.com\">thebear@thenormalbrand.com</a> to set up a custom amount.</p><p>The gift cards available on our website are entirely digital, so once a card is purchased, a custom code will be sent to the email address used at checkout. To use the gift card, all the recipient needs to do is enter that custom code at checkout on our website, and the store credit will be applied to the order.</p><p>We also offer physical gift cards to purchase in all of our <a href=\"https://thenormalbrand.com/pages/the-normal-brand-store\">brick and mortar locations</a> that can be redeemed toward purchases on either our website or our stores.</p><p>Please note that coupons and reward points cannot be used toward the purchase of gift cards.</p>",
+            "row_content": "<p>We sure do. You can purchase common amounts <a href=\"https://thenormalbrand.com/products/gift-card?_pos=1&_sid=f840fe24c&_ss=r\" title=\"Purchase a gift card\">here</a>, or email at us at <a href=\"mailto:thebear@thenormalbrand.com\">thebear@thenormalbrand.com</a> to set up a custom amount.</p><p>The gift cards available on our website are entirely digital, so once a card is purchased, a custom code will be sent to the email address used at checkout. To use the gift card, all the recipient needs to do is enter that custom code at checkout on our website, and the store credit will be applied to the order.</p><p>We also offer physical gift cards to purchase in all of our <a href=\"https://thenormalbrand.com/pages/the-normal-brand-store\">brick and mortar locations</a> that can be redeemed toward purchases on either our website or our stores.</p><p>Please note that coupons and reward points cannot be used toward the purchase of gift cards.</p>",
             "page": ""
           }
         }
@@ -137,16 +137,6 @@
             "page": ""
           }
         },
-        "collapsible_row_yzkC83": {
-          "type": "collapsible_row",
-          "disabled": true,
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
-        },
         "collapsible_row_gkFFrJ": {
           "type": "collapsible_row",
           "settings": {
@@ -161,14 +151,13 @@
           "settings": {
             "heading": "There’s a problem with my order. What do I do?",
             "icon": "none",
-            "row_content": "<p>Send an email to  <a href=\"mailto:thebear@thenormalbrand.com\">thebear@thenormalbrand.com</a> or fill out our customer service contact form <a href=\"https://thenormalbrand.com/community/contact/\">here</a> and let us know the error with your order. We’ll be more than happy to make things right as soon as possible.</p>",
+            "row_content": "<p>Send an email to  <a href=\"mailto:thebear@thenormalbrand.com\">thebear@thenormalbrand.com</a> or fill out our customer service contact form <a href=\"https://thenormalbrand.com/community/contact/\" title=\"Customer service form\">here</a> and let us know the error with your order. We’ll be more than happy to make things right as soon as possible.</p>",
             "page": ""
           }
         }
       },
       "block_order": [
         "collapsible_row_gpgtry",
-        "collapsible_row_yzkC83",
         "collapsible_row_gkFFrJ",
         "collapsible_row_gGPMba"
       ],
@@ -204,7 +193,7 @@
           "settings": {
             "heading": "When will my order arrive?",
             "icon": "none",
-            "row_content": "<p>Once fulfilled, orders are shipped depending on the shipping option you selected at checkout. Shipments deliver within 4-10 business days to most US locations, but we have noticed they usually deliver faster than that.</p><p>You can check the status of your shipment using the tracking number found in your shipping confirmation email. If you have a Normal Brand rewards account, you can log in and check your tracking on your <a href=\"https://thenormalbrand.com/account/login\">account page</a>.</p>",
+            "row_content": "<p>Once fulfilled, orders are shipped depending on the shipping option you selected at checkout. Shipments deliver within 4-10 business days to most US locations, but we have noticed they usually deliver faster than that.</p><p>You can check the status of your shipment using the tracking number found in your shipping confirmation email. If you have a Normal Brand rewards account, you can log in and check your tracking on your <a href=\"https://thenormalbrand.com/account/login\" title=\"Visit your account page\">account page</a>.</p>",
             "page": ""
           }
         },
@@ -213,7 +202,7 @@
           "settings": {
             "heading": "I made a mistake on my order contents/shipping address/etc. How do I edit it?",
             "icon": "none",
-            "row_content": "<p>Send an email to <a href=\"mailto:thebear@thenormalbrand.com\">thebear@thenormalbrand.com</a> or fill out our customer service contact form <a href=\"https://thenormalbrand.com/community/contact/\">here</a> with the changes you need made as soon as possible. We can't guarantee we can make changes to orders once they begin processing, but we'll give it our best shot.</p>",
+            "row_content": "<p>Send an email to <a href=\"mailto:thebear@thenormalbrand.com\">thebear@thenormalbrand.com</a> or fill out our customer service contact form <a href=\"https://thenormalbrand.com/community/contact/\" title=\"Customer service form\">here</a> with the changes you need made as soon as possible. We can't guarantee we can make changes to orders once they begin processing, but we'll give it our best shot.</p>",
             "page": ""
           }
         },
@@ -222,7 +211,7 @@
           "settings": {
             "heading": "I forgot to apply a discount code at checkout. What can I do?",
             "icon": "none",
-            "row_content": "<p>Send an email to  <a href=\"mailto:thebear@thenormalbrand.com\">thebear@thenormalbrand.com</a> or fill out our customer service contact form<a href=\"https://thenormalbrand.com/community/contact/\">here</a> to let us know, and we can apply the discount for you.</p>",
+            "row_content": "<p>Send an email to  <a href=\"mailto:thebear@thenormalbrand.com\">thebear@thenormalbrand.com</a> or fill out our customer service contact form <a href=\"https://thenormalbrand.com/community/contact/\" title=\"Customer service form\">here</a> to let us know, and we can apply the discount for you.</p>",
             "page": ""
           }
         },
@@ -231,7 +220,7 @@
           "settings": {
             "heading": "How can I track my order?",
             "icon": "none",
-            "row_content": "<p>Once your order has shipped you will receive an email with tracking information. If you don’t receive an email, check your spam folder. If it’s still not there, feel free to email us at <a href=\"mailto:thebear@thenormalbrand.com\">thebear@thenormalbrand.com</a> or fill out our customer service contact form <a href=\"https://thenormalbrand.com/community/contact/\">here</a> and we’ll send you  your tracking information.</p>",
+            "row_content": "<p>Once your order has shipped you will receive an email with tracking information. If you don’t receive an email, check your spam folder. If it’s still not there, feel free to email us at <a href=\"mailto:thebear@thenormalbrand.com\">thebear@thenormalbrand.com</a> or fill out our customer service contact form <a href=\"https://thenormalbrand.com/community/contact/\" title=\"Customer service form\">here</a> and we’ll send you  your tracking information.</p>",
             "page": ""
           }
         }
@@ -293,7 +282,7 @@
           "settings": {
             "heading": "How can I track my order?",
             "icon": "none",
-            "row_content": "<p>Once your order has shipped you will receive an email with tracking information. If you don’t receive an email, check your spam folder.</p><p>If you have a Normal Brand rewards account, you can log in and check your tracking on your <a href=\"https://thenormalbrand.com/account/login\">account page</a>.</p><p>If you're having trouble tracking your order, feel free to email us at <a href=\"mailto:thebear@thenormalbrand.com\">thebear@thenormalbrand.com</a> or fill out our customer service contact form <a href=\"https://thenormalbrand.com/community/contact/\">here</a> and we'll be happy to help.</p>",
+            "row_content": "<p>Once your order has shipped you will receive an email with tracking information. If you don’t receive an email, check your spam folder.</p><p>If you have a Normal Brand rewards account, you can log in and check your tracking on your <a href=\"https://thenormalbrand.com/account/login\" title=\"Visit your account page\">account page</a>.</p><p>If you're having trouble tracking your order, feel free to email us at <a href=\"mailto:thebear@thenormalbrand.com\">thebear@thenormalbrand.com</a> or fill out our customer service contact form <a href=\"https://thenormalbrand.com/community/contact/\" title=\"Customer service form\">here</a> and we'll be happy to help.</p>",
             "page": ""
           }
         }
@@ -354,7 +343,7 @@
           "settings": {
             "heading": "I’m 5’ 8” tall, weigh 200 lbs, and I like my clothing to be more fitted. What size should I get?",
             "icon": "none",
-            "row_content": "<p>We’re always happy to recommend a size based on your measurements and preferences. Send an email to<a href=\"mailto:thebear@thenormalbrand.com\">thebear@thenormalbrand.com</a> or fill out our customer service contact form <a href=\"https://thenormalbrand.com/community/contact/\">here</a> and we’ll suggest some styles and sizes that will work for you!</p>",
+            "row_content": "<p>We’re always happy to recommend a size based on your measurements and preferences. Send an email to<a href=\"mailto:thebear@thenormalbrand.com\">thebear@thenormalbrand.com</a> or fill out our customer service contact form <a href=\"https://thenormalbrand.com/community/contact/\" title=\"Customer service form\">here</a> and we’ll suggest some styles and sizes that will work for you!</p>",
             "page": ""
           }
         },
@@ -363,7 +352,7 @@
           "settings": {
             "heading": "Do you offer tall sizes?",
             "icon": "none",
-            "row_content": "<p>Many of our men's items are available in tall sizes Medium through 2XL. <a href=\"https://thenormalbrand.com/collections/mens?size[]=filter-size-m-tall&size[]=filter-size-l-tall&size[]=filter-size-xl-tall&size[]=filter-size-xxl-tall&size[]=filter-size-xxxl-tall\" title=\"https://thenormalbrand.com/collections/mens?size[]=filter-size-m-tall&size[]=filter-size-l-tall&size[]=filter-size-xl-tall&size[]=filter-size-xxl-tall&size[]=filter-size-xxxl-tall\">Click here</a> to see a complete collection of styles with tall sizes.</p>",
+            "row_content": "<p>Many of our men's items are available in tall sizes Medium through 2XL. <a href=\"https://thenormalbrand.com/collections/mens?size[]=filter-size-m-tall&size[]=filter-size-l-tall&size[]=filter-size-xl-tall&size[]=filter-size-xxl-tall&size[]=filter-size-xxxl-tall\" title=\"View items in tall sizes\">Click here</a> to see a complete collection of styles with tall sizes.</p>",
             "page": ""
           }
         }
@@ -398,7 +387,7 @@
           "settings": {
             "heading": "How does it work?",
             "icon": "none",
-            "row_content": "<p>Easy, just sign up for a free TNB Rewards account <a href=\"https://thenormalbrand.com/pages/rewards\" target=\"_blank\" title=\"https://thenormalbrand.com/pages/rewards\">here</a> and start earning points with every purchase on thenormalbrand.com or in any TNB store. </p><p>You can redeem points in increments of $10, $20, $30, $40, or $50 off future orders.</p>",
+            "row_content": "<p>Easy, just sign up for a free TNB Rewards account <a href=\"https://thenormalbrand.com/pages/rewards\" target=\"_blank\" title=\"Sign up for a TNB rewards account\">here</a> and start earning points with every purchase on thenormalbrand.com or in any TNB store. </p><p>You can redeem points in increments of $10, $20, $30, $40, or $50 off future orders.</p>",
             "page": ""
           }
         },
@@ -407,7 +396,7 @@
           "settings": {
             "heading": "How do I earn reward points?",
             "icon": "none",
-            "row_content": "<p>Once you've signed up, you'll earn 1 point for each dollar you spend. You'll also earn 50 points just for signing up.</p><p>You can also earn points by leaving a product review, following us on Instagram, and more. Full details can be found <a href=\"https://thenormalbrand.com/pages/rewards\" target=\"_blank\" title=\"https://thenormalbrand.com/pages/rewards\">here</a>.</p>",
+            "row_content": "<p>Once you've signed up, you'll earn 1 point for each dollar you spend. You'll also earn 50 points just for signing up.</p><p>You can also earn points by leaving a product review, following us on Instagram, and more. Full details can be found <a href=\"https://thenormalbrand.com/pages/rewards\" target=\"_blank\" title=\"How to earn TNB Rewards points\">here</a>.</p>",
             "page": ""
           }
         },
@@ -449,7 +438,7 @@
           "settings": {
             "heading": "Contact us",
             "icon": "none",
-            "row_content": "<p>Have a question you didn’t find the answer to here? Send an email to <a href=\"mailto:thebear@thenormalbrand.com\">thebear@thenormalbrand.com</a> or fill out our customer service contact form <a href=\"https://thenormalbrand.com/community/contact/\">here</a> and we’ll be in touch!</p>",
+            "row_content": "<p>Have a question you didn’t find the answer to here? Send an email to <a href=\"mailto:thebear@thenormalbrand.com\">thebear@thenormalbrand.com</a> or fill out our customer service contact form <a href=\"https://thenormalbrand.com/community/contact/\" title=\"Access the customer service form\">here</a> and we’ll be in touch!</p>",
             "page": ""
           }
         }
