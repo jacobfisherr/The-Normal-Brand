@@ -558,6 +558,7 @@ a.product__text {
   background-color: transparent;
   color: currentColor;
   padding: 0;
+  opacity: 0;
 }
 
 .product__media-toggle::after {
