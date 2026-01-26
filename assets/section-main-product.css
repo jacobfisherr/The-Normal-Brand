@@ -577,8 +577,7 @@ a.product__text {
 }
 
 .product__media-toggle:focus-visible {
-  outline: 0;
-  box-shadow: none;
+  opacity: 0;
 }
 
 /* outline styling for Windows High Contrast Mode */
