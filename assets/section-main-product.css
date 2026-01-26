@@ -560,6 +560,9 @@ a.product__text {
   padding: 0;
   opacity: 0;
   position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgb(var(--color-background));
 }
 
 .product__media-toggle::after {
