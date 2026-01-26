@@ -1077,3 +1077,7 @@ details[open]>.modal__content {
 div.okeReviews {
   --oke-highlightColor: #d33800;
 }
+
+.skip-to-content-link:after {
+  transition: none;
+}
