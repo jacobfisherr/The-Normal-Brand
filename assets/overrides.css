@@ -630,6 +630,7 @@ summary.list-menu__item {
   min-height: 5rem;
   line-height: 1;
   color: rgb(var(--color-foreground));
+  background: rgb(var(--color-background));
 }
 
 .tall-sizing-controls button.inactive {
