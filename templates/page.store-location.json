@@ -52,7 +52,7 @@
         "text_yUhL4a": {
           "type": "text",
           "settings": {
-            "text": "<p>Want to join the TNB team? <a href=\"https://apply.workable.com/the-normal-brand/\">Click here </a>to apply!</p>"
+            "text": "<p>Want to join the TNB team? <a href=\"https://apply.workable.com/the-normal-brand/\" title=\"Apply to work at a TNB store location\">Click here </a>to apply!</p>"
           }
         }
       },
