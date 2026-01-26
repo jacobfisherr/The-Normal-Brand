@@ -1078,6 +1078,7 @@ div.okeReviews {
   --oke-highlightColor: #d33800;
 }
 
-.skip-to-content-link:after {
+.skip-to-content-link:after,
+.skip-to-content-link:hover:after {
   transition: none;
 }
