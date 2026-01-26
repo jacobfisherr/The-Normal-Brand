@@ -46,6 +46,7 @@
                           {% if childlink.current %}
                             aria-current="page"
                           {% endif %}
+                          aria-label="{{ childlink.title }}"
                         >
                           {{ childlink.title | escape }}
                         </a>
