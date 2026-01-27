@@ -167,7 +167,7 @@
                   assign qty_rules = true
                 endif
               -%}
-              <div data-qty-rules="{{ qty_rules }}" data-variants="{{ card_product.variants.size }}" style="display: none;"></div></div>
+              {% comment %} <div data-qty-rules="{{ qty_rules }}" data-variants="{{ card_product.variants.size }}" style="display: none;"></div></div> {% endcomment %}
               {%- if card_product.variants.size > 1 or qty_rules -%}
                 <modal-opener data-modal="#QuickAdd-{{ card_product.id }}">
                   <button
