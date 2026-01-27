@@ -1130,3 +1130,9 @@ div.okeReviews {
     transition: none;
   }
 }
+
+.limoniapps-sticky-bar .limoniapps-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
