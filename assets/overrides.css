@@ -1131,7 +1131,7 @@ div.okeReviews {
   }
 }
 
-.limoniapps-sticky-bar .limoniapps-close {
+.limoniapps-sticky-bar-wrapper .limoniapps-sticky-bar .limoniapps-close {
   display: flex;
   align-items: center;
   justify-content: center;
