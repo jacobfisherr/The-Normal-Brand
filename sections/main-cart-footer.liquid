@@ -46,7 +46,11 @@
               <div class="js-contents" {{ block.shopify_attributes }}>
                 <div>
                   {%- if cart.cart_level_discount_applications.size > 0 -%}
-                    <ul class="discounts list-unstyled" role="list" aria-label="{{ 'customer.order.discount' | t }}">
+                    <ul
+                      class="discounts list-unstyled limoniapps-discountninja-whenactivepromotions-hide"
+                      role="list"
+                      aria-label="{{ 'customer.order.discount' | t }}"
+                    >
                       {%- for discount in cart.cart_level_discount_applications -%}
                         <li class="discounts__discount discounts__discount--position">
                           {%- render 'icon-discount' -%}
@@ -57,10 +61,14 @@
                     </ul>
                   {%- endif -%}
                 </div>
+                <div data-la-dn-promotion-summary-placeholder></div>
+                <div data-la-dn-promocodefield-placeholder></div>
 
-                <div class="totals">
+                <div class="totals limoniapps-discountninja-cart-subtotal">
                   <h2 class="totals__total">{{ 'sections.cart.estimated_total' | t }}</h2>
-                  <p class="totals__total-value">{{ cart.total_price | money_with_currency }}</p>
+                  <p class="totals__total-value limoniapps-discountninja-cart-subtotal-price">
+                    {{ cart.total_price | money_with_currency }}
+                  </p>
                 </div>
 
                 <small class="tax-note caption-large rte">
