@@ -30,7 +30,8 @@ body {
 /* Typography */
 @font-face {
   font-family: 'Ivar Headline';
-  src: url('https://cdn.shopify.com/s/files/1/0749/3241/files/IvarHeadline-Regular_a07eef15-9fcf-4c0e-9ab7-12891f3e82fd.woff2?v=1722394511')
+  src:
+    url('https://cdn.shopify.com/s/files/1/0749/3241/files/IvarHeadline-Regular_a07eef15-9fcf-4c0e-9ab7-12891f3e82fd.woff2?v=1722394511')
       format('woff2'),
     url('https://cdn.shopify.com/s/files/1/0749/3241/files/IvarHeadline-Regular_5988fc83-de90-4a8d-810b-6fac8860b73d.woff?v=1722394511')
       format('woff');
@@ -39,8 +40,8 @@ body {
 @font-face {
   font-weight: 700;
   font-family: 'Trade Gothic LT Pro';
-  src: url('https://cdn.shopify.com/s/files/1/0749/3241/files/TradeGothicLTPro-BdCn20.woff2?v=1723490022')
-      format('woff2'),
+  src:
+    url('https://cdn.shopify.com/s/files/1/0749/3241/files/TradeGothicLTPro-BdCn20.woff2?v=1723490022') format('woff2'),
     url('https://cdn.shopify.com/s/files/1/0749/3241/files/TradeGothicLTPro-BdCn20.woff?v=1723490022') format('woff');
 }
 
@@ -269,12 +270,14 @@ summary.list-menu__item {
   .card-wrapper:hover .media.media--hover-effect > img:first-child:only-child {
     transform: none !important;
   }
+
   .card-wrapper:hover .media.media--hover-effect > img + img,
   .card-wrapper:hover .media.media--hover-effect > img + video {
     opacity: 1;
     transform: none !important;
     transition: opacity 0.18s var(--ease-opacity);
   }
+
   .card-wrapper.swatch-selected:hover .media.media--hover-effect > img:first-child:not(:only-child),
   .card-wrapper.swatch-selected:hover .media.media--hover-effect > img:first-child:not(:only-child) {
     opacity: 1 !important;
@@ -633,6 +636,7 @@ summary.list-menu__item {
   min-height: 5rem;
   line-height: 1;
   color: rgb(var(--color-foreground));
+  background: rgb(var(--color-background));
 }
 
 .tall-sizing-controls button.inactive {
@@ -744,6 +748,48 @@ summary.list-menu__item {
 
 .breadcrumbs__item a:hover {
   text-decoration: underline;
+}
+
+/* Breadcrumbs A/B Test Styles */
+
+.breadcrumbs--path {
+  display: none;
+}
+
+.breadcrumbs--back {
+  display: block;
+}
+
+.breadcrumbs--path .breadcrumbs__item:first-child {
+  margin-right: 0.5rem;
+}
+
+/* prevent line breaks */
+.breadcrumbs--path .breadcrumbs__list {
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+.breadcrumbs--path .breadcrumbs__item {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Allow last item to truncate */
+.breadcrumbs--path .breadcrumbs__item:last-child {
+  flex-shrink: 1;
+  min-width: 0;
+}
+
+.breadcrumbs--path .breadcrumbs__item:last-child .breadcrumbs__link,
+.breadcrumbs--path .breadcrumbs__item:last-child span[itemprop='name'] {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+  max-width: 100%;
 }
 
 .contact-page {
@@ -1061,7 +1107,9 @@ div.okeReviews {
 @media screen and (min-width: 990px) {
   .product-grid .grid__item--image.two-column {
     width: calc((33.33% - var(--grid-desktop-horizontal-spacing) * 2 / 3) * 2 + var(--grid-desktop-horizontal-spacing));
-    max-width: calc((33.33% - var(--grid-desktop-horizontal-spacing) * 2 / 3) * 2 + var(--grid-desktop-horizontal-spacing));
+    max-width: calc(
+      (33.33% - var(--grid-desktop-horizontal-spacing) * 2 / 3) * 2 + var(--grid-desktop-horizontal-spacing)
+    );
   }
 }
 
@@ -1073,5 +1121,12 @@ div.okeReviews {
   .product-grid .grid__item--image.full-width {
     width: 100%;
     max-width: 100%;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .button:after,
+  .button:hover:after {
+    transition: none;
   }
 }

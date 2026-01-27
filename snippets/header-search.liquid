@@ -41,6 +41,7 @@
           <search-form class="search-modal__form">
         {%- endif -%}
         <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
+          <input type="hidden" name="options[unavailable_products]" value="hide" />
           <div class="field">
             <input
               class="search__input field__input"
@@ -50,7 +51,7 @@
               value="{{ search.terms | escape }}"
               placeholder="{{ 'general.search.search' | t }}"
               {%- if settings.predictive_search_enabled -%}
-                role="combobox"
+                {% comment %} role="combobox" {% endcomment %}
                 aria-owns="predictive-search-results"
                 aria-controls="predictive-search-results"
                 aria-haspopup="listbox"

@@ -558,6 +558,11 @@ a.product__text {
   background-color: transparent;
   color: currentColor;
   padding: 0;
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgb(var(--color-background));
 }
 
 .product__media-toggle::after {
@@ -575,8 +580,7 @@ a.product__text {
 }
 
 .product__media-toggle:focus-visible {
-  outline: 0;
-  box-shadow: none;
+  opacity: 1;
 }
 
 /* outline styling for Windows High Contrast Mode */

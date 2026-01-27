@@ -2,6 +2,7 @@
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'component-search.css' | asset_url | stylesheet_tag }}
+{{ 'quick-add.css' | asset_url | stylesheet_tag }}
 
 {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
   {{ 'component-facets.css' | asset_url | stylesheet_tag }}
@@ -12,6 +13,8 @@
   {{ 'mask-blobs.css' | asset_url | stylesheet_tag }}
 {%- endif -%}
 
+<script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'main-search.js' | asset_url }}" defer="defer"></script>
 
 <style>
@@ -79,6 +82,7 @@
         {%- endif -%}
         <main-search>
           <form action="{{ routes.search_url }}" method="get" role="search" class="search">
+            <input type="hidden" name="options[unavailable_products]" value="hide" />
             <div class="field">
               <input
                 class="search__input field__input"
@@ -278,7 +282,8 @@
                           show_vendor: section.settings.show_vendor,
                           show_rating: section.settings.show_rating,
                           lazy_load: lazy_load,
-                          skip_styles: skip_card_product_styles
+                          skip_styles: skip_card_product_styles,
+                          quick_add: "standard"
                         %}
                         {%- assign skip_card_product_styles = true -%}
                       {%- when 'article' -%}

@@ -51,7 +51,7 @@
             {%- if filter_type == 'vertical' -%}
               <div class="product-count light" role="status">
                 <h2 class="product-count__text text-body">
-                  <span id="ProductCountDesktop" style="display: none;">
+                  <span id="ProductCountDesktop">
                     {%- if results.results_count -%}
                       {{
                         'templates.search.results_with_count'
@@ -256,7 +256,7 @@
                               <span class="facet-checkbox__text" aria-hidden="true">
                                 <span class="facet-checkbox__text-label">{{- value.label | escape }}</span> ({{- value.count -}})
                               </span>
-                              <span class="visually-hidden">
+                              {% comment %} <span class="visually-hidden">
                                 {{- value.label | escape }} (
                                 {%- if value.count == 1 -%}
                                   {{- 'products.facets.product_count_simple.one' | t: count: value.count -}}
@@ -264,7 +264,7 @@
                                   {{- 'products.facets.product_count_simple.other' | t: count: value.count -}}
                                 {%- endif -%}
                                 )
-                              </span>
+                              </span> {% endcomment %}
                             {%- endcapture -%}
 
                             <li class="list-menu__item facets__item{% if forloop.index > show_more_number and filter_type == 'vertical' %} show-more-item hidden{% endif %}">
@@ -886,7 +886,7 @@
     role="status"
   >
     <h2 class="product-count__text text-body">
-      <span id="ProductCount" style="display: none;">
+      <span id="ProductCount">
         {%- if results.results_count -%}
           {{ 'templates.search.results_with_count' | t: terms: results.terms, count: results.results_count }}
         {%- elsif results.products_count == results.all_products_count -%}

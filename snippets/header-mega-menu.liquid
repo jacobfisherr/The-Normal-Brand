@@ -21,9 +21,9 @@
                     class="header__active-menu-item"
                   {% endif %}
                 >
-                  <a href="{{ link.url }}" class="mega-menu__menu-item-link">
+                  <span class="mega-menu__menu-item-link">
                     {{- link.title | escape -}}
-                  </a>
+                  </span>
                 </span>
                 {% render 'icon-caret' %}
               </summary>
@@ -46,6 +46,7 @@
                           {% if childlink.current %}
                             aria-current="page"
                           {% endif %}
+                          aria-label="{{ link.title }} {{ childlink.title }}"
                         >
                           {{ childlink.title | escape }}
                         </a>
@@ -60,6 +61,7 @@
                                   {% if grandchildlink.current %}
                                     aria-current="page"
                                   {% endif %}
+                                  aria-label="{{ link.title }} {{ grandchildlink.title }}"
                                 >
                                   {{ grandchildlink.title | escape }}
                                 </a>
