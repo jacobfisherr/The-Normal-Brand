@@ -1136,3 +1136,7 @@ div.okeReviews {
   align-items: center;
   justify-content: center;
 }
+
+.limoniapps-sticky-bar .limoniapps-close .limoniapps-close-x {
+  position: static !important;
+}
