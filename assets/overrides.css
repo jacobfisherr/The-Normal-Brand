@@ -1141,3 +1141,9 @@ div.okeReviews {
 .limoniapps-sticky-bar .limoniapps-close .limoniapps-close-x {
   position: static !important;
 }
+
+.limoniapps-sticky-bar .limoniapps-col-info .limoniapps-info .limoniapps-message > span {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
