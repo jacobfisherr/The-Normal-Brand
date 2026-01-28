@@ -253,7 +253,7 @@
                             {%- endcapture -%}
 
                             {%- capture text_value -%}
-                              <span class="facet-checkbox__text" aria-hidden="true">
+                              <span class="facet-checkbox__text">
                                 <span class="facet-checkbox__text-label">{{- value.label | escape }}</span> ({{- value.count -}})
                               </span>
                               {% comment %} <span class="visually-hidden">
