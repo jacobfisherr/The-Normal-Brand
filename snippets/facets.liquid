@@ -292,7 +292,7 @@
                                     name="{{ value.param_name }}"
                                     value="{{ value.value }}"
                                     id="{{ input_id }}"
-                                    title="test"
+                                    title="{{- value.label | escape }}"
                                     {% if value.active %}
                                       checked
                                     {% endif %}
