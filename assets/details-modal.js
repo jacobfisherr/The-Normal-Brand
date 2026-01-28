@@ -9,7 +9,7 @@ class DetailsModal extends HTMLElement {
     this.summaryToggle.addEventListener('click', this.onSummaryClick.bind(this));
     this.querySelector('button[type="button"]').addEventListener('click', this.close.bind(this));
 
-    this.summaryToggle.setAttribute('role', 'button');
+    // this.summaryToggle.setAttribute('role', 'button');
   }
 
   isOpen() {
