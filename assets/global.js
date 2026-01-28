@@ -77,9 +77,9 @@ document.querySelectorAll('[id^="Details-"] summary').forEach((summary) => {
 
   // Only add role="button" if there are no focusable children
   // This prevents accessibility issues when summary contains links
-  if (focusableChildren.length === 0) {
-    summary.setAttribute('role', 'button');
-  }
+  // if (focusableChildren.length === 0) {
+  //   summary.setAttribute('role', 'button');
+  // }
 
   summary.setAttribute('aria-expanded', summary.parentNode.hasAttribute('open'));
 
