@@ -152,7 +152,7 @@ if (!customElements.get('product-info')) {
       }
 
       getSelectedVariant(productInfoNode) {
-        console.log(productInfoNode);
+        // console.log(productInfoNode);
         const selectedVariant = productInfoNode.querySelector('variant-selects [data-selected-variant]')?.innerHTML;
         return !!selectedVariant ? JSON.parse(selectedVariant) : null;
       }
@@ -195,6 +195,7 @@ if (!customElements.get('product-info')) {
 
       handleUpdateProductInfo(productUrl) {
         return (html) => {
+          console.log(html);
           const variant = this.getSelectedVariant(html);
 
           this.pickupAvailability?.update(variant);
