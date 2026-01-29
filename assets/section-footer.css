@@ -336,7 +336,10 @@
 }
 
 .footer-block__details-content .list-menu__item--link,
-.copyright__content a {
+.copyright__content a,
+.footer__copyright,
+.footer__copyright a
+ {
   /* color: rgba(var(--color-foreground), 0.75); */
   color: #3B3C3F;
 }
