@@ -95,7 +95,7 @@ if (!customElements.get('product-info')) {
           this.productModal?.remove();
 
           const selector = updateFullPage ? "product-info[id^='MainProduct']" : 'product-info';
-          console.log(html.querySelector('product-info'));
+          console.log(html);
           const variant = this.getSelectedVariant(html.querySelector(selector));
           this.updateURL(productUrl, variant?.id);
 
