@@ -92,6 +92,7 @@ if (!customElements.get('product-info')) {
 
       handleSwapProduct(productUrl, updateFullPage) {
         return (html) => {
+          console.log(html);
           this.productModal?.remove();
 
           const selector = updateFullPage ? "product-info[id^='MainProduct']" : 'product-info';
