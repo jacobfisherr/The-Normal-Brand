@@ -292,7 +292,7 @@
                                     name="{{ value.param_name }}"
                                     value="{{ value.value }}"
                                     id="{{ input_id }}"
-                                    aria-label="{{ value.label }} ({{ value.count }})"
+                                    {% comment %} aria-label="{{ value.label }} ({{ value.count }})" {% endcomment %}
                                     {% if value.active %}
                                       checked
                                     {% endif %}
