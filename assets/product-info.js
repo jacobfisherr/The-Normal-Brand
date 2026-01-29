@@ -152,6 +152,7 @@ if (!customElements.get('product-info')) {
       }
 
       getSelectedVariant(productInfoNode) {
+        console.log(productInfoNode);
         const selectedVariant = productInfoNode.querySelector('variant-selects [data-selected-variant]')?.innerHTML;
         return !!selectedVariant ? JSON.parse(selectedVariant) : null;
       }
