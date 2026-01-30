@@ -77,6 +77,10 @@
             "custom_liquid": "{%- if product.description != blank -%}\n<div class=\"pdp-brief-desc\">\n  <div class=\"pdp-brief-desc__text is-clamped\">\n  {{ product.description }}\n</div>\n  <a href=\"#\" class=\"pdp-brief-desc__toggle\" role=\"button\" aria-expanded=\"false\" aria-label=\"Read more/Expand product description\"\n    >Read more</a\n  >\n</div>\n{%- endif -%}\n\n<script>\ndocument.addEventListener('DOMContentLoaded', function() {\n  // Build container\n  const wrap = document.querySelector('.pdp-brief-desc');\n\n    // Text element (keep inner HTML)\n    const textEl = wrap.querySelector('.pdp-brief-desc__text');\n\n    // Toggle\n    const toggle = document.querySelector('.pdp-brief-desc__toggle');\n\n    if (toggle && wrap && textEl) {\n    toggle.addEventListener('click', function(e){\n      e.preventDefault();\n      const expanded = wrap.classList.toggle('is-expanded');\n      if (expanded) {\n        textEl.classList.remove('is-clamped');\n        toggle.textContent = 'Read less';\n        toggle.setAttribute('aria-expanded','true');\n        toggle.setAttribute('aria-label','Read less/Collapse product description');\n      } else {\n        textEl.classList.add('is-clamped');\n        toggle.textContent = 'Read more';\n        toggle.setAttribute('aria-expanded','false');\n        toggle.setAttribute('aria-label','Read more/Expand product description');\n      }\n    });\n  }\n});\n</script>\n\n<style>\n.pdp-brief-desc[data-injected] {\n  display: none !important;\n}\n</style>"
           }
         },
+        "discount_ninja_discountninja_app_blocks_product_banner_XQtVCa": {
+          "type": "shopify://apps/discount-ninja/blocks/discountninja-app-blocks-product-banner/b9a933ba-e276-459f-a4bf-3571d5a1e81c",
+          "settings": {}
+        },
         "price": {
           "type": "price",
           "settings": {}
@@ -240,6 +244,7 @@
         "okendo_star_rating_6iTwd3",
         "icon_with_text_Cf3Knd",
         "custom_liquid_47C9XV",
+        "discount_ninja_discountninja_app_blocks_product_banner_XQtVCa",
         "price",
         "bold_discounts_the_sales_app_sale_clock_Hi3ULR",
         "popup_notice_6PL4GD",
