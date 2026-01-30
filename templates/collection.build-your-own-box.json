@@ -163,6 +163,18 @@
     },
     "product-grid": {
       "type": "main-collection-product-grid",
+      "blocks": {
+        "one_column_image_zrLFbB": {
+          "type": "one_column_image",
+          "settings": {
+            "position": 5,
+            "image": "shopify://shop_images/BYOB-CARD.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "one_column_image_zrLFbB"
+      ],
       "settings": {
         "products_per_page": 36,
         "columns_desktop": 3,
