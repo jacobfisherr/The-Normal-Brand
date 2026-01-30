@@ -105,29 +105,13 @@
         "full_width_image_VUtYyb": {
           "type": "full_width_image",
           "settings": {
-            "position": 13,
-            "image": "shopify://shop_images/TNB_Spring19-361.jpg"
-          }
-        },
-        "two_column_image_WJGGzB": {
-          "type": "two_column_image",
-          "settings": {
             "position": 7,
-            "image": "shopify://shop_images/NB_Fall18_Day1_-155_0c48c0f8-f663-4616-89f0-9989ee8de9bf.jpg"
-          }
-        },
-        "one_column_image_gREFV7": {
-          "type": "one_column_image",
-          "settings": {
-            "position": 4,
-            "image": "shopify://shop_images/lifestyle_41b2a7d6-f60e-4b2c-97ea-eef4a6f389da.jpg"
+            "image": "shopify://shop_images/Collection_Header.jpg"
           }
         }
       },
       "block_order": [
-        "full_width_image_VUtYyb",
-        "two_column_image_WJGGzB",
-        "one_column_image_gREFV7"
+        "full_width_image_VUtYyb"
       ],
       "settings": {
         "products_per_page": 36,
