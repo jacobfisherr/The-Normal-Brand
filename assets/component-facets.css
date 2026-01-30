@@ -1164,6 +1164,7 @@ input.mobile-facets__checkbox {
   .facets-vertical-form {
     display: flex;
     margin-bottom: 1rem;
+    justify-content: space-between;
   }
 
   .facets-vertical-form .facet-filters {
