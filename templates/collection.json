@@ -108,6 +108,13 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "blocks": {
+        "two_column_image_Lhgif8": {
+          "type": "two_column_image",
+          "settings": {
+            "position": 7,
+            "image": "shopify://shop_images/Web_2_44f23c6e-7492-4837-ab15-02ce079f3f75.jpg"
+          }
+        },
         "one_column_image_8bTBKm": {
           "type": "one_column_image",
           "settings": {
@@ -117,6 +124,7 @@
         }
       },
       "block_order": [
+        "two_column_image_Lhgif8",
         "one_column_image_8bTBKm"
       ],
       "settings": {
