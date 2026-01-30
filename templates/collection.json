@@ -11,7 +11,6 @@
   "sections": {
     "breadcrumbs": {
       "type": "breadcrumbs",
-      "disabled": true,
       "settings": {
         "padding_top": 8,
         "padding_bottom": 0
@@ -19,7 +18,6 @@
     },
     "banner": {
       "type": "main-collection-banner",
-      "disabled": true,
       "settings": {
         "show_collection_description": true,
         "show_collection_image": false,
@@ -108,46 +106,8 @@
         "padding_bottom": 20
       }
     },
-    "image_banner_yYqpdK": {
-      "type": "image-banner",
-      "name": "t:sections.image-banner.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/COLLECTION_BYOB.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "mobile_color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
     "product-grid": {
       "type": "main-collection-product-grid",
-      "blocks": {
-        "two_column_image_Lhgif8": {
-          "type": "two_column_image",
-          "settings": {
-            "position": 7,
-            "image": "shopify://shop_images/Web_2_44f23c6e-7492-4837-ab15-02ce079f3f75.jpg"
-          }
-        },
-        "one_column_image_8bTBKm": {
-          "type": "one_column_image",
-          "settings": {
-            "position": 4,
-            "image": "shopify://shop_images/mobile3_de1792a2-0553-4338-9f9e-644b6ddea88a.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "two_column_image_Lhgif8",
-        "one_column_image_8bTBKm"
-      ],
       "settings": {
         "products_per_page": 36,
         "columns_desktop": 3,
@@ -172,7 +132,6 @@
     "breadcrumbs",
     "banner",
     "pants-style-filter",
-    "image_banner_yYqpdK",
     "product-grid"
   ]
 }
