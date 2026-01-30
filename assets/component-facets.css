@@ -1241,7 +1241,7 @@ input.mobile-facets__checkbox {
   }
 }
 
-@media (min-width: 990px)
+@media screen and (min-width: 990px)
   .facets-vertical-sort.small-hide {
     margin-bottom: -3.1rem;
   }
