@@ -158,6 +158,66 @@
                 {%- if forloop.index > 2 -%}
                   {%- assign lazy_load = true -%}
                 {%- endif -%}
+
+                {%- assign product_index = forloop.index -%}
+                {%- liquid
+                  assign ratio = 1
+                  if product.featured_media and section.settings.image_ratio == 'portrait'
+                    assign ratio = 0.8
+                  elsif product.featured_media and section.settings.image_ratio == 'adapt'
+                    assign ratio = product.featured_media.aspect_ratio
+                  endif
+
+                  if ratio == 0 or ratio == null
+                    assign ratio = 1
+                  endif
+                -%}
+
+                {% for block in section.blocks %}
+                  {% if block.settings.position == product_index %}
+                    <li
+                      class="grid__item grid__item--image{% if block.type == 'two_column_image' %} two-column {% elsif block.type == 'full_width_image' %} full-width {% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                      {% if settings.animations_reveal_on_scroll %}
+                        data-cascade
+                        style="--animation-order: {{ product_index }};"
+                      {% endif %}
+                    >
+                      {%- liquid
+                        assign image_width = 533
+
+                        if block.type == 'two_column_image'
+                          assign image_width = 700
+                          assign ratio = 1.67
+                        elsif block.type == 'full_width_image'
+                          assign image_width = 1400
+                          assign ratio = 2.56
+                        endif
+                      -%}
+                      <a href="{{ product.url }}">
+                        <span class="visually-hidden">{{ product.title }}</span>
+                        <div class="ratio" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
+                          <img
+                            srcset="
+                              {%- if block.settings.image.width >= 165 -%}{{ block.settings.image | image_url: width: 165 }} 165w,{%- endif -%}
+                              {%- if block.settings.image.width >= 360 -%}{{ block.settings.image | image_url: width: 360 }} 360w,{%- endif -%}
+                              {%- if block.settings.image.width >= 533 -%}{{ block.settings.image | image_url: width: 533 }} 533w,{%- endif -%}
+                              {%- if block.settings.image.width >= 720 -%}{{ block.settings.image | image_url: width: 720 }} 720w,{%- endif -%}
+                              {%- if block.settings.image.width >= 940 -%}{{ block.settings.image | image_url: width: 940 }} 940w,{%- endif -%}
+                              {%- if block.settings.image.width >= 1066 -%}{{ block.settings.image | image_url: width: 1066 }} 1066w,{%- endif -%}
+                              {{ block.settings.image | image_url }} {{ block.settings.image.width }}w
+                            "
+                            src="{{ block.settings.image | image_url: width: image_width }}"
+                            alt="{{ block.settings.image.alt | default: product.title }}"
+                            width="{{ block.settings.image.width }}"
+                            height="{{ block.settings.image.height }}"
+                            loading="lazy"
+                          >
+                        </div>
+                      </a>
+                    </li>
+                  {% endif %}
+                {% endfor %}
+
                 <li
                   class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                   {% if settings.animations_reveal_on_scroll %}
@@ -420,6 +480,56 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "name": "One Column Image",
+      "type": "one_column_image",
+      "settings": [
+        {
+          "type": "number",
+          "id": "position",
+          "label": "Position"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    },
+    {
+      "name": "Two Column Image",
+      "type": "two_column_image",
+      "settings": [
+        {
+          "type": "number",
+          "id": "position",
+          "label": "Position"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    },
+    {
+      "name": "Full Width Image",
+      "type": "full_width_image",
+      "settings": [
+        {
+          "type": "number",
+          "id": "position",
+          "label": "Position"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
     }
   ]
 }
