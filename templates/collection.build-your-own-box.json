@@ -163,18 +163,6 @@
     },
     "product-grid": {
       "type": "main-collection-product-grid",
-      "blocks": {
-        "full_width_image_PdMrpU": {
-          "type": "full_width_image",
-          "settings": {
-            "position": 12,
-            "image": "shopify://shop_images/Web_2_71820df3-d86e-45eb-9f1b-eb926676d7f0.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "full_width_image_PdMrpU"
-      ],
       "settings": {
         "products_per_page": 36,
         "columns_desktop": 3,
