@@ -1166,6 +1166,10 @@ input.mobile-facets__checkbox {
     margin-bottom: 1rem;
   }
 
+  .facets-vertical-form .facet-filters {
+    padding-left: 0;
+  }
+
   .product-count-vertical {
     margin-left: 3.5rem;
     position: relative;
