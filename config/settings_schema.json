@@ -543,6 +543,12 @@
         "default": false
       },
       {
+        "type": "checkbox",
+        "id": "show_product_announcement",
+        "label": "Show product announcement metafield text",
+        "default": false
+      },
+      {
         "type": "range",
         "id": "card_image_padding",
         "min": 0,
