@@ -190,7 +190,7 @@
                           assign ratio = 1.67
                         endif
                       -%}
-                      <a href="{{ product.url }}">
+                      {% comment %} <a href="{{ product.url }}"> {% endcomment %}
                         <span class="visually-hidden">{{ product.title }}</span>
                         <div class="ratio" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
                           <img
@@ -210,7 +210,7 @@
                             loading="lazy"
                           >
                         </div>
-                      </a>
+                      {% comment %} </a> {% endcomment %}
                     </li>
                   {% endif %}
                 {% endfor %}
