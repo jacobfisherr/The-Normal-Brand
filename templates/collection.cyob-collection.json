@@ -1,0 +1,158 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "padding_top": 8,
+        "padding_bottom": 0
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "scheme-1"
+      }
+    },
+    "pants-style-filter": {
+      "type": "pants-style-filter",
+      "blocks": {
+        "comfort-terry": {
+          "type": "style_card",
+          "settings": {
+            "title": "COMFORT TERRY",
+            "features": "Looks polished, feels like sweats\nNow in extended sizes\nAvailable in Pant, Jean, Jogger",
+            "button_label": "Shop Now",
+            "button_link": "filter.p.m.custom.style=Comfort+Terry"
+          }
+        },
+        "denim": {
+          "type": "style_card",
+          "settings": {
+            "title": "DENIM",
+            "features": "No frills, made to last\nNow in extended sizes\nAvailable in Classic, Straight, Comfort Terry",
+            "button_label": "Shop Now",
+            "button_link": "filter.p.m.custom.style=Denim"
+          }
+        },
+        "cord": {
+          "type": "style_card",
+          "settings": {
+            "title": "COMFORT CORD",
+            "features": "Slim fit\nClassic 5-pocket jean styling\nHeavy stretch corduroy",
+            "button_label": "Shop Now",
+            "button_link": "filter.p.m.custom.style=Cord"
+          }
+        },
+        "chino": {
+          "type": "style_card",
+          "settings": {
+            "title": "CHINO",
+            "features": "Straight fit\nSoft, peached stretch chino fabric\nContour waistband with elastic interior for the perfect fit",
+            "button_label": "Shop Now",
+            "button_link": "filter.p.m.custom.style=Chino"
+          }
+        },
+        "jogger": {
+          "type": "style_card",
+          "settings": {
+            "title": "JOGGER",
+            "features": "Elastic waistband\nAlpha sizing\nAvailable in Comfort Terry, Puremeso, COOLMAX®",
+            "button_label": "Shop Now",
+            "button_link": "filter.p.m.custom.style=Jogger"
+          }
+        },
+        "trouser": {
+          "type": "style_card",
+          "settings": {
+            "title": "TROUSER",
+            "features": "Straight fit\nFully lined\nOur most tailored look",
+            "button_label": "Shop Now",
+            "button_link": "filter.p.m.custom.style=Trouser"
+          }
+        }
+      },
+      "block_order": [
+        "comfort-terry",
+        "denim",
+        "cord",
+        "chino",
+        "jogger",
+        "trouser"
+      ],
+      "settings": {
+        "columns_desktop": 5,
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 20
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "blocks": {
+        "full_width_image_VUtYyb": {
+          "type": "full_width_image",
+          "settings": {
+            "position": 13,
+            "image": "shopify://shop_images/TNB_Spring19-361.jpg"
+          }
+        },
+        "two_column_image_WJGGzB": {
+          "type": "two_column_image",
+          "settings": {
+            "position": 7,
+            "image": "shopify://shop_images/NB_Fall18_Day1_-155_0c48c0f8-f663-4616-89f0-9989ee8de9bf.jpg"
+          }
+        },
+        "one_column_image_gREFV7": {
+          "type": "one_column_image",
+          "settings": {
+            "position": 4,
+            "image": "shopify://shop_images/lifestyle_41b2a7d6-f60e-4b2c-97ea-eef4a6f389da.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "full_width_image_VUtYyb",
+        "two_column_image_WJGGzB",
+        "one_column_image_gREFV7"
+      ],
+      "settings": {
+        "products_per_page": 36,
+        "columns_desktop": 3,
+        "hide_out_of_stock": false,
+        "color_scheme": "tnb-light",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "quick_add": "standard",
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "banner",
+    "pants-style-filter",
+    "product-grid"
+  ]
+}
