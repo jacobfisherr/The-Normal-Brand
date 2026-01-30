@@ -107,6 +107,18 @@
     },
     "product-grid": {
       "type": "main-collection-product-grid",
+      "blocks": {
+        "one_column_image_8bTBKm": {
+          "type": "one_column_image",
+          "settings": {
+            "position": 4,
+            "image": "shopify://shop_images/mobile3_de1792a2-0553-4338-9f9e-644b6ddea88a.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "one_column_image_8bTBKm"
+      ],
       "settings": {
         "products_per_page": 36,
         "columns_desktop": 3,
