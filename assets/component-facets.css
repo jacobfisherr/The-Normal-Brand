@@ -1161,6 +1161,10 @@ input.mobile-facets__checkbox {
     width: 100%;
   }
 
+  .facets-vertical-form {
+    display: flex;
+  }
+
   .product-count-vertical {
     margin-left: 3.5rem;
     position: relative;
@@ -1242,7 +1246,6 @@ input.mobile-facets__checkbox {
   }
 
   .facets-vertical-form {
-    display: flex;
     justify-content: flex-end;
   }
 }
