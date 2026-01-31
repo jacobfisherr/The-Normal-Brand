@@ -74,6 +74,7 @@
       "blocks": {
         "slide_GgzTMR": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Web_1_57a4e266-d3b7-47b9-9a01-92b394a272b9.jpg",
             "mobile_image": "shopify://shop_images/mobile_1_4f7ec980-c728-4364-af19-dacfe4e5ac9a.jpg",
@@ -99,7 +100,6 @@
         },
         "slide_ey3yPc": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/10year-Desktop-Template_1_97fa5ebc-1ddc-49a2-a4a3-315fe85ba664.jpg",
             "mobile_image": "shopify://shop_images/Mobile-Template-1_STEEL2_90d1b2bc-67e6-4e9b-bf57-ebdd1eea5b45.jpg",
@@ -125,7 +125,6 @@
         },
         "slide_QBadaG": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/10year-Desktop-Template_2_814c5bda-8cf0-4f7f-a4d1-42011ae5dd22.jpg",
             "mobile_image": "shopify://shop_images/Mobile-Template-2_12317d36-c650-4ef0-9552-1741f5ffa807.jpg",
@@ -151,7 +150,6 @@
         },
         "slide_rHJLX8": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/10year-Desktop-Template_3_1604588f-4fbf-440e-b497-690ec0493d8c.jpg",
             "mobile_image": "shopify://shop_images/Mobile-Template-1_STEEL_11c27562-0fc8-4d4c-b8a4-ef8da1be010d.jpg",
