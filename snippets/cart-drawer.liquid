@@ -82,7 +82,7 @@
       {%- if cart != empty -%}
         {% render 'free-shipping-progress', threshold: 15000 %}
       {%- endif -%}
-      <div class="cart-drawer-items_container">
+      <div class="cart-drawer-items_container" la-dn-drawercart-lineitems>
         <cart-drawer-items
           {% if cart == empty %}
             class=" is-empty"
