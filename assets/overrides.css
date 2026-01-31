@@ -1147,7 +1147,7 @@ div.okeReviews {
   gap: 0.6rem;
 }
 
-.limoniapps-discountninja-subtotalcomment-summary-footer,
-.limoniapps-discountninja-subtotalcomment-summary-body {
+.cart-drawer__footer .limoniapps-discountninja-subtotalcomment-summary-footer,
+.cart-drawer__footer .limoniapps-discountninja-subtotalcomment-summary-body {
   padding: 10px 0;
 }
