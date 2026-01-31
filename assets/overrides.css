@@ -1146,3 +1146,8 @@ div.okeReviews {
   flex-direction: column;
   gap: 0.6rem;
 }
+
+.limoniapps-discountninja-subtotalcomment-summary-footer,
+.limoniapps-discountninja-subtotalcomment-summary-body {
+  padding: 10px 0;
+}
