@@ -158,8 +158,6 @@
                               {{- item.product.title | escape -}}
                             </a>
 
-                            <div data-la-dn-cart-item-text></div>
-
                             {% comment %}
                               {%- if item.original_price != item.final_price -%}
                                 <div class="cart-item__discounted-prices">
@@ -226,6 +224,8 @@
 
                               <p class="product-option">{{ item.selling_plan_allocation.selling_plan.name }}</p>
                             {%- endif -%}
+
+                            <div data-la-dn-cart-item-text></div>
 
                             <ul
                               class="discounts list-unstyled limoniapps-discountninja-whenactivepromotions-hide"
