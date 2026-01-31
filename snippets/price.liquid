@@ -119,9 +119,11 @@
           <span class="price-item price-item--regular">
             {{ money_price }}
           </span>
+          {% comment %}
           {% if combined_listing_price_varies %}
               <span class="price-item price-item--varies-badge">(Select colors starting at {{ combined_listing_price_min | money }})</span>
           {% endif %}
+          {% endcomment %}
         {%- endif -%}
       </div>
       <div class="price__sale">
