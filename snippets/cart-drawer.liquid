@@ -541,7 +541,7 @@
           {%- endif -%}
 
           <div class="cart-summary-text">
-            {% for cart_text_metaobject in metaobjects.cart_discount_text.values %}
+            {% for cart_text_metaobject in metaobjects.discount_cart_text.values %}
               <div data-test="{{ cart_text_metaobject.discount_name }}"></div>
               {% for discount_application in cart.discount_applications %}
                 {% comment %} {% if discount_application.title == cart_text_metaobject.discount_name %} {% endcomment %}
