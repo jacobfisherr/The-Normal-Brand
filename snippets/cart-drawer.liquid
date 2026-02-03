@@ -522,8 +522,9 @@
         <!-- Subtotals -->
 
         <div class="cart-drawer__footer" {{ block.shopify_attributes }}>
-          <div>
-            {%- if cart.cart_level_discount_applications.size > 0 -%}
+          
+          {%- if cart.cart_level_discount_applications.size > 0 -%}
+            <div>
               <ul
                 class="discounts list-unstyled limoniapps-discountninja-whenactivepromotions-hide"
                 role="list"
@@ -537,8 +538,9 @@
                   </li>
                 {%- endfor -%}
               </ul>
-            {%- endif -%}
-          </div>
+            </div>
+          {%- endif -%}
+          
 
           <div class="cart-summary-text">
             {% for cart_text_metaobject in metaobjects.cart_discount_text.values %}
