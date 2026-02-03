@@ -543,7 +543,7 @@
           <div class="cart-summary-text">
             {% for cart_text_metaobject in metaobjects.cart_discount_text.values %}
               {% for discount_application in cart.discount_applications %}
-                {% if discount_application.title == cart_text_metaobject.disount_name %}
+                {% if discount_application.title == cart_text_metaobject.discount_name %}
                   <div style="display: none;">
                     <p>Discount Applied!</p>
                   </div>
