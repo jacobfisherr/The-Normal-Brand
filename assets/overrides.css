@@ -1152,7 +1152,7 @@ div.okeReviews {
 
 .collection-cart-message .metafield-rich_text_field a {
   font-weight: 700;
-  color: var(--orange);
+  color: var(--color-orange);
 }
 
 .collection-cart-message .metafield-rich_text_field > :last-child {
