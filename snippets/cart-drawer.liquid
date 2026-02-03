@@ -540,6 +540,8 @@
             </div>
           {%- endif -%}
 
+          {% assign discounts_found = [] %}
+
           <div class="cart-summary-text">
             {% for cart_text_metaobject in metaobjects.cart_discount_text.values %}
               {% for discount_application in cart.cart_level_discount_applications %}
