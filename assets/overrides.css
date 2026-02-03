@@ -1146,6 +1146,11 @@ div.okeReviews {
   margin-top: 0;
 }
 
+.collection-cart-message .metafield-rich_text_field a {
+  font-weight: 700;
+  color: var(--orange);
+}
+
 .collection-cart-message .metafield-rich_text_field > :last-child {
   margin-bottom: 0;
 }
