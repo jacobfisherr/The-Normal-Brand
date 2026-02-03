@@ -1155,3 +1155,7 @@ div.okeReviews {
 .cart-summary-text:empty {
   display: none;
 }
+
+.announcement-bar__message {
+  min-height: 0;
+}
