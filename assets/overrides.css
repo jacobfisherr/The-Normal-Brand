@@ -1138,6 +1138,10 @@ div.okeReviews {
   align-items: flex-start;
 }
 
+.collection-cart-message {
+  font-size: 1.4rem;
+}
+
 .collection-cart-message .icon {
   margin-top: 0.2rem;
 }
