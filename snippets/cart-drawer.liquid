@@ -552,16 +552,6 @@
                 {% comment %} {% endif %} {% endcomment %}
               {% endfor %}
             {% endfor %}
-
-            {% for discount_application in cart.cart_level_discount_applications %}
-              {% for cart_text_metaobject in metaobjects.cart_discount_text.values %}
-                {% comment %} {% if discount_application.title == cart_text_metaobject.discount_name %} {% endcomment %}
-                  <div data-title="{{ discount_application.title }}" data-test="{{ cart_text_metaobject.discount_name }}">
-                    {{ cart_text_metaobject.cart_text | metafield_tag }}
-                  </div>
-                {% comment %} {% endif %} {% endcomment %}
-              {% endfor %}
-            {% endfor %}
           </div>
 
           <div class="totals" role="status">
