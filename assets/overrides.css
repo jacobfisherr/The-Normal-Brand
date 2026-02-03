@@ -1138,6 +1138,10 @@ div.okeReviews {
   align-items: flex-start;
 }
 
+.collection-cart-message .icon {
+  margin-top: 0.2rem;
+}
+
 .collection-cart-message .metafield-rich_text_field p {
   margin-top: 0;
 }
