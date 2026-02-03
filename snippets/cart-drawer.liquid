@@ -543,10 +543,10 @@
           {% assign discounts_found = [] %}
 
           <div class="cart-summary-text">
-            {% for discount_application in cart.discount_applications %}
+            {% for discount in cart.discount_applications %}
               {% for cart_text_metaobject in metaobjects.cart_discount_text.values %}
                 {% comment %} {% if discount_application.title == cart_text_metaobject.discount_name %} {% endcomment %}
-                  <div data-type="{{ discount_application.type }}" data-title="{{ discount_application.title }}" data-test="{{ cart_text_metaobject.discount_name }}">
+                  <div data-type="{{ discount.type }}" data-title="{{ discount.title }}" data-test="{{ cart_text_metaobject.discount_name }}">
                     {{ cart_text_metaobject.cart_text | metafield_tag }}
                   </div>
                 {% comment %} {% endif %} {% endcomment %}
