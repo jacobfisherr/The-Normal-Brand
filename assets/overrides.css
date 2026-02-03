@@ -1151,3 +1151,7 @@ div.okeReviews {
 .cart-drawer__footer .limoniapps-discountninja-subtotalcomment-summary-body {
   padding: 10px 0;
 }
+
+.cart-summary-text:empty {
+  display: none;
+}
