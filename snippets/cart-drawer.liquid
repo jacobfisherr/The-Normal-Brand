@@ -544,6 +544,7 @@
 
           <div class="cart-summary-text">
             {% for discount_application in cart.discounts %}
+              <div>{{ discount.title }}</div>
               {% for cart_text_metaobject in metaobjects.cart_discount_text.values %}
                 {% comment %} {% if discount_application.title == cart_text_metaobject.discount_name %} {% endcomment %}
                   <div data-testt="{{ discount_application.target_selection }}" data-title="{{ discount_application.title }}" data-test="{{ cart_text_metaobject.discount_name }}">
