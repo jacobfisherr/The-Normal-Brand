@@ -545,7 +545,7 @@
               {% for discount_application in cart.discount_applications %}
                 {% if discount_application.title == cart_text_metaobject.discount_name %}
                   <div style="display: none;">
-                    <p>Discount Applied!</p>
+                    {{ cart_text_metaobject.cart_text }}
                   </div>
                 {% endif %}
               {% endfor %}
