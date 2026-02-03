@@ -1130,30 +1130,20 @@ div.okeReviews {
   }
 }
 
-.limoniapps-sticky-bar-wrapper .limoniapps-sticky-bar .limoniapps-close {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
-
-.limoniapps-sticky-bar .limoniapps-close .limoniapps-close-x {
-  position: static !important;
-}
-
-.limoniapps-sticky-bar .limoniapps-col-info .limoniapps-info .limoniapps-message > span {
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
-}
-
-.cart-drawer__footer .limoniapps-discountninja-subtotalcomment-summary-footer,
-.cart-drawer__footer .limoniapps-discountninja-subtotalcomment-summary-body {
-  padding: 10px 0;
-}
-
 .cart-summary-text:empty {
   display: none;
+}
+
+.cart-summary-text .discounts__discount {
+  align-items: flex-start;
+}
+
+.collection-cart-message .metafield-rich_text_field p {
+  margin-top: 0;
+}
+
+.collection-cart-message .metafield-rich_text_field > :last-child {
+  margin-bottom: 0;
 }
 
 .announcement-bar__message {
