@@ -553,7 +553,7 @@
                   
                   {% unless shown_collection_ids contains collection_id_string %}
                     <div class="collection-cart-message">
-                      {{ collection.metafields.custom.cart_summary_text }}
+                      {{ collection.metafields.custom.cart_summary_text | metafield_tag }}
                     </div>
                     
                     {% assign shown_collection_ids = shown_collection_ids | append: collection_id_string %}
