@@ -553,6 +553,7 @@
                   
                   {% unless shown_collection_ids contains collection_id_string %}
                     <div class="collection-cart-message">
+                      {%- render 'icon-discount' -%}
                       {{ collection.metafields.custom.cart_summary_text | metafield_tag }}
                     </div>
                     
