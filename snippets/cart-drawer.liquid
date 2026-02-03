@@ -540,7 +540,7 @@
             {%- endif -%}
           </div>
 
-          <div class="cart-summary-text">
+          <div class="cart-summary-text discounts">
             {% assign shown_collection_ids = '' %}
 
             {% for item in cart.items %}
@@ -550,7 +550,8 @@
                   {% assign collection_id_string = collection.id | append: ',' %}
                   
                   {% unless shown_collection_ids contains collection_id_string %}
-                    <div class="collection-cart-message">
+                    <div class="collection-cart-message discounts__discount discounts__discount--end">
+                      {%- render 'icon-discount' -%}
                       {{ collection.metafields.custom.cart_summary_text | metafield_tag }}
                     </div>
                     
