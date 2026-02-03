@@ -540,8 +540,17 @@
             {%- endif -%}
           </div>
 
-          <div data-la-dn-promotion-summary-placeholder></div>
-          <div data-la-dn-promocodefield-placeholder></div>
+          <div class="cart-summary-text">
+            {% for cart_text_metaobject in metaobjects.cart_discount_text.values %}
+              {% for discount_application in cart.discount_applications %}
+                {% if discount_application.title == cart_text_metaobject.discount_name %}
+                  <div style="display: none;">
+                    <p>Discount Applied!</p>
+                  </div>
+                {% endif %}
+              {% endfor %}
+            {% endfor %}
+          </div>
 
           <div class="totals limoniapps-discountninja-cart-subtotal" role="status">
             <h2 class="totals__total">{{ 'sections.cart.estimated_total' | t }}</h2>
