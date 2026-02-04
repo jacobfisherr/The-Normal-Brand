@@ -565,9 +565,9 @@
                     {% if items_needed > 0 %}
                       {{ collection.metafields.custom.cart_summary_text 
                         | metafield_tag
-                        | replace: '{{items_needed}}', items_needed 
-                        | replace: '{{current_count}}', collection_item_count 
-                        | replace: '{{threshold}}', byob_threshold }}
+                        | replace: "{{items_needed}}", items_needed 
+                        | replace: "{{current_count}}", collection_item_count 
+                        | replace: "{{threshold}}"", byob_threshold }}
                     {% else %}
                       {{ collection.metafields.custom.cart_summary_text_complete | metafield_tag }}
                     {% endif %}
