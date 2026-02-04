@@ -540,29 +540,43 @@
             </div>
           {%- endif -%}
 
-          {% assign discounts_found = [] %}
+          {% assign shown_collection_ids = '' %}
 
-          <div class="cart-summary-text discounts">
-            {% assign shown_collection_ids = '' %}
-
-            {% for item in cart.items %}
-              {% for collection in item.product.collections %}
-                {% comment %} Check if collection has cart summary text and we haven't shown it yet {% endcomment %}
-                {% if collection.metafields.custom.cart_summary_text != blank %}
-                  {% assign collection_id_string = collection.id | append: ',' %}
+          {% for item in cart.items %}
+            {% for collection in item.product.collections %}
+              {% if collection.metafields.custom.cart_summary_text != blank %}
+                {% assign collection_id_string = collection.id | append: ',' %}
+                
+                {% unless shown_collection_ids contains collection_id_string %}
+                  {% comment %} Get threshold from metafield, default to 5 {% endcomment %}
+                  {% assign byob_threshold = collection.metafields.custom.cart_discount_threshold | default: 5 %}
                   
-                  {% unless shown_collection_ids contains collection_id_string %}
-                    <div class="collection-cart-message discounts__discount discounts__discount--end">
-                      {%- render 'icon-discount' -%}
-                      {{ collection.metafields.custom.cart_summary_text | metafield_tag }}
-                    </div>
-                    
-                    {% assign shown_collection_ids = shown_collection_ids | append: collection_id_string %}
-                  {% endunless %}
-                {% endif %}
-              {% endfor %}
+                  {% comment %} Count items from this collection {% endcomment %}
+                  {% assign collection_item_count = 0 %}
+                  {% for cart_item in cart.items %}
+                    {% if cart_item.product.collections contains collection %}
+                      {% assign collection_item_count = collection_item_count | plus: cart_item.quantity %}
+                    {% endif %}
+                  {% endfor %}
+                  
+                  {% assign items_needed = byob_threshold | minus: collection_item_count %}
+                  
+                  <div class="collection-cart-message">
+                    {% if items_needed > 0 %}
+                      {{ collection.metafields.custom.cart_summary_text 
+                        | replace: '{{items_needed}}', items_needed 
+                        | replace: '{{current_count}}', collection_item_count 
+                        | replace: '{{threshold}}', byob_threshold }}
+                    {% else %}
+                      {{ collection.metafields.custom.cart_summary_text_complete }}
+                    {% endif %}
+                  </div>
+                  
+                  {% assign shown_collection_ids = shown_collection_ids | append: collection_id_string %}
+                {% endunless %}
+              {% endif %}
             {% endfor %}
-          </div>
+          {% endfor %}
 
           <div class="totals" role="status">
             <h2 class="totals__total">{{ 'sections.cart.estimated_total' | t }}</h2>
