@@ -563,7 +563,8 @@
                   
                   <div class="collection-cart-message">
                     {% if items_needed > 0 %}
-                      {{ collection.metafields.custom.cart_summary_text 
+                      {{ collection.metafields.custom.cart_summary_text
+                        | metafield_tag
                         | replace: '[items_needed]', items_needed 
                         | replace: '[current_count]', collection_item_count 
                         | replace: '[threshold]', byob_threshold }}
