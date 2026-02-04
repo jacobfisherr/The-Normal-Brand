@@ -67,10 +67,17 @@
           "settings": {
             "text": "<p><a href=\"https://thenormalbrand.com/products/comfort-terry-pant-taupe?variant=43788786598060\" title=\"https://thenormalbrand.com/products/comfort-terry-pant-taupe?variant=43788786598060\">Pants</a> | <a href=\"/products/comfort-terry-shirt-jacket\" title=\"Comfort Terry Shirt Jacket\">Shirt Jackets</a> | <a href=\"/products/comfort-terry-chore-coat\" title=\"Comfort Terry Chore Coat\">Chore Coats</a></p>"
           }
+        },
+        "text_xXAxEb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our BEST SELLING pants. Imagine denim and sweatpants had a baby. The baby's name is Comfort Terry. We've sold out of these every season for a reason. Comfortable enough for the couch and sharp enough for a night out.</p>"
+          }
         }
       },
       "block_order": [
-        "text_VHA98C"
+        "text_VHA98C",
+        "text_xXAxEb"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -112,17 +119,6 @@
     },
     "rich_text_7ngLCw": {
       "type": "rich-text",
-      "blocks": {
-        "text_DxBJpa": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Our BEST SELLING pants. Imagine denim and sweatpants had a baby. The baby's name is Comfort Terry. We've sold out of these every season for a reason. Comfortable enough for the couch and sharp enough for a night out.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "text_DxBJpa"
-      ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
