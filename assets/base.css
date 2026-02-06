@@ -2168,6 +2168,7 @@ input[type='checkbox'] {
   flex-wrap: wrap;
   align-content: center;
   grid-area: announcements;
+  max-height: 4.5rem;
 }
 
 .announcement-bar .slider--everywhere {
