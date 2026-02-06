@@ -440,9 +440,8 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
   white-space: nowrap;
 }
 
-/* A/B Test: Cart Drawer UVP */
 .cart-drawer-uvp-row {
-  display: none;
+  display: flex;
   flex-direction: row;
   gap: 2rem;
   margin-top: 1.5rem;
