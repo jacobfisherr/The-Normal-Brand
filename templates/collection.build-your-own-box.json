@@ -168,14 +168,14 @@
           "type": "one_column_image",
           "settings": {
             "position": 16,
-            "image": "shopify://shop_images/BYOB-CARD_3_432b5e41-9f48-42fa-a81e-b42a9902f477.jpg"
+            "image": "shopify://shop_images/BYOB-CARD_1.jpg"
           }
         },
         "one_column_image_zrLFbB": {
           "type": "one_column_image",
           "settings": {
             "position": 8,
-            "image": "shopify://shop_images/BYOB-CARD_2_a9e70406-a8a1-4756-85b9-c7d2995c727b.jpg"
+            "image": "shopify://shop_images/BYOB-CARD_2_24fca25e-404a-4fc1-8ab4-50ee2cdd8962.jpg"
           }
         }
       },
