@@ -32,7 +32,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "BYOB - Buy 5+ and Save 50%",
+            "text": "50% off the BYOB Collection",
             "link": "shopify://collections/build-your-own-box-byob"
           }
         }
