@@ -36,7 +36,7 @@
         "image_overlay_opacity": 0,
         "image_height": "small",
         "desktop_content_position": "middle-center",
-        "show_text_box": true,
+        "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-7eca2d75-45a3-4024-b69d-17de1ca4d726",
         "mobile_color_scheme": "",
