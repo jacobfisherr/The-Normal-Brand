@@ -48,7 +48,7 @@
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/COLLECTION_BYOB_UPDATE.jpg",
+        "image": "shopify://shop_images/COLLECTION_presidents.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-center",
@@ -168,14 +168,14 @@
           "type": "one_column_image",
           "settings": {
             "position": 16,
-            "image": "shopify://shop_images/BYOB-CARD_1.jpg"
+            "image": "shopify://shop_images/presidents-CARD_2.jpg"
           }
         },
         "one_column_image_zrLFbB": {
           "type": "one_column_image",
           "settings": {
             "position": 8,
-            "image": "shopify://shop_images/BYOB-CARD_2_24fca25e-404a-4fc1-8ab4-50ee2cdd8962.jpg"
+            "image": "shopify://shop_images/presidents-CARD_1.jpg"
           }
         }
       },
