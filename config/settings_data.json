@@ -48,7 +48,7 @@
     "size_chart_label": "Size Chart",
     "card_style": "card",
     "show_color_name": false,
-    "show_product_announcement": false,
+    "show_product_announcement": true,
     "card_image_padding": 0,
     "card_text_alignment": "left",
     "card_color_scheme": "tnb-light",
