@@ -32,7 +32,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "50% off Presidents Day Sale",
+            "text": "50% off Presidents Day Sale - Ends Tonight!",
             "link": "shopify://collections/presidents-day-sale-collection"
           }
         }
