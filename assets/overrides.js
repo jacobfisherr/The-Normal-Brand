@@ -164,6 +164,8 @@ function init() {
   const handleMenuItemClick = (e) => {
     const target = e.target;
 
+    console.log('click');
+
     if (target) {
       const href = e.target.getAttribute('data-href');
 
