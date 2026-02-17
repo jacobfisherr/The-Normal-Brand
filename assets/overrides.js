@@ -166,7 +166,7 @@ function init() {
   }
 
   headerMenuItems.forEach((menuItem) => {
-    menuItem.addEventListener('click', handleMenuItemClick);
+    menuItem.addEventListener('mouseup', handleMenuItemClick);
   });
 }
 
