@@ -29,8 +29,7 @@
   transform: translateY(-1.5rem);
 }
 
-.mega-menu[open] .mega-menu__content,
-.mega-menu.is-open .mega-menu__content {
+.mega-menu[open] .mega-menu__content {
   opacity: 1;
   transform: translateY(0);
 }

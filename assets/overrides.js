@@ -174,7 +174,9 @@ function init() {
         window.location = href;
 
         if (parent) {
-          parent.classList.add('is-open');
+          requestAnimationFrame(() => {
+            parent.setAttribute('open', 'true');
+          })
         }
       }
     }
