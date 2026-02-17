@@ -162,15 +162,15 @@ function init() {
 
   const headerMenuItems = document.querySelectorAll('summary.header__menu-item');
   const handleMenuItemClick = (e) => {
-    e.preventDefault();
     const target = e.target;
 
     if (target) {
       const href = e.target.getAttribute('data-href');
 
       if (href) {
-        // window.location = href;
-        console.log(href);
+        e.preventDefault();
+        e.stopPropagation();
+        window.location = href;
       }
     }
   }
