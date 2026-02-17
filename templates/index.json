@@ -74,6 +74,7 @@
       "blocks": {
         "slide_GgzTMR": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Web_1.1_UPDATE.jpg",
             "mobile_image": "shopify://shop_images/Mobile_1.1_UPDATE.jpg",
@@ -99,7 +100,6 @@
         },
         "slide_ey3yPc": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/10year-Desktop-Template_1_97fa5ebc-1ddc-49a2-a4a3-315fe85ba664.jpg",
             "mobile_image": "shopify://shop_images/Mobile-Template-1_STEEL2_90d1b2bc-67e6-4e9b-bf57-ebdd1eea5b45.jpg",
