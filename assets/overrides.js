@@ -167,12 +167,10 @@ function init() {
     if (target) {
       const href = target.getAttribute('data-href');
 
-      console.log(href);
-
       if (href) {
-        // e.preventDefault();
-        // e.stopPropagation();
-        // window.location = href;
+        e.preventDefault();
+        e.stopPropagation();
+        window.location = href;
       }
     }
   }
