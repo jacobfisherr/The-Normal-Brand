@@ -166,11 +166,16 @@ function init() {
 
     if (target) {
       const href = target.getAttribute('data-href');
+      const parent = target.closes('details');
 
       if (href) {
         e.preventDefault();
         e.stopPropagation();
         window.location = href;
+
+        if (parent) {
+          parent.setAttribute('open', 'true');
+        }
       }
     }
   }
