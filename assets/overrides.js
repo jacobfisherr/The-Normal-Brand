@@ -161,8 +161,8 @@ function init() {
   }
 
   const headerMenuItems = document.querySelectorAll('summary.header__menu-item');
-  const handleMenuItemClick = () => {
-    console.log('click');
+  const handleMenuItemClick = (e) => {
+    console.log('click', e);
   }
 
   headerMenuItems.forEach((menuItem) => {
