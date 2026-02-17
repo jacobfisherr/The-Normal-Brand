@@ -174,7 +174,9 @@ function init() {
         window.location = href;
 
         if (parent) {
-          parent.setAttribute('open', 'true');
+          setTimeout(() => {
+            parent.setAttribute('open', 'true');
+          }, 10);
         }
       }
     }
