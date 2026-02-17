@@ -159,6 +159,15 @@ function init() {
     productCountDesktop.innerText = parsedCount - outOfStockProducts.length + ' products';
     productCountDesktop.style.display = 'block';
   }
+
+  const headerMenuItems = document.querySelectorAll('summary.header__menu-item');
+  const handleMenuItemClick = () => {
+    console.log('click');
+  }
+
+  headerMenuItems.forEach((menuItem) => {
+    menuItem.addEventListener('click', handleMenuItemClick);
+  });
 }
 
 window.addEventListener('DOMContentLoaded', function () {
