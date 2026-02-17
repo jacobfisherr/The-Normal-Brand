@@ -176,7 +176,7 @@ function init() {
         if (parent) {
           setTimeout(() => {
             parent.setAttribute('open', 'true');
-          }, 10);
+          }, 5);
         }
       }
     }
