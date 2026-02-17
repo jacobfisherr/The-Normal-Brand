@@ -162,12 +162,12 @@ function init() {
 
   const headerMenuItems = document.querySelectorAll('summary.header__menu-item');
   const handleMenuItemClick = (e) => {
-    const target = e.target;
-
-    console.log('click');
+    const target = e.target.closest('summary.header__menu-item');
 
     if (target) {
-      const href = e.target.getAttribute('data-href');
+      const href = target.getAttribute('data-href');
+
+      console.log(href);
 
       if (href) {
         // e.preventDefault();
