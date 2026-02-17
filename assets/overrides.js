@@ -166,7 +166,7 @@ function init() {
 
     if (target) {
       const href = target.getAttribute('data-href');
-      const parent = target.closes('details');
+      const parent = target.closest('details');
 
       if (href) {
         e.preventDefault();
