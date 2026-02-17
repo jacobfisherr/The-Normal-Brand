@@ -168,9 +168,9 @@ function init() {
       const href = e.target.getAttribute('data-href');
 
       if (href) {
-        e.preventDefault();
-        e.stopPropagation();
-        window.location = href;
+        // e.preventDefault();
+        // e.stopPropagation();
+        // window.location = href;
       }
     }
   }
