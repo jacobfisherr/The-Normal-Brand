@@ -345,7 +345,7 @@
         "column_746rwt": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Multicolumn-Template_1.jpg",
+            "image": "shopify://shop_images/Multicolumn-Template1.jpg",
             "title": "Quiet Anticipation",
             "text": "<p>Pieces that live in the in-between, chosen with what's next in mind.</p>",
             "liquid": "",
@@ -358,12 +358,12 @@
         "column_qyTCPm": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Multicolumn-Template_2.jpg",
-            "title": "newness you need",
-            "text": "<p>New Puremeso colors are here, along with seasonal favorites back in stock.</p>",
+            "image": "shopify://shop_images/Multicolumn-Template2.jpg",
+            "title": "All in the details",
+            "text": "<p>Add a little texture without feeling over the top. </p>",
             "liquid": "",
-            "link_label": "Shop Men's Puremeso",
-            "link": "https://thenormalbrand.com/collections/mens-puremeso",
+            "link_label": "Shop Jacquard Zip Front Cardigan",
+            "link": "https://thenormalbrand.com/collections/sweaters/products/jacquard-zip-front-cardigan-in-ivory",
             "text_alignment": "left",
             "text_alignment_mobile": "left"
           }
@@ -371,12 +371,12 @@
         "column_jMQNUb": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Multicolumn-Template_3.jpg",
-            "title": "Sweater weather",
-            "text": "<p>Soft knits, versatile fits, and timeless details, these are the pieces that make layering effortless.</p>",
+            "image": "shopify://shop_images/Multicolumn-Template_2_24808404-b56c-4037-ab42-b40a6b411169.jpg",
+            "title": "Introducing: Gia",
+            "text": "<p>With modern silhouette and versatile styling details in mind, it’s a statement piece you’ll reach for again and again.</p>",
             "liquid": "",
-            "link_label": "Shop Sweaters",
-            "link": "https://thenormalbrand.com/collections/womens-sweaters",
+            "link_label": "Shop Gia Lapel Cropped Jacket",
+            "link": "https://thenormalbrand.com/products/gia-lapel-cropped-jacket-in-chalk?_pos=1&_psq=gia&_ss=e&_v=1.0",
             "text_alignment": "left",
             "text_alignment_mobile": "left"
           }
