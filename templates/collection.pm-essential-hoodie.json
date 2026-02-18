@@ -9,58 +9,48 @@
  */
 {
   "sections": {
-    "image_banner_RKnHKy": {
-      "type": "image-banner",
+    "rich_text_KC88dB": {
+      "type": "rich-text",
       "blocks": {
-        "heading_GXQyXx": {
+        "heading_D4a9Ci": {
           "type": "heading",
-          "disabled": true,
           "settings": {
-            "heading": "Build Your Own Box",
+            "heading": "Puremeso Essential Hoodie",
             "heading_size": "h1"
           }
         },
-        "text_kYhnWW": {
+        "text_fPwd7E": {
           "type": "text",
-          "disabled": true,
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
+            "text": "<p>Lightweight, comfortable, and made to mix into your daily rotation, this hoodie is the definition of effortless layering. Easy to pair with other favorites or wear on its own, it’s a piece you’ll keep coming back to in every color.</p>"
           }
         },
-        "buttons_EPXiwK": {
-          "type": "buttons",
+        "button_BF6AUb": {
+          "type": "button",
           "disabled": true,
           "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
           }
         }
       },
       "block_order": [
-        "heading_GXQyXx",
-        "text_kYhnWW",
-        "buttons_EPXiwK"
+        "heading_D4a9Ci",
+        "text_fPwd7E",
+        "button_BF6AUb"
       ],
-      "disabled": true,
-      "name": "t:sections.image-banner.presets.name",
+      "name": "t:sections.rich-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/COLLECTION_BYOB_UPDATE_1.1.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "small",
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
         "color_scheme": "",
-        "mobile_color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "breadcrumbs": {
@@ -205,7 +195,7 @@
     }
   },
   "order": [
-    "image_banner_RKnHKy",
+    "rich_text_KC88dB",
     "breadcrumbs",
     "banner",
     "pants-style-filter",
