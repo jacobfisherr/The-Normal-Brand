@@ -135,17 +135,6 @@
                   class="predictive-search__list-item"
                   role="option"
                   aria-selected="false"
-                  data-la-dn-product-handle="{{ product.handle }}"
-                  data-la-dn-product-id="{{ product.id }}"
-                  data-la-dn-product-collection-handles="{{ product.collections | map: 'handle' | join: ',' | default: '[[--NONE--]]' }}"
-                  data-la-dn-product-collection-ids="{{ product.collections | map: 'id' | join: ',' | default: '[[--NONE--]]' }}"
-                  data-la-dn-product-available="{{ product.available}}"
-                  data-la-dn-product-price="{{ product.first_available_variant.price | default: product.price }}"
-                  data-la-dn-product-compare-at-price="{{ product.first_available_variant.compare_at_price | default: product.first_available_variant.price | default: product.compare_at_price | default: product.price }}"
-                  data-la-dn-product-price-varies="{{ product.price_varies }}"
-                  data-la-dn-product-compare-at-price-varies="{{ product.compare_at_price_varies }}"
-                  data-la-dn-product-price-min="{{ product.price_min }}"
-                  data-la-dn-product-tags="{{ product.tags | join: ',' | escape | default: '[[--NONE--]]' }}"
                 >
                   <a
                     href="{{ product.url }}"
@@ -171,9 +160,6 @@
                       <p class="predictive-search__item-heading h5">{{ product.title | escape }}</p>
                       {%- if settings.predictive_search_show_price -%}
                         {% render 'price', product: product, use_variant: true, show_badges: false %}
-                        <span data-la-dn-price>
-                          {% render 'price', product: product, use_variant: true, show_badges: false -%}
-                        </span>
                       {%- endif -%}
                     </div>
                   </a>
