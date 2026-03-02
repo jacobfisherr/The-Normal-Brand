@@ -102,6 +102,9 @@ class CartReminder extends HTMLElement {
     // Try to open cart drawer if it exists
     const cartDrawer = document.querySelector('cart-drawer');
 
+    window._conv_q = window._conv_q || [];
+    _conv_q.push(["triggerConversion", "1004115071"]); // Clicks on View Cart CTA on Popup Conversion
+
     if (cartDrawer && typeof cartDrawer.open === 'function') {
       cartDrawer.open(this.ctaButton);
       this.hide();
