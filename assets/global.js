@@ -596,6 +596,7 @@ class HeaderDrawer extends MenuDrawer {
     const btn = trigger || this.mainToggleButton;
     if (!this.mainDetailsToggle) this.mainDetailsToggle = this.querySelector('.menu-drawer-container');
     if (!btn || !this.mainDetailsToggle) return;
+    this.mainToggleButton = btn;
     if (this.mainDetailsToggle.classList.contains('menu-drawer-container--open')) {
       this.closeMenuDrawer(event, btn);
     } else {
@@ -623,10 +624,11 @@ class HeaderDrawer extends MenuDrawer {
 
   onFocusOut() {
     setTimeout(() => {
-      const isOpen =
-        this.mainDetailsToggle?.hasAttribute?.('open') ||
-        this.mainDetailsToggle?.classList?.contains('menu-drawer-container--open');
-      if (isOpen && !this.mainDetailsToggle.contains(document.activeElement)) {
+      const isOpen = this.mainDetailsToggle?.classList?.contains('menu-drawer-container--open');
+      const activeEl = document.activeElement;
+      if (!isOpen) return;
+      if (!activeEl || activeEl === document.body) return;
+      if (!this.mainDetailsToggle.contains(activeEl)) {
         this.closeMenuDrawer(null, this.mainToggleButton);
       }
     });
