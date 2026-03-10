@@ -622,20 +622,9 @@ class HeaderDrawer extends MenuDrawer {
     }
   }
 
-  onFocusOut(event) {
-    setTimeout(() => {
-      const isOpen = this.mainDetailsToggle?.classList?.contains('menu-drawer-container--open');
-      if (!isOpen) return;
-
-      const nextFocus = event?.relatedTarget || document.activeElement;
-      if (!nextFocus || nextFocus === document.body || nextFocus === document.documentElement) {
-        return;
-      }
-
-      if (!this.mainDetailsToggle.contains(nextFocus)) {
-        this.closeMenuDrawer(null, this.mainToggleButton);
-      }
-    });
+  onFocusOut() {
+    // Touch browsers can emit transient focus changes on first tap.
+    // Avoid auto-closing the main drawer on focusout to prevent open-then-close behavior.
   }
 
   openMenuDrawer(toggleElement) {
