@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "current": {
     "logo": "shopify://shop_images/logo_8c382134-9a8f-481f-9327-986f810fa22f.png",
     "logo_width": 50,
@@ -163,11 +163,11 @@
         "settings": {
           "row_heading": "How it Works",
           "column_1_heading": "Sign Up",
-          "column_1_paragraph": "Create an account and get 50 points.",
+          "column_1_paragraph": "Create an account andget 50 points.",
           "column_2_heading": "Earn points",
-          "column_2_paragraph": "Earn points every time you shop.",
+          "column_2_paragraph": "Earn points every timeyou shop.",
           "column_3_heading": "Redeem points",
-          "column_3_paragraph": "Redeem points for exclusive discounts"
+          "column_3_paragraph": "Redeem points forexclusive discounts"
         }
       },
       "okendo-loyalty-earn": {
