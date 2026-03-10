@@ -1,8 +1,8 @@
 function getFocusableElements(container) {
   return Array.from(
     container.querySelectorAll(
-      "summary, a[href], button:enabled, [tabindex]:not([tabindex^='-']), [draggable], area, input:not([type=hidden]):enabled, select:enabled, textarea:enabled, object, iframe"
-    )
+      "summary, a[href], button:enabled, [tabindex]:not([tabindex^='-']), [draggable], area, input:not([type=hidden]):enabled, select:enabled, textarea:enabled, object, iframe",
+    ),
   );
 }
 
@@ -72,7 +72,7 @@ document.querySelectorAll('[id^="Details-"] summary').forEach((summary) => {
   // Check if summary contains focusable children (excluding the summary itself)
   const parent = summary.closest('details');
   const focusableChildren = getFocusableElements(parent).filter(
-    (el) => el !== summary && !summary.contains(el.closest('summary'))
+    (el) => el !== summary && !summary.contains(el.closest('summary')),
   );
 
   // Only add role="button" if there are no focusable children
@@ -188,7 +188,7 @@ function focusVisiblePolyfill() {
       currentFocusedElement = document.activeElement;
       currentFocusedElement.classList.add('focused');
     },
-    true
+    true,
   );
 }
 
@@ -232,7 +232,7 @@ class QuantityInput extends HTMLElement {
     this.changeEvent = new Event('change', { bubbles: true });
     this.input.addEventListener('change', this.onInputChange.bind(this));
     this.querySelectorAll('button').forEach((button) =>
-      button.addEventListener('click', this.onButtonClick.bind(this))
+      button.addEventListener('click', this.onButtonClick.bind(this)),
     );
   }
 
@@ -442,10 +442,10 @@ class MenuDrawer extends HTMLElement {
 
   bindEvents() {
     this.querySelectorAll('summary').forEach((summary) =>
-      summary.addEventListener('click', this.onSummaryClick.bind(this))
+      summary.addEventListener('click', this.onSummaryClick.bind(this)),
     );
     this.querySelectorAll(
-      'button:not(.localization-selector):not(.country-selector__close-button):not(.country-filter__reset-button)'
+      'button:not(.localization-selector):not(.country-selector__close-button):not(.country-filter__reset-button):not(.menu-drawer-trigger)',
     ).forEach((button) => button.addEventListener('click', this.onCloseButtonClick.bind(this)));
   }
 
@@ -568,15 +568,80 @@ customElements.define('menu-drawer', MenuDrawer);
 class HeaderDrawer extends MenuDrawer {
   constructor() {
     super();
+    // Header drawer uses a button + div instead of details/summary for accessibility
+    this.mainDetailsToggle = this.querySelector('.menu-drawer-container');
+    this.mainToggleButton = this.querySelector('.menu-drawer-trigger');
   }
 
-  openMenuDrawer(summaryElement) {
+  connectedCallback() {
+    this.mainDetailsToggle = this.querySelector('.menu-drawer-container');
+    this.mainToggleButton = this.querySelector('.menu-drawer-trigger');
+    // Event delegation: listen on the element itself, no need to find the button
+    if (!this.dataset.clickBound) {
+      this.dataset.clickBound = 'true';
+      this.addEventListener('click', (e) => {
+        const trigger = e.target.closest('.menu-drawer-trigger');
+        if (trigger) {
+          this.onMenuTriggerClick(e, trigger);
+        }
+      });
+    }
+  }
+
+  bindEvents() {
+    super.bindEvents();
+  }
+
+  onMenuTriggerClick(event, trigger) {
+    const btn = trigger || this.mainToggleButton;
+    if (!this.mainDetailsToggle) this.mainDetailsToggle = this.querySelector('.menu-drawer-container');
+    if (!btn || !this.mainDetailsToggle) return;
+    this.mainToggleButton = btn;
+    if (this.mainDetailsToggle.classList.contains('menu-drawer-container--open')) {
+      this.closeMenuDrawer(event, btn);
+    } else {
+      this.openMenuDrawer(btn);
+    }
+  }
+
+  onKeyUp(event) {
+    if (event.code.toUpperCase() !== 'ESCAPE') return;
+    const openDetailsElement = event.target.closest('details[open]');
+    if (openDetailsElement) {
+      openDetailsElement === this.mainDetailsToggle
+        ? this.closeMenuDrawer(event, this.mainDetailsToggle.querySelector('summary'))
+        : this.closeSubmenu(openDetailsElement);
+      return;
+    }
+    if (
+      this.mainDetailsToggle?.classList.contains('menu-drawer-container--open') &&
+      this.mainDetailsToggle.contains(document.activeElement)
+    ) {
+      this.closeMenuDrawer(event, this.mainToggleButton);
+      this.mainToggleButton?.focus();
+    }
+  }
+
+  onFocusOut() {
+    setTimeout(() => {
+      const isOpen = this.mainDetailsToggle?.classList?.contains('menu-drawer-container--open');
+      const activeEl = document.activeElement;
+      if (!isOpen) return;
+      if (!activeEl || activeEl === document.body) return;
+      if (!this.mainDetailsToggle.contains(activeEl)) {
+        this.closeMenuDrawer(null, this.mainToggleButton);
+      }
+    });
+  }
+
+  openMenuDrawer(toggleElement) {
+    this.mainDetailsToggle.classList.add('menu-drawer-container--open');
     this.header = this.header || document.querySelector('.section-header');
     this.borderOffset =
       this.borderOffset || this.closest('.header-wrapper').classList.contains('header-wrapper--border-bottom') ? 1 : 0;
     document.documentElement.style.setProperty(
       '--header-bottom-position',
-      `${parseInt(this.header.getBoundingClientRect().bottom - this.borderOffset)}px`
+      `${parseInt(this.header.getBoundingClientRect().bottom - this.borderOffset)}px`,
     );
     this.header.classList.add('menu-open');
 
@@ -584,14 +649,16 @@ class HeaderDrawer extends MenuDrawer {
       this.mainDetailsToggle.classList.add('menu-opening');
     });
 
-    summaryElement.setAttribute('aria-expanded', true);
+    toggleElement.setAttribute('aria-expanded', true);
     window.addEventListener('resize', this.onResize);
-    trapFocus(this.mainDetailsToggle, summaryElement);
+    trapFocus(this.mainDetailsToggle, toggleElement);
     document.body.classList.add(`overflow-hidden-${this.dataset.breakpoint}`);
   }
 
   closeMenuDrawer(event, elementToFocus) {
     if (!elementToFocus) return;
+    this.mainDetailsToggle.classList.remove('menu-drawer-container--open');
+    elementToFocus.setAttribute('aria-expanded', 'false');
     super.closeMenuDrawer(event, elementToFocus);
     this.header.classList.remove('menu-open');
     window.removeEventListener('resize', this.onResize);
@@ -601,7 +668,7 @@ class HeaderDrawer extends MenuDrawer {
     this.header &&
       document.documentElement.style.setProperty(
         '--header-bottom-position',
-        `${parseInt(this.header.getBoundingClientRect().bottom - this.borderOffset)}px`
+        `${parseInt(this.header.getBoundingClientRect().bottom - this.borderOffset)}px`,
       );
     document.documentElement.style.setProperty('--viewport-height', `${window.innerHeight}px`);
   };
@@ -678,7 +745,7 @@ class BulkModal extends HTMLElement {
     };
 
     new IntersectionObserver(handleIntersection.bind(this)).observe(
-      document.querySelector(`#QuickBulk-${this.dataset.productId}-${this.dataset.sectionId}`)
+      document.querySelector(`#QuickBulk-${this.dataset.productId}-${this.dataset.sectionId}`),
     );
   }
 }
@@ -754,7 +821,7 @@ class SliderComponent extends HTMLElement {
     if (this.sliderItemsToShow.length < 2) return;
     this.sliderItemOffset = this.sliderItemsToShow[1].offsetLeft - this.sliderItemsToShow[0].offsetLeft;
     this.slidesPerPage = Math.floor(
-      (this.slider.clientWidth - this.sliderItemsToShow[0].offsetLeft) / this.sliderItemOffset
+      (this.slider.clientWidth - this.sliderItemsToShow[0].offsetLeft) / this.sliderItemOffset,
     );
     this.totalPages = this.sliderItemsToShow.length - this.slidesPerPage + 1;
     this.update();
@@ -785,7 +852,7 @@ class SliderComponent extends HTMLElement {
             currentPage: this.currentPage,
             currentElement: this.sliderItemsToShow[this.currentPage - 1],
           },
-        })
+        }),
       );
     }
 
@@ -862,7 +929,7 @@ class SlideshowComponent extends SliderComponent {
           () => {
             this.announcementBarArrowButtonWasClicked = true;
           },
-          { once: true }
+          { once: true },
         );
       });
     }
@@ -1106,7 +1173,7 @@ class VariantSelects extends HTMLElement {
 
       selectedDropdownSwatchValue.style.setProperty(
         '--swatch-focal-point',
-        target.selectedOptions[0].dataset.optionSwatchFocalPoint || 'unset'
+        target.selectedOptions[0].dataset.optionSwatchFocalPoint || 'unset',
       );
     } else if (tagName === 'INPUT' && target.type === 'radio') {
       let allSwatchValueContainers = target.closest(`.product-form__input`).querySelectorAll('[data-selected-value]');
@@ -1131,7 +1198,7 @@ class VariantSelects extends HTMLElement {
 
   get selectedOptionValues() {
     return Array.from(this.querySelectorAll('select option[selected], fieldset input:checked')).map(
-      ({ dataset }) => dataset.optionValueId
+      ({ dataset }) => dataset.optionValueId,
     );
   }
 }
@@ -1157,7 +1224,7 @@ class ProductRecommendations extends HTMLElement {
         observer.unobserve(this);
         this.loadRecommendations(productId);
       },
-      { rootMargin: '0px 0px 400px 0px' }
+      { rootMargin: '0px 0px 400px 0px' },
     );
     this.observer.observe(this);
   }
