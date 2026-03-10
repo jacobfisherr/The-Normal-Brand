@@ -253,38 +253,6 @@
     "enavi_collection_list_dLxaBA": {
       "type": "enavi-collection-list",
       "blocks": {
-        "featured_collection_tzCdTE": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "hoodies-pullovers-1",
-            "custom_title": "",
-            "custom_image": "shopify://shop_images/Homepage-Category-Template_eb26d0af-ffb1-4b55-a356-0e643d0c6360.jpg"
-          }
-        },
-        "featured_collection_f94kY8": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "t-shirts-henleys",
-            "custom_title": "",
-            "custom_image": "shopify://shop_images/M_Henley.jpg"
-          }
-        },
-        "featured_collection_gd9VFq": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "sweaters",
-            "custom_title": "Sweaters",
-            "custom_image": "shopify://shop_images/Homepage-Category-Template_2.jpg"
-          }
-        },
-        "featured_collection_LdNq8P": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "button-up-shirts",
-            "custom_title": "",
-            "custom_image": "shopify://shop_images/Homepage-Category-Template_45967191-dee2-40cb-8ecf-4b5f4253c665.jpg"
-          }
-        },
         "featured_collection_JQFfzG": {
           "type": "featured_collection",
           "settings": {
@@ -301,6 +269,38 @@
             "custom_image": "shopify://shop_images/Homepage-Category-Template_3.jpg"
           }
         },
+        "featured_collection_LdNq8P": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "button-up-shirts",
+            "custom_title": "",
+            "custom_image": "shopify://shop_images/Homepage-Category-Template_45967191-dee2-40cb-8ecf-4b5f4253c665.jpg"
+          }
+        },
+        "featured_collection_f94kY8": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "t-shirts-henleys",
+            "custom_title": "",
+            "custom_image": "shopify://shop_images/M_Henley.jpg"
+          }
+        },
+        "featured_collection_tzCdTE": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hoodies-pullovers-1",
+            "custom_title": "",
+            "custom_image": "shopify://shop_images/Homepage-Category-Template_eb26d0af-ffb1-4b55-a356-0e643d0c6360.jpg"
+          }
+        },
+        "featured_collection_gd9VFq": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "sweaters",
+            "custom_title": "Sweaters",
+            "custom_image": "shopify://shop_images/Homepage-Category-Template_2.jpg"
+          }
+        },
         "featured_collection_m9KmVy": {
           "type": "featured_collection",
           "settings": {
@@ -311,12 +311,12 @@
         }
       },
       "block_order": [
-        "featured_collection_tzCdTE",
-        "featured_collection_f94kY8",
-        "featured_collection_gd9VFq",
-        "featured_collection_LdNq8P",
         "featured_collection_JQFfzG",
         "featured_collection_bhEd3K",
+        "featured_collection_LdNq8P",
+        "featured_collection_f94kY8",
+        "featured_collection_tzCdTE",
+        "featured_collection_gd9VFq",
         "featured_collection_m9KmVy"
       ],
       "name": "Enavi Collection List",
