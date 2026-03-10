@@ -572,14 +572,15 @@ class HeaderDrawer extends MenuDrawer {
     if (!this.mainDetailsToggle) {
       this.mainDetailsToggle = this.querySelector('.menu-drawer-container');
       this.mainToggleButton = this.querySelector('.menu-drawer-trigger');
+      // Add listener here; bindEvents runs during super() before these are set
+      if (this.mainToggleButton) {
+        this.mainToggleButton.addEventListener('click', this.onMenuTriggerClick.bind(this));
+      }
     }
   }
 
   bindEvents() {
     super.bindEvents();
-    if (this.mainToggleButton) {
-      this.mainToggleButton.addEventListener('click', this.onMenuTriggerClick.bind(this));
-    }
   }
 
   onMenuTriggerClick(event) {
