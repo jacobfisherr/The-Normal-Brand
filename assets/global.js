@@ -622,13 +622,17 @@ class HeaderDrawer extends MenuDrawer {
     }
   }
 
-  onFocusOut() {
+  onFocusOut(event) {
     setTimeout(() => {
       const isOpen = this.mainDetailsToggle?.classList?.contains('menu-drawer-container--open');
-      const activeEl = document.activeElement;
       if (!isOpen) return;
-      if (!activeEl || activeEl === document.body) return;
-      if (!this.mainDetailsToggle.contains(activeEl)) {
+
+      const nextFocus = event?.relatedTarget || document.activeElement;
+      if (!nextFocus || nextFocus === document.body || nextFocus === document.documentElement) {
+        return;
+      }
+
+      if (!this.mainDetailsToggle.contains(nextFocus)) {
         this.closeMenuDrawer(null, this.mainToggleButton);
       }
     });
