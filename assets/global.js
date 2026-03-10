@@ -576,14 +576,19 @@ class HeaderDrawer extends MenuDrawer {
   }
 
   connectedCallback() {
-    // Setup runs here; constructor may run before children are in DOM
     if (!this.mainDetailsToggle) {
       this.mainDetailsToggle = this.querySelector('.menu-drawer-container');
       this.mainToggleButton = this.querySelector('.menu-drawer-trigger');
     }
-    if (this.mainToggleButton && !this.mainToggleButton.dataset.headerDrawerBound) {
-      this.mainToggleButton.dataset.headerDrawerBound = 'true';
-      this.mainToggleButton.addEventListener('click', this.onMenuTriggerClick.bind(this));
+    // Event delegation: listen on the element itself, no need to find the button
+    if (!this.dataset.clickBound) {
+      this.dataset.clickBound = 'true';
+      this.addEventListener('click', (e) => {
+        const trigger = e.target.closest('.menu-drawer-trigger');
+        if (trigger) {
+          this.onMenuTriggerClick(e, trigger);
+        }
+      });
     }
   }
 
@@ -591,11 +596,14 @@ class HeaderDrawer extends MenuDrawer {
     super.bindEvents();
   }
 
-  onMenuTriggerClick(event) {
+  onMenuTriggerClick(event, trigger) {
+    const btn = trigger || this.mainToggleButton;
+    if (!this.mainDetailsToggle) this.mainDetailsToggle = this.querySelector('.menu-drawer-container');
+    if (!btn || !this.mainDetailsToggle) return;
     if (this.mainDetailsToggle.classList.contains('menu-drawer-container--open')) {
-      this.closeMenuDrawer(event, this.mainToggleButton);
+      this.closeMenuDrawer(event, btn);
     } else {
-      this.openMenuDrawer(this.mainToggleButton);
+      this.openMenuDrawer(btn);
     }
   }
 
