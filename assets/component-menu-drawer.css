@@ -3,7 +3,9 @@
 }
 
 .js menu-drawer > details > summary::before,
-.js menu-drawer > details[open]:not(.menu-opening) > summary::before {
+.js menu-drawer > details[open]:not(.menu-opening) > summary::before,
+.js header-drawer .menu-drawer-container > .menu-drawer-trigger::before,
+.js header-drawer .menu-drawer-container:not(.menu-opening) > .menu-drawer-trigger::before {
   content: '';
   position: absolute;
   cursor: default;
@@ -16,13 +18,18 @@
   opacity: 0;
   visibility: hidden;
   z-index: 2;
-  transition: opacity 0s, visibility 0s;
+  transition:
+    opacity 0s,
+    visibility 0s;
 }
 
-menu-drawer > details[open] > summary::before {
+menu-drawer > details[open] > summary::before,
+header-drawer .menu-drawer-container--open > .menu-drawer-trigger::before {
   visibility: visible;
   opacity: 1;
-  transition: opacity var(--duration-default) ease, visibility var(--duration-default) ease;
+  transition:
+    opacity var(--duration-default) ease,
+    visibility var(--duration-default) ease;
 }
 
 .menu-drawer {
@@ -48,12 +55,16 @@ menu-drawer > details[open] > summary::before {
 }
 
 .js details[open] > .menu-drawer,
-.js details[open] > .menu-drawer__submenu {
-  transition: transform var(--duration-default) ease, visibility var(--duration-default) ease;
+.js details[open] > .menu-drawer__submenu,
+.js header-drawer .menu-drawer-container--open > .menu-drawer {
+  transition:
+    transform var(--duration-default) ease,
+    visibility var(--duration-default) ease;
 }
 
 .js details[open].menu-opening > .menu-drawer,
-details[open].menu-opening > .menu-drawer__submenu {
+details[open].menu-opening > .menu-drawer__submenu,
+.js header-drawer .menu-drawer-container--open.menu-opening > .menu-drawer {
   transform: translateX(0);
   visibility: visible;
 }
