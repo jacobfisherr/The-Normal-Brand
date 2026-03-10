@@ -568,9 +568,59 @@ customElements.define('menu-drawer', MenuDrawer);
 class HeaderDrawer extends MenuDrawer {
   constructor() {
     super();
+    // Header drawer uses a button + div instead of details/summary for accessibility
+    if (!this.mainDetailsToggle) {
+      this.mainDetailsToggle = this.querySelector('.menu-drawer-container');
+      this.mainToggleButton = this.querySelector('.menu-drawer-trigger');
+    }
   }
 
-  openMenuDrawer(summaryElement) {
+  bindEvents() {
+    super.bindEvents();
+    if (this.mainToggleButton) {
+      this.mainToggleButton.addEventListener('click', this.onMenuTriggerClick.bind(this));
+    }
+  }
+
+  onMenuTriggerClick(event) {
+    if (this.mainDetailsToggle.classList.contains('menu-drawer-container--open')) {
+      this.closeMenuDrawer(event, this.mainToggleButton);
+    } else {
+      this.openMenuDrawer(this.mainToggleButton);
+    }
+  }
+
+  onKeyUp(event) {
+    if (event.code.toUpperCase() !== 'ESCAPE') return;
+    const openDetailsElement = event.target.closest('details[open]');
+    if (openDetailsElement) {
+      openDetailsElement === this.mainDetailsToggle
+        ? this.closeMenuDrawer(event, this.mainDetailsToggle.querySelector('summary'))
+        : this.closeSubmenu(openDetailsElement);
+      return;
+    }
+    if (
+      this.mainDetailsToggle?.classList.contains('menu-drawer-container--open') &&
+      this.mainDetailsToggle.contains(document.activeElement)
+    ) {
+      this.closeMenuDrawer(event, this.mainToggleButton);
+      this.mainToggleButton?.focus();
+    }
+  }
+
+  onFocusOut() {
+    setTimeout(() => {
+      const isOpen =
+        this.mainDetailsToggle?.hasAttribute?.('open') ||
+        this.mainDetailsToggle?.classList?.contains('menu-drawer-container--open');
+      if (isOpen && !this.mainDetailsToggle.contains(document.activeElement)) {
+        this.closeMenuDrawer(null, this.mainToggleButton);
+      }
+    });
+  }
+
+  openMenuDrawer(toggleElement) {
+    this.mainDetailsToggle.classList.add('menu-drawer-container--open');
     this.header = this.header || document.querySelector('.section-header');
     this.borderOffset =
       this.borderOffset || this.closest('.header-wrapper').classList.contains('header-wrapper--border-bottom') ? 1 : 0;
@@ -584,14 +634,16 @@ class HeaderDrawer extends MenuDrawer {
       this.mainDetailsToggle.classList.add('menu-opening');
     });
 
-    summaryElement.setAttribute('aria-expanded', true);
+    toggleElement.setAttribute('aria-expanded', true);
     window.addEventListener('resize', this.onResize);
-    trapFocus(this.mainDetailsToggle, summaryElement);
+    trapFocus(this.mainDetailsToggle, toggleElement);
     document.body.classList.add(`overflow-hidden-${this.dataset.breakpoint}`);
   }
 
   closeMenuDrawer(event, elementToFocus) {
     if (!elementToFocus) return;
+    this.mainDetailsToggle.classList.remove('menu-drawer-container--open');
+    elementToFocus.setAttribute('aria-expanded', 'false');
     super.closeMenuDrawer(event, elementToFocus);
     this.header.classList.remove('menu-open');
     window.removeEventListener('resize', this.onResize);
