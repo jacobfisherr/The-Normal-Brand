@@ -150,6 +150,7 @@
         },
         "slide_rHJLX8": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/10year-Desktop-Template_1_dfc7f339-8e84-4fc0-bf8d-40a8341d82d0.jpg",
             "mobile_image": "shopify://shop_images/Mobile-Template-2_c745aef4-6164-44ba-b955-7618258eee61.jpg",
