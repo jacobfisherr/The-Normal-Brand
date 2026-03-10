@@ -569,17 +569,13 @@ class HeaderDrawer extends MenuDrawer {
   constructor() {
     super();
     // Header drawer uses a button + div instead of details/summary for accessibility
-    if (!this.mainDetailsToggle) {
-      this.mainDetailsToggle = this.querySelector('.menu-drawer-container');
-      this.mainToggleButton = this.querySelector('.menu-drawer-trigger');
-    }
+    this.mainDetailsToggle = this.querySelector('.menu-drawer-container');
+    this.mainToggleButton = this.querySelector('.menu-drawer-trigger');
   }
 
   connectedCallback() {
-    if (!this.mainDetailsToggle) {
-      this.mainDetailsToggle = this.querySelector('.menu-drawer-container');
-      this.mainToggleButton = this.querySelector('.menu-drawer-trigger');
-    }
+    this.mainDetailsToggle = this.querySelector('.menu-drawer-container');
+    this.mainToggleButton = this.querySelector('.menu-drawer-trigger');
     // Event delegation: listen on the element itself, no need to find the button
     if (!this.dataset.clickBound) {
       this.dataset.clickBound = 'true';
