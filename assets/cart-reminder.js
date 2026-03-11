@@ -5,6 +5,39 @@ class CartReminder extends HTMLElement {
   }
 
   connectedCallback() {
+    // Dispatch cart-has-items for ALL users so Convert can bucket them into the experiment
+    if (this.dataset.cartCount > 0) {
+      window.dispatchEvent(
+        new CustomEvent('cart-has-items', {
+          detail: {
+            hasItems: true,
+          },
+        })
+      );
+    }
+
+    // Only activate the tooltip for Convert variation users (data-cart-reminder="true" on <html>)
+    if (document.documentElement.getAttribute('data-cart-reminder') === 'true') {
+      this.activate();
+    } else {
+      // Convert JS may not have run yet — watch for the attribute to be set
+      this.observer = new MutationObserver((mutations) => {
+        for (const mutation of mutations) {
+          if (
+            mutation.attributeName === 'data-cart-reminder' &&
+            document.documentElement.getAttribute('data-cart-reminder') === 'true'
+          ) {
+            this.observer.disconnect();
+            this.activate();
+            break;
+          }
+        }
+      });
+      this.observer.observe(document.documentElement, { attributes: true });
+    }
+  }
+
+  activate() {
     // Create the reminder content dynamically
     const cartUrl = this.dataset.cartUrl || '/cart';
 
@@ -34,16 +67,6 @@ class CartReminder extends HTMLElement {
     // Only show if cart has items and reminder hasn't been shown this session
     if (!this.hasShown && this.dataset.cartCount > 0) {
       this.init();
-    }
-
-    if (this.dataset.cartCount > 0) {
-      window.dispatchEvent(
-        new CustomEvent('cart-has-items', {
-          detail: {
-            hasItems: true,
-          },
-        })
-      );
     }
   }
 
