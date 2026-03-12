@@ -100,6 +100,7 @@
         },
         "slide_ey3yPc": {
           "type": "slide",
+          "name": "Slide - Robles Knit Button  Up",
           "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Web_robles_1e3f8aff-2d02-4311-97db-50375af97b9f.jpg",
@@ -108,11 +109,11 @@
             "heading_size": "h0",
             "mobile_heading_size": "h0",
             "subheading": "",
-            "button_size": "small",
+            "button_size": "large",
             "mobile_button_size": "small",
             "button_label": "Shop Men",
             "link": "https://thenormalbrand.com/collections/mens",
-            "button_label_2": "Shop Comfort Terry",
+            "button_label_2": "",
             "link_2": "https://thenormalbrand.com/collections/comfort-terry-collection-mens",
             "button_style_secondary": true,
             "box_align": "middle-right",
