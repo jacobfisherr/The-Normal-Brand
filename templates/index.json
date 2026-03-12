@@ -125,6 +125,7 @@
         },
         "slide_ey3yPc": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/10year-Desktop-Template_2_8904a7b7-5fed-40ad-8958-19588ac6ce1c.jpg",
             "mobile_image": "shopify://shop_images/Mobile-Template-1_712cfa96-45b1-4cdf-8b20-dcee8c9ff485.jpg",
@@ -150,6 +151,7 @@
         },
         "slide_QBadaG": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/10year-Desktop-Template_3_6faffc01-8b74-4aa0-bb84-2bcab925f975.jpg",
             "mobile_image": "shopify://shop_images/Mobile-Template-3_ca7a9e59-297d-4783-9edf-a93b4f8a92ba.jpg",
