@@ -88,7 +88,7 @@
             "link": "https://thenormalbrand.com/collections/new",
             "button_label_2": "",
             "link_2": "",
-            "button_style_secondary": false,
+            "button_style_secondary": true,
             "box_align": "middle-center",
             "show_text_box": false,
             "text_alignment": "center",
