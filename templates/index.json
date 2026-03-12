@@ -72,6 +72,32 @@
     "slideshow_nnbpCq": {
       "type": "slideshow",
       "blocks": {
+        "slide_z4z64U": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Web_new.jpg",
+            "mobile_image": "shopify://shop_images/mobile_new.jpg",
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "mobile_heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_size": "large",
+            "mobile_button_size": "small",
+            "button_label": "Shop New Arrivals",
+            "link": "",
+            "button_label_2": "Button label",
+            "link_2": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center",
+            "mobile_box_align": "middle"
+          }
+        },
         "slide_GgzTMR": {
           "type": "slide",
           "disabled": true,
@@ -176,6 +202,7 @@
         }
       },
       "block_order": [
+        "slide_z4z64U",
         "slide_GgzTMR",
         "slide_ey3yPc",
         "slide_QBadaG",
