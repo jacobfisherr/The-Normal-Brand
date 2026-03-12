@@ -74,7 +74,6 @@
       "blocks": {
         "slide_z4z64U": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Web_new.jpg",
             "mobile_image": "shopify://shop_images/mobile_new.jpg",
@@ -93,7 +92,7 @@
             "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
-            "color_scheme": "scheme-7eca2d75-45a3-4024-b69d-17de1ca4d726",
+            "color_scheme": "tnb-dark",
             "text_alignment_mobile": "center",
             "mobile_box_align": "middle"
           }
