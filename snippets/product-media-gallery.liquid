@@ -63,7 +63,7 @@
         {%- assign featured_media = product.selected_or_first_available_variant.featured_media -%}
         <li
           id="Slide-{{ section.id }}-{{ featured_media.id }}"
-          class="product__media-item grid__item slider__slide is-active{% if single_media_visible %} product__media-item--single{% endif %}{% if featured_media.media_type != 'image' %} product__media-item--full{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
+          class="product__media-item grid__item slider__slide is-active{% if single_media_visible %} product__media-item--single{% endif %}{% if featured_media.media_type != 'image' %} product__media-item--full{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}{% if featured_media.alt contains 'test-pdpgallery' %} convert-test-video{% endif %}"
           data-media-id="{{ section.id }}-{{ featured_media.id }}"
         >
           {%- assign media_position = 1 -%}
@@ -95,7 +95,7 @@
         {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
           <li
             id="Slide-{{ section.id }}-{{ media.id }}"
-            class="product__media-item grid__item slider__slide{% if single_media_visible %} product__media-item--single{% endif %}{% if product.selected_or_first_available_variant.featured_media == nil and forloop.index == 1 %} is-active{% endif %}{% if media.media_type != 'image' %} product__media-item--full{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
+            class="product__media-item grid__item slider__slide{% if single_media_visible %} product__media-item--single{% endif %}{% if product.selected_or_first_available_variant.featured_media == nil and forloop.index == 1 %} is-active{% endif %}{% if media.media_type != 'image' %} product__media-item--full{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}{% if media.alt contains 'test-pdpgallery' %} convert-test-video{% endif %}"
             data-media-id="{{ section.id }}-{{ media.id }}"
           >
             {% render 'product-thumbnail',
@@ -118,31 +118,33 @@
     </ul>
     <div class="slider-bullet-nav">
       <ul class="slider-bullets">
-      {%- if product.selected_or_first_available_variant.featured_media != null -%}
-        {%- assign media_counter = 1 -%}
-        {%- assign media_position = 1 -%}
-        <li class="slider-bullet">
-          <button
-            class="slider-bullet-button active"
-            >View slide 1</button>
-        </li>
-      {%- endif -%}
-      {%- for media in product.media -%}
-        {% if media_position >= limit
-          or media_position >= 1
-          and section.settings.hide_variants
-          and variant_images contains media.src
-        %}
-          {% continue %}
-        {% endif %}
-
-        {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
-          {%- assign media_counter = media_counter | plus: 1 -%}
-          <li class="slider-bullet">
-            <button class="slider-bullet-button">View slide {{ media_counter }}</button>
+        {%- if product.selected_or_first_available_variant.featured_media != null -%}
+          {%- assign media_counter = 1 -%}
+          {%- assign media_position = 1 -%}
+          <li class="slider-bullet{% if product.selected_or_first_available_variant.featured_media.alt contains 'test-pdpgallery' %} convert-test-video{% endif %}">
+            <button
+              class="slider-bullet-button active"
+            >
+              View slide 1
+            </button>
           </li>
-        {%- endunless -%}
-      {%- endfor -%}
+        {%- endif -%}
+        {%- for media in product.media -%}
+          {% if media_position >= limit
+            or media_position >= 1
+            and section.settings.hide_variants
+            and variant_images contains media.src
+          %}
+            {% continue %}
+          {% endif %}
+
+          {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
+            {%- assign media_counter = media_counter | plus: 1 -%}
+            <li class="slider-bullet{% if media.alt contains 'test-pdpgallery' %} convert-test-video{% endif %}">
+              <button class="slider-bullet-button">View slide {{ media_counter }}</button>
+            </li>
+          {%- endunless -%}
+        {%- endfor -%}
       </ul>
     </div>
     <div class="slider-buttons quick-add-hidden{% if hide_mobile_slider %} small-hide{% endif %}">
@@ -279,7 +281,7 @@
             -%}
             <li
               id="Slide-Thumbnails-{{ section.id }}-{{ forloop.index }}"
-              class="thumbnail-list__item slider__slide{% if section.settings.hide_variants and variant_images contains media.src %} thumbnail-list_item--variant{% endif %}"
+              class="thumbnail-list__item slider__slide{% if section.settings.hide_variants and variant_images contains media.src %} thumbnail-list_item--variant{% endif %}{% if media.alt contains 'test-pdpgallery' %} convert-test-video{% endif %}"
               data-target="{{ section.id }}-{{ media.id }}"
               data-media-position="{{ media_index }}"
             >
