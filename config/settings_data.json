@@ -185,7 +185,7 @@
       "okendo-loyalty-referrals": {
         "type": "okendo-loyalty-referrals",
         "settings": {
-          "referrals_image": "shopify://shop_images/Bottom_header.jpg"
+          "referrals_image": "shopify://shop_images/rewards_bottom.jpg"
         }
       },
       "okendo-loyalty-faq": {
