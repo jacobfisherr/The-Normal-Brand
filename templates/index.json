@@ -127,7 +127,6 @@
         "slide_QBadaG": {
           "type": "slide",
           "name": "Slide - Deep V ",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Web_deepv_937fb4bb-b0ef-4f9e-ae6a-66cc0a487a68.jpg",
             "mobile_image": "shopify://shop_images/mobile_deepv_4e3bdb3f-773e-4c46-a30a-e5f886fe25c1.jpg",
@@ -144,7 +143,7 @@
             "button_style_secondary": true,
             "box_align": "middle-center",
             "show_text_box": false,
-            "text_alignment": "right",
+            "text_alignment": "center",
             "image_overlay_opacity": 0,
             "color_scheme": "scheme-7eca2d75-45a3-4024-b69d-17de1ca4d726",
             "text_alignment_mobile": "center",
