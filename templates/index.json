@@ -126,6 +126,7 @@
         },
         "slide_QBadaG": {
           "type": "slide",
+          "name": "Slide - Deep V ",
           "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Web_deepv_937fb4bb-b0ef-4f9e-ae6a-66cc0a487a68.jpg",
