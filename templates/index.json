@@ -78,10 +78,10 @@
           "settings": {
             "image": "shopify://shop_images/Web_new.jpg",
             "mobile_image": "shopify://shop_images/mobile_new.jpg",
-            "heading": "Image slide",
+            "heading": "",
             "heading_size": "h1",
             "mobile_heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
+            "subheading": "",
             "button_size": "large",
             "mobile_button_size": "small",
             "button_label": "Shop New Arrivals",
