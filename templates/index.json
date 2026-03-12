@@ -250,7 +250,7 @@
           "settings": {
             "collection": "button-up-shirts",
             "custom_title": "",
-            "custom_image": "shopify://shop_images/Homepage-Category-Template_45967191-dee2-40cb-8ecf-4b5f4253c665.jpg"
+            "custom_image": "shopify://shop_images/buttonup.jpg"
           }
         },
         "featured_collection_f94kY8": {
@@ -258,11 +258,12 @@
           "settings": {
             "collection": "t-shirts",
             "custom_title": "",
-            "custom_image": "shopify://shop_images/M_Henley.jpg"
+            "custom_image": "shopify://shop_images/tshirts_43725570-c629-49c6-bf49-af18e29614cb.jpg"
           }
         },
         "featured_collection_tzCdTE": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
             "collection": "hoodies-pullovers-1",
             "custom_title": "",
@@ -271,6 +272,7 @@
         },
         "featured_collection_gd9VFq": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
             "collection": "sweaters",
             "custom_title": "Sweaters",
@@ -282,7 +284,7 @@
           "settings": {
             "collection": "outerwear",
             "custom_title": "Outerwear",
-            "custom_image": "shopify://shop_images/M_Outerwear_4f6b3c41-0dc6-40b3-843e-4709284a33d1.jpg"
+            "custom_image": "shopify://shop_images/outerwear_1132060f-2060-41ca-9b40-422dfb111943.jpg"
           }
         }
       },
