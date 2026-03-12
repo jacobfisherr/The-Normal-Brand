@@ -323,12 +323,12 @@
         "column_746rwt": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Multicolumn-Template1.jpg",
-            "title": "Quiet Anticipation",
-            "text": "<p>Pieces that live in the in-between, chosen with what's next in mind.</p>",
+            "image": "shopify://shop_images/PIM.jpg",
+            "title": "Postcards in Motion",
+            "text": "<p>Each piece feels lived in, as if it's collected a few stories along the way.</p>",
             "liquid": "",
-            "link_label": "Shop New Arrivals",
-            "link": "https://thenormalbrand.com/collections/quiet-anticipation",
+            "link_label": "Shop Collection",
+            "link": "https://thenormalbrand.com/collections/postcards-in-motion",
             "text_alignment": "left",
             "text_alignment_mobile": "left"
           }
