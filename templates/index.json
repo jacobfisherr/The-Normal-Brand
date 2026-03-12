@@ -149,66 +149,12 @@
             "text_alignment_mobile": "center",
             "mobile_box_align": "middle"
           }
-        },
-        "slide_rHJLX8": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/10year-Desktop-Template_1_dfc7f339-8e84-4fc0-bf8d-40a8341d82d0.jpg",
-            "mobile_image": "shopify://shop_images/Mobile-Template-2_c745aef4-6164-44ba-b955-7618258eee61.jpg",
-            "heading": "Essentials Only",
-            "heading_size": "h0",
-            "mobile_heading_size": "h0",
-            "subheading": "",
-            "button_size": "small",
-            "mobile_button_size": "small",
-            "button_label": "Shop All Men's",
-            "link": "https://thenormalbrand.com/collections/mens",
-            "button_label_2": "Shop Puremeso",
-            "link_2": "https://thenormalbrand.com/collections/mens-puremeso",
-            "button_style_secondary": true,
-            "box_align": "middle-right",
-            "show_text_box": false,
-            "text_alignment": "right",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-7eca2d75-45a3-4024-b69d-17de1ca4d726",
-            "text_alignment_mobile": "center",
-            "mobile_box_align": "middle"
-          }
-        },
-        "slide_GgzTMR": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/Web_1.1_UPDATE.jpg",
-            "mobile_image": "shopify://shop_images/Mobile_1.1_UPDATE.jpg",
-            "heading": "",
-            "heading_size": "h0",
-            "mobile_heading_size": "h0",
-            "subheading": "",
-            "button_size": "large",
-            "mobile_button_size": "small",
-            "button_label": "Shop Men's",
-            "link": "https://thenormalbrand.com/collections/build-your-own-box-byob?options%5Bunavailable_products%5D=hide&sort_by=manual&filter.p.m.custom.gender=gid%3A%2F%2Fshopify%2FMetaobject%2F75598921900",
-            "button_label_2": "Shop Women's",
-            "link_2": "https://thenormalbrand.com/collections/build-your-own-box-byob?options%5Bunavailable_products%5D=hide&sort_by=manual&filter.p.m.custom.gender=gid%3A%2F%2Fshopify%2FMetaobject%2F75653972140",
-            "button_style_secondary": true,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-7eca2d75-45a3-4024-b69d-17de1ca4d726",
-            "text_alignment_mobile": "center",
-            "mobile_box_align": "middle"
-          }
         }
       },
       "block_order": [
         "slide_z4z64U",
         "slide_ey3yPc",
-        "slide_QBadaG",
-        "slide_rHJLX8",
-        "slide_GgzTMR"
+        "slide_QBadaG"
       ],
       "settings": {
         "layout": "full_bleed",
@@ -288,7 +234,7 @@
           "settings": {
             "collection": "pants",
             "custom_title": "",
-            "custom_image": "shopify://shop_images/M_Pants_a65bd7bc-14ff-4c56-9fd8-13ec0b5fd33d.jpg"
+            "custom_image": "shopify://shop_images/pants_1df9afdd-c981-46c1-aa93-391d573dabce.jpg"
           }
         },
         "featured_collection_bhEd3K": {
