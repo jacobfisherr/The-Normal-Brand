@@ -74,6 +74,7 @@
       "blocks": {
         "slide_z4z64U": {
           "type": "slide",
+          "name": "Slide - Spring '26",
           "settings": {
             "image": "shopify://shop_images/Web_new.jpg",
             "mobile_image": "shopify://shop_images/mobile_new.jpg",
@@ -101,15 +102,15 @@
           "type": "slide",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/10year-Desktop-Template_2_8904a7b7-5fed-40ad-8958-19588ac6ce1c.jpg",
-            "mobile_image": "shopify://shop_images/Mobile-Template-1_712cfa96-45b1-4cdf-8b20-dcee8c9ff485.jpg",
-            "heading": "Crafted for Comfort",
+            "image": "shopify://shop_images/Web_robles_1e3f8aff-2d02-4311-97db-50375af97b9f.jpg",
+            "mobile_image": "shopify://shop_images/mobile_robles.jpg",
+            "heading": "",
             "heading_size": "h0",
             "mobile_heading_size": "h0",
             "subheading": "",
             "button_size": "small",
             "mobile_button_size": "small",
-            "button_label": "Shop All Men's",
+            "button_label": "Shop Men",
             "link": "https://thenormalbrand.com/collections/mens",
             "button_label_2": "Shop Comfort Terry",
             "link_2": "https://thenormalbrand.com/collections/comfort-terry-collection-mens",
