@@ -1256,7 +1256,6 @@ body.convert-pdp-video-active .convert-test-video .slider-bullet-button.convert-
   background: transparent !important;
   border: none !important;
   cursor: pointer;
-  height: 1.1rem;
   width: 1rem;
   border-radius: 0;
 }
