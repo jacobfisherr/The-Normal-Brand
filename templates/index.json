@@ -323,7 +323,7 @@
         "column_746rwt": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/PIM.jpg",
+            "image": "shopify://shop_images/Multicolumn-Template_1_a16c6571-6b64-4c80-bc7f-b9cc6bcf22ca.jpg",
             "title": "Postcards in Motion",
             "text": "<p>Each piece feels lived in, as if it's collected a few stories along the way.</p>",
             "liquid": "",
@@ -336,12 +336,12 @@
         "column_qyTCPm": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Multicolumn-Template_09a86b06-c7fa-403f-a2d0-2f432182c664.jpg",
-            "title": "All in the details",
-            "text": "<p>Add a little texture without feeling over the top. </p>",
+            "image": "shopify://shop_images/Multicolumn-Template_2_1dc88518-64c0-4adc-93e5-29bfa9643003.jpg",
+            "title": "Top classics",
+            "text": "<p>The shirt you'll reach for all season. Button-ups made for warmer days.</p>",
             "liquid": "",
-            "link_label": "Shop Jacquard Zip Front Cardigan",
-            "link": "https://thenormalbrand.com/collections/sweaters/products/jacquard-zip-front-cardigan-in-ivory",
+            "link_label": "Shop Freshwater",
+            "link": "https://thenormalbrand.com/collections/freshwater-collection",
             "text_alignment": "left",
             "text_alignment_mobile": "left"
           }
@@ -349,12 +349,12 @@
         "column_jMQNUb": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Multicolumn-Template_439dc23e-849a-4dea-8019-02da72265400.jpg",
-            "title": "Introducing: Gia",
-            "text": "<p>With modern silhouette and versatile styling details in mind, it’s a statement piece you’ll reach for again and again.</p>",
+            "image": "shopify://shop_images/Multicolumn-Template_3_eac407f1-8962-4491-a3e1-b8dc911b433d.jpg",
+            "title": "early spring essentials",
+            "text": "<p>Designed to move with you through shifting days. These pieces are ones you'll keep within arm's reach.</p>",
             "liquid": "",
-            "link_label": "Shop Gia Lapel Cropped Jacket",
-            "link": "https://thenormalbrand.com/products/gia-lapel-cropped-jacket-in-chalk?_pos=1&_psq=gia&_ss=e&_v=1.0",
+            "link_label": "Shop Sweaters",
+            "link": "https://thenormalbrand.com/collections/sweaters-for-spring",
             "text_alignment": "left",
             "text_alignment_mobile": "left"
           }
