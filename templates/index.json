@@ -89,7 +89,7 @@
             "button_label_2": "",
             "link_2": "",
             "button_style_secondary": true,
-            "box_align": "bottom-center",
+            "box_align": "middle-center",
             "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
@@ -126,7 +126,7 @@
         },
         "slide_QBadaG": {
           "type": "slide",
-          "name": "Slide - Deep V ",
+          "name": "Slide 3",
           "settings": {
             "image": "shopify://shop_images/10year-Desktop-Template_2_35a8bdf1-0cba-4aac-9d87-91b17924bda4.jpg",
             "mobile_image": "shopify://shop_images/Mobile-Template-2_1a241857-ff3a-4d1f-a9c0-a9283ac935e3.jpg",
