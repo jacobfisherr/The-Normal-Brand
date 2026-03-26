@@ -46,7 +46,7 @@
     "default_color_category": "Color",
     "returns_product": 8053165228204,
     "size_chart_label": "Size Chart",
-    "specifications_fit_messaging": "<p><strong>Not sure if it fits?</strong></p><p>Try on your purchase with confidence. We offer <strong>free exchanges</strong> and <strong>easy 30-day returns</strong>. Or, reach out to us for a recommended size based on your measurements and preferences.</p>",
+    "specifications_fit_messaging": "<p><strong>Not sure if it fits?</strong></p><p>Try on your purchase with confidence. We offer <strong>free exchanges</strong> and <strong>easy 30-day returns</strong>. Or, <a href=\"/pages/contact-us\" target=\"_blank\" rel=\"noopener\">reach out to us</a> for a recommended size based on your measurements and preferences.</p>",
     "card_style": "card",
     "show_color_name": false,
     "show_product_announcement": false,
