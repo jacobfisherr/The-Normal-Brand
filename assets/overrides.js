@@ -199,7 +199,6 @@ function init() {
       }
     });
     if (!specificationsElement) return;
-    console.log(specificationsElement);
     const accordionItem = specificationsElement.closest(".product__accordion");
     const accordionContent = accordionItem
       ? accordionItem.querySelector(".accordion__content")
@@ -207,6 +206,7 @@ function init() {
     if (!accordionContent) return;
     if (accordionContent.querySelector(".fit-confidence-message")) return;
     const paragraphs = accordionContent.querySelectorAll("p");
+    console.log(paragraphs);
     for (const p of paragraphs) {
       const strongs = p.querySelectorAll("strong");
       if (strongs.length !== 1) continue;
