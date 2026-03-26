@@ -208,8 +208,9 @@ function init() {
     const paragraphs = accordionContent.querySelectorAll("p");
     for (const p of paragraphs) {
       const strongs = p.querySelectorAll("strong");
+      console.log(strongs);
       if (strongs.length !== 1) continue;
-      if (!strongs[0].textContent.trim().startsWith("Not sure if it fits?")) continue;
+      if (!strongs[0].textContent.trim().startsWith("Not sure if it fits")) continue;
       const wrapper = document.createElement("div");
       wrapper.classList.add("fit-confidence-message");
       p.parentNode.insertBefore(wrapper, p);
