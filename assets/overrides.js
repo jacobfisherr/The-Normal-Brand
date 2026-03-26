@@ -185,6 +185,90 @@ function init() {
   headerMenuItems.forEach((menuItem) => {
     menuItem.addEventListener('mouseup', handleMenuItemClick);
   });
+
+  // Add fit confidence messaging to specifications section PDP
+  function handleSpecsAccordionManipulation() {
+    const accordionTitles = document.querySelectorAll(
+      ".product__accordion .accordion__title",
+    );
+
+    let specificationsElement = null;
+    let modelSizingElement = null;
+
+    accordionTitles.forEach((title) => {
+      const titleText = title.innerText.trim().toLowerCase();
+      if (titleText === "specifications") {
+        specificationsElement = title;
+      }
+      if (titleText.toLowerCase() === "model sizing") {
+        modelSizingElement = title;
+      }
+    });
+
+    if (specificationsElement) {
+      const accordionItem = specificationsElement.closest(
+        ".product__accordion",
+      );
+      const accordionContent = accordionItem
+        ? accordionItem.querySelector(".accordion__content")
+        : null;
+
+      if (accordionContent) {
+        // Prevent duplicate appending
+        if (accordionContent.querySelector("#fit-confidence-message")) {
+          return true;
+        }
+
+        const fitParagraph = accordionContent.querySelector("p");
+        const infoDiv = document.querySelector("#fit-confidence-message");
+
+        if (fitParagraph && infoDiv) {
+          fitParagraph.insertAdjacentElement("afterend", infoDiv);
+          infoDiv.style.display = "block";
+          return true;
+        }
+      }
+    }
+
+    return false;
+  }
+
+  function verifyAppendedContent() {
+    const allFitMessages = document.querySelectorAll(".fit-confidence-message");
+    return (
+      allFitMessages.length > 0 &&
+      Array.from(allFitMessages).some((el) => el.offsetParent !== null)
+    );
+  }
+
+  function retryWithTimeout(maxRetries = 5, timeout = 1000) {
+    let retryCount = 0;
+
+    function attempt() {
+      if (handleSpecsAccordionManipulation()) {
+        setTimeout(() => {
+          if (!verifyAppendedContent() && retryCount < maxRetries) {
+            retryCount++;
+            setTimeout(attempt, timeout);
+          }
+        }, 500);
+        return;
+      }
+
+      retryCount++;
+      if (retryCount < maxRetries) {
+        setTimeout(attempt, timeout);
+      }
+    }
+
+    attempt();
+  }
+
+  retryWithTimeout();
+
+  document.addEventListener("product-info:loaded", function () {
+    retryWithTimeout();
+  });
 }
 
 window.addEventListener('DOMContentLoaded', function () {
