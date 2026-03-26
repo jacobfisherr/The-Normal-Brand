@@ -191,84 +191,32 @@ function init() {
     const accordionTitles = document.querySelectorAll(
       ".product__accordion .accordion__title",
     );
-
     let specificationsElement = null;
-    let modelSizingElement = null;
-
     accordionTitles.forEach((title) => {
       const titleText = title.innerText.trim().toLowerCase();
       if (titleText === "specifications") {
         specificationsElement = title;
       }
-      if (titleText.toLowerCase() === "model sizing") {
-        modelSizingElement = title;
-      }
     });
-
-    if (specificationsElement) {
-      const accordionItem = specificationsElement.closest(
-        ".product__accordion",
-      );
-      const accordionContent = accordionItem
-        ? accordionItem.querySelector(".accordion__content")
-        : null;
-
-      if (accordionContent) {
-        // Prevent duplicate appending
-        if (accordionContent.querySelector("#fit-confidence-message")) {
-          return true;
-        }
-
-        const fitParagraph = accordionContent.querySelector("p");
-        const infoDiv = document.querySelector("#fit-confidence-message");
-
-        if (fitParagraph && infoDiv) {
-          fitParagraph.insertAdjacentElement("afterend", infoDiv);
-          infoDiv.style.display = "block";
-          return true;
-        }
-      }
-    }
-
-    return false;
-  }
-
-  function verifyAppendedContent() {
-    const allFitMessages = document.querySelectorAll(".fit-confidence-message");
-    return (
-      allFitMessages.length > 0 &&
-      Array.from(allFitMessages).some((el) => el.offsetParent !== null)
-    );
-  }
-
-  function retryWithTimeout(maxRetries = 5, timeout = 1000) {
-    let retryCount = 0;
-
-    function attempt() {
-      if (handleSpecsAccordionManipulation()) {
-        setTimeout(() => {
-          if (!verifyAppendedContent() && retryCount < maxRetries) {
-            retryCount++;
-            setTimeout(attempt, timeout);
-          }
-        }, 500);
+    if (!specificationsElement) return;
+    const accordionItem = specificationsElement.closest(".product__accordion");
+    const accordionContent = accordionItem
+      ? accordionItem.querySelector(".accordion__content")
+      : null;
+    if (!accordionContent) return;
+    if (accordionContent.querySelector(".fit-confidence-message")) return;
+    const paragraphs = accordionContent.querySelectorAll("p");
+    for (const p of paragraphs) {
+      if (p.textContent.includes("Not sure if it fits?")) {
+        const wrapper = document.createElement("div");
+        wrapper.classList.add("fit-confidence-message");
+        p.parentNode.insertBefore(wrapper, p);
+        wrapper.appendChild(p);
         return;
       }
-
-      retryCount++;
-      if (retryCount < maxRetries) {
-        setTimeout(attempt, timeout);
-      }
     }
-
-    attempt();
   }
-
-  // retryWithTimeout();
-
-  document.addEventListener("product-info:loaded", function () {
-    // retryWithTimeout();
-  });
+  document.addEventListener("product-info:loaded", handleSpecsAccordionManipulation);
 }
 
 window.addEventListener('DOMContentLoaded', function () {
