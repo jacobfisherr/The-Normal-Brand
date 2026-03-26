@@ -232,7 +232,7 @@
         "custom_liquid_QcBjtX": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{% if settings.specs_fit_message %}\n<div class=\"fit-confidence-message\">{{ settings.specs_fit_message }}</div>\n{% endif %}"
+            "custom_liquid": "{% if settings.specifications_fit_messaging %}\n<div id=\"fit-confidence-message\" class=\"fit-confidence-message\" style=\"display: none;\">{{ settings.specifications_fit_messaging }}</div>\n{% endif %}"
           }
         }
       },
