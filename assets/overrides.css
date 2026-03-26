@@ -1277,3 +1277,9 @@ body.convert-pdp-video-active .convert-test-video .slider-bullet-button.convert-
 body.convert-pdp-video-active .convert-test-video .slider-bullet-button.convert-video-bullet.active::before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='12' viewBox='0 0 10 12' fill='none'%3E%3Cpath d='M9.735 5.621L0 11.241V0L9.735 5.621Z' fill='%23000'/%3E%3C/svg%3E");
 }
+
+.fit-confidence-message{
+    background-color: #E9E8E6;
+    padding: 20px 15px;
+    border-radius: 5px;
+}
