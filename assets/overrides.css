@@ -1284,6 +1284,6 @@ body.convert-pdp-video-active .convert-test-video .slider-bullet-button.convert-
     border-radius: 5px;
 }
 
-.fit-confidence-message:last-child {
+.fit-confidence-message p:last-child {
   margin-bottom: 0;
 }
