@@ -228,13 +228,6 @@
             "page": "",
             "liquid": ""
           }
-        },
-        "custom_liquid_QcBjtX": {
-          "type": "custom_liquid",
-          "name": "Fit Confidence Message",
-          "settings": {
-            "custom_liquid": "{% if settings.specifications_fit_messaging %}\n<div id=\"fit-confidence-message\" class=\"fit-confidence-message\" style=\"display: none;\">{{ settings.specifications_fit_messaging }}</div>\n{% endif %}"
-          }
         }
       },
       "block_order": [
@@ -260,8 +253,7 @@
         "custom_liquid_DnUpYB",
         "collapsible_tab_gcD7wr",
         "collapsible-row-0",
-        "collapsible_tab_trXCdM",
-        "custom_liquid_QcBjtX"
+        "collapsible_tab_trXCdM"
       ],
       "settings": {
         "enable_sticky_info": true,
