@@ -199,14 +199,24 @@ function init() {
       INLINE_STRONGS.includes(node.textContent.trim().toLowerCase())
     );
   }
+  function trimTrailing(nodes, start, end) {
+    let i = end;
+    while (i > start) {
+      const prev = nodes[i - 1];
+      const isBr = prev.nodeType === Node.ELEMENT_NODE && prev.tagName === "BR";
+      const isWhitespace = prev.nodeType === Node.TEXT_NODE && prev.textContent.trim() === "";
+      if (isBr || isWhitespace) i--;
+      else break;
+    }
+    return i;
+  }
   function handleSpecsAccordionManipulation() {
     const accordionTitles = document.querySelectorAll(
       ".product__accordion .accordion__title",
     );
     let specificationsElement = null;
     accordionTitles.forEach((title) => {
-      const titleText = title.innerText.trim().toLowerCase();
-      if (titleText === "specifications") {
+      if (title.innerText.trim().toLowerCase() === "specifications") {
         specificationsElement = title;
       }
     });
@@ -221,38 +231,54 @@ function init() {
     for (const p of paragraphs) {
       if (!p.textContent.includes("Not sure if it fits?")) continue;
       const childNodes = Array.from(p.childNodes);
-      const splitIndex = childNodes.findIndex(
+      const anchorIndex = childNodes.findIndex(
         (node) =>
+          node.nodeType === Node.ELEMENT_NODE &&
+          node.tagName === "STRONG" &&
+          node.textContent.trim().toLowerCase().startsWith("not sure if it fits"),
+      );
+      if (anchorIndex === -1) continue;
+      const endIndex = childNodes.findIndex(
+        (node, i) =>
+          i > anchorIndex &&
           node.nodeType === Node.ELEMENT_NODE &&
           node.tagName === "STRONG" &&
           !isInlineStrong(node),
       );
+      const parent = p.parentNode;
       const wrapper = document.createElement("div");
       wrapper.classList.add("fit-confidence-message");
-      if (splitIndex === -1) {
-        p.parentNode.insertBefore(wrapper, p);
+      const hasBefore = anchorIndex > 0;
+      const hasAfter = endIndex !== -1;
+      if (!hasBefore && !hasAfter) {
+        parent.insertBefore(wrapper, p);
         wrapper.appendChild(p);
       } else {
-        let beforeEnd = splitIndex;
-        while (beforeEnd > 0) {
-          const prev = childNodes[beforeEnd - 1];
-          const isBr = prev.nodeType === Node.ELEMENT_NODE && prev.tagName === "BR";
-          const isWhitespace = prev.nodeType === Node.TEXT_NODE && prev.textContent.trim() === "";
-          if (isBr || isWhitespace) {
-            beforeEnd--;
-          } else {
-            break;
+        const beforeEnd = trimTrailing(childNodes, 0, anchorIndex);
+        const fitEnd = trimTrailing(childNodes, anchorIndex, hasAfter ? endIndex : childNodes.length);
+        if (beforeEnd > 0) {
+          const beforeP = document.createElement("p");
+          for (let i = 0; i < beforeEnd; i++) {
+            beforeP.appendChild(childNodes[i]);
           }
+          parent.insertBefore(beforeP, p);
+        }
+        for (let i = beforeEnd; i < anchorIndex; i++) {
+          if (childNodes[i].parentNode) childNodes[i].remove();
         }
         const fitP = document.createElement("p");
-        for (let i = 0; i < beforeEnd; i++) {
+        for (let i = anchorIndex; i < fitEnd; i++) {
           fitP.appendChild(childNodes[i]);
         }
-        for (let i = beforeEnd; i < splitIndex; i++) {
-          childNodes[i].remove();
-        }
         wrapper.appendChild(fitP);
-        p.parentNode.insertBefore(wrapper, p);
+        parent.insertBefore(wrapper, p);
+        const gapEnd = hasAfter ? endIndex : childNodes.length;
+        for (let i = fitEnd; i < gapEnd; i++) {
+          if (childNodes[i].parentNode) childNodes[i].remove();
+        }
+        if (!p.hasChildNodes() || p.textContent.trim() === "") {
+          p.remove();
+        }
       }
       return;
     }
