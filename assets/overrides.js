@@ -188,7 +188,6 @@ function init() {
 
   // Add fit confidence messaging to specifications section PDP
   function handleSpecsAccordionManipulation() {
-    console.log('manipulate specs accordion');
     const accordionTitles = document.querySelectorAll(
       ".product__accordion .accordion__title",
     );
@@ -208,13 +207,14 @@ function init() {
     if (accordionContent.querySelector(".fit-confidence-message")) return;
     const paragraphs = accordionContent.querySelectorAll("p");
     for (const p of paragraphs) {
-      if (p.textContent.includes("Not sure if it fits?")) {
-        const wrapper = document.createElement("div");
-        wrapper.classList.add("fit-confidence-message");
-        p.parentNode.insertBefore(wrapper, p);
-        wrapper.appendChild(p);
-        return;
-      }
+      const strongs = p.querySelectorAll("strong");
+      if (strongs.length !== 1) continue;
+      if (!strongs[0].textContent.trim().startsWith("Not sure if it fits")) continue;
+      const wrapper = document.createElement("div");
+      wrapper.classList.add("fit-confidence-message");
+      p.parentNode.insertBefore(wrapper, p);
+      wrapper.appendChild(p);
+      return;
     }
   }
 
