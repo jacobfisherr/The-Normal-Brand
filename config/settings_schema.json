@@ -508,6 +508,11 @@
         "type": "text",
         "id": "size_chart_label",
         "label": "t:settings_schema.products.settings.size_chart_label"
+      },
+      {
+        "type": "richtext",
+        "id": "specifications_fit_messaging",
+        "label": "Specifications Accordion Fit Messaging"
       }
     ]
   },
