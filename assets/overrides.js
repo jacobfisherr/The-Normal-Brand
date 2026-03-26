@@ -264,10 +264,10 @@ function init() {
     attempt();
   }
 
-  retryWithTimeout();
+  // retryWithTimeout();
 
   document.addEventListener("product-info:loaded", function () {
-    retryWithTimeout();
+    // retryWithTimeout();
   });
 }
 
