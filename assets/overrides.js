@@ -217,6 +217,8 @@ function init() {
       }
     }
   }
+
+  handleSpecsAccordionManipulation();
   document.addEventListener("product-info:loaded", handleSpecsAccordionManipulation);
 }
 
