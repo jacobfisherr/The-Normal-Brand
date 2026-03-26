@@ -188,7 +188,6 @@ function init() {
 
   // Add fit confidence messaging to specifications section PDP
   function handleSpecsAccordionManipulation() {
-    console.log("Manipulate specs accordion");
     const accordionTitles = document.querySelectorAll(
       ".product__accordion .accordion__title",
     );
@@ -200,6 +199,7 @@ function init() {
       }
     });
     if (!specificationsElement) return;
+    console.log(specificationsElement);
     const accordionItem = specificationsElement.closest(".product__accordion");
     const accordionContent = accordionItem
       ? accordionItem.querySelector(".accordion__content")
