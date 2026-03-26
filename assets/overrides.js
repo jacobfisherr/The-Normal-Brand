@@ -208,7 +208,7 @@ function init() {
     const paragraphs = accordionContent.querySelectorAll("p");
     for (const p of paragraphs) {
       const strongs = p.querySelectorAll("strong");
-      console.log(strongs);
+      console.log(strongs[0]);
       if (strongs.length !== 1) continue;
       if (!strongs[0].textContent.trim().startsWith("Not sure if it fits")) continue;
       const wrapper = document.createElement("div");
