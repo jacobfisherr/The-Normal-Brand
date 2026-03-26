@@ -187,6 +187,18 @@ function init() {
   });
 
   // Add fit confidence messaging to specifications section PDP
+  const INLINE_STRONGS = [
+    "not sure if it fits?",
+    "free exchanges",
+    "easy 30-day returns",
+  ];
+  function isInlineStrong(node) {
+    return (
+      node.nodeType === Node.ELEMENT_NODE &&
+      node.tagName === "STRONG" &&
+      INLINE_STRONGS.includes(node.textContent.trim().toLowerCase())
+    );
+  }
   function handleSpecsAccordionManipulation() {
     const accordionTitles = document.querySelectorAll(
       ".product__accordion .accordion__title",
@@ -207,14 +219,41 @@ function init() {
     if (accordionContent.querySelector(".fit-confidence-message")) return;
     const paragraphs = accordionContent.querySelectorAll("p");
     for (const p of paragraphs) {
-      const strongs = p.querySelectorAll("strong");
-      if (strongs.length !== 1) continue;
-      if (!strongs[0].textContent.trim().startsWith("Not sure if it fits")) continue;
+      if (!p.textContent.includes("Not sure if it fits?")) continue;
+      const childNodes = Array.from(p.childNodes);
+      const splitIndex = childNodes.findIndex(
+        (node) =>
+          node.nodeType === Node.ELEMENT_NODE &&
+          node.tagName === "STRONG" &&
+          !isInlineStrong(node),
+      );
       const wrapper = document.createElement("div");
       wrapper.classList.add("fit-confidence-message");
-      console.log(p);
-      p.parentNode.insertBefore(wrapper, p);
-      wrapper.appendChild(p);
+      if (splitIndex === -1) {
+        p.parentNode.insertBefore(wrapper, p);
+        wrapper.appendChild(p);
+      } else {
+        let beforeEnd = splitIndex;
+        while (beforeEnd > 0) {
+          const prev = childNodes[beforeEnd - 1];
+          const isBr = prev.nodeType === Node.ELEMENT_NODE && prev.tagName === "BR";
+          const isWhitespace = prev.nodeType === Node.TEXT_NODE && prev.textContent.trim() === "";
+          if (isBr || isWhitespace) {
+            beforeEnd--;
+          } else {
+            break;
+          }
+        }
+        const fitP = document.createElement("p");
+        for (let i = 0; i < beforeEnd; i++) {
+          fitP.appendChild(childNodes[i]);
+        }
+        for (let i = beforeEnd; i < splitIndex; i++) {
+          childNodes[i].remove();
+        }
+        wrapper.appendChild(fitP);
+        p.parentNode.insertBefore(wrapper, p);
+      }
       return;
     }
   }
