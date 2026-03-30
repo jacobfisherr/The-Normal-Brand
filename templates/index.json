@@ -35,7 +35,7 @@
           "type": "benefit_linktext",
           "settings": {
             "devices": "all",
-            "text": "4.7/5 Average Customer Rating",
+            "text": "4.8/5 Average Customer Rating",
             "message_link": "",
             "message_icon": "star"
           }
