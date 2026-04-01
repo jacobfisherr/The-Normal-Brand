@@ -46,7 +46,6 @@
     "default_color_category": "Color",
     "returns_product": 8053165228204,
     "size_chart_label": "Size Chart",
-    "specifications_fit_messaging": "<p><strong>Not sure if it fits?</strong></p><p>Try on your purchase with confidence. We offer <strong>free exchanges</strong> and <strong>easy 30-day returns</strong>. Or, <a href=\"/pages/contact-us\" target=\"_blank\" rel=\"noopener\">reach out to us</a> for a recommended size based on your measurements and preferences.</p>",
     "card_style": "card",
     "show_color_name": false,
     "show_product_announcement": false,
@@ -131,6 +130,7 @@
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
+    "specifications_fit_messaging": "<p><strong>Not sure if it fits?</strong></p><p>Try on your purchase with confidence. We offer <strong>free exchanges</strong> and <strong>easy 30-day returns</strong>. Or, <a href=\"/pages/contact-us\" target=\"_blank\" rel=\"noopener\">reach out to us</a> for a recommended size based on your measurements and preferences.</p>",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
@@ -273,6 +273,11 @@
       "11560147490181472608": {
         "type": "shopify://apps/rivo-loyalty-rewards-referrals/blocks/app-embed/580e9665-b2cd-4dbc-b6ba-6445ac9e6871",
         "disabled": true,
+        "settings": {}
+      },
+      "4705145147225299685": {
+        "type": "shopify://apps/tolstoy-shoppable-video-quiz/blocks/widget-block/06fa8282-42ff-403e-b67c-1936776aed11",
+        "disabled": false,
         "settings": {}
       }
     },
