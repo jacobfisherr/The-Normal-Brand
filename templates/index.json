@@ -323,12 +323,12 @@
         "column_746rwt": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Multicolumn-Template_1_a16c6571-6b64-4c80-bc7f-b9cc6bcf22ca.jpg",
-            "title": "Postcards in Motion",
-            "text": "<p>Each piece feels lived in, as if it's collected a few stories along the way.</p>",
+            "image": "shopify://shop_images/Multicolumn-Template_eda36773-564a-4246-b962-5b13c010ff32.jpg",
+            "title": "Notes in the margin",
+            "text": "<p>Lightweight textures, easy colors, and the kind of pieces that work from daily life to showing up to that thing.</p>",
             "liquid": "",
             "link_label": "Shop Collection",
-            "link": "https://thenormalbrand.com/collections/postcards-in-motion",
+            "link": "https://thenormalbrand.com/collections/new?sort_by=manual",
             "text_alignment": "left",
             "text_alignment_mobile": "left"
           }
@@ -540,7 +540,6 @@
       "blocks": {
         "tolstoy_shoppable_video_quiz_carousel_block_djNV8j": {
           "type": "shopify://apps/tolstoy-shoppable-video-quiz/blocks/carousel-block/06fa8282-42ff-403e-b67c-1936776aed11",
-          "disabled": true,
           "settings": {
             "publishId": "7l3hb0z9jrirv"
           }
