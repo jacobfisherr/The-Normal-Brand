@@ -82,6 +82,7 @@
         },
         "bold_discounts_the_sales_app_sale_clock_Hi3ULR": {
           "type": "shopify://apps/bold-discounts-flash-sales/blocks/sale-clock/22ca27ee-084f-4527-b863-69a3cd4c8b2c",
+          "disabled": true,
           "settings": {
             "is_preview_enabled": true,
             "templates": "template_1",
