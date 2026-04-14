@@ -3656,3 +3656,9 @@ details-disclosure > details {
   width: 100%;
   height: 100%;
 }
+
+
+.tolstoy-carousel-arrows-container {
+    margin-top:-50px !important;
+    margin-bottom:12px !important; 
+}
