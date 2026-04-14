@@ -336,9 +336,9 @@
         "column_qyTCPm": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Multicolumn-Template_2_1dc88518-64c0-4adc-93e5-29bfa9643003.jpg",
-            "title": "Top classics",
-            "text": "<p>The shirt you'll reach for all season. Button-ups made for warmer days.</p>",
+            "image": "shopify://shop_images/Multicolumn-Templateb.jpg",
+            "title": "Coastal hues",
+            "text": "<p>Our bestselling button up in colors that evoke the seaside. Timeless and lightweight for everyday.</p>",
             "liquid": "",
             "link_label": "Shop Freshwater",
             "link": "https://thenormalbrand.com/collections/freshwater-collection",
@@ -349,12 +349,12 @@
         "column_jMQNUb": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Multicolumn-Template_3_eac407f1-8962-4491-a3e1-b8dc911b433d.jpg",
-            "title": "early spring essentials",
-            "text": "<p>Designed to move with you through shifting days. These pieces are ones you'll keep within arm's reach.</p>",
+            "image": "shopify://shop_images/Multicolumn-Template1_a464c26f-1595-4e30-81fe-f8efc7e925b8.jpg",
+            "title": "All Dressed up",
+            "text": "<p>Keep spring effortless. Easy silhouettes and soft fabric that move with you from morning brunch to afternoon outings. </p>",
             "liquid": "",
-            "link_label": "Shop Sweaters",
-            "link": "https://thenormalbrand.com/collections/sweaters-for-spring",
+            "link_label": "Shop Dresses",
+            "link": "https://thenormalbrand.com/collections/womens-dresses",
             "text_alignment": "left",
             "text_alignment_mobile": "left"
           }
@@ -539,7 +539,7 @@
       "type": "apps",
       "blocks": {
         "tolstoy_shoppable_video_quiz_carousel_block_djNV8j": {
-          "type": "shopify://apps/tolstoy-shoppable-video-quiz/blocks/carousel-block/06fa8282-42ff-403e-b67c-1936776aed11",
+          "type": "shopify://apps/tolstoy-ads-image-video/blocks/carousel-block/06fa8282-42ff-403e-b67c-1936776aed11",
           "settings": {
             "publishId": "7l3hb0z9jrirv"
           }
