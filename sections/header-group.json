@@ -31,9 +31,10 @@
       "blocks": {
         "announcement-bar-0": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
-            "text": "50% off Presidents Day Sale - Ends Tonight!",
-            "link": "shopify://collections/presidents-day-sale-collection"
+            "text": "Double Points. All Weekend. Sign In or Join Today!",
+            "link": "shopify://pages/rewards"
           }
         }
       },
@@ -41,8 +42,9 @@
         "announcement-bar-0"
       ],
       "disabled": true,
+      "custom_css": [],
       "settings": {
-        "color_scheme": "scheme-9c7aa676-4f0f-4eb2-bd63-acfe39500ad8",
+        "color_scheme": "tnb-dark",
         "show_line_separator": true,
         "show_social": false,
         "auto_rotate": false,
