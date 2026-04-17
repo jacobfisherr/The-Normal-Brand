@@ -32,7 +32,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Double Points. All Weekend. Sign In or Join Today!",
+            "text": "Earn Double Points. All Weekend. Sign In or Join Today!",
             "link": "shopify://pages/rewards"
           }
         }
