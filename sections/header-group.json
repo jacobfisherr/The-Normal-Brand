@@ -31,7 +31,6 @@
       "blocks": {
         "announcement-bar-0": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
             "text": "Double Points. All Weekend. Sign In or Join Today!",
             "link": "shopify://pages/rewards"
@@ -41,7 +40,6 @@
       "block_order": [
         "announcement-bar-0"
       ],
-      "disabled": true,
       "custom_css": [],
       "settings": {
         "color_scheme": "tnb-dark",
