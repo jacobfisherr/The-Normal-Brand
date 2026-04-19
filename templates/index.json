@@ -72,9 +72,35 @@
     "slideshow_nnbpCq": {
       "type": "slideshow",
       "blocks": {
+        "slide_RFLjqQ": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/10year-Desktop-Template_f956b59a-3741-441d-9401-5efd5fae8508.jpg",
+            "mobile_image": "shopify://shop_images/Mobile-Template-1_2cf1664e-d162-4c53-b868-09697576246f.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "mobile_heading_size": "h1",
+            "subheading": "",
+            "button_size": "large",
+            "mobile_button_size": "small",
+            "button_label": "Shop Men's",
+            "link": "https://thenormalbrand.com/collections/new?sort_by=manual&filter.p.m.custom.gender=gid%3A%2F%2Fshopify%2FMetaobject%2F75598921900",
+            "button_label_2": "Shop Women's",
+            "link_2": "https://thenormalbrand.com/collections/new?sort_by=manual&filter.p.m.custom.gender=gid%3A%2F%2Fshopify%2FMetaobject%2F75653972140",
+            "button_style_secondary": true,
+            "box_align": "middle-right",
+            "show_text_box": false,
+            "text_alignment": "right",
+            "image_overlay_opacity": 0,
+            "color_scheme": "tnb-dark",
+            "text_alignment_mobile": "center",
+            "mobile_box_align": "middle"
+          }
+        },
         "slide_z4z64U": {
           "type": "slide",
           "name": "Slide - Spring '26",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/10year-Desktop-Template_bfb34e31-aa73-4bf9-a227-0e12c683ca37.jpg",
             "mobile_image": "shopify://shop_images/Mobile-Template-1_040826.jpg",
@@ -152,6 +178,7 @@
         }
       },
       "block_order": [
+        "slide_RFLjqQ",
         "slide_z4z64U",
         "slide_ey3yPc",
         "slide_QBadaG"
