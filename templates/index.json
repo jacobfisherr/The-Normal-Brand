@@ -72,6 +72,32 @@
     "slideshow_nnbpCq": {
       "type": "slideshow",
       "blocks": {
+        "slide_ey3yPc": {
+          "type": "slide",
+          "name": "Slide 2",
+          "settings": {
+            "image": "shopify://shop_images/10year-Desktop-Template_1_STEEL_d9bdd4eb-7689-4dc1-ae9a-32ef5bd426d4.jpg",
+            "mobile_image": "shopify://shop_images/Mobile-Template-1_STEEL_1fa7874f-09c3-4ccf-ab2e-40b902d67060.jpg",
+            "heading": "",
+            "heading_size": "h0",
+            "mobile_heading_size": "h0",
+            "subheading": "",
+            "button_size": "large",
+            "mobile_button_size": "small",
+            "button_label": "Shop Men",
+            "link": "https://thenormalbrand.com/collections/mens",
+            "button_label_2": "",
+            "link_2": "",
+            "button_style_secondary": true,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-7eca2d75-45a3-4024-b69d-17de1ca4d726",
+            "text_alignment_mobile": "left",
+            "mobile_box_align": "middle"
+          }
+        },
         "slide_RFLjqQ": {
           "type": "slide",
           "settings": {
@@ -124,32 +150,6 @@
             "mobile_box_align": "middle"
           }
         },
-        "slide_ey3yPc": {
-          "type": "slide",
-          "name": "Slide 2",
-          "settings": {
-            "image": "shopify://shop_images/Desktop-Template_2_040826.jpg",
-            "mobile_image": "shopify://shop_images/Mobile-Template-2_040826.jpg",
-            "heading": "Spring Revival",
-            "heading_size": "h0",
-            "mobile_heading_size": "h0",
-            "subheading": "",
-            "button_size": "large",
-            "mobile_button_size": "small",
-            "button_label": "Shop Men",
-            "link": "https://thenormalbrand.com/collections/mens",
-            "button_label_2": "",
-            "link_2": "",
-            "button_style_secondary": true,
-            "box_align": "middle-left",
-            "show_text_box": false,
-            "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-7eca2d75-45a3-4024-b69d-17de1ca4d726",
-            "text_alignment_mobile": "center",
-            "mobile_box_align": "middle"
-          }
-        },
         "slide_QBadaG": {
           "type": "slide",
           "name": "Slide 3",
@@ -178,9 +178,9 @@
         }
       },
       "block_order": [
+        "slide_ey3yPc",
         "slide_RFLjqQ",
         "slide_z4z64U",
-        "slide_ey3yPc",
         "slide_QBadaG"
       ],
       "settings": {
