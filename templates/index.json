@@ -75,6 +75,7 @@
         "slide_ey3yPc": {
           "type": "slide",
           "name": "Slide 2",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/10year-Desktop-Template_1_STEEL_d9bdd4eb-7689-4dc1-ae9a-32ef5bd426d4.jpg",
             "mobile_image": "shopify://shop_images/Mobile-Template-1_STEEL_1fa7874f-09c3-4ccf-ab2e-40b902d67060.jpg",
