@@ -350,12 +350,12 @@
         "column_746rwt": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Multicolumn-Template_eda36773-564a-4246-b962-5b13c010ff32.jpg",
-            "title": "Notes in the margin",
-            "text": "<p>Lightweight textures, easy colors, and the kind of pieces that work from daily life to showing up to that thing.</p>",
+            "image": "shopify://shop_images/Multicolumn-Template_2_94233955-a6f3-4fe1-9d9d-bef60cd671b0.jpg",
+            "title": "Brother's Favorites",
+            "text": "<p>A lineup of their most-loved picks, selected for ease, style and versatility. Consider this your shortcut to the pieces they swear by.</p>",
             "liquid": "",
-            "link_label": "Shop Collection",
-            "link": "https://thenormalbrand.com/collections/new?sort_by=manual",
+            "link_label": "Shop Their Favorites",
+            "link": "https://thenormalbrand.com/collections/brothers-favorites",
             "text_alignment": "left",
             "text_alignment_mobile": "left"
           }
