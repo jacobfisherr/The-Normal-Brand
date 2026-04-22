@@ -462,7 +462,7 @@
           "settings": {
             "collection": "womens-dresses",
             "custom_title": "",
-            "custom_image": "shopify://shop_images/W_Dresses_cdd110be-4ef1-419e-9e15-6797109a24ec.jpg"
+            "custom_image": "shopify://shop_images/Dresses.jpg"
           }
         },
         "featured_collection_aeaXhP": {
@@ -470,7 +470,7 @@
           "settings": {
             "collection": "womens-sweaters",
             "custom_title": "",
-            "custom_image": "shopify://shop_images/W_Sweaters_f624d9f2-0583-4fb7-bf6d-e4ea99245290.jpg"
+            "custom_image": "shopify://shop_images/Sweaters.jpg"
           }
         },
         "featured_collection_XMxTXN": {
@@ -478,7 +478,7 @@
           "settings": {
             "collection": "womens-hoodies-pullovers",
             "custom_title": "Hoodies & Pullovers",
-            "custom_image": "shopify://shop_images/W_Pullovers_585e5b52-df87-4390-95d8-0ab939a543cd.jpg"
+            "custom_image": "shopify://shop_images/Hoodies_Pullovers.jpg"
           }
         },
         "featured_collection_hNmRX4": {
@@ -486,15 +486,15 @@
           "settings": {
             "collection": "button-ups-and-blouses",
             "custom_title": "",
-            "custom_image": "shopify://shop_images/W_Tops.jpg"
+            "custom_image": "shopify://shop_images/Shirts_Tops.jpg"
           }
         },
         "featured_collection_UNqmEY": {
           "type": "featured_collection",
           "settings": {
-            "collection": "womens-pants",
+            "collection": "bottoms",
             "custom_title": "",
-            "custom_image": "shopify://shop_images/W_Pants_ece44e87-4b41-42b0-8cd5-2f5951424f50.jpg"
+            "custom_image": "shopify://shop_images/Bottoms.jpg"
           }
         },
         "featured_collection_FNQ8d7": {
@@ -502,7 +502,7 @@
           "settings": {
             "collection": "womens-outerwear",
             "custom_title": "Outerwear",
-            "custom_image": "shopify://shop_images/Homepage-Category-Template_b905516d-809f-4fb5-856a-abfbdece519d.jpg"
+            "custom_image": "shopify://shop_images/Outerwear_adcca293-86e8-4b7c-b1f5-7dd35df1e6c2.jpg"
           }
         }
       },
