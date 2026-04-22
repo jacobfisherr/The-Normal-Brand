@@ -363,12 +363,12 @@
         "column_qyTCPm": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Multicolumn-Templateb.jpg",
-            "title": "Coastal hues",
-            "text": "<p>Our bestselling button up in colors that evoke the seaside. Timeless and lightweight for everyday.</p>",
+            "image": "shopify://shop_images/Multicolumn-Template_1_5443e1e3-2337-490c-bba3-e35072919539.jpg",
+            "title": "New and Noteworthy",
+            "text": "<p>The ComforTech Pant combines polished style with everyday comfort. Crafted to feel cool and move with ease, it’s an elevated staple for warm-weather wear.</p>",
             "liquid": "",
-            "link_label": "Shop Freshwater",
-            "link": "https://thenormalbrand.com/collections/freshwater-collection",
+            "link_label": "Shop ComforTech Pant",
+            "link": "https://thenormalbrand.com/products/comfortech-twill-pant-in-moss?_pos=1&_psq=comfortech&_ss=e&_v=1.0",
             "text_alignment": "left",
             "text_alignment_mobile": "left"
           }
