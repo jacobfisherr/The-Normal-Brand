@@ -72,9 +72,35 @@
     "slideshow_nnbpCq": {
       "type": "slideshow",
       "blocks": {
+        "slide_6GDP6M": {
+          "type": "slide",
+          "name": "Slide 1 - New Arrivals: Grounded Light",
+          "settings": {
+            "image": "shopify://shop_images/Header_Web.jpg",
+            "mobile_image": "shopify://shop_images/Header_Mobile_2550799c-6a79-4bd5-a5b1-28073e955cba.jpg",
+            "heading": "",
+            "heading_size": "h2",
+            "mobile_heading_size": "h2",
+            "subheading": "",
+            "button_size": "small",
+            "mobile_button_size": "small",
+            "button_label": "Shop Men",
+            "link": "https://thenormalbrand.com/collections/new?sort_by=manual&filter.p.m.custom.gender=gid%3A%2F%2Fshopify%2FMetaobject%2F75598921900",
+            "button_label_2": "Shop Women",
+            "link_2": "https://thenormalbrand.com/collections/new?sort_by=manual&filter.p.m.custom.gender=gid%3A%2F%2Fshopify%2FMetaobject%2F75653972140",
+            "button_style_secondary": true,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "tnb-dark",
+            "text_alignment_mobile": "center",
+            "mobile_box_align": "middle"
+          }
+        },
         "slide_ey3yPc": {
           "type": "slide",
-          "name": "Slide 2",
+          "name": "Slide 2 - Mens: ComforTech Pant",
           "settings": {
             "image": "shopify://shop_images/10year-Desktop-Template_1_STEEL_a76e187b-843e-4a76-8de0-c0d50e0cd40b.jpg",
             "mobile_image": "shopify://shop_images/Mobile-Template-1_STEEL_91e68cd1-23bb-4274-a81e-e8339ba5a232.jpg",
@@ -98,8 +124,36 @@
             "mobile_box_align": "middle"
           }
         },
+        "slide_QBadaG": {
+          "type": "slide",
+          "name": "Slide 3 - Womens: Lucia",
+          "settings": {
+            "image": "shopify://shop_images/Desktop-Template_3_040826.jpg",
+            "mobile_image": "shopify://shop_images/Mobile-Template-3_040826.jpg",
+            "heading": "Introducing Lucia",
+            "heading_size": "h0",
+            "mobile_heading_size": "h0",
+            "subheading": "",
+            "button_size": "large",
+            "mobile_button_size": "small",
+            "button_label": "Shop Women",
+            "link": "https://thenormalbrand.com/collections/womens",
+            "button_label_2": "",
+            "link_2": "",
+            "button_style_secondary": true,
+            "box_align": "middle-right",
+            "show_text_box": false,
+            "text_alignment": "right",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-7eca2d75-45a3-4024-b69d-17de1ca4d726",
+            "text_alignment_mobile": "center",
+            "mobile_box_align": "middle"
+          }
+        },
         "slide_RFLjqQ": {
           "type": "slide",
+          "name": "New Arrivals: Sueded Costa",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/10year-Desktop-Template_f956b59a-3741-441d-9401-5efd5fae8508.jpg",
             "mobile_image": "shopify://shop_images/Mobile-Template_3f35fd98-ea40-43be-babb-491532dc3391.jpg",
@@ -125,7 +179,7 @@
         },
         "slide_z4z64U": {
           "type": "slide",
-          "name": "Slide - Spring '26",
+          "name": "Slide 1 - New Arrivals: Notes in the Margin",
           "disabled": true,
           "settings": {
             "image": "shopify://shop_images/10year-Desktop-Template_bfb34e31-aa73-4bf9-a227-0e12c683ca37.jpg",
@@ -149,39 +203,14 @@
             "text_alignment_mobile": "center",
             "mobile_box_align": "middle"
           }
-        },
-        "slide_QBadaG": {
-          "type": "slide",
-          "name": "Slide 3",
-          "settings": {
-            "image": "shopify://shop_images/Desktop-Template_3_040826.jpg",
-            "mobile_image": "shopify://shop_images/Mobile-Template-3_040826.jpg",
-            "heading": "Introducing Lucia",
-            "heading_size": "h0",
-            "mobile_heading_size": "h0",
-            "subheading": "",
-            "button_size": "large",
-            "mobile_button_size": "small",
-            "button_label": "Shop Women",
-            "link": "https://thenormalbrand.com/collections/womens",
-            "button_label_2": "",
-            "link_2": "",
-            "button_style_secondary": true,
-            "box_align": "middle-right",
-            "show_text_box": false,
-            "text_alignment": "right",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-7eca2d75-45a3-4024-b69d-17de1ca4d726",
-            "text_alignment_mobile": "center",
-            "mobile_box_align": "middle"
-          }
         }
       },
       "block_order": [
+        "slide_6GDP6M",
         "slide_ey3yPc",
+        "slide_QBadaG",
         "slide_RFLjqQ",
-        "slide_z4z64U",
-        "slide_QBadaG"
+        "slide_z4z64U"
       ],
       "settings": {
         "layout": "full_bleed",
