@@ -22,7 +22,7 @@
         "heading_wEbEMd": {
           "type": "heading",
           "settings": {
-            "heading": "Our Stores",
+            "heading": "Our Stores in St. Louis, MO",
             "heading_size": "hxl"
           }
         }
@@ -91,308 +91,13 @@
         "padding_bottom": 52
       }
     },
-    "rich_text_dpfKem": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_X8Ctp4": {
-          "type": "heading",
-          "settings": {
-            "heading": "Alabama",
-            "heading_size": "h1"
-          }
-        }
-      },
-      "block_order": [
-        "heading_X8Ctp4"
-      ],
-      "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
-      }
-    },
-    "image_with_text_LnH8zT": {
-      "type": "image-with-text",
-      "blocks": {
-        "caption_Exznny": {
-          "type": "caption",
-          "settings": {
-            "caption": "Birmingham",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "large"
-          }
-        },
-        "heading_WbaAyQ": {
-          "type": "heading",
-          "settings": {
-            "heading": "<a href=\"/pages/copy-of-the-normal-brand-store-birmingham\" title=\"/pages/copy-of-the-normal-brand-store-birmingham\">The Summit</a>",
-            "heading_size": "h1"
-          }
-        },
-        "text_idCyNG": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>214 Summit Boulevard, Suite 450<br/>Birmingham, AL 35243</strong></p><p>(205) 644-1866</p><p>Mon-Thur: 10am - 8pm<br/>Fri-Sat: 10am - 9pm<br/>Sun: 12pm - 6pm</p><p></p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "caption_Exznny",
-        "heading_WbaAyQ",
-        "text_idCyNG"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/BHM.jpg",
-        "height": "adapt",
-        "desktop_image_width": "small",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "full_width": false,
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "rich_text_Erkkib": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_QdHnzi": {
-          "type": "heading",
-          "settings": {
-            "heading": "Colorado",
-            "heading_size": "h1"
-          }
-        }
-      },
-      "block_order": [
-        "heading_QdHnzi"
-      ],
-      "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
-      }
-    },
-    "image_with_text_fYcwUC": {
-      "type": "image-with-text",
-      "blocks": {
-        "caption_irnxHm": {
-          "type": "caption",
-          "settings": {
-            "caption": "Denver",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "large"
-          }
-        },
-        "heading_JrpUyt": {
-          "type": "heading",
-          "settings": {
-            "heading": "<a href=\"/pages/the-normal-brand-store-denver\" title=\"/pages/the-normal-brand-store-denver\">Cherry Creek North</a>",
-            "heading_size": "h1"
-          }
-        },
-        "text_JG4GCr": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>105 Fillmore Street, Suite 106<br/>Denver, CO 80206</strong></p><p>(720) 661-7276</p><p>Mon-Sat: 10am - 7pm<br/>Sun: 11am - 6pm</p><p></p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "caption_irnxHm",
-        "heading_JrpUyt",
-        "text_JG4GCr"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/DENVER1.jpg",
-        "height": "square",
-        "desktop_image_width": "small",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "full_width": false,
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "rich_text_dVLA69": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_JEPxyQ": {
-          "type": "heading",
-          "settings": {
-            "heading": "Indiana",
-            "heading_size": "h1"
-          }
-        }
-      },
-      "block_order": [
-        "heading_JEPxyQ"
-      ],
-      "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
-      }
-    },
-    "image_with_text_m3EWAw": {
-      "type": "image-with-text",
-      "blocks": {
-        "caption_ecqAbe": {
-          "type": "caption",
-          "settings": {
-            "caption": "Indianapolis",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        },
-        "heading_Wrhz8G": {
-          "type": "heading",
-          "settings": {
-            "heading": "<a href=\"/pages/the-normal-brand-store-indianapolis\" title=\"/pages/the-normal-brand-store-indianapolis\">The Fashion Mall at Keystone</a>",
-            "heading_size": "h1"
-          }
-        },
-        "text_6RyFdT": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>8702 Keystone Crossing, Unit 166B<br/>Indianapolis, IN 46240</strong></p><p>(317) 832-5139</p><p>Mon-Thur: 10am - 8pm<br/>Fri-Sat: 10am - 9pm<br/>Sun: 12pm - 6pm</p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "caption_ecqAbe",
-        "heading_Wrhz8G",
-        "text_6RyFdT"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/x2.jpg",
-        "height": "adapt",
-        "desktop_image_width": "small",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "full_width": false,
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "rich_text_t9xaHW": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_PNH49r": {
-          "type": "heading",
-          "settings": {
-            "heading": "Iowa",
-            "heading_size": "h1"
-          }
-        }
-      },
-      "block_order": [
-        "heading_PNH49r"
-      ],
-      "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
-      }
-    },
-    "image_with_text_36PecB": {
-      "type": "image-with-text",
-      "blocks": {
-        "caption_abiHxd": {
-          "type": "caption",
-          "settings": {
-            "caption": "Des Moines",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "large"
-          }
-        },
-        "heading_fYHxAP": {
-          "type": "heading",
-          "settings": {
-            "heading": "<a href=\"/pages/shop-for-your-normal-at-jordan-creek-town-center\" title=\"Shop for Your Normal at Jordan Creek Town Center\">Jordan Creek Town Center</a>",
-            "heading_size": "h1"
-          }
-        },
-        "text_cyp76z": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>101 Jordan Creek Parkway, Suite11030<br/>West Des Moines, IA 50266</strong></p><p>(515) 493-6569</p><p>Mon-Thurs: 10am - 8pm<br/>Fri-Sat: 10am - 9pm<br/>Sun: 11am - 6pm</p><p></p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "caption_abiHxd",
-        "heading_fYHxAP",
-        "text_cyp76z"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/DM.jpg",
-        "height": "square",
-        "desktop_image_width": "small",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "full_width": false,
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "rich_text_rcXhLM": {
-      "type": "rich-text",
-      "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
-      }
-    },
     "rich_text_dCmBBk": {
       "type": "rich-text",
       "blocks": {
         "heading_mhk3BF": {
           "type": "heading",
           "settings": {
-            "heading": "Missouri",
+            "heading": "St. Louis Stores",
             "heading_size": "h1"
           }
         }
@@ -412,17 +117,6 @@
     "multirow_fikqhk": {
       "type": "multirow",
       "blocks": {
-        "row_etKLNe": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/KANSAS_CITY.jpg",
-            "caption": "Kansas City",
-            "heading": "<a href=\"/pages/the-normal-brand-store-kansas-city\" title=\"/pages/the-normal-brand-store-kansas-city\">Country Club Plaza</a>",
-            "text": "<p><strong>425 Nichols Road<br/>Kansas City, MO 64112</strong></p><p>(816) 831-7407</p><p>Mon-Sat: 10am - 7pm<br/>Sun: 12pm - 6pm</p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
         "row_kDDQLb": {
           "type": "row",
           "settings": {
@@ -430,17 +124,6 @@
             "caption": "St. Louis | Des Peres",
             "heading": "<a href=\"https://thenormalbrand.com/pages/the-normal-brand-store-west-county\" title=\"https://thenormalbrand.com/pages/the-normal-brand-store-west-county\">West County Center</a>",
             "text": "<p><strong>80 West County Center<br/>Des Peres, MO 63131</strong></p><p>(314) 973-8424</p><p>Mon-Sat: 10am - 8pm<br/>Sun: 11am - 6pm</p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "row_maUKnV": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/Untitled-1.png",
-            "caption": "Springfield",
-            "heading": "<a href=\"/pages/the-normal-brand-store-springfield\" title=\"/pages/the-normal-brand-store-springfield\">Battlefield Mall</a>",
-            "text": "<p><strong>2825 Glenstone Avenue, Unit F16A<br/>Springfield, MO 65804</strong></p><p>(417) 818-7613</p><p>Mon-Thur: 10am - 8pm<strong><br/></strong>Fri-Sat: 10am - 9pm<br/>Sun: 12pm - 6pm</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -469,9 +152,7 @@
         }
       },
       "block_order": [
-        "row_etKLNe",
         "row_kDDQLb",
-        "row_maUKnV",
         "row_L99whm",
         "row_dq8prP"
       ],
@@ -493,18 +174,6 @@
     },
     "rich_text_zUPUiG": {
       "type": "rich-text",
-      "blocks": {
-        "heading_kRtYgH": {
-          "type": "heading",
-          "settings": {
-            "heading": "Tennessee",
-            "heading_size": "h1"
-          }
-        }
-      },
-      "block_order": [
-        "heading_kRtYgH"
-      ],
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
@@ -512,118 +181,10 @@
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 0
-      }
-    },
-    "image_with_text_fiHBHQ": {
-      "type": "image-with-text",
-      "blocks": {
-        "caption_wRKPQh": {
-          "type": "caption",
-          "settings": {
-            "caption": "Nashville",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "large"
-          }
-        },
-        "heading_mXbzNw": {
-          "type": "heading",
-          "settings": {
-            "heading": "<a href=\"https://thenormalbrand.com/pages/fifth-broadway\" title=\"https://thenormalbrand.com/pages/fifth-broadway\">Fifth & Broadway</a>",
-            "heading_size": "h1"
-          }
-        },
-        "text_iW9Rzf": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>5068 Broadway<br/>Nashville, TN 37203</strong></p><p>(615) 795-1444</p><p>Mon-Thursday: 10am - 8pm<br/>Friday-Saturday: 10am - 9pm<br/>Sunday: 11am-6pm</p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "caption_wRKPQh",
-        "heading_mXbzNw",
-        "text_iW9Rzf"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/NASHVILLE.jpg",
-        "height": "adapt",
-        "desktop_image_width": "small",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "full_width": false,
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "image_with_text_G3A78L": {
-      "type": "image-with-text",
-      "blocks": {
-        "caption_zhrCeJ": {
-          "type": "caption",
-          "settings": {
-            "caption": "Franklin",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "large"
-          }
-        },
-        "heading_V8tRzp": {
-          "type": "heading",
-          "settings": {
-            "heading": "<a href=\"/pages/the-normal-brand-store-franklin\" title=\"/pages/the-normal-brand-store-franklin\">CoolSprings Galleria</a>",
-            "heading_size": "h1"
-          }
-        },
-        "text_rewmqr": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>1800 Galleria Boulevard, Space 1270<br/>Franklin, TN 37067</strong></p><p>(629) 654-0910</p><p>Mon-Sat: 10am - 8pm<br/>Sun: 11am - 6pm</p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "caption_zhrCeJ",
-        "heading_V8tRzp",
-        "text_rewmqr"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/FRANKLIN_8785a4ba-3064-4817-9216-50a7b5e2abda.jpg",
-        "height": "adapt",
-        "desktop_image_width": "small",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "full_width": false,
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "rich_text_HhjwHa": {
       "type": "rich-text",
-      "blocks": {
-        "heading_a9FB6G": {
-          "type": "heading",
-          "settings": {
-            "heading": "Texas",
-            "heading_size": "h1"
-          }
-        }
-      },
-      "block_order": [
-        "heading_a9FB6G"
-      ],
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
@@ -631,54 +192,6 @@
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 0
-      }
-    },
-    "image_with_text_ByTcgk": {
-      "type": "image-with-text",
-      "blocks": {
-        "caption_XhCYjH": {
-          "type": "caption",
-          "settings": {
-            "caption": "Southlake",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "large"
-          }
-        },
-        "heading_EQy3dA": {
-          "type": "heading",
-          "settings": {
-            "heading": "<a href=\"/pages/shop-for-your-normal-at-southlake-town-center\" title=\"Shop for Your Normal at Southlake Town Center\">Southlake Town Center</a>",
-            "heading_size": "h1"
-          }
-        },
-        "text_JndXbN": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>1232 Main Street<br/>Southlake, TX 76092</strong></p><p>(817) 823-0971</p><p>Mon-Sat: 10am - 8pm<br/>Sun: 11am - 6pm</p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "caption_XhCYjH",
-        "heading_EQy3dA",
-        "text_JndXbN"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/SOUTHLAKE.jpg",
-        "height": "adapt",
-        "desktop_image_width": "small",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "full_width": false,
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "rich_text_LeBzta": {
@@ -817,22 +330,10 @@
     "image_banner_AQgzAm",
     "rich_text_YEtwtT",
     "rich_text_HjwrwQ",
-    "rich_text_dpfKem",
-    "image_with_text_LnH8zT",
-    "rich_text_Erkkib",
-    "image_with_text_fYcwUC",
-    "rich_text_dVLA69",
-    "image_with_text_m3EWAw",
-    "rich_text_t9xaHW",
-    "image_with_text_36PecB",
-    "rich_text_rcXhLM",
     "rich_text_dCmBBk",
     "multirow_fikqhk",
     "rich_text_zUPUiG",
-    "image_with_text_fiHBHQ",
-    "image_with_text_G3A78L",
     "rich_text_HhjwHa",
-    "image_with_text_ByTcgk",
     "rich_text_LeBzta",
     "multicolumn_ExbEyA",
     "rich_text_BXfm89",
