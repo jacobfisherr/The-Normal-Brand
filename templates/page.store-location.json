@@ -424,6 +424,75 @@
         "padding_bottom": 36
       }
     },
+    "rich_text_BKrPUN": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_3w3efW": {
+          "type": "heading",
+          "settings": {
+            "heading": "Tennessee",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_3w3efW"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "multirow_apzetW": {
+      "type": "multirow",
+      "blocks": {
+        "row_9AxfEt": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/NASHVILLE_a2f896ef-b068-41df-a298-f8a413cc2b72.jpg",
+            "caption": "Nashville",
+            "heading": "<a href=\"https://thenormalbrand.com/pages/nashville-store\" title=\"https://thenormalbrand.com/pages/nashville-store\">Fifth & Broadway</a>",
+            "text": "<p><strong>5068 Broadway<br/>Nashville, TN 37203</strong></p><p>(615) 795-1444</p><p>Mon-Thur: 10am - 8pm<br/>Fri-Sat: 10am - 9pm<br/>Sun: 11am - 6pm</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_yeiti4": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/franklin_tn.jpg",
+            "caption": "Franklin, TN",
+            "heading": "<a href=\"https://thenormalbrand.com/pages/the-normal-brand-store-franklin\" title=\"https://thenormalbrand.com/pages/the-normal-brand-store-franklin\">CoolSprings Galleria</a>",
+            "text": "<p><strong>1800 Galleria Boulevard, Space 1270<br/>Franklin, TN 37067</strong></p><p>(629) 654-0910</p><p>Mon-Sat: 10am - 8pm<br/>Sun: 11am - 6pm</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_9AxfEt",
+        "row_yeiti4"
+      ],
+      "settings": {
+        "image_height": "adapt",
+        "desktop_image_width": "small",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "image_layout": "align-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "rich_text_zUPUiG": {
       "type": "rich-text",
       "settings": {
@@ -592,6 +661,8 @@
     "multirow_kbjRJ9",
     "rich_text_AKUzEJ",
     "multirow_fikqhk",
+    "rich_text_BKrPUN",
+    "multirow_apzetW",
     "rich_text_zUPUiG",
     "rich_text_HhjwHa",
     "rich_text_LeBzta",
