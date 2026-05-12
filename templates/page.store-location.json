@@ -22,7 +22,7 @@
         "heading_wEbEMd": {
           "type": "heading",
           "settings": {
-            "heading": "Our Stores in St. Louis, MO",
+            "heading": "Our Stores",
             "heading_size": "hxl"
           }
         }
@@ -94,7 +94,121 @@
     "rich_text_dCmBBk": {
       "type": "rich-text",
       "blocks": {
-        "heading_mhk3BF": {
+        "heading_BbkGbf": {
+          "type": "heading",
+          "settings": {
+            "heading": "Alabama",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_BbkGbf"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "multirow_RnxBAY": {
+      "type": "multirow",
+      "blocks": {
+        "row_j9A7UA": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Birmingham.The_summit_7517f748-2f01-4e2a-8b70-99cb99fb7dd6.jpg",
+            "caption": "Birmingham",
+            "heading": "<a href=\"https://thenormalbrand.com/pages/copy-of-the-normal-brand-store-birmingham\" title=\"https://thenormalbrand.com/pages/copy-of-the-normal-brand-store-birmingham\">The Summit</a>",
+            "text": "<p><strong>214 Summit Boulevard, Suite 450<br/>Birmingham, AL 35243</strong></p><p>(205) 644-1866</p><p>Mon-Thur: 10am - 8pm<br/>Fri-Sat: 10am - 9pm<br/>Sun: 12pm - 6pm</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_j9A7UA"
+      ],
+      "settings": {
+        "image_height": "adapt",
+        "desktop_image_width": "small",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "image_layout": "align-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_Ta9k9N": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_NaHcHD": {
+          "type": "heading",
+          "settings": {
+            "heading": "Colorado",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_NaHcHD"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "multirow_QYaRpJ": {
+      "type": "multirow",
+      "blocks": {
+        "row_qyGnTF": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/DENVER1_0fd64feb-6576-4e23-88d6-f2971639994c.jpg",
+            "caption": "Denver",
+            "heading": "<a href=\"https://thenormalbrand.com/pages/the-normal-brand-store-denver\" title=\"https://thenormalbrand.com/pages/the-normal-brand-store-denver\">Cherry Creek North</a>",
+            "text": "<p><strong>105 Fillmore Street, Suite 106<br/>Denver, CO 80206</strong></p><p>(702) 661-7276</p><p>Mon-Sat: 10am - 7pm<br/>Sun: 11am - 6pm</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_qyGnTF"
+      ],
+      "settings": {
+        "image_height": "adapt",
+        "desktop_image_width": "small",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "image_layout": "align-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_AKUzEJ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_PATfgN": {
           "type": "heading",
           "settings": {
             "heading": "St. Louis Stores",
@@ -103,7 +217,7 @@
         }
       },
       "block_order": [
-        "heading_mhk3BF"
+        "heading_PATfgN"
       ],
       "settings": {
         "desktop_content_position": "left",
@@ -118,6 +232,17 @@
       "type": "multirow",
       "blocks": {
         "row_kDDQLb": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/DES_PERES.jpg",
+            "caption": "St. Louis | Des Peres",
+            "heading": "<a href=\"https://thenormalbrand.com/pages/the-normal-brand-store-west-county\" title=\"https://thenormalbrand.com/pages/the-normal-brand-store-west-county\">West County Center</a>",
+            "text": "<p><strong>80 West County Center<br/>Des Peres, MO 63131</strong></p><p>(314) 973-8424</p><p>Mon-Sat: 10am - 8pm<br/>Sun: 11am - 6pm</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_X3MeND": {
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/DES_PERES.jpg",
@@ -153,6 +278,7 @@
       },
       "block_order": [
         "row_kDDQLb",
+        "row_X3MeND",
         "row_L99whm",
         "row_dq8prP"
       ],
@@ -331,6 +457,10 @@
     "rich_text_YEtwtT",
     "rich_text_HjwrwQ",
     "rich_text_dCmBBk",
+    "multirow_RnxBAY",
+    "rich_text_Ta9k9N",
+    "multirow_QYaRpJ",
+    "rich_text_AKUzEJ",
     "multirow_fikqhk",
     "rich_text_zUPUiG",
     "rich_text_HhjwHa",
