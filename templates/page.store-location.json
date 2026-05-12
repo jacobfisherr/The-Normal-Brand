@@ -325,7 +325,7 @@
         "heading_PATfgN": {
           "type": "heading",
           "settings": {
-            "heading": "St. Louis Stores",
+            "heading": "Missouri",
             "heading_size": "h1"
           }
         }
@@ -346,6 +346,17 @@
       "type": "multirow",
       "blocks": {
         "row_kDDQLb": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/KANSAS_CITY_868f56cd-7254-489e-822c-40899d2c1114.jpg",
+            "caption": "Kansas City",
+            "heading": "<a href=\"https://thenormalbrand.com/pages/the-normal-brand-store-kansas-city\" title=\"https://thenormalbrand.com/pages/the-normal-brand-store-kansas-city\">Country Club Plaza</a>",
+            "text": "<p><strong>425 Nichols Road<br/>Kansas, MO 64112</strong></p><p>(816) 831-7407</p><p>Mon-Sat: 10am - 7pm<br/>Sun: 12pm - 6pm</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_nbahFe": {
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/DES_PERES.jpg",
@@ -392,6 +403,7 @@
       },
       "block_order": [
         "row_kDDQLb",
+        "row_nbahFe",
         "row_X3MeND",
         "row_L99whm",
         "row_dq8prP"
