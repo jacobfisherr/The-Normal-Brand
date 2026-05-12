@@ -1,0 +1,732 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_AQgzAm": {
+      "type": "image-banner",
+      "blocks": {
+        "text_tHyUNc": {
+          "type": "text",
+          "settings": {
+            "text": "<strong>The Normal Brand</strong>",
+            "text_style": "caption-with-letter-spacing"
+          }
+        },
+        "heading_wEbEMd": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our Stores",
+            "heading_size": "hxl"
+          }
+        }
+      },
+      "block_order": [
+        "text_tHyUNc",
+        "heading_wEbEMd"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/OUR_STORE_1440x_5ba87bb7-e4b5-4be5-a1c6-2d4d331257dc.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-7eca2d75-45a3-4024-b69d-17de1ca4d726",
+        "mobile_color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "rich_text_YEtwtT": {
+      "type": "rich-text",
+      "blocks": {
+        "text_yUhL4a": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Want to join the TNB team? <a href=\"https://apply.workable.com/the-normal-brand/\" title=\"Apply to work at a TNB store location\">Click here </a>to apply!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_yUhL4a"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "tnb-dark",
+        "full_width": true,
+        "padding_top": 8,
+        "padding_bottom": 8
+      }
+    },
+    "rich_text_HjwrwQ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_6rgzaX": {
+          "type": "heading",
+          "settings": {
+            "heading": "We wanted more than a store. We want an experience. We want you to come in and not just shop around, but to hang out and grab a beer with us.",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_6rgzaX"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_dCmBBk": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_BbkGbf": {
+          "type": "heading",
+          "settings": {
+            "heading": "Test Update",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_BbkGbf"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "multirow_RnxBAY": {
+      "type": "multirow",
+      "blocks": {
+        "row_j9A7UA": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Birmingham.The_summit_7517f748-2f01-4e2a-8b70-99cb99fb7dd6.jpg",
+            "caption": "Birmingham",
+            "heading": "<a href=\"https://thenormalbrand.com/pages/copy-of-the-normal-brand-store-birmingham\" title=\"https://thenormalbrand.com/pages/copy-of-the-normal-brand-store-birmingham\">The Summit</a>",
+            "text": "<p><strong>214 Summit Boulevard, Suite 450<br/>Birmingham, AL 35243</strong></p><p>(205) 644-1866</p><p>Mon-Thur: 10am - 8pm<br/>Fri-Sat: 10am - 9pm<br/>Sun: 12pm - 6pm</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_j9A7UA"
+      ],
+      "settings": {
+        "image_height": "adapt",
+        "desktop_image_width": "small",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "image_layout": "align-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_Ta9k9N": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_NaHcHD": {
+          "type": "heading",
+          "settings": {
+            "heading": "Colorado",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_NaHcHD"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "multirow_QYaRpJ": {
+      "type": "multirow",
+      "blocks": {
+        "row_qyGnTF": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/DENVER1_0fd64feb-6576-4e23-88d6-f2971639994c.jpg",
+            "caption": "Denver",
+            "heading": "<a href=\"https://thenormalbrand.com/pages/the-normal-brand-store-denver\" title=\"https://thenormalbrand.com/pages/the-normal-brand-store-denver\">Cherry Creek North</a>",
+            "text": "<p><strong>105 Fillmore Street, Suite 106<br/>Denver, CO 80206</strong></p><p>(702) 661-7276</p><p>Mon-Sat: 10am - 7pm<br/>Sun: 11am - 6pm</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_qyGnTF"
+      ],
+      "settings": {
+        "image_height": "adapt",
+        "desktop_image_width": "small",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "image_layout": "align-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_QFMCak": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_rrMwJA": {
+          "type": "heading",
+          "settings": {
+            "heading": "Indiana",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_rrMwJA"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "multirow_n4bzCe": {
+      "type": "multirow",
+      "blocks": {
+        "row_ggpfHd": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Indiana.jpg",
+            "caption": "INDIANAPOLIS",
+            "heading": "<a href=\"https://thenormalbrand.com/pages/the-normal-brand-store-indianapolis\" title=\"https://thenormalbrand.com/pages/the-normal-brand-store-indianapolis\">The Fashion Mall at Keystone</a>",
+            "text": "<p><strong>8702 Keystone Crossing, Unit 166B<br/>Indianapolis, IN 46240</strong></p><p>(317) 832-5139</p><p>Mon-Thur: 10am - 8pm<br/>Fri-Sat: 10am - 9pm<br/>Sun: 12pm - 6pm</p><p></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_ggpfHd"
+      ],
+      "settings": {
+        "image_height": "adapt",
+        "desktop_image_width": "small",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "image_layout": "align-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_xftV6q": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_XdBdkg": {
+          "type": "heading",
+          "settings": {
+            "heading": "Iowa",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_XdBdkg"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "multirow_kbjRJ9": {
+      "type": "multirow",
+      "blocks": {
+        "row_xhEU4H": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/DesMoines.jpg",
+            "caption": "DES MOINES",
+            "heading": "<a href=\"https://thenormalbrand.com/pages/shop-for-your-normal-at-jordan-creek-town-center\" title=\"https://thenormalbrand.com/pages/shop-for-your-normal-at-jordan-creek-town-center\">Jordan Creek Town Center</a>",
+            "text": "<p><strong>101 Jordan Creek Parkway, Suite 11030<br/>West Des Moines, IA 50266</strong></p><p>(515) 493-6569</p><p>Mon-Thur: 10am - 8pm<br/>Fri-Sat: 10am - 9pm<br/>Sun: 11am - 6pm</p><p></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_xhEU4H"
+      ],
+      "settings": {
+        "image_height": "adapt",
+        "desktop_image_width": "small",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "image_layout": "align-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_AKUzEJ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_PATfgN": {
+          "type": "heading",
+          "settings": {
+            "heading": "Missouri",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_PATfgN"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "multirow_fikqhk": {
+      "type": "multirow",
+      "blocks": {
+        "row_nbahFe": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/KANSAS_CITY_868f56cd-7254-489e-822c-40899d2c1114.jpg",
+            "caption": "Kansas City",
+            "heading": "<a href=\"https://thenormalbrand.com/pages/the-normal-brand-store-kansas-city\" title=\"https://thenormalbrand.com/pages/the-normal-brand-store-kansas-city\">Country Club Plaza</a>",
+            "text": "<p><strong>425 Nichols Road<br/>Kansas City, MO 64112</strong></p><p>(816) 831-7407</p><p>Mon-Sat: 10am - 7pm<br/>Sun: 12pm - 6pm</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_X3MeND": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/DES_PERES.jpg",
+            "caption": "St. Louis | Des Peres",
+            "heading": "<a href=\"https://thenormalbrand.com/pages/the-normal-brand-store-west-county\" title=\"https://thenormalbrand.com/pages/the-normal-brand-store-west-county\">West County Center</a>",
+            "text": "<p><strong>80 West County Center<br/>Des Peres, MO 63131</strong></p><p>(314) 973-8424</p><p>Mon-Sat: 10am - 8pm<br/>Sun: 11am - 6pm</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_kDDQLb": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Springfield.png",
+            "caption": "Springfield",
+            "heading": "<a href=\"https://thenormalbrand.com/pages/the-normal-brand-store-springfield\" title=\"https://thenormalbrand.com/pages/the-normal-brand-store-springfield\">Battlefield Mall</a>",
+            "text": "<p><strong>2825 Glenstone Avenue, Unit F16A<br/>Springfield, MO 65804</strong></p><p>(417) 818-7613</p><p>Mon-Thur: 10am - 8pm<br/>Fri-Sat: 10am - 9pm<br/>Sun: 12pm - 6pm</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_L99whm": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/CLAYTON.jpg",
+            "caption": "St. Louis | Clayton",
+            "heading": "<a href=\"/pages/st-louis-store\" title=\"/pages/st-louis-store\">Colonial Marketplace</a>",
+            "text": "<p><strong>8809 Ladue Road<br/>St. Louis, MO 63124</strong></p><p>(314) 899-0800</p><p>Mon-Fri: 10am - 7pm<br/>Sat: 10am - 6pm<br/>Sun: 12pm - 5pm</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_dq8prP": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/KIRKWOOD.jpg",
+            "caption": "St. Louis | Kirkwood",
+            "heading": "<a href=\"/pages/the-normal-brand-store-stlouis-kirkwood\" title=\"/pages/the-normal-brand-store-stlouis-kirkwood\">Kirkwood Commons</a>",
+            "text": "<p><strong>110 North Clay Avenue<br/>Kirkwood, MO 63122</strong></p><p>(314) 882-4541</p><p>Mon-Thur: 10am - 6pm<br/>Fri-Sat: 10am - 7pm<br/>Sun: 12pm - 5pm</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_nbahFe",
+        "row_X3MeND",
+        "row_kDDQLb",
+        "row_L99whm",
+        "row_dq8prP"
+      ],
+      "settings": {
+        "image_height": "adapt",
+        "desktop_image_width": "small",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "image_layout": "align-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_BKrPUN": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_3w3efW": {
+          "type": "heading",
+          "settings": {
+            "heading": "Tennessee",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_3w3efW"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "multirow_apzetW": {
+      "type": "multirow",
+      "blocks": {
+        "row_9AxfEt": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/NASHVILLE_a2f896ef-b068-41df-a298-f8a413cc2b72.jpg",
+            "caption": "Nashville",
+            "heading": "<a href=\"https://thenormalbrand.com/pages/nashville-store\" title=\"https://thenormalbrand.com/pages/nashville-store\">Fifth & Broadway</a>",
+            "text": "<p><strong>5068 Broadway<br/>Nashville, TN 37203</strong></p><p>(615) 795-1444</p><p>Mon-Thur: 10am - 8pm<br/>Fri-Sat: 10am - 9pm<br/>Sun: 11am - 6pm</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_yeiti4": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/franklin_tn.jpg",
+            "caption": "Franklin",
+            "heading": "<a href=\"https://thenormalbrand.com/pages/the-normal-brand-store-franklin\" title=\"https://thenormalbrand.com/pages/the-normal-brand-store-franklin\">CoolSprings Galleria</a>",
+            "text": "<p><strong>1800 Galleria Boulevard, Space 1270<br/>Franklin, TN 37067</strong></p><p>(629) 654-0910</p><p>Mon-Sat: 10am - 8pm<br/>Sun: 11am - 6pm</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_9AxfEt",
+        "row_yeiti4"
+      ],
+      "settings": {
+        "image_height": "adapt",
+        "desktop_image_width": "small",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "image_layout": "align-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_WpXcEC": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_kwkwAV": {
+          "type": "heading",
+          "settings": {
+            "heading": "Texas",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_kwkwAV"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "multirow_PU77iT": {
+      "type": "multirow",
+      "blocks": {
+        "row_Wnc4zN": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/texa.jpg",
+            "caption": "Southlake",
+            "heading": "<a href=\"https://thenormalbrand.com/pages/shop-for-your-normal-at-southlake-town-square\" title=\"https://thenormalbrand.com/pages/shop-for-your-normal-at-southlake-town-square\">Southlake Town Center</a>",
+            "text": "<p><strong>1232 Main Street<br/>Southlake, TX 76092</strong></p><p>(817) 823-0971</p><p>Mon-Sat: 10am - 8pm<br/>Sun: 11am - 6pm</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_Wnc4zN"
+      ],
+      "settings": {
+        "image_height": "adapt",
+        "desktop_image_width": "small",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "image_layout": "align-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_zUPUiG": {
+      "type": "rich-text",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_HhjwHa": {
+      "type": "rich-text",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_LeBzta": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Gqyp44": {
+          "type": "heading",
+          "settings": {
+            "heading": "Swing By & Say Hi",
+            "heading_size": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Gqyp44"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "tnb-dark",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_ExbEyA": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_Rmmpbx": {
+          "type": "column",
+          "settings": {
+            "title": "Exclusive Events",
+            "text": "<p>Who doesn't love a good ol'fashioned get together? We frequently partner with other brands/influencers to host events that will add to your TNB experience.</p>",
+            "liquid": "",
+            "link_label": "",
+            "link": "",
+            "text_alignment": "left",
+            "text_alignment_mobile": "left"
+          }
+        },
+        "column_THiJQ9": {
+          "type": "column",
+          "settings": {
+            "title": "TNB Hospitality",
+            "text": "<p>We know the importance of a solid retail experience here at The Normal Brand, which is why we do everything we can to ensure you walk away happy & satisfied!</p>",
+            "liquid": "",
+            "link_label": "",
+            "link": "",
+            "text_alignment": "left",
+            "text_alignment_mobile": "left"
+          }
+        },
+        "column_CrF7Gb": {
+          "type": "column",
+          "settings": {
+            "title": "Follow For More",
+            "text": "<p>Checkout all the deals and exclusive events on our instagram! Follow us @thenormalbrand and be sure to give our city stores a follow!</p>",
+            "liquid": "",
+            "link_label": "",
+            "link": "",
+            "text_alignment": "left",
+            "text_alignment_mobile": "left"
+          }
+        }
+      },
+      "block_order": [
+        "column_Rmmpbx",
+        "column_THiJQ9",
+        "column_CrF7Gb"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h0",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "tnb-dark",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_BXfm89": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Cp89JW": {
+          "type": "heading",
+          "settings": {
+            "heading": "Looking To The Future",
+            "heading_size": "h0"
+          }
+        },
+        "heading_KzhUBU": {
+          "type": "heading",
+          "settings": {
+            "heading": "We Work Hard to Bring You the Best",
+            "heading_size": "h2"
+          }
+        },
+        "text_98iEeb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our goal is to create a tone that embodies The Normal Brand. We use a combination of antiques, flags, animal mounts, and pieces of history to create this vision. When you walk in, we want you to feel like you walked into a Midwestern experience. We want everything we do to reflect our value of hard work. Our stores do not fall short. From the shelves and counters to the bar top, everything is cut, stained, and distressed by hand. We take pride in the small details because they make the biggest difference.</p><p>Probably our favorite part is the hangout bar area, for anyone who wants to come in and kick back with a beer in hand. We want you to feel comfortable enough to come in and hang out, regardless of whether you're shopping or not.</p><p>None of this would be possible if it weren't for everyone out there supporting us along the way. To the ones who were with us when we were shipping out hats from our basement, to the ones who maybe just heard of us on the internet, we thank you. Without your support and feedback, none of this would even be possible. With everyone joining us, it reminds us that Normal is better.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Cp89JW",
+        "heading_KzhUBU",
+        "text_98iEeb"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-e93e77ef-e7cc-40f5-9a5f-968397f62fa7",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "image_banner_AQgzAm",
+    "rich_text_YEtwtT",
+    "rich_text_HjwrwQ",
+    "rich_text_dCmBBk",
+    "multirow_RnxBAY",
+    "rich_text_Ta9k9N",
+    "multirow_QYaRpJ",
+    "rich_text_QFMCak",
+    "multirow_n4bzCe",
+    "rich_text_xftV6q",
+    "multirow_kbjRJ9",
+    "rich_text_AKUzEJ",
+    "multirow_fikqhk",
+    "rich_text_BKrPUN",
+    "multirow_apzetW",
+    "rich_text_WpXcEC",
+    "multirow_PU77iT",
+    "rich_text_zUPUiG",
+    "rich_text_HhjwHa",
+    "rich_text_LeBzta",
+    "multicolumn_ExbEyA",
+    "rich_text_BXfm89",
+    "main"
+  ]
+}
