@@ -22,7 +22,7 @@
         "heading_wEbEMd": {
           "type": "heading",
           "settings": {
-            "heading": "Our Stores",
+            "heading": "Our Nashville Stores",
             "heading_size": "hxl"
           }
         }
@@ -96,6 +96,7 @@
       "blocks": {
         "heading_BbkGbf": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Test Update",
             "heading_size": "h1"
@@ -105,6 +106,7 @@
       "block_order": [
         "heading_BbkGbf"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
@@ -119,6 +121,7 @@
       "blocks": {
         "row_j9A7UA": {
           "type": "row",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Birmingham.The_summit_7517f748-2f01-4e2a-8b70-99cb99fb7dd6.jpg",
             "caption": "Birmingham",
@@ -132,6 +135,7 @@
       "block_order": [
         "row_j9A7UA"
       ],
+      "disabled": true,
       "settings": {
         "image_height": "adapt",
         "desktop_image_width": "small",
@@ -153,6 +157,7 @@
       "blocks": {
         "heading_NaHcHD": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Colorado",
             "heading_size": "h1"
@@ -162,6 +167,7 @@
       "block_order": [
         "heading_NaHcHD"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
@@ -176,6 +182,7 @@
       "blocks": {
         "row_qyGnTF": {
           "type": "row",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/DENVER1_0fd64feb-6576-4e23-88d6-f2971639994c.jpg",
             "caption": "Denver",
@@ -189,6 +196,7 @@
       "block_order": [
         "row_qyGnTF"
       ],
+      "disabled": true,
       "settings": {
         "image_height": "adapt",
         "desktop_image_width": "small",
@@ -210,6 +218,7 @@
       "blocks": {
         "heading_rrMwJA": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Indiana",
             "heading_size": "h1"
@@ -219,6 +228,7 @@
       "block_order": [
         "heading_rrMwJA"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
@@ -233,6 +243,7 @@
       "blocks": {
         "row_ggpfHd": {
           "type": "row",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Indiana.jpg",
             "caption": "INDIANAPOLIS",
@@ -246,6 +257,7 @@
       "block_order": [
         "row_ggpfHd"
       ],
+      "disabled": true,
       "settings": {
         "image_height": "adapt",
         "desktop_image_width": "small",
@@ -267,6 +279,7 @@
       "blocks": {
         "heading_XdBdkg": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Iowa",
             "heading_size": "h1"
@@ -276,6 +289,7 @@
       "block_order": [
         "heading_XdBdkg"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
@@ -303,6 +317,7 @@
       "block_order": [
         "row_xhEU4H"
       ],
+      "disabled": true,
       "settings": {
         "image_height": "adapt",
         "desktop_image_width": "small",
@@ -333,6 +348,7 @@
       "block_order": [
         "heading_PATfgN"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
@@ -347,6 +363,7 @@
       "blocks": {
         "row_nbahFe": {
           "type": "row",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/KANSAS_CITY_868f56cd-7254-489e-822c-40899d2c1114.jpg",
             "caption": "Kansas City",
@@ -358,6 +375,7 @@
         },
         "row_X3MeND": {
           "type": "row",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/DES_PERES.jpg",
             "caption": "St. Louis | Des Peres",
@@ -369,6 +387,7 @@
         },
         "row_kDDQLb": {
           "type": "row",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Springfield.png",
             "caption": "Springfield",
@@ -380,6 +399,7 @@
         },
         "row_L99whm": {
           "type": "row",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/CLAYTON.jpg",
             "caption": "St. Louis | Clayton",
@@ -391,6 +411,7 @@
         },
         "row_dq8prP": {
           "type": "row",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/KIRKWOOD.jpg",
             "caption": "St. Louis | Kirkwood",
@@ -408,6 +429,7 @@
         "row_L99whm",
         "row_dq8prP"
       ],
+      "disabled": true,
       "settings": {
         "image_height": "adapt",
         "desktop_image_width": "small",
@@ -498,6 +520,7 @@
       "blocks": {
         "heading_kwkwAV": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Texas",
             "heading_size": "h1"
@@ -507,6 +530,7 @@
       "block_order": [
         "heading_kwkwAV"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
@@ -521,6 +545,7 @@
       "blocks": {
         "row_Wnc4zN": {
           "type": "row",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/texa.jpg",
             "caption": "Southlake",
@@ -534,6 +559,7 @@
       "block_order": [
         "row_Wnc4zN"
       ],
+      "disabled": true,
       "settings": {
         "image_height": "adapt",
         "desktop_image_width": "small",
