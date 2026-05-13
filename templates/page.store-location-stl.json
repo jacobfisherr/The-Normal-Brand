@@ -96,6 +96,7 @@
       "blocks": {
         "heading_BbkGbf": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Test Update",
             "heading_size": "h1"
@@ -105,6 +106,7 @@
       "block_order": [
         "heading_BbkGbf"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
@@ -119,6 +121,7 @@
       "blocks": {
         "row_j9A7UA": {
           "type": "row",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Birmingham.The_summit_7517f748-2f01-4e2a-8b70-99cb99fb7dd6.jpg",
             "caption": "Birmingham",
@@ -132,6 +135,7 @@
       "block_order": [
         "row_j9A7UA"
       ],
+      "disabled": true,
       "settings": {
         "image_height": "adapt",
         "desktop_image_width": "small",
@@ -153,6 +157,7 @@
       "blocks": {
         "heading_NaHcHD": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Colorado",
             "heading_size": "h1"
@@ -162,6 +167,7 @@
       "block_order": [
         "heading_NaHcHD"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
@@ -176,6 +182,7 @@
       "blocks": {
         "row_qyGnTF": {
           "type": "row",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/DENVER1_0fd64feb-6576-4e23-88d6-f2971639994c.jpg",
             "caption": "Denver",
@@ -189,6 +196,7 @@
       "block_order": [
         "row_qyGnTF"
       ],
+      "disabled": true,
       "settings": {
         "image_height": "adapt",
         "desktop_image_width": "small",
@@ -210,6 +218,7 @@
       "blocks": {
         "heading_rrMwJA": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Indiana",
             "heading_size": "h1"
@@ -219,6 +228,7 @@
       "block_order": [
         "heading_rrMwJA"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
@@ -233,6 +243,7 @@
       "blocks": {
         "row_ggpfHd": {
           "type": "row",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Indiana.jpg",
             "caption": "INDIANAPOLIS",
@@ -246,6 +257,7 @@
       "block_order": [
         "row_ggpfHd"
       ],
+      "disabled": true,
       "settings": {
         "image_height": "adapt",
         "desktop_image_width": "small",
@@ -267,6 +279,7 @@
       "blocks": {
         "heading_XdBdkg": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Iowa",
             "heading_size": "h1"
@@ -290,6 +303,7 @@
       "blocks": {
         "row_xhEU4H": {
           "type": "row",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/DesMoines.jpg",
             "caption": "DES MOINES",
@@ -303,6 +317,7 @@
       "block_order": [
         "row_xhEU4H"
       ],
+      "disabled": true,
       "settings": {
         "image_height": "adapt",
         "desktop_image_width": "small",
@@ -438,6 +453,7 @@
       "block_order": [
         "heading_3w3efW"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
@@ -477,6 +493,7 @@
         "row_9AxfEt",
         "row_yeiti4"
       ],
+      "disabled": true,
       "settings": {
         "image_height": "adapt",
         "desktop_image_width": "small",
@@ -507,6 +524,7 @@
       "block_order": [
         "heading_kwkwAV"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
@@ -534,6 +552,7 @@
       "block_order": [
         "row_Wnc4zN"
       ],
+      "disabled": true,
       "settings": {
         "image_height": "adapt",
         "desktop_image_width": "small",
