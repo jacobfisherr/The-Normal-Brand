@@ -419,6 +419,7 @@
         },
         "row_chYTm4": {
           "type": "row",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Multicolumn-Template_2_8fc730e4-1635-45b6-898a-225d8c261e74.jpg",
             "caption": "",
