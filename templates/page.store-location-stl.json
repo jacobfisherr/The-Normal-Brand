@@ -416,6 +416,17 @@
             "button_label": "",
             "button_link": ""
           }
+        },
+        "row_chYTm4": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Multicolumn-Template_2_8fc730e4-1635-45b6-898a-225d8c261e74.jpg",
+            "caption": "",
+            "heading": "Brothers' Favorites",
+            "text": "<p>Jimmy, Conrad, and Lan put their names on these. The styles they actually reach for — broken in, tested, and worn on repeat. No guesswork required.<br/><br/></p>",
+            "button_label": "Shop Now",
+            "button_link": "https://thenormalbrand.com/collections/brothers-favorites"
+          }
         }
       },
       "block_order": [
@@ -423,7 +434,8 @@
         "row_X3MeND",
         "row_kDDQLb",
         "row_L99whm",
-        "row_dq8prP"
+        "row_dq8prP",
+        "row_chYTm4"
       ],
       "settings": {
         "image_height": "adapt",
@@ -439,6 +451,20 @@
         "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "slideshow_bYJYtj": {
+      "type": "slideshow",
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
       }
     },
     "rich_text_BKrPUN": {
@@ -739,6 +765,7 @@
     "multirow_kbjRJ9",
     "rich_text_AKUzEJ",
     "multirow_fikqhk",
+    "slideshow_bYJYtj",
     "rich_text_BKrPUN",
     "multirow_apzetW",
     "rich_text_WpXcEC",
