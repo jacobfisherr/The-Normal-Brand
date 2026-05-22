@@ -538,29 +538,6 @@
         "padding_bottom": 0
       }
     },
-    "rich_text_LeBzta": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_Gqyp44": {
-          "type": "heading",
-          "settings": {
-            "heading": "Swing By & Say Hi",
-            "heading_size": "h0"
-          }
-        }
-      },
-      "block_order": [
-        "heading_Gqyp44"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "tnb-dark",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 36
-      }
-    },
     "enavi_collection_list_Ydfh3d": {
       "type": "enavi-collection-list",
       "blocks": {
@@ -650,6 +627,109 @@
         "view_all_products_link": "shopify://collections/mens",
         "view_all_products_text": "View all products",
         "view_all_products_style": "link"
+      }
+    },
+    "enavi_collection_list_6URNWH": {
+      "type": "enavi-collection-list",
+      "blocks": {
+        "featured_collection_6Me7zp": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "womens-dresses",
+            "custom_title": "",
+            "custom_image": "shopify://shop_images/Dresses.jpg"
+          }
+        },
+        "featured_collection_eVFhwd": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "button-ups-and-blouses",
+            "custom_title": "",
+            "custom_image": "shopify://shop_images/Shirts_Tops.jpg"
+          }
+        },
+        "featured_collection_LNWfgD": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "womens-pants-and-shorts",
+            "custom_title": "",
+            "custom_image": "shopify://shop_images/Bottoms.jpg"
+          }
+        },
+        "featured_collection_kUwbY9": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "womens-sweaters",
+            "custom_title": "",
+            "custom_image": "shopify://shop_images/Sweaters.jpg"
+          }
+        },
+        "featured_collection_TrrU4E": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "womens-outerwear",
+            "custom_title": "Outerwear",
+            "custom_image": "shopify://shop_images/Outerwear_adcca293-86e8-4b7c-b1f5-7dd35df1e6c2.jpg"
+          }
+        },
+        "featured_collection_YQTzUV": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "womens-hoodies-pullovers",
+            "custom_title": "Hoodies & Pullovers",
+            "custom_image": "shopify://shop_images/Hoodies_Pullovers.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_6Me7zp",
+        "featured_collection_eVFhwd",
+        "featured_collection_LNWfgD",
+        "featured_collection_kUwbY9",
+        "featured_collection_TrrU4E",
+        "featured_collection_YQTzUV"
+      ],
+      "name": "Enavi Collection List",
+      "settings": {
+        "title": "Shop Women's",
+        "heading_size": "h2",
+        "image_ratio": "portrait",
+        "columns_desktop": 4,
+        "enable_desktop_slider": true,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "custom_class": "enavi-collection-womens",
+        "show_view_all_products": true,
+        "view_all_products_link": "shopify://collections/womens",
+        "view_all_products_text": "View all products",
+        "view_all_products_style": "link"
+      }
+    },
+    "rich_text_LeBzta": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Gqyp44": {
+          "type": "heading",
+          "settings": {
+            "heading": "Swing By & Say Hi",
+            "heading_size": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Gqyp44"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "tnb-dark",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 36
       }
     },
     "multicolumn_ExbEyA": {
@@ -779,6 +859,7 @@
     "multirow_apzetW",
     "rich_text_zUPUiG",
     "enavi_collection_list_Ydfh3d",
+    "enavi_collection_list_6URNWH",
     "rich_text_LeBzta",
     "multicolumn_ExbEyA",
     "rich_text_BXfm89",
