@@ -493,20 +493,20 @@
             "custom_image": "shopify://shop_images/Dresses.jpg"
           }
         },
+        "featured_collection_aeaXhP": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "tees-tanks",
+            "custom_title": "",
+            "custom_image": "shopify://shop_images/PIC_1_a01faa55-486d-4526-bfb4-a9e1a3a8af1b.jpg"
+          }
+        },
         "featured_collection_hNmRX4": {
           "type": "featured_collection",
           "settings": {
             "collection": "button-ups-and-blouses",
             "custom_title": "",
-            "custom_image": "shopify://shop_images/Shirts_Tops.jpg"
-          }
-        },
-        "featured_collection_aeaXhP": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "womens-sweaters",
-            "custom_title": "",
-            "custom_image": "shopify://shop_images/Sweaters.jpg"
+            "custom_image": "shopify://shop_images/PIC_3_ff6a63e2-8cdb-4304-9a32-7d569e663a4f.jpg"
           }
         },
         "featured_collection_UNqmEY": {
@@ -536,8 +536,8 @@
       },
       "block_order": [
         "featured_collection_V7gCqN",
-        "featured_collection_hNmRX4",
         "featured_collection_aeaXhP",
+        "featured_collection_hNmRX4",
         "featured_collection_UNqmEY",
         "featured_collection_FNQ8d7",
         "featured_collection_XMxTXN"
