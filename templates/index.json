@@ -391,12 +391,12 @@
         "column_qyTCPm": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Multicolumn-Template_1_5443e1e3-2337-490c-bba3-e35072919539.jpg",
-            "title": "New and Noteworthy",
-            "text": "<p>The ComforTech Pant combines polished style with everyday comfort. Crafted to feel cool and move with ease, it’s an elevated staple for warm-weather wear.</p>",
+            "image": "shopify://shop_images/Multicolumn-Template_2_8b81420b-99f2-4059-a2f0-f66a158d92db.jpg",
+            "title": "Let’s Summer-ize",
+            "text": "<p>A few new graphics and a few classics. We have everything you need for the weekends ahead. </p>",
             "liquid": "",
-            "link_label": "Shop ComforTech Pant",
-            "link": "https://thenormalbrand.com/products/comfortech-twill-pant-in-moss?_pos=1&_psq=comfortech&_ss=e&_v=1.0",
+            "link_label": "Shop Graphic Tees",
+            "link": "https://thenormalbrand.com/collections/graphic-tees",
             "text_alignment": "left",
             "text_alignment_mobile": "left"
           }
