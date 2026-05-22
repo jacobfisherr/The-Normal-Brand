@@ -493,28 +493,20 @@
             "custom_image": "shopify://shop_images/Dresses.jpg"
           }
         },
-        "featured_collection_aeaXhP": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "womens-sweaters",
-            "custom_title": "",
-            "custom_image": "shopify://shop_images/Sweaters.jpg"
-          }
-        },
-        "featured_collection_XMxTXN": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "womens-hoodies-pullovers",
-            "custom_title": "Hoodies & Pullovers",
-            "custom_image": "shopify://shop_images/Hoodies_Pullovers.jpg"
-          }
-        },
         "featured_collection_hNmRX4": {
           "type": "featured_collection",
           "settings": {
             "collection": "button-ups-and-blouses",
             "custom_title": "",
             "custom_image": "shopify://shop_images/Shirts_Tops.jpg"
+          }
+        },
+        "featured_collection_aeaXhP": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "womens-sweaters",
+            "custom_title": "",
+            "custom_image": "shopify://shop_images/Sweaters.jpg"
           }
         },
         "featured_collection_UNqmEY": {
@@ -532,15 +524,23 @@
             "custom_title": "Outerwear",
             "custom_image": "shopify://shop_images/Outerwear_adcca293-86e8-4b7c-b1f5-7dd35df1e6c2.jpg"
           }
+        },
+        "featured_collection_XMxTXN": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "womens-hoodies-pullovers",
+            "custom_title": "Hoodies & Pullovers",
+            "custom_image": "shopify://shop_images/Hoodies_Pullovers.jpg"
+          }
         }
       },
       "block_order": [
         "featured_collection_V7gCqN",
-        "featured_collection_aeaXhP",
-        "featured_collection_XMxTXN",
         "featured_collection_hNmRX4",
+        "featured_collection_aeaXhP",
         "featured_collection_UNqmEY",
-        "featured_collection_FNQ8d7"
+        "featured_collection_FNQ8d7",
+        "featured_collection_XMxTXN"
       ],
       "name": "Enavi Collection List",
       "settings": {
