@@ -75,6 +75,7 @@
         "slide_RFLjqQ": {
           "type": "slide",
           "name": "Holidays",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Desktop_3e554515-f8bf-4b2d-bcf9-775e77f73269.jpg",
             "mobile_image": "shopify://shop_images/Mobile_1_7e3210be-18df-4c02-916b-b7b800047d26.jpg",
