@@ -101,12 +101,12 @@
     "featured_collection_FmAHab": {
       "type": "featured-collection",
       "settings": {
-        "title": "The Fall Line",
+        "title": "See What's New",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "fall-24-collection",
+        "collection": "new",
         "products_to_show": 7,
         "columns_desktop": 4,
         "full_width": false,
