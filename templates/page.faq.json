@@ -133,7 +133,7 @@
           "settings": {
             "heading": "What is your return policy?",
             "icon": "none",
-            "row_content": "<p><em><strong>All orders placed between November 1, 2025 and December 31, 2025 are eligible for return or exchange until January 31, 2026. <br/><br/></strong></em>Any item in new, unworn condition can be returned or exchanged within 30 days of purchase. Please note that items listed as Final Sale are not eligible for returns.  </p><p>Note that all returned and exchanged items must be in new, unused condition. </p><p>If you prefer to exchange your goods or return them by mail, visit our <a href=\"https://returns.thenormalbrand.com/#/\" title=\"Returns portal\">returns page here</a>. Note: an $8 flat-rate fee per return package will be deducted from your refund for all US orders. For what it’s worth, this does not cover the full cost of the shipment, but as a bootstrapped, family-owned business, we have to cover some of our costs or we will not be able to make cool clothes anymore. <em><strong>All in-store returns are free.</strong></em></p><p>Clearance, Mystery Box, gift cards, and final sale items are not eligible for returns or exchanges. </p><p>To process a return or exchange for orders outside the United States, please email <a href=\"mailto:thebear@thenormalbrand.com\" title=\"mailto:thebear@thenormalbrand.com\">thebear@thenormalbrand.com</a>.</p><p>Please allow up to 10 days for us to receive and process your return or exchange.</p>",
+            "row_content": "<p><em><strong>All orders placed between November 1, 2025 and December 31, 2025 are eligible for return or exchange until January 31, 2026. <br/><br/></strong></em>Any item in new, unworn condition can be returned or exchanged within 30 days of purchase. Please note that items listed as Final Sale are not eligible for returns.  </p><p>Note that all returned and exchanged items must be in new, unused condition. </p><p>If you prefer to exchange your goods or return them by mail, visit our <a href=\"https://returns.thenormalbrand.com/#/\" title=\"Returns portal\">returns page here</a>. Note: an $8 flat-rate fee per return package will be deducted from your refund for all US orders. For what it’s worth, this does not cover the full cost of the shipment, but as a bootstrapped, family-owned business, we have to cover some of our costs or we will not be able to make cool clothes anymore. <em><strong>All in-store returns are free.</strong></em></p><p>Clearance, , gift cards, and final sale items are not eligible for returns or exchanges. </p><p>To process a return or exchange for orders outside the United States, please email <a href=\"mailto:thebear@thenormalbrand.com\" title=\"mailto:thebear@thenormalbrand.com\">thebear@thenormalbrand.com</a>.</p><p>Please allow up to 10 days for us to receive and process your return or exchange   </p><p><strong>Return Policy Abuse</strong></p><p>The Normal Brand reserves the right to deny returns, refunds, exchanges, or future purchases in cases of suspected fraud, misuse of our return policy, excessive returns, wardrobing, or other abusive behavior. We may limit or refuse service to customers whose return activity appears inconsistent with the intent of our return policy.</p>",
             "page": ""
           }
         },
@@ -143,15 +143,6 @@
             "heading": "How do I start a return or exchange?",
             "icon": "none",
             "row_content": "<p>You can return or exchange items through our website here: <a href=\"https://returns.thenormalbrand.com/#/\">https://returns.thenormalbrand.com/</a></p><p>You’ll need your 5-digit order number (located on the packing slip) as well as ONE of the following: your shipping zip code, email address, or phone number</p><p>It will walk you through the short process step-by-step, and will provide you with a printable return label in the end. All you have to do is affix the label to the items you want to return or exchange, and send it back to us. </p><p>If you choose to exchange an item, the new items will be fulfilled and sent out within 24-48 hours of the returned items being received and scanned in by the carrier.</p><p>If you choose to return an item, a refund will be issued to your original payment method once we receive your return.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_ng3zUU": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Return Policy Abuse",
-            "icon": "none",
-            "row_content": "<p>The Normal Brand reserves the right to deny returns, refunds, exchanges, or future purchases in cases of suspected fraud, misuse of our return policy, excessive returns, wardrobing, or other abusive behavior. We may limit or refuse service to customers whose return activity appears inconsistent with the intent of our return policy.</p>",
             "page": ""
           }
         },
@@ -168,7 +159,6 @@
       "block_order": [
         "collapsible_row_gpgtry",
         "collapsible_row_gkFFrJ",
-        "collapsible_row_ng3zUU",
         "collapsible_row_gGPMba"
       ],
       "settings": {
