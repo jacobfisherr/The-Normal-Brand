@@ -146,15 +146,6 @@
             "page": ""
           }
         },
-        "collapsible_row_gGPMba": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "There’s a problem with my order. What do I do?",
-            "icon": "none",
-            "row_content": "<p>Send an email to  <a href=\"mailto:thebear@thenormalbrand.com\">thebear@thenormalbrand.com</a> or fill out our customer service contact form <a href=\"https://thenormalbrand.com/community/contact/\" title=\"Customer service form\">here</a> and let us know the error with your order. We’ll be more than happy to make things right as soon as possible.</p>",
-            "page": ""
-          }
-        },
         "collapsible_row_ng3zUU": {
           "type": "collapsible_row",
           "settings": {
@@ -163,13 +154,22 @@
             "row_content": "<p>The Normal Brand reserves the right to deny returns, refunds, exchanges, or future purchases in cases of suspected fraud, misuse of our return policy, excessive returns, wardrobing, or other abusive behavior. We may limit or refuse service to customers whose return activity appears inconsistent with the intent of our return policy.</p>",
             "page": ""
           }
+        },
+        "collapsible_row_gGPMba": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "There’s a problem with my order. What do I do?",
+            "icon": "none",
+            "row_content": "<p>Send an email to  <a href=\"mailto:thebear@thenormalbrand.com\">thebear@thenormalbrand.com</a> or fill out our customer service contact form <a href=\"https://thenormalbrand.com/community/contact/\" title=\"Customer service form\">here</a> and let us know the error with your order. We’ll be more than happy to make things right as soon as possible.</p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
         "collapsible_row_gpgtry",
         "collapsible_row_gkFFrJ",
-        "collapsible_row_gGPMba",
-        "collapsible_row_ng3zUU"
+        "collapsible_row_ng3zUU",
+        "collapsible_row_gGPMba"
       ],
       "settings": {
         "caption": "",
