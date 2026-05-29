@@ -78,7 +78,7 @@
         "show_description": false,
         "description_style": "subtitle",
         "collection": "hats",
-        "products_to_show": 6,
+        "products_to_show": 2,
         "columns_desktop": 4,
         "full_width": false,
         "show_view_all": true,
@@ -93,8 +93,8 @@
         "quick_add": "none",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 36,
+        "padding_top": 16,
+        "padding_bottom": 16,
         "custom_class": ""
       }
     }
