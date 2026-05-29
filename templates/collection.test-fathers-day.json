@@ -79,7 +79,7 @@
         "description_style": "subtitle",
         "collection": "hats",
         "products_to_show": 6,
-        "columns_desktop": 6,
+        "columns_desktop": 4,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "link",
