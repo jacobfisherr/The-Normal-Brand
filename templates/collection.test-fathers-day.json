@@ -166,6 +166,7 @@
       "blocks": {
         "one_column_image_Vm4nrF": {
           "type": "one_column_image",
+          "disabled": true,
           "settings": {
             "position": 3,
             "image": "shopify://shop_images/presidents-CARD_2.jpg"
