@@ -9,60 +9,6 @@
  */
 {
   "sections": {
-    "image_banner_RKnHKy": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_GXQyXx": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Build Your Own Box",
-            "heading_size": "h1"
-          }
-        },
-        "text_kYhnWW": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "buttons_EPXiwK": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_GXQyXx",
-        "text_kYhnWW",
-        "buttons_EPXiwK"
-      ],
-      "disabled": true,
-      "name": "t:sections.image-banner.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/COLLECTION_BYOB_UPDATE_1.1.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "mobile_color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
     "breadcrumbs": {
       "type": "breadcrumbs",
       "disabled": true,
@@ -77,88 +23,6 @@
         "show_collection_description": true,
         "show_collection_image": false,
         "color_scheme": "scheme-1"
-      }
-    },
-    "pants-style-filter": {
-      "type": "pants-style-filter",
-      "blocks": {
-        "comfort-terry": {
-          "type": "style_card",
-          "settings": {
-            "image": "shopify://shop_images/Comfort_Terry_Pant_-_Dark_Brown_5.jpg",
-            "title": "COMFORT TERRY",
-            "features": "Looks polished, feels like sweats\nNow in extended sizes\nAvailable in Pant, Jean, Jogger",
-            "button_label": "Shop Now",
-            "button_link": "filter.p.m.custom.style=Comfort+Terry"
-          }
-        },
-        "denim": {
-          "type": "style_card",
-          "settings": {
-            "image": "shopify://shop_images/Normal_Jean_-_Medium_Greyson_Wash_460.jpg",
-            "title": "DENIM",
-            "features": "No frills, made to last\nNow in extended sizes\nAvailable in Classic, Straight, Comfort Terry",
-            "button_label": "Shop Now",
-            "button_link": "filter.p.m.custom.style=Denim"
-          }
-        },
-        "cord": {
-          "type": "style_card",
-          "settings": {
-            "image": "shopify://shop_images/image_1_5.png",
-            "title": "COMFORT CORD",
-            "features": "Slim fit\nClassic 5-pocket jean styling\nHeavy stretch corduroy",
-            "button_label": "Shop Now",
-            "button_link": "filter.p.m.custom.style=Cord"
-          }
-        },
-        "chino": {
-          "type": "style_card",
-          "settings": {
-            "image": "shopify://shop_images/image_1_6.png",
-            "title": "CHINO",
-            "features": "Straight fit\nSoft, peached stretch chino fabric\nContour waistband with elastic interior for the perfect fit",
-            "button_label": "Shop Now",
-            "button_link": "filter.p.m.custom.style=Chino"
-          }
-        },
-        "jogger": {
-          "type": "style_card",
-          "settings": {
-            "image": "shopify://shop_images/Comfort_Terry_Everyday_Jogger_-_Steel_2945.jpg",
-            "title": "JOGGER",
-            "features": "Elastic waistband\nAlpha sizing\nAvailable in Comfort Terry, Puremeso, COOLMAX®",
-            "button_label": "Shop Now",
-            "button_link": "filter.p.m.custom.style=Jogger"
-          }
-        },
-        "trouser": {
-          "type": "style_card",
-          "settings": {
-            "image": "shopify://shop_images/Normal_Trouser_-_Navy_2510.jpg",
-            "title": "TROUSER",
-            "features": "Straight fit\nFully lined\nOur most tailored look",
-            "button_label": "Shop Now",
-            "button_link": "filter.p.m.custom.style=Trouser"
-          }
-        }
-      },
-      "block_order": [
-        "comfort-terry",
-        "denim",
-        "cord",
-        "chino",
-        "jogger",
-        "trouser"
-      ],
-      "disabled": true,
-      "settings": {
-        "columns_desktop": 5,
-        "color_scheme": "scheme-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "padding_top": 24,
-        "padding_bottom": 20
       }
     },
     "product-grid": {
@@ -223,7 +87,7 @@
         "color_scheme": "",
         "image_ratio": "adapt",
         "image_shape": "default",
-        "show_secondary_image": false,
+        "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
         "quick_add": "none",
@@ -236,10 +100,8 @@
     }
   },
   "order": [
-    "image_banner_RKnHKy",
     "breadcrumbs",
     "banner",
-    "pants-style-filter",
     "product-grid",
     "featured_collection_VtwQcB"
   ]

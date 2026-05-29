@@ -270,11 +270,6 @@
         "disabled": false,
         "settings": {}
       },
-      "11560147490181472608": {
-        "type": "shopify://apps/rivo-loyalty-rewards-referrals/blocks/app-embed/580e9665-b2cd-4dbc-b6ba-6445ac9e6871",
-        "disabled": true,
-        "settings": {}
-      },
       "4705145147225299685": {
         "type": "shopify://apps/tolstoy-shoppable-video-quiz/blocks/widget-block/06fa8282-42ff-403e-b67c-1936776aed11",
         "disabled": false,
