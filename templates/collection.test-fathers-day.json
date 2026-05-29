@@ -170,7 +170,6 @@
         },
         "one_column_image_Vm4nrF": {
           "type": "one_column_image",
-          "disabled": true,
           "settings": {
             "position": 3,
             "image": "shopify://shop_images/presidents-CARD_2.jpg"
@@ -208,69 +207,6 @@
         "padding_top": 32,
         "padding_bottom": 36
       }
-    },
-    "featured_product_x96RJA": {
-      "type": "featured-product",
-      "blocks": {
-        "title_JtFkmf": {
-          "type": "title",
-          "settings": {
-            "heading_size": "h1"
-          }
-        },
-        "price_GzwhW9": {
-          "type": "price",
-          "settings": {}
-        },
-        "variant_picker_RM6h8i": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button",
-            "swatch_shape": "circle"
-          }
-        },
-        "quantity_selector_zcp4EC": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
-        "buy_buttons_WthfKy": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
-          }
-        },
-        "share_VM4cXK": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        }
-      },
-      "block_order": [
-        "title_JtFkmf",
-        "price_GzwhW9",
-        "variant_picker_RM6h8i",
-        "quantity_selector_zcp4EC",
-        "buy_buttons_WthfKy",
-        "share_VM4cXK"
-      ],
-      "name": "t:sections.featured-product.presets.name",
-      "settings": {
-        "product": "",
-        "product_slug": "gift-card",
-        "color_scheme": "",
-        "secondary_background": false,
-        "media_size": "small",
-        "constrain_to_viewport": true,
-        "media_fit": "contain",
-        "media_position": "left",
-        "image_zoom": "lightbox",
-        "hide_variants": false,
-        "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
@@ -278,7 +214,6 @@
     "breadcrumbs",
     "banner",
     "pants-style-filter",
-    "product-grid",
-    "featured_product_x96RJA"
+    "product-grid"
   ]
 }
