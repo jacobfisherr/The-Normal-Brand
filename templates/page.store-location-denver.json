@@ -22,7 +22,7 @@
         "heading_wEbEMd": {
           "type": "heading",
           "settings": {
-            "heading": "Our Nashville Stores",
+            "heading": "Our Denver Store",
             "heading_size": "hxl"
           }
         }
@@ -97,7 +97,7 @@
         "heading_3w3efW": {
           "type": "heading",
           "settings": {
-            "heading": "Tennessee",
+            "heading": "Colorado",
             "heading_size": "h1"
           }
         }
@@ -120,29 +120,17 @@
         "row_9AxfEt": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/NASHVILLE_a2f896ef-b068-41df-a298-f8a413cc2b72.jpg",
-            "caption": "Nashville",
-            "heading": "<a href=\"https://thenormalbrand.com/pages/nashville-store\" title=\"https://thenormalbrand.com/pages/nashville-store\">Fifth & Broadway</a>",
-            "text": "<p><strong>5068 Broadway<br/>Nashville, TN 37203</strong></p><p>(615) 795-1444</p><p>Mon-Thur: 10am - 8pm<br/>Fri-Sat: 10am - 9pm<br/>Sun: 11am - 6pm</p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "row_yeiti4": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/franklin_tn.jpg",
-            "caption": "Franklin",
-            "heading": "<a href=\"https://thenormalbrand.com/pages/the-normal-brand-store-franklin\" title=\"https://thenormalbrand.com/pages/the-normal-brand-store-franklin\">CoolSprings Galleria</a>",
-            "text": "<p><strong>1800 Galleria Boulevard, Space 1270<br/>Franklin, TN 37067</strong></p><p>(629) 654-0910</p><p>Mon-Sat: 10am - 8pm<br/>Sun: 11am - 6pm</p>",
+            "image": "shopify://shop_images/DENVER1_a8597e63-a62b-46d3-bf83-f77d1a982c47.jpg",
+            "caption": "Denver",
+            "heading": "<a href=\"https://thenormalbrand.com/pages/nashville-store\" title=\"https://thenormalbrand.com/pages/the-normal-brand-store-denver\">Cherry Creek North</a>",
+            "text": "<p><strong>105 Fillmore Street, Suite 106<br/>Denver, CO 80206</strong></p><p>(706) 661-7276</p><p>Mon-Sat: 10am - 7pm<br/>Sun: 11am - 6pm</p>",
             "button_label": "",
             "button_link": ""
           }
         }
       },
       "block_order": [
-        "row_9AxfEt",
-        "row_yeiti4"
+        "row_9AxfEt"
       ],
       "settings": {
         "image_height": "adapt",
