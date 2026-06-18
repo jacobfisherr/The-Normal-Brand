@@ -47,7 +47,7 @@
         "column_Tn94Ci": {
           "type": "column",
           "settings": {
-            "title": "Address",
+            "title": "<a href=\"https://www.google.com/maps/dir//105+Fillmore+St+Ste+106,+Denver,+CO+80206/@39.7186997,-104.9533603,17.26z/data=!4m8!4m7!1m0!1m5!1m1!1s0x876c7e96e09ae2ed:0xbeab9056fb82f10c!2m2!1d-104.953637!2d39.7187246?entry=ttu&g_ep=EgoyMDI2MDYxMy4wIKXMDSoASAFQAw%3D%3D\" target=\"_blank\" title=\"https://www.google.com/maps/dir//105+Fillmore+St+Ste+106,+Denver,+CO+80206/@39.7186997,-104.9533603,17.26z/data=!4m8!4m7!1m0!1m5!1m1!1s0x876c7e96e09ae2ed:0xbeab9056fb82f10c!2m2!1d-104.953637!2d39.7187246?entry=ttu&g_ep=EgoyMDI2MDYxMy4wIKXMDSoASAFQAw%3D%3D\">Address</a>",
             "text": "",
             "liquid": "<p>{{ page.metafields.custom.page_address }}</p>",
             "link_label": "",
