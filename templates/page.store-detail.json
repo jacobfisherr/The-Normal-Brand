@@ -253,6 +253,200 @@
         "padding_bottom": 36
       }
     },
+    "rich_text_X6XPbk": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_zbTqEd": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get a head start. Shop Online.",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_zbTqEd"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "enavi_collection_list_idx76H": {
+      "type": "enavi-collection-list",
+      "blocks": {
+        "featured_collection_HgWcUp": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bottoms",
+            "custom_title": "Men's Pants & Shorts",
+            "custom_image": "shopify://shop_images/pants_1df9afdd-c981-46c1-aa93-391d573dabce.jpg"
+          }
+        },
+        "featured_collection_RV4ejG": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "polos",
+            "custom_title": "",
+            "custom_image": "shopify://shop_images/Homepage-Category-Template_3.jpg"
+          }
+        },
+        "featured_collection_nUhKVt": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "button-up-shirts",
+            "custom_title": "",
+            "custom_image": "shopify://shop_images/Homepage-Category-Template_eb515664-5d45-4bd0-97ab-3b16d80d2fe8.jpg"
+          }
+        },
+        "featured_collection_JBPtW9": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "t-shirts-mens",
+            "custom_title": "",
+            "custom_image": "shopify://shop_images/tshirts_43725570-c629-49c6-bf49-af18e29614cb.jpg"
+          }
+        },
+        "featured_collection_9AJjR8": {
+          "type": "featured_collection",
+          "disabled": true,
+          "settings": {
+            "collection": "hoodies-pullovers-1",
+            "custom_title": "",
+            "custom_image": "shopify://shop_images/Homepage-Category-Template_eb26d0af-ffb1-4b55-a356-0e643d0c6360.jpg"
+          }
+        },
+        "featured_collection_F6pCqL": {
+          "type": "featured_collection",
+          "disabled": true,
+          "settings": {
+            "collection": "sweaters",
+            "custom_title": "Sweaters",
+            "custom_image": "shopify://shop_images/Homepage-Category-Template_2.jpg"
+          }
+        },
+        "featured_collection_G8MiVP": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "outerwear",
+            "custom_title": "Outerwear",
+            "custom_image": "shopify://shop_images/outerwear_1132060f-2060-41ca-9b40-422dfb111943.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_HgWcUp",
+        "featured_collection_RV4ejG",
+        "featured_collection_nUhKVt",
+        "featured_collection_JBPtW9",
+        "featured_collection_9AJjR8",
+        "featured_collection_F6pCqL",
+        "featured_collection_G8MiVP"
+      ],
+      "name": "Enavi Collection List",
+      "settings": {
+        "title": "Shop Men's",
+        "heading_size": "h2",
+        "image_ratio": "portrait",
+        "columns_desktop": 4,
+        "enable_desktop_slider": true,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "custom_class": "enavi-collection-men",
+        "show_view_all_products": true,
+        "view_all_products_link": "shopify://collections/mens",
+        "view_all_products_text": "View all products",
+        "view_all_products_style": "link"
+      }
+    },
+    "enavi_collection_list_rimCKi": {
+      "type": "enavi-collection-list",
+      "blocks": {
+        "featured_collection_FQKXVc": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "womens-dresses",
+            "custom_title": "",
+            "custom_image": "shopify://shop_images/Dresses.jpg"
+          }
+        },
+        "featured_collection_8aVYVP": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "button-ups-and-blouses",
+            "custom_title": "",
+            "custom_image": "shopify://shop_images/Shirts_Tops.jpg"
+          }
+        },
+        "featured_collection_3mNV7b": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "womens-pants-and-shorts",
+            "custom_title": "",
+            "custom_image": "shopify://shop_images/Bottoms.jpg"
+          }
+        },
+        "featured_collection_FWykbX": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "womens-sweaters",
+            "custom_title": "",
+            "custom_image": "shopify://shop_images/Sweaters.jpg"
+          }
+        },
+        "featured_collection_UdPYqB": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "womens-outerwear",
+            "custom_title": "Outerwear",
+            "custom_image": "shopify://shop_images/Outerwear_adcca293-86e8-4b7c-b1f5-7dd35df1e6c2.jpg"
+          }
+        },
+        "featured_collection_jajQwP": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "womens-hoodies-pullovers",
+            "custom_title": "Hoodies & Pullovers",
+            "custom_image": "shopify://shop_images/Hoodies_Pullovers.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_FQKXVc",
+        "featured_collection_8aVYVP",
+        "featured_collection_3mNV7b",
+        "featured_collection_FWykbX",
+        "featured_collection_UdPYqB",
+        "featured_collection_jajQwP"
+      ],
+      "name": "Enavi Collection List",
+      "settings": {
+        "title": "Shop Women's",
+        "heading_size": "h2",
+        "image_ratio": "portrait",
+        "columns_desktop": 4,
+        "enable_desktop_slider": true,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "custom_class": "enavi-collection-womens",
+        "show_view_all_products": true,
+        "view_all_products_link": "shopify://collections/womens",
+        "view_all_products_text": "View all products",
+        "view_all_products_style": "link"
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -269,6 +463,9 @@
     "multirow_DVh3UW",
     "image_banner_wMHaMp",
     "multicolumn_miAtnC",
+    "rich_text_X6XPbk",
+    "enavi_collection_list_idx76H",
+    "enavi_collection_list_rimCKi",
     "main"
   ]
 }
