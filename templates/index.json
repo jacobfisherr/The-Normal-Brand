@@ -75,6 +75,7 @@
         "slide_ey3yPc": {
           "type": "slide",
           "name": "Slide 2",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Desktop3_a9d7512a-8108-4ea1-908d-7f2af00110e1.jpg",
             "mobile_image": "shopify://shop_images/Mobile3_b362cb46-3440-4523-b0a4-f206b322ad14.jpg",
