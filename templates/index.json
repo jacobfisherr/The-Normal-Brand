@@ -77,9 +77,9 @@
           "name": "Slide 2",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/Desktop3_a9d7512a-8108-4ea1-908d-7f2af00110e1.jpg",
-            "mobile_image": "shopify://shop_images/Mobile3_b362cb46-3440-4523-b0a4-f206b322ad14.jpg",
-            "heading": "Made for Dad",
+            "image": "shopify://shop_images/Desktop_1.jpg",
+            "mobile_image": "shopify://shop_images/Mobile_1_fbfcc80f-634c-4d36-8b80-18c2f49c02e5.jpg",
+            "heading": "",
             "heading_size": "h1",
             "mobile_heading_size": "h0",
             "subheading": "",
