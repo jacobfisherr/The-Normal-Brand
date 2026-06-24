@@ -75,7 +75,6 @@
         "slide_ey3yPc": {
           "type": "slide",
           "name": "Summer Sale",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Desktop_1.jpg",
             "mobile_image": "shopify://shop_images/Mobile_1_fbfcc80f-634c-4d36-8b80-18c2f49c02e5.jpg",
@@ -102,6 +101,7 @@
         "slide_6GDP6M": {
           "type": "slide",
           "name": "Slide 1",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Desktop1.jpg",
             "mobile_image": "shopify://shop_images/Mobile1_01ae9dc9-4e57-4bbe-99c8-1515b2790d02.jpg",
@@ -128,6 +128,7 @@
         "slide_QBadaG": {
           "type": "slide",
           "name": "Slide 3 - Womens: Lucia",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Desktop2_cb11ef90-6521-4fe3-81ac-627c65f710ff.jpg",
             "mobile_image": "shopify://shop_images/Mobile2_14fb1f15-3b6e-4d8b-9ff0-75e0a7d41dba.jpg",
