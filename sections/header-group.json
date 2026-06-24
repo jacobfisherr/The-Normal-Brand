@@ -32,18 +32,17 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Double Points. All Weekend. Sign In or Join Today!",
-            "link": "shopify://pages/rewards"
+            "text": "Shop the Summer Sale - up to 30% off",
+            "link": "https://thenormalbrand.com/collections/summer-sale"
           }
         }
       },
       "block_order": [
         "announcement-bar-0"
       ],
-      "disabled": true,
       "custom_css": [],
       "settings": {
-        "color_scheme": "tnb-dark",
+        "color_scheme": "scheme-7eca2d75-45a3-4024-b69d-17de1ca4d726",
         "show_line_separator": true,
         "show_social": false,
         "auto_rotate": false,
