@@ -76,8 +76,8 @@
           "type": "slide",
           "name": "Summer Sale",
           "settings": {
-            "image": "shopify://shop_images/Desktop_1.jpg",
-            "mobile_image": "shopify://shop_images/Mobile_9ee3b76c-ef33-4987-9a1d-2c742b700647.jpg",
+            "image": "shopify://shop_images/SS_Desktop_2.jpg",
+            "mobile_image": "shopify://shop_images/SS_Mobile_2.jpg",
             "heading": "",
             "heading_size": "h1",
             "mobile_heading_size": "h0",
