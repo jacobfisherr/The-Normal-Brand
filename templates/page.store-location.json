@@ -91,67 +91,6 @@
         "padding_bottom": 52
       }
     },
-    "rich_text_dCmBBk": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_BbkGbf": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Alabama",
-            "heading_size": "h1"
-          }
-        }
-      },
-      "block_order": [
-        "heading_BbkGbf"
-      ],
-      "disabled": true,
-      "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
-      }
-    },
-    "multirow_RnxBAY": {
-      "type": "multirow",
-      "blocks": {
-        "row_j9A7UA": {
-          "type": "row",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/Birmingham.The_summit_7517f748-2f01-4e2a-8b70-99cb99fb7dd6.jpg",
-            "caption": "Birmingham",
-            "heading": "<a href=\"https://thenormalbrand.com/pages/copy-of-the-normal-brand-store-birmingham\" title=\"https://thenormalbrand.com/pages/copy-of-the-normal-brand-store-birmingham\">The Summit</a>",
-            "text": "<p><strong>214 Summit Boulevard, Suite 450<br/>Birmingham, AL 35243</strong></p><p>(205) 644-1866</p><p>Mon-Thur: 10am - 8pm<br/>Fri-Sat: 10am - 9pm<br/>Sun: 12pm - 6pm</p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "row_j9A7UA"
-      ],
-      "disabled": true,
-      "settings": {
-        "image_height": "adapt",
-        "desktop_image_width": "small",
-        "heading_size": "h1",
-        "text_style": "body",
-        "button_style": "secondary",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "image_layout": "align-left",
-        "section_color_scheme": "",
-        "row_color_scheme": "",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "rich_text_Ta9k9N": {
       "type": "rich-text",
       "blocks": {
@@ -712,8 +651,6 @@
     "image_banner_AQgzAm",
     "rich_text_YEtwtT",
     "rich_text_HjwrwQ",
-    "rich_text_dCmBBk",
-    "multirow_RnxBAY",
     "rich_text_Ta9k9N",
     "multirow_QYaRpJ",
     "rich_text_QFMCak",
