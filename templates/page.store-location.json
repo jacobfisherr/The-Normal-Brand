@@ -96,6 +96,7 @@
       "blocks": {
         "heading_BbkGbf": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Alabama",
             "heading_size": "h1"
@@ -105,6 +106,7 @@
       "block_order": [
         "heading_BbkGbf"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
@@ -119,6 +121,7 @@
       "blocks": {
         "row_j9A7UA": {
           "type": "row",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Birmingham.The_summit_7517f748-2f01-4e2a-8b70-99cb99fb7dd6.jpg",
             "caption": "Birmingham",
@@ -132,6 +135,7 @@
       "block_order": [
         "row_j9A7UA"
       ],
+      "disabled": true,
       "settings": {
         "image_height": "adapt",
         "desktop_image_width": "small",
