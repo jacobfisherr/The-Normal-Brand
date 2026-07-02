@@ -32,7 +32,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Shop the Summer Sale - up to 30% off",
+            "text": "Extra 10% off Sale with code: SUMMER",
             "link": "https://thenormalbrand.com/collections/summer-sale"
           }
         }
