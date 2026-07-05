@@ -31,6 +31,7 @@
       "blocks": {
         "announcement-bar-0": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "Extra 10% off Sale with code: SUMMER",
             "link": "https://thenormalbrand.com/collections/summer-sale"
