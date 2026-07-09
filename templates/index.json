@@ -225,6 +225,49 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
+    "video_hero_banner_ooo": {
+      "type": "video-hero-banner",
+      "blocks": {
+        "heading_ooo": {
+          "type": "heading",
+          "settings": {
+            "heading": "Out of Office",
+            "heading_size": "h0"
+          }
+        },
+        "buttons_ooo": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop Women",
+            "button_link_1": "shopify://collections/womens",
+            "button_style_secondary_1": true,
+            "button_label_2": "Shop Men",
+            "button_link_2": "shopify://collections/mens",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_ooo",
+        "buttons_ooo"
+      ],
+      "settings": {
+        "video": "shopify://files/videos/TNB_Hero_Desktop.mp4",
+        "video_mobile": "shopify://files/videos/TNB_Hero_Mobile.mp4",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-7eca2d75-45a3-4024-b69d-17de1ca4d726",
+        "mobile_color_scheme": "scheme-7eca2d75-45a3-4024-b69d-17de1ca4d726",
+        "mobile_fill_fold": true,
+        "mobile_fold_offset": 200,
+        "mobile_content_alignment": "center",
+        "mobile_buttons_inline": true,
+        "show_text_below": false
+      }
+    },
     "rich_text_aCrigY": {
       "type": "rich-text",
       "blocks": {
@@ -774,6 +817,7 @@
   "order": [
     "sl_benefit_bar_cbLikB",
     "slideshow_nnbpCq",
+    "video_hero_banner_ooo",
     "rich_text_aCrigY",
     "featured_collection_LbyiNp",
     "enavi_collection_list_dLxaBA",
