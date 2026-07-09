@@ -102,6 +102,7 @@
         "slide_6GDP6M": {
           "type": "slide",
           "name": "Slide 1",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Desktop1.jpg",
             "mobile_image": "shopify://shop_images/Mobile1_01ae9dc9-4e57-4bbe-99c8-1515b2790d02.jpg",
@@ -128,6 +129,7 @@
         "slide_QBadaG": {
           "type": "slide",
           "name": "Slide 3 - Womens: Eleanor",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Desktop2_cb11ef90-6521-4fe3-81ac-627c65f710ff.jpg",
             "mobile_image": "shopify://shop_images/Mobile2_14fb1f15-3b6e-4d8b-9ff0-75e0a7d41dba.jpg",
@@ -154,27 +156,26 @@
         "slide_z4z64U": {
           "type": "slide",
           "name": "Out of Office - Enavi Control - Video Test",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Desktop_8c6f5e2e-449e-4215-8dc7-c7605ea365d3.jpg",
             "mobile_image": "shopify://shop_images/Mobile_704332a3-afa8-4350-9ef2-c27279fa0003.jpg",
-            "heading": "",
-            "heading_size": "h0",
+            "heading": "Out of Office",
+            "heading_size": "h1",
             "mobile_heading_size": "h0",
             "subheading": "",
             "button_size": "small",
             "mobile_button_size": "small",
-            "button_label": "Shop Men",
-            "link": "https://thenormalbrand.com/collections/new?sort_by=manual&filter.p.m.custom.gender=gid%3A%2F%2Fshopify%2FMetaobject%2F75598921900",
-            "button_label_2": "Shop Women",
-            "link_2": "https://thenormalbrand.com/collections/new?sort_by=manual&filter.p.m.custom.gender=gid%3A%2F%2Fshopify%2FMetaobject%2F75653972140",
+            "button_label": "Shop Women",
+            "link": "https://thenormalbrand.com/collections/womens",
+            "button_label_2": "Shop Men",
+            "link_2": "https://thenormalbrand.com/collections/mens",
             "button_style_secondary": true,
             "box_align": "middle-right",
             "show_text_box": false,
             "text_alignment": "right",
             "image_overlay_opacity": 0,
             "color_scheme": "tnb-dark",
-            "text_alignment_mobile": "center",
+            "text_alignment_mobile": "right",
             "mobile_box_align": "middle"
           }
         },
