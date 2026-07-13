@@ -53,6 +53,26 @@
 
     assign product_name = card_product.title | split: ' in'
   -%}
+  {%- comment -%} [PLP video A/B test] video map — remove this block if test loses {%- endcomment -%}
+  {%- if loop_index == 0 and shop.metaobjects.plp_test_video.values.size > 0 -%}
+    {%- capture plp_ab_map -%}{
+      {%- assign plp_first = true -%}
+      {%- for plp_entry in shop.metaobjects.plp_test_video.values -%}
+        {%- assign plp_src = '' -%}
+        {%- for plp_s in plp_entry.video.value.sources -%}
+          {%- if plp_s.mime_type == 'video/mp4' -%}{%- assign plp_src = plp_s.url -%}{%- break -%}{%- endif -%}
+        {%- endfor -%}
+        {%- if plp_src != '' -%}
+          {%- assign plp_color = plp_entry.video_color.value | default: '' -%}
+          {%- for plp_p in plp_entry.products.value -%}
+            {%- unless plp_first %},{% endunless -%}{%- assign plp_first = false -%}
+            {{ plp_p.handle | json }}:{"u":{{ plp_src | json }},"c":{{ plp_color | json }}}
+          {%- endfor -%}
+        {%- endif -%}
+      {%- endfor -%}
+    }{%- endcapture -%}
+    <script type="application/json" id="plp-ab-video-map">{{ plp_ab_map }}</script>
+  {%- endif -%}
   <product-card
     data-product-name="{{ card_product.title | escape }}"
     class="card-wrapper product-card-wrapper underline-links-hover"
@@ -134,6 +154,8 @@
                   | video_tag: autoplay: true, loop: true, muted: true, class: 'motion-reduce'
                 }}
               {%- endif -%}
+
+              {%- comment -%} [PLP video A/B test] video injected here by product-card.js {%- endcomment -%}
             </div>
           </div>
         {%- endif -%}
