@@ -101,11 +101,10 @@
         "slide_6GDP6M": {
           "type": "slide",
           "name": "Slide 1",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/Desktop1.jpg",
-            "mobile_image": "shopify://shop_images/Mobile1_01ae9dc9-4e57-4bbe-99c8-1515b2790d02.jpg",
-            "heading": "Warm Days Ahead",
+            "image": "shopify://shop_images/Desktop_3_d01681b3-4b83-4736-9ce2-33271acb0363.jpg",
+            "mobile_image": "shopify://shop_images/Mobile_3_a97f7ae7-45d4-4ef5-b63e-36763e3eb252.jpg",
+            "heading": "Hello Jute",
             "heading_size": "h1",
             "mobile_heading_size": "h0",
             "subheading": "",
