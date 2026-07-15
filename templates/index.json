@@ -424,12 +424,12 @@
         "column_746rwt": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Multicolumn-Template_2_94233955-a6f3-4fe1-9d9d-bef60cd671b0.jpg",
-            "title": "Brothers' Favorites",
-            "text": "<p>A lineup of their most-loved picks, selected for ease, style and versatility. Consider this your shortcut to the pieces they swear by.</p>",
+            "image": "shopify://shop_images/Multicolumn-Template_1_1f87609a-84c4-4c13-88b3-558a788517f5.jpg",
+            "title": "Cut for Comfort",
+            "text": "<p>Our stores say these pants sell themselves — all customers have to do is try them on.</p>",
             "liquid": "",
-            "link_label": "Shop Their Favorites",
-            "link": "https://thenormalbrand.com/collections/brothers-favorites",
+            "link_label": "Shop Comfort Terry",
+            "link": "https://thenormalbrand.com/collections/comfort-terry-collection-mens",
             "text_alignment": "left",
             "text_alignment_mobile": "left"
           }
@@ -437,12 +437,12 @@
         "column_qyTCPm": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Multicolumn-Template_2_8b81420b-99f2-4059-a2f0-f66a158d92db.jpg",
-            "title": "Let’s Summer-ize",
-            "text": "<p>A few new graphics and a few classics. We have everything you need for the weekends ahead. </p>",
+            "image": "shopify://shop_images/Multicolumn-Template_4.jpg",
+            "title": "Everyday Icon",
+            "text": "<p>New colors just dropped, and your essential shades are back — worn alone, worn under everything.</p>",
             "liquid": "",
-            "link_label": "Shop Graphic Tees",
-            "link": "https://thenormalbrand.com/collections/graphic-tees",
+            "link_label": "Shop Rib Tee Collection",
+            "link": "https://thenormalbrand.com/collections/tees-tanks",
             "text_alignment": "left",
             "text_alignment_mobile": "left"
           }
@@ -450,12 +450,12 @@
         "column_jMQNUb": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Multicolumn-Template1_a464c26f-1595-4e30-81fe-f8efc7e925b8.jpg",
-            "title": "All Dressed up",
-            "text": "<p>Keep spring effortless. Easy silhouettes and soft fabric that move with you from morning brunch to afternoon outings. </p>",
+            "image": "shopify://shop_images/Multicolumn-Template_2_888f4e31-b3c9-4697-9c9b-cd4046d2a58a.jpg",
+            "title": "Puremeso essentials",
+            "text": "<p>Your favorite fabric, now in Pumice,</p>",
             "liquid": "",
-            "link_label": "Shop Dresses",
-            "link": "https://thenormalbrand.com/collections/womens-dresses",
+            "link_label": "Shop Puremeso Collection",
+            "link": "https://thenormalbrand.com/collections/mens-puremeso",
             "text_alignment": "left",
             "text_alignment_mobile": "left"
           }
