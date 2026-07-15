@@ -127,11 +127,10 @@
         "slide_QBadaG": {
           "type": "slide",
           "name": "Slide 3 - Womens: Eleanor",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/Desktop2_cb11ef90-6521-4fe3-81ac-627c65f710ff.jpg",
-            "mobile_image": "shopify://shop_images/Mobile2_14fb1f15-3b6e-4d8b-9ff0-75e0a7d41dba.jpg",
-            "heading": "Dress Accordingly",
+            "image": "shopify://shop_images/Desktop_2.jpg",
+            "mobile_image": "shopify://shop_images/Mobile_2_f55f61ed-b0ed-469b-94d3-12e2be964c72.jpg",
+            "heading": "Introducing Moss",
             "heading_size": "h1",
             "mobile_heading_size": "h0",
             "subheading": "",
