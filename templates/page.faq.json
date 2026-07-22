@@ -273,7 +273,7 @@
           "settings": {
             "heading": "Can you ship to an address that’s outside the US?",
             "icon": "none",
-            "row_content": "<p>Yes, we ship internationally to Canada, Australia, and the United Kingdom. Note that you will be subject to and responsible for the taxes and tariff fees of your country upon receipt of your order. International orders typically arrive between 8-20 business days.</p>",
+            "row_content": "<p>Yes, we ship internationally to Canada, Australia, Germany, Sweden, and the United Kingdom. Note that you will be subject to and responsible for the taxes and tariff fees of your country upon receipt of your order. International orders typically arrive between 8-20 business days.</p>",
             "page": ""
           }
         },
