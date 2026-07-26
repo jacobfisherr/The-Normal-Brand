@@ -100,7 +100,7 @@
         },
         "slide_6GDP6M": {
           "type": "slide",
-          "name": "Slide 1",
+          "name": "Slide 2",
           "settings": {
             "image": "shopify://shop_images/Desktop_2_0c9ad0a3-4fc7-40a0-897f-6f50726873af.jpg",
             "mobile_image": "shopify://shop_images/Mobile_2_757ba722-0bcd-4ecc-b5d8-67b71fe238ab.jpg",
@@ -120,7 +120,7 @@
             "text_alignment": "left",
             "image_overlay_opacity": 0,
             "color_scheme": "scheme-7eca2d75-45a3-4024-b69d-17de1ca4d726",
-            "text_alignment_mobile": "left",
+            "text_alignment_mobile": "right",
             "mobile_box_align": "middle"
           }
         },
