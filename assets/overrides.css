@@ -1287,3 +1287,8 @@ body.convert-pdp-video-active .convert-test-video .slider-bullet-button.convert-
 .fit-confidence-message p:last-child {
   margin-bottom: 0;
 }
+
+/* 42-1-R-MENS-PDP-Fit Scale to Size - Hide aggregated module */
+.oke-w-header .oke-w-attrModule { 
+  display: none !important; 
+}
