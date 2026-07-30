@@ -249,6 +249,7 @@
         "heading_ooo",
         "buttons_ooo"
       ],
+      "disabled": true,
       "settings": {
         "video": "shopify://files/videos/TNB_Hero_Desktop.mp4",
         "video_mobile": "shopify://files/videos/TNB_Hero_Mobile.mp4",
