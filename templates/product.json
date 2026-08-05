@@ -214,7 +214,7 @@
         "collapsible-row-0": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Model Sizing",
+            "heading": "Size & Fit",
             "icon": "none",
             "content": "<p>{{ product.metafields.custom.model_sizing.value }}</p>",
             "page": "",
