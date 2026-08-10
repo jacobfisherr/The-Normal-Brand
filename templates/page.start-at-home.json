@@ -48,9 +48,9 @@
       "settings": {
         "image": "shopify://shop_images/prayer.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
+        "image_height": "adapt",
+        "desktop_content_position": "top-center",
+        "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "",
         "mobile_color_scheme": "",
@@ -62,6 +62,7 @@
     },
     "main": {
       "type": "main-page-blank",
+      "disabled": true,
       "settings": {}
     }
   },
