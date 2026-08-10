@@ -80,7 +80,7 @@
           "settings": {
             "heading": "I want to carry The Normal Brand in my store. What do I need to do?",
             "icon": "none",
-            "row_content": "<p>To apply to become a retailer please fill out this application form <a href=\"https://www.powr.io/form-builder/i/24343510#page\" target=\"_blank\" title=\"Retailer application form\">here</a>, or email us at <a href=\"mailto:sales@thenormalbrand.com\" title=\"mailto:sales@thenormalbrand.com\">sales@thenormalbrand.com</a>.</p>",
+            "row_content": "<p>To apply to become a retailer please fill out this application form <a href=\"https://www.powr.io/form-builder/i/24343510#page\" target=\"_blank\" title=\"opens in a new window\">here</a>, or email us at <a href=\"mailto:sales@thenormalbrand.com\" title=\"mailto:sales@thenormalbrand.com\">sales@thenormalbrand.com</a>.</p>",
             "page": ""
           }
         },
@@ -387,7 +387,7 @@
           "settings": {
             "heading": "How does it work?",
             "icon": "none",
-            "row_content": "<p>Easy, just sign up for a free TNB Rewards account <a href=\"https://thenormalbrand.com/pages/rewards\" target=\"_blank\" title=\"Sign up for a TNB rewards account\">here</a> and start earning points with every purchase on thenormalbrand.com or in any TNB store. </p><p>You can redeem points in increments of $10, $20, $30, $40, or $50 off future orders.</p>",
+            "row_content": "<p>Easy, just sign up for a free TNB Rewards account <a href=\"https://thenormalbrand.com/pages/rewards\" title=\"Sign up for a TNB rewards account\">here</a> and start earning points with every purchase on thenormalbrand.com or in any TNB store. </p><p>You can redeem points in increments of $10, $20, $30, $40, or $50 off future orders.</p>",
             "page": ""
           }
         },
@@ -396,7 +396,7 @@
           "settings": {
             "heading": "How do I earn reward points?",
             "icon": "none",
-            "row_content": "<p>Once you've signed up, you'll earn 1 point for each dollar you spend. You'll also earn 50 points just for signing up.</p><p>You can also earn points by leaving a product review, following us on Instagram, and more. Full details can be found <a href=\"https://thenormalbrand.com/pages/rewards\" target=\"_blank\" title=\"How to earn TNB Rewards points\">here</a>.</p>",
+            "row_content": "<p>Once you've signed up, you'll earn 1 point for each dollar you spend. You'll also earn 50 points just for signing up.</p><p>You can also earn points by leaving a product review, following us on Instagram, and more. Full details can be found <a href=\"https://thenormalbrand.com/pages/rewards\">here</a>.</p>",
             "page": ""
           }
         },
