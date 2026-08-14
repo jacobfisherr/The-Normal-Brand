@@ -78,7 +78,7 @@
           "settings": {
             "image": "shopify://shop_images/Men_s-_-Women_s-HP-Header.jpg",
             "mobile_image": "shopify://shop_images/Men_s-_-Women_s-HP-Mobile-Header.jpg",
-            "heading": "Early Fall Classics",
+            "heading": "New for August",
             "heading_size": "h1",
             "mobile_heading_size": "h0",
             "subheading": "",
@@ -104,7 +104,7 @@
           "settings": {
             "image": "shopify://shop_images/Men_s-HP-Header-Owen-Button-Up.jpg",
             "mobile_image": "shopify://shop_images/Men_s-HP-Mobile-Header-Owen-Button-Up.jpg",
-            "heading": "Newness You Need",
+            "heading": "Made for Everyday",
             "heading_size": "h1",
             "mobile_heading_size": "h0",
             "subheading": "",
@@ -126,11 +126,11 @@
         },
         "slide_QBadaG": {
           "type": "slide",
-          "name": "Slide 3 - Womens: Eleanor",
+          "name": "Slide 3",
           "settings": {
             "image": "shopify://shop_images/Women_s-HP-Header-Lynn.jpg",
             "mobile_image": "shopify://shop_images/Women_s-HP-Mobile-Header-Lynn.jpg",
-            "heading": "New for August",
+            "heading": "Early Fall Icons",
             "heading_size": "h1",
             "mobile_heading_size": "h0",
             "subheading": "",
