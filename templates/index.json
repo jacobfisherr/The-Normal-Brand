@@ -578,7 +578,6 @@
         },
         "featured_collection_XMxTXN": {
           "type": "featured_collection",
-          "disabled": true,
           "settings": {
             "collection": "womens-hoodies-pullovers",
             "custom_title": "Hoodies & Pullovers",
