@@ -533,23 +533,7 @@
           "settings": {
             "collection": "womens-dresses",
             "custom_title": "",
-            "custom_image": "shopify://shop_images/Homepage-Category-Template_1_47c74510-a99f-4a7c-8965-0422d45fd7f0.jpg"
-          }
-        },
-        "featured_collection_aeaXhP": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "tees-tanks",
-            "custom_title": "",
-            "custom_image": "shopify://shop_images/Homepage-Category-Template_2_76cfbb56-52b6-43fe-a284-81f01890acea.jpg"
-          }
-        },
-        "featured_collection_hNmRX4": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "button-ups-and-blouses",
-            "custom_title": "",
-            "custom_image": "shopify://shop_images/Homepage-Category-Template_3_83c4f176-bc36-4b45-afc3-9ddacffefd3a.jpg"
+            "custom_image": "shopify://shop_images/Homepage-Category-Template_79a6827e-4fb4-4796-ae63-2fee18db5fb2.jpg"
           }
         },
         "featured_collection_ykTmeA": {
@@ -560,12 +544,28 @@
             "custom_image": "shopify://shop_images/Homepage-Category-Template_f0ecb29c-d2ed-45c0-97a8-c9159c070284.jpg"
           }
         },
+        "featured_collection_hNmRX4": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "button-ups-and-blouses",
+            "custom_title": "",
+            "custom_image": "shopify://shop_images/Homepage-Category-Template_10ca7e9f-1790-455c-8463-3d26b487ba12.jpg"
+          }
+        },
         "featured_collection_UNqmEY": {
           "type": "featured_collection",
           "settings": {
             "collection": "womens-pants-and-shorts",
             "custom_title": "",
             "custom_image": "shopify://shop_images/Homepage-Category-Template_6_afdf22c3-ccc2-4615-a544-3b104ef133b5.jpg"
+          }
+        },
+        "featured_collection_aeaXhP": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "tees-tanks",
+            "custom_title": "",
+            "custom_image": "shopify://shop_images/Homepage-Category-Template_2_76cfbb56-52b6-43fe-a284-81f01890acea.jpg"
           }
         },
         "featured_collection_FNQ8d7": {
@@ -578,6 +578,7 @@
         },
         "featured_collection_XMxTXN": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
             "collection": "womens-hoodies-pullovers",
             "custom_title": "Hoodies & Pullovers",
@@ -587,10 +588,10 @@
       },
       "block_order": [
         "featured_collection_V7gCqN",
-        "featured_collection_aeaXhP",
-        "featured_collection_hNmRX4",
         "featured_collection_ykTmeA",
+        "featured_collection_hNmRX4",
         "featured_collection_UNqmEY",
+        "featured_collection_aeaXhP",
         "featured_collection_FNQ8d7",
         "featured_collection_XMxTXN"
       ],
