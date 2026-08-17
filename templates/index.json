@@ -533,7 +533,7 @@
           "settings": {
             "collection": "womens-dresses",
             "custom_title": "",
-            "custom_image": "shopify://shop_images/Dresses.jpg"
+            "custom_image": "shopify://shop_images/Homepage-Category-Template_1_47c74510-a99f-4a7c-8965-0422d45fd7f0.jpg"
           }
         },
         "featured_collection_aeaXhP": {
@@ -541,7 +541,7 @@
           "settings": {
             "collection": "tees-tanks",
             "custom_title": "",
-            "custom_image": "shopify://shop_images/PIC_1_a01faa55-486d-4526-bfb4-a9e1a3a8af1b.jpg"
+            "custom_image": "shopify://shop_images/Homepage-Category-Template_2_76cfbb56-52b6-43fe-a284-81f01890acea.jpg"
           }
         },
         "featured_collection_hNmRX4": {
@@ -549,7 +549,15 @@
           "settings": {
             "collection": "button-ups-and-blouses",
             "custom_title": "",
-            "custom_image": "shopify://shop_images/W_Tops_d4ed0b69-8521-4f62-847a-ce1f547b48c3.jpg"
+            "custom_image": "shopify://shop_images/Homepage-Category-Template_3_83c4f176-bc36-4b45-afc3-9ddacffefd3a.jpg"
+          }
+        },
+        "featured_collection_ykTmeA": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "womens-sweaters",
+            "custom_title": "Women's Sweaters",
+            "custom_image": "shopify://shop_images/Homepage-Category-Template_f0ecb29c-d2ed-45c0-97a8-c9159c070284.jpg"
           }
         },
         "featured_collection_UNqmEY": {
@@ -557,7 +565,7 @@
           "settings": {
             "collection": "womens-pants-and-shorts",
             "custom_title": "",
-            "custom_image": "shopify://shop_images/Bottoms.jpg"
+            "custom_image": "shopify://shop_images/Homepage-Category-Template_6_afdf22c3-ccc2-4615-a544-3b104ef133b5.jpg"
           }
         },
         "featured_collection_FNQ8d7": {
@@ -581,6 +589,7 @@
         "featured_collection_V7gCqN",
         "featured_collection_aeaXhP",
         "featured_collection_hNmRX4",
+        "featured_collection_ykTmeA",
         "featured_collection_UNqmEY",
         "featured_collection_FNQ8d7",
         "featured_collection_XMxTXN"
