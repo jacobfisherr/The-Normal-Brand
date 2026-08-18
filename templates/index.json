@@ -421,12 +421,12 @@
         "column_746rwt": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Multicolumn-Template_1_1f87609a-84c4-4c13-88b3-558a788517f5.jpg",
-            "title": "Cut for Comfort",
-            "text": "<p>Our stores say these pants sell themselves — all customers have to do is try them on.</p>",
+            "image": "shopify://shop_images/Multicolumn-Template_1_9274cf8d-75ee-4e06-b4c2-e9215a01949c.jpg",
+            "title": "for the in-between",
+            "text": "<p>Meet the pieces made to crossover seasons and blend into your rotation.</p>",
             "liquid": "",
-            "link_label": "Shop Comfort Terry Pant",
-            "link": "https://thenormalbrand.com/collections/comfort-terry-pant",
+            "link_label": "Shop Early Fall",
+            "link": "https://thenormalbrand.com/collections/the-in-between-season",
             "text_alignment": "left",
             "text_alignment_mobile": "left"
           }
@@ -434,12 +434,12 @@
         "column_qyTCPm": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Multicolumn-Template_4.jpg",
-            "title": "Everyday Icon",
-            "text": "<p>New colors just dropped, and your essential shades are back — worn alone, worn under everything.</p>",
+            "image": "shopify://shop_images/Multicolumn-Template_2_1999fed3-dd45-4b30-a7a8-42f13c3a15e0.jpg",
+            "title": "Early Fall Icon",
+            "text": "<p>Everyone's favorite sweater is back and in colors that work with everything.</p>",
             "liquid": "",
-            "link_label": "Shop Normal Rib Collection",
-            "link": "https://thenormalbrand.com/collections/normal-rib",
+            "link_label": "Shop Marianna",
+            "link": "https://thenormalbrand.com/products/marianna-crewneck-sweater-in-chestnut?_pos=1&_psq=marianna&_psid=5449155a2&_ss=e",
             "text_alignment": "left",
             "text_alignment_mobile": "left"
           }
@@ -447,12 +447,12 @@
         "column_jMQNUb": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Multicolumn-Template_2_888f4e31-b3c9-4697-9c9b-cd4046d2a58a.jpg",
-            "title": "Puremeso essentials",
-            "text": "<p>Your favorite fabric, now in Pumice,</p>",
+            "image": "shopify://shop_images/Multicolumn-Template_3_9b433220-2d95-4d4f-8e7b-9d22c4a9a247.jpg",
+            "title": "Crafted for Comfort",
+            "text": "<p>Your favorite fabric, now in Spiced Brandy and Greystone.</p>",
             "liquid": "",
-            "link_label": "Shop Puremeso Collection",
-            "link": "https://thenormalbrand.com/collections/mens-puremeso",
+            "link_label": "Shop Comfort Terry",
+            "link": "https://thenormalbrand.com/collections/comfort-terry-collection-mens",
             "text_alignment": "left",
             "text_alignment_mobile": "left"
           }
