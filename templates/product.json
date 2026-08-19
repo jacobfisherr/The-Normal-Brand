@@ -239,6 +239,7 @@
         },
         "complementary_RfJbRP": {
           "type": "complementary",
+          "disabled": true,
           "settings": {
             "block_heading": "Wear it with",
             "make_collapsible_row": false,
