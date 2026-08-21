@@ -31,7 +31,6 @@
       "blocks": {
         "announcement-bar-0": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
             "text": "Extra 20% off Clearance with code: EXTRA20",
             "link": "https://thenormalbrand.com/collections/summer-sale"
