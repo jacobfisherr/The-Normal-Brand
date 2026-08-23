@@ -29,8 +29,17 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
+        "announcement_CinrH4": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "text": "Welcome to our store",
+            "link": ""
+          }
+        },
         "announcement-bar-0": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "Extra 20% off Clearance with code: EXTRA20",
             "link": "https://thenormalbrand.com/collections/summer-sale"
@@ -38,6 +47,7 @@
         }
       },
       "block_order": [
+        "announcement_CinrH4",
         "announcement-bar-0"
       ],
       "custom_css": [],
