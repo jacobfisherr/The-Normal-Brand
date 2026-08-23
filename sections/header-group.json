@@ -14,13 +14,13 @@
     "172412211844be2332": {
       "type": "apps",
       "blocks": {
-        "hextom_announce_bar_qab_custom_placement_jNz7z4": {
-          "type": "shopify://apps/hextom-announce-bar/blocks/qab-custom-placement/9ac2a261-3b8b-42c8-9613-d34eb2e079d3",
+        "hextom_timer_bar_ctb_custom_placement_PeV7Dr": {
+          "type": "shopify://apps/hextom-timer-bar/blocks/ctb-custom-placement/f7b88b6e-2e87-46bc-87a9-3e3638a24fa9",
           "settings": {}
         }
       },
       "block_order": [
-        "hextom_announce_bar_qab_custom_placement_jNz7z4"
+        "hextom_timer_bar_ctb_custom_placement_PeV7Dr"
       ],
       "settings": {
         "include_margins": false
@@ -29,14 +29,6 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
-        "announcement_CinrH4": {
-          "type": "announcement",
-          "disabled": true,
-          "settings": {
-            "text": "Welcome to our store",
-            "link": ""
-          }
-        },
         "announcement-bar-0": {
           "type": "announcement",
           "disabled": true,
@@ -47,7 +39,6 @@
         }
       },
       "block_order": [
-        "announcement_CinrH4",
         "announcement-bar-0"
       ],
       "disabled": true,
