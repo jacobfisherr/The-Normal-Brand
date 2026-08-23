@@ -265,13 +265,13 @@
         "disabled": false,
         "settings": {}
       },
-      "1027443428159536739": {
-        "type": "shopify://apps/hextom-announce-bar/blocks/qab-embeded-block/9ac2a261-3b8b-42c8-9613-d34eb2e079d3",
-        "disabled": true,
-        "settings": {}
-      },
       "1744161739547163668": {
         "type": "shopify://apps/hextom-timer-bar/blocks/ctb-embeded-block/f7b88b6e-2e87-46bc-87a9-3e3638a24fa9",
+        "disabled": false,
+        "settings": {}
+      },
+      "1027443428159536739": {
+        "type": "shopify://apps/hextom-announce-bar/blocks/qab-embeded-block/9ac2a261-3b8b-42c8-9613-d34eb2e079d3",
         "disabled": false,
         "settings": {}
       }
