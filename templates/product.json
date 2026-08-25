@@ -396,6 +396,16 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "custom_liquid_FtDH6f": {
+      "type": "custom-liquid",
+      "name": "Product Size Chart - Custom Liquid",
+      "settings": {
+        "custom_liquid": "{% render 'product-size-chart', page_handle: product.metafields.custom.size_chart %}",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
@@ -403,6 +413,7 @@
     "main",
     "multicolumn_VQHnTn",
     "17532236734d6439ab",
-    "related-products"
+    "related-products",
+    "custom_liquid_FtDH6f"
   ]
 }
