@@ -230,7 +230,17 @@
           "settings": {
             "heading": "Size & Fit",
             "icon": "none",
-            "content": "<p>{{ product.metafields.custom.model_sizing.value }}</p>",
+            "content": "{{ product.metafields.custom.size_and_fit | metafield_tag }}",
+            "page": "",
+            "liquid": ""
+          }
+        },
+        "collapsible_tab_rrKiUW": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Fabric Details",
+            "icon": "none",
+            "content": "{{ product.metafields.custom.fabric_details | metafield_tag }}",
             "page": "",
             "liquid": ""
           }
@@ -276,6 +286,7 @@
         "custom_liquid_DnUpYB",
         "collapsible_tab_gcD7wr",
         "collapsible-row-0",
+        "collapsible_tab_rrKiUW",
         "collapsible_tab_trXCdM",
         "tolstoy_shoppable_video_quiz_stories_block_xQHMVW"
       ],
