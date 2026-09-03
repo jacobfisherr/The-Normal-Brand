@@ -76,9 +76,9 @@
           "type": "slide",
           "name": "Slide 1",
           "settings": {
-            "image": "shopify://shop_images/D1-homepage-headers-_1.jpg",
-            "mobile_image": "shopify://shop_images/D1-homepage-web-headers-_2.jpg",
-            "heading": "New for August",
+            "image": "shopify://shop_images/Both.jpg",
+            "mobile_image": "shopify://shop_images/Both_mobile.jpg",
+            "heading": "New for Fall",
             "heading_size": "h1",
             "mobile_heading_size": "h0",
             "subheading": "",
