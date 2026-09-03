@@ -75,6 +75,7 @@
         "slide_NgP3Hg": {
           "type": "slide",
           "name": "Slide 1",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Both.jpg",
             "mobile_image": "shopify://shop_images/Both_mobile.jpg",
