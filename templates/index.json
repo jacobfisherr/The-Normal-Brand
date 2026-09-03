@@ -104,9 +104,9 @@
           "settings": {
             "image": "shopify://shop_images/Puremeso-hoodie.jpg",
             "mobile_image": "shopify://shop_images/Puremeso-hoodie_mobile.jpg",
-            "heading": "New in Puremeso",
+            "heading": "New Colors in Puremeso",
             "heading_size": "h0",
-            "mobile_heading_size": "h0",
+            "mobile_heading_size": "h1",
             "subheading": "",
             "button_size": "small",
             "mobile_button_size": "small",
