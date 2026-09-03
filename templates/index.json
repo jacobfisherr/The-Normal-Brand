@@ -79,7 +79,7 @@
             "image": "shopify://shop_images/Both.jpg",
             "mobile_image": "shopify://shop_images/Both_mobile.jpg",
             "heading": "New for Fall",
-            "heading_size": "h1",
+            "heading_size": "h0",
             "mobile_heading_size": "h0",
             "subheading": "",
             "button_size": "small",
