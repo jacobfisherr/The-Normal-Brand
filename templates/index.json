@@ -646,14 +646,22 @@
     "17750675312787a421": {
       "type": "apps",
       "blocks": {
+        "tolstoy_ads_image_video_tolstoy_builder_9EeNL9": {
+          "type": "shopify://apps/tolstoy-ads-image-video/blocks/tolstoy-builder/06fa8282-42ff-403e-b67c-1936776aed11",
+          "settings": {
+            "custom_code": "<tolstoy-widget data-tolstoy-widget-id=\"01M23WQ5XNDW3B3TDRNACX2XHF\" data-product-id=\"PRODUCT_ID\" data-tags=\"PRODUCT_TAGS\"></tolstoy-widget>\n<script src=\"https://ai-widgets.gotolstoy.com/85240f9e-333c-4b54-af1c-502126553928/01M23WQ5XNDW3B3TDRNACX2XHF/latest/dist/widget.iife.js\" defer></script>"
+          }
+        },
         "tolstoy_shoppable_video_quiz_carousel_block_djNV8j": {
           "type": "shopify://apps/tolstoy-ads-image-video/blocks/carousel-block/06fa8282-42ff-403e-b67c-1936776aed11",
+          "disabled": true,
           "settings": {
             "publishId": "7l3hb0z9jrirv"
           }
         }
       },
       "block_order": [
+        "tolstoy_ads_image_video_tolstoy_builder_9EeNL9",
         "tolstoy_shoppable_video_quiz_carousel_block_djNV8j"
       ],
       "settings": {
