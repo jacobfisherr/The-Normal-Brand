@@ -281,12 +281,36 @@
             "custom_image": "shopify://shop_images/Homepage-Category-Template_cdb5497a-1476-468c-b7ea-d543b451461f.jpg"
           }
         },
+        "featured_collection_tzCdTE": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hoodies-pullovers-1",
+            "custom_title": "",
+            "custom_image": "shopify://shop_images/Homepage-Category-Template_6_50080462-240b-4996-bdce-0753ad49a22c.jpg"
+          }
+        },
         "featured_collection_LdNq8P": {
           "type": "featured_collection",
           "settings": {
             "collection": "button-up-shirts",
             "custom_title": "",
             "custom_image": "shopify://shop_images/Homepage-Category-Template_7f00dbb7-b863-48c2-b075-35e634b68a05.jpg"
+          }
+        },
+        "featured_collection_gd9VFq": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "sweaters",
+            "custom_title": "Sweaters",
+            "custom_image": "shopify://shop_images/Homepage-Category-Template_6.jpg"
+          }
+        },
+        "featured_collection_m9KmVy": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "outerwear",
+            "custom_title": "Outerwear",
+            "custom_image": "shopify://shop_images/Homepage-Category-Template_c280a23f-83de-48df-a7af-463f739b1b2f.jpg"
           }
         },
         "featured_collection_f94kY8": {
@@ -304,40 +328,16 @@
             "custom_title": "",
             "custom_image": "shopify://shop_images/Homepage-Category-Template_2_c387647f-910a-4390-bc8f-6fcd9e69fd3c.jpg"
           }
-        },
-        "featured_collection_gd9VFq": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "sweaters",
-            "custom_title": "Sweaters",
-            "custom_image": "shopify://shop_images/Homepage-Category-Template_6.jpg"
-          }
-        },
-        "featured_collection_tzCdTE": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "hoodies-pullovers-1",
-            "custom_title": "",
-            "custom_image": "shopify://shop_images/Homepage-Category-Template_6_50080462-240b-4996-bdce-0753ad49a22c.jpg"
-          }
-        },
-        "featured_collection_m9KmVy": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "outerwear",
-            "custom_title": "Outerwear",
-            "custom_image": "shopify://shop_images/Homepage-Category-Template_c280a23f-83de-48df-a7af-463f739b1b2f.jpg"
-          }
         }
       },
       "block_order": [
         "featured_collection_JQFfzG",
-        "featured_collection_LdNq8P",
-        "featured_collection_f94kY8",
-        "featured_collection_bhEd3K",
-        "featured_collection_gd9VFq",
         "featured_collection_tzCdTE",
-        "featured_collection_m9KmVy"
+        "featured_collection_LdNq8P",
+        "featured_collection_gd9VFq",
+        "featured_collection_m9KmVy",
+        "featured_collection_f94kY8",
+        "featured_collection_bhEd3K"
       ],
       "name": "Enavi Collection List",
       "settings": {
