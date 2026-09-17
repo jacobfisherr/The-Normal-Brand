@@ -362,15 +362,15 @@
     "multicolumn_CnFgTJ": {
       "type": "multicolumn",
       "blocks": {
-        "column_746rwt": {
+        "column_jMQNUb": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Multicolumn-Template_1_9274cf8d-75ee-4e06-b4c2-e9215a01949c.jpg",
-            "title": "for the in-between",
-            "text": "<p>Meet the pieces made to crossover seasons and blend into your rotation.</p>",
+            "image": "shopify://shop_images/Multicolumn-Template_6.jpg",
+            "title": "Crafted for Comfort",
+            "text": "<p>Your favorite fabric, now in Spiced Brandy and Greystone.</p>",
             "liquid": "",
-            "link_label": "Shop Early Fall",
-            "link": "https://thenormalbrand.com/collections/the-in-between-season",
+            "link_label": "Shop Comfort Terry",
+            "link": "https://thenormalbrand.com/collections/comfort-terry-collection-mens",
             "text_alignment": "left",
             "text_alignment_mobile": "left"
           }
@@ -388,15 +388,15 @@
             "text_alignment_mobile": "left"
           }
         },
-        "column_jMQNUb": {
+        "column_746rwt": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Multicolumn-Template_6.jpg",
-            "title": "Crafted for Comfort",
-            "text": "<p>Your favorite fabric, now in Spiced Brandy and Greystone.</p>",
+            "image": "shopify://shop_images/Multicolumn-Template_1_9274cf8d-75ee-4e06-b4c2-e9215a01949c.jpg",
+            "title": "for the in-between",
+            "text": "<p>Meet the pieces made to crossover seasons and blend into your rotation.</p>",
             "liquid": "",
-            "link_label": "Shop Comfort Terry",
-            "link": "https://thenormalbrand.com/collections/comfort-terry-collection-mens",
+            "link_label": "Shop Early Fall",
+            "link": "https://thenormalbrand.com/collections/the-in-between-season",
             "text_alignment": "left",
             "text_alignment_mobile": "left"
           }
@@ -417,9 +417,9 @@
         }
       },
       "block_order": [
-        "column_746rwt",
-        "column_qyTCPm",
         "column_jMQNUb",
+        "column_qyTCPm",
+        "column_746rwt",
         "column_3Cc7dq"
       ],
       "settings": {
