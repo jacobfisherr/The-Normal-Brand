@@ -500,6 +500,54 @@
         "padding_bottom": 100
       }
     },
+    "image_with_text_TrHB6f": {
+      "type": "image-with-text",
+      "blocks": {
+        "caption_AcD9wV": {
+          "type": "caption",
+          "settings": {
+            "caption": "2022",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "heading_THf8mV": {
+          "type": "heading",
+          "settings": {
+            "heading": "10 Years of Normal",
+            "heading_size": "h1"
+          }
+        },
+        "text_VKrpKd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>2025 marked 10 years of Normal. We teamed up with Winchester on a limited-edition Sherpa Jacket featuring archival Winchester patches and a custom patch made just for the collaboration. We also launched The Legacy Collection, a premium line built with timeless style and construction meant to be passed down to the next generation.&nbsp;</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "caption_AcD9wV",
+        "heading_THf8mV",
+        "text_VKrpKd"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Stores3-7.jpg",
+        "height": "adapt",
+        "desktop_image_width": "large",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "full_width": false,
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 100
+      }
+    },
     "rich_text_p36dLD": {
       "type": "rich-text",
       "blocks": {
@@ -545,6 +593,7 @@
     "image_with_text_MffnJz",
     "image_with_text_9MqtGQ",
     "image_with_text_xqcqFf",
+    "image_with_text_TrHB6f",
     "rich_text_p36dLD"
   ]
 }
