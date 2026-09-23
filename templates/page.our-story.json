@@ -425,7 +425,7 @@
         "text_Ti7rW4": {
           "type": "text",
           "settings": {
-            "text": "<p>The Country Club Plaza in Kansas City became home to our third store. Store number four opened in the heart of Kirkwood, Missouri. We ventured West to Denver, Colorado for our fifth store, but came home to St. Louis West County Center to open our sixth store just in time for Thanksgiving.</p>",
+            "text": "<p>The Country Club Plaza in Kansas City became home to our third store. Store number four opened in the heart of&nbsp;Kirkwood, Missouri. We ventured West to Denver, Colorado for our fifth store, but came home to St. Louis West County Center to open our sixth store just in time for Thanksgiving. The Mall of America in Bloomington, Minnesota became lucky number seven.&nbsp;</p>",
             "text_style": "body"
           }
         }
@@ -473,7 +473,7 @@
         "text_aCEGmn": {
           "type": "text",
           "settings": {
-            "text": "<p>The Mall of America in Bloomington, Minnesota became lucky number seven. Up next we headed down to The Summit in Birmingham, Alabama for store eight. We then came back to our home state of Missouri to open up store number 9 in Springfield. Store number ten opened in Franklin, Tennessee, our second in the Nashville area. And we expanded East for store 11 in Indianapolis, Indiana.</p>",
+            "text": "<p>Up next we headed down to The Summit in Birmingham, Alabama for store eight. We then came back to our home state of Missouri to open up store number 9 in Springfield. Store number ten opened in Franklin, Tennessee, our second in the Nashville area. And we expanded East for store 11 in Indianapolis, Indiana.</p>",
             "text_style": "body"
           }
         }
