@@ -196,6 +196,10 @@
   margin-bottom: 1.5rem;
 }
 
+.facets__selected {
+  color: #515255;
+}
+
 .facets__disclosure fieldset {
   padding: 0;
   margin: 0;
