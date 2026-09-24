@@ -151,7 +151,7 @@
           "settings": {
             "heading": "There’s a problem with my order. What do I do?",
             "icon": "none",
-            "row_content": "<p>Send an email to  <a href=\"mailto:thebear@thenormalbrand.com\">thebear@thenormalbrand.com</a> or fill out our customer service contact form <a href=\"https://thenormalbrand.com/community/contact/\" title=\"Customer service form\">here</a> and let us know the error with your order. We’ll be more than happy to make things right as soon as possible.</p>",
+            "row_content": "<p>Send an email to&nbsp;&nbsp;<a href=\"mailto:thebear@thenormalbrand.com\">thebear@thenormalbrand.com</a>&nbsp;or <a href=\"https://thenormalbrand.com/community/contact/\" title=\"Customer service form\">fill out our customer service contact form</a>&nbsp;and let us know the error with your order. We’ll be more than happy to make things right as soon as possible.</p>",
             "page": ""
           }
         }
@@ -193,7 +193,7 @@
           "settings": {
             "heading": "When will my order arrive?",
             "icon": "none",
-            "row_content": "<p>Once fulfilled, orders are shipped depending on the shipping option you selected at checkout. Shipments deliver within 4-10 business days to most US locations, but we have noticed they usually deliver faster than that.</p><p>You can check the status of your shipment using the tracking number found in your shipping confirmation email. If you have a Normal Brand rewards account, you can log in and check your tracking on your <a href=\"https://thenormalbrand.com/account/login\" title=\"Visit your account page\">account page</a>.</p>",
+            "row_content": "<p>Once fulfilled, orders are shipped depending on the shipping option you selected at checkout. Shipments deliver within 4-10 business days to most US locations, but we have noticed they usually deliver faster than that.</p><p>You can check the status of your shipment using the tracking number found in your shipping confirmation email. If you have a Normal Brand rewards account, you can log in and check your tracking on your&nbsp;<a href=\"https://thenormalbrand.com/account/login\" title=\"Visit your account page\">account page</a>.</p>",
             "page": ""
           }
         },
@@ -202,7 +202,7 @@
           "settings": {
             "heading": "I made a mistake on my order contents/shipping address/etc. How do I edit it?",
             "icon": "none",
-            "row_content": "<p>Send an email to <a href=\"mailto:thebear@thenormalbrand.com\">thebear@thenormalbrand.com</a> or fill out our customer service contact form <a href=\"https://thenormalbrand.com/community/contact/\" title=\"Customer service form\">here</a> with the changes you need made as soon as possible. We can't guarantee we can make changes to orders once they begin processing, but we'll give it our best shot.</p>",
+            "row_content": "<p>Send an email to&nbsp;<a href=\"mailto:thebear@thenormalbrand.com\">thebear@thenormalbrand.com</a>&nbsp;or <a href=\"https://thenormalbrand.com/community/contact/\" title=\"Customer service form\">fill out our customer service contact form</a>&nbsp;with the changes you need made as soon as possible. We can't guarantee we can make changes to orders once they begin processing, but we'll give it our best shot.</p>",
             "page": ""
           }
         },
@@ -211,7 +211,7 @@
           "settings": {
             "heading": "I forgot to apply a discount code at checkout. What can I do?",
             "icon": "none",
-            "row_content": "<p>Send an email to  <a href=\"mailto:thebear@thenormalbrand.com\">thebear@thenormalbrand.com</a> or fill out our customer service contact form <a href=\"https://thenormalbrand.com/community/contact/\" title=\"Customer service form\">here</a> to let us know, and we can apply the discount for you.</p>",
+            "row_content": "<p>Send an email to&nbsp;&nbsp;<a href=\"mailto:thebear@thenormalbrand.com\">thebear@thenormalbrand.com</a>&nbsp;or <a href=\"https://thenormalbrand.com/community/contact/\" title=\"Customer service form\">fill out our customer service contact form</a>&nbsp;to let us know, and we can apply the discount for you.</p>",
             "page": ""
           }
         },
@@ -220,7 +220,7 @@
           "settings": {
             "heading": "How can I track my order?",
             "icon": "none",
-            "row_content": "<p>Once your order has shipped you will receive an email with tracking information. If you don’t receive an email, check your spam folder. If it’s still not there, feel free to email us at <a href=\"mailto:thebear@thenormalbrand.com\">thebear@thenormalbrand.com</a> or fill out our customer service contact form <a href=\"https://thenormalbrand.com/community/contact/\" title=\"Customer service form\">here</a> and we’ll send you  your tracking information.</p>",
+            "row_content": "<p>Once your order has shipped you will receive an email with tracking information. If you don’t receive an email, check your spam folder. If it’s still not there, feel free to email us at&nbsp;<a href=\"mailto:thebear@thenormalbrand.com\">thebear@thenormalbrand.com</a>&nbsp;or <a href=\"https://thenormalbrand.com/community/contact/\" title=\"Customer service form\">fill out our customer service contact form</a>&nbsp;and we’ll send you &nbsp;your tracking information.</p>",
             "page": ""
           }
         }
@@ -438,7 +438,7 @@
           "settings": {
             "heading": "Contact us",
             "icon": "none",
-            "row_content": "<p>Have a question you didn’t find the answer to here? Send an email to <a href=\"mailto:thebear@thenormalbrand.com\">thebear@thenormalbrand.com</a> or fill out our customer service contact form <a href=\"https://thenormalbrand.com/community/contact/\" title=\"Access the customer service form\">here</a> and we’ll be in touch!</p>",
+            "row_content": "<p>Have a question you didn’t find the answer to here? Send an email to&nbsp;<a href=\"mailto:thebear@thenormalbrand.com\">thebear@thenormalbrand.com</a>&nbsp;or <a href=\"https://thenormalbrand.com/community/contact/\" title=\"Access the customer service form\">fill out our customer service contact form</a>&nbsp;and we’ll be in touch!</p>",
             "page": ""
           }
         }
