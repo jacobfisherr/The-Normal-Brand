@@ -60,6 +60,11 @@ if (!customElements.get('product-info')) {
         this.postProcessHtmlCallbacks.push((newNode) => {
           window?.Shopify?.PaymentButton?.init();
           window?.ProductModel?.loadShopifyXR();
+
+          // True Fit widget script
+          if (window.tfcapi) {
+            window.tfcapi('calculate');
+          }
         });
       }
 
