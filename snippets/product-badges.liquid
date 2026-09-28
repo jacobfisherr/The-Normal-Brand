@@ -1,6 +1,18 @@
-{% comment %} Piggy-back's on pricing component in snippets/price.liquid {% endcomment %}
+{% comment %}
+  Piggy-back's on pricing component in snippets/price.liquid
+
+  Accepts:
+  - tag_badges: {String} Which "badge:" tag badges to output (optional)
+      'all'    (default) every tag badge, same as before
+      'none'   no tag badges, only Sale / Sold out
+      'sorted' all tag badges sorted by priority (see snippets/badge-priority.liquid),
+               output as bare <span>s with no wrapper, highest priority first.
+               Outputs nothing if the product has no tag badges.
+{% endcomment %}
 
 {%- liquid
+  assign tag_badges = tag_badges | default: 'all'
+
   if use_variant
     assign target = product.selected_or_first_available_variant
   elsif placeholder
@@ -19,7 +31,7 @@
 
   for tag in target.tags
     assign lowercase_tag = tag | downcase
-    if lowercase_tag contains "badge:"
+    if lowercase_tag contains 'badge:'
       assign has_tag_badges = true
     endif
 
@@ -27,6 +39,12 @@
       assign coming_soon = true
     endif
   endfor
+
+  # When tag badges are rendered elsewhere (overlay), they don't count here
+  if tag_badges == 'none'
+    assign has_tag_badges = false
+    assign coming_soon = false
+  endif
 
   if target == product and product.price_varies
     assign money_price = 'products.product.price.from_price_html' | t: price: money_price
@@ -37,37 +55,66 @@
   endunless
 -%}
 
-{%- unless target == null and placeholder == null -%}
-  <div
-    class="
-      product-badges price
-      {%- if price_class %} {{ price_class }}{% endif -%}
-      {%- if available == false %} price--sold-out{% endif -%}
-      {%- if compare_at_price > price and product.quantity_price_breaks_configured? != true %} price--on-sale{% endif -%}
-      {%- if compare_at_price > price and product.quantity_price_breaks_configured? %} volume-pricing--sale-badge{% endif -%}
-      {%- if product.price_varies == false and product.compare_at_price_varies %} price--no-compare{% endif -%}
-      {%- if show_badges %} price--show-badge{% endif -%}
-      {% if is_empty%} is-empty{% endif %}
-    "
-  >
-    <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
-      {{ 'products.product.on_sale' | t }}
-    </span>
-
-    <span class="badge price__badge-sold-out color-{{ settings.sold_out_badge_color_scheme }}">
-      {{ 'products.product.sold_out' | t }}
-    </span>
-
-    {%- for tag in product.tags -%}
-      {% assign lowercase_tag = tag | downcase %}
-      {%- if lowercase_tag contains 'badge:' -%}
-        {%- liquid
-          assign tag_text = lowercase_tag | split: 'badge:'
-        -%}
+{%- if tag_badges == 'sorted' -%}
+  {%- liquid
+    assign badge_labels = ''
+    for tag in product.tags
+      assign lowercase_tag = tag | downcase
+      if lowercase_tag contains 'badge:'
+        assign tag_text = lowercase_tag | split: 'badge:'
+        assign badge_label = tag_text[1] | strip
+        if badge_label != blank
+          assign badge_labels = badge_labels | append: badge_label | append: '|'
+        endif
+      endif
+    endfor
+  -%}
+  {%- if badge_labels != blank -%}
+    {%- capture sorted_badges -%}{%- render 'badge-priority', labels: badge_labels -%}{%- endcapture -%}
+    {%- assign sorted_badges = sorted_badges | strip | split: '|' -%}
+    {%- for badge_label in sorted_badges -%}
+      {%- if badge_label != blank -%}
         <span class="badge price__badge-tag color-{{ settings.tag_badge_color_scheme }}">
-          {{ tag_text[1] | capitalize }}
+          {{ badge_label | capitalize }}
         </span>
       {%- endif -%}
     {%- endfor -%}
-  </div>
-{% endunless %}
+  {%- endif -%}
+{%- else -%}
+  {%- unless target == null and placeholder == null -%}
+    <div
+      class="
+        product-badges price
+        {%- if price_class %} {{ price_class }}{% endif -%}
+        {%- if available == false %} price--sold-out{% endif -%}
+        {%- if compare_at_price > price and product.quantity_price_breaks_configured? != true %} price--on-sale{% endif -%}
+        {%- if compare_at_price > price and product.quantity_price_breaks_configured? %} volume-pricing--sale-badge{% endif -%}
+        {%- if product.price_varies == false and product.compare_at_price_varies %} price--no-compare{% endif -%}
+        {%- if show_badges %} price--show-badge{% endif -%}
+        {% if is_empty%} is-empty{% endif %}
+      "
+    >
+      <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
+        {{ 'products.product.on_sale' | t }}
+      </span>
+
+      <span class="badge price__badge-sold-out color-{{ settings.sold_out_badge_color_scheme }}">
+        {{ 'products.product.sold_out' | t }}
+      </span>
+
+      {%- unless tag_badges == 'none' -%}
+        {%- for tag in product.tags -%}
+          {% assign lowercase_tag = tag | downcase %}
+          {%- if lowercase_tag contains 'badge:' -%}
+            {%- liquid
+              assign tag_text = lowercase_tag | split: 'badge:'
+            -%}
+            <span class="badge price__badge-tag color-{{ settings.tag_badge_color_scheme }}">
+              {{ tag_text[1] | capitalize }}
+            </span>
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endunless -%}
+    </div>
+  {% endunless %}
+{%- endif -%}
