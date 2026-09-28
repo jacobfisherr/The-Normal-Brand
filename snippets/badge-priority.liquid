@@ -1,0 +1,42 @@
+{%- comment -%}
+  Sorts badge labels by priority.
+  Replaces the BADGE_PRIORITY logic from the Convert experiment JS.
+
+  Usage:
+    {%- capture sorted_badges -%}{%- render 'badge-priority', labels: badge_labels -%}{%- endcapture -%}
+
+  Accepts:
+  - labels: {String} pipe-separated badge labels, e.g. "best seller|new color"
+
+  Returns: pipe-separated labels (lowercase), highest priority first.
+  - Labels in the priority list come first, in priority order (case-insensitive).
+  - Labels not in the list follow, in their original order.
+  So the first label is always the same "winner" the JS picked.
+{%- endcomment -%}
+
+{%- liquid
+  assign priority = "trending|new style|new color|best seller|back in stock|in-store favorite|jimmy's favorite" | split: '|'
+  assign candidates = labels | split: '|'
+  assign sorted = ''
+
+  for p in priority
+    for c in candidates
+      assign c_norm = c | strip | downcase
+      if c_norm == p
+        assign sorted = sorted | append: c_norm | append: '|'
+        break
+      endif
+    endfor
+  endfor
+
+  for c in candidates
+    assign c_norm = c | strip | downcase
+    if c_norm != blank
+      unless priority contains c_norm
+        assign sorted = sorted | append: c_norm | append: '|'
+      endunless
+    endif
+  endfor
+
+  echo sorted
+-%}
