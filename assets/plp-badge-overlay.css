@@ -1,0 +1,34 @@
+/* Badge overlay on product card images (settings.badge_display_mode == 'on_image') */
+
+.card__inner:has(> .plp-badge-overlay) {
+  position: relative;
+}
+
+.plp-badge-overlay {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  right: 8px;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 4px;
+  pointer-events: none;
+}
+
+.plp-badge-overlay .badge {
+  padding: 0.7rem 1.3rem 0.3rem;
+}
+
+@media screen and (max-width: 749px) {
+  .plp-badge-overlay .badge {
+    font-size: 1rem;
+    padding: 0.5rem 1rem 0.2rem;
+  }
+
+  /* Mobile: show only the highest-priority badge */
+  .plp-badge-overlay .badge ~ .badge {
+    display: none;
+  }
+}
