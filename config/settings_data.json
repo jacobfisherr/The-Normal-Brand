@@ -49,6 +49,7 @@
     "card_style": "card",
     "show_color_name": false,
     "show_product_announcement": false,
+    "badge_display_mode": "on_image",
     "card_image_padding": 0,
     "card_text_alignment": "left",
     "card_color_scheme": "tnb-light",
@@ -229,11 +230,6 @@
         "settings": {
           "product": ""
         }
-      },
-      "1057056175266400017": {
-        "type": "shopify://apps/yotpo-email-marketing-sms/blocks/app-embed/7a4b8bd9-dff0-44fc-aef9-a187a77a5d45",
-        "disabled": true,
-        "settings": {}
       },
       "733389323033596483": {
         "type": "shopify://apps/okendo/blocks/theme-settings/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
