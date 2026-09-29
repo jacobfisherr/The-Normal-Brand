@@ -9,6 +9,7 @@
   - values: {String} a string of specific values to render
   - loop_index {Number} a product card forloop index (optional)
   - tag_variant_filter: {String} Show only swatches for variants that have this tag (optional)
+  - selected_size: {String} Mark color swatches whose linked product is sold out in this size (optional)
 
   Usage:
   {% render 'product-variant-options',
@@ -66,6 +67,25 @@
         assign option_is_color = true
       endif
 
+      comment
+        Combined listings: each color is its own product, so value.available ignores the
+        selected size. Check the linked product's variants for that size instead.
+        value.variant is nil when the linked product doesn't offer the size at all.
+      endcomment
+      assign size_in_stock = null
+      if option_is_color and selected_size != blank
+        assign size_in_stock = false
+        for sibling_variant in value.variant.product.variants
+          if sibling_variant.available and sibling_variant.options contains selected_size
+            assign size_in_stock = true
+            break
+          endif
+        endfor
+        if size_in_stock == false
+          assign option_disabled = true
+        endif
+      endif
+
       assign downcased_value = value | downcase
       assign is_tall_size = false
       if downcased_value contains 'tall'
@@ -93,6 +113,10 @@
       {% endif %}
       data-product-price="{{ value.variant.price | money }}"
       data-product-compare-at-price="{{ value.variant.compare_at_price | money }}"
+      {% if size_in_stock != null %}
+        data-product-handle="{{ value.product_url | split: '/' | last | split: '?' | first }}"
+        data-size-in-stock="{{ size_in_stock }}"
+      {% endif %}
     {%- endcapture -%}
 
     {%- capture label_unavailable -%}

@@ -569,7 +569,7 @@
                 %}
 
               {%- when 'variant_picker' -%}
-                {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
+                {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id, size_aware_swatches: true %}
               {%- when 'buy_buttons' -%}
                 {% liquid
                   assign has_notice = false

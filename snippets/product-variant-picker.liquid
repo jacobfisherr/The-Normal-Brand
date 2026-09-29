@@ -5,9 +5,32 @@
   - product: {Object} product object.
   - block: {Object} passing the block information.
   - product_form_id: {String} Id of the product form to which the variant picker is associated.
+  - size_aware_swatches: {Boolean} Mark color swatches sold out in the selected size (optional)
   Usage:
   {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
 {% endcomment %}
+{%- liquid
+  comment
+    Size-aware color swatches: only once the shopper has picked a size, so first page load
+    doesn't mark swatches against the pre-checked default size. selected_variant is nil when
+    the picked size doesn't exist in this color, so also accept a size that differs from the default.
+  endcomment
+  assign selected_size = blank
+  if size_aware_swatches
+    for option in product.options_with_values
+      assign downcased_option_name = option.name | downcase
+      if downcased_option_name == 'size'
+        assign size_index = option.position | minus: 1
+        assign picked_size = option.selected_value | append: ''
+        assign default_size = product.selected_or_first_available_variant.options[size_index] | append: ''
+        if product.selected_variant or picked_size != default_size
+          assign selected_size = picked_size
+        endif
+        break
+      endif
+    endfor
+  endif
+-%}
 {%- unless product.has_only_default_variant -%}
   <variant-selects
     id="variant-selects-{{ section.id }}"
@@ -133,6 +156,7 @@
                     product: product,
                     option: option,
                     block: block,
+                    selected_size: selected_size,
                     picker_type: picker_type,
                     values: grouped_colors[forloop.index0] | join: ' '
                   %}
@@ -160,6 +184,7 @@
                     product: product,
                     option: option,
                     block: block,
+                    selected_size: selected_size,
                     picker_type: picker_type,
                     values: ungrouped_colors_array | join: ' '
                   %}
@@ -177,6 +202,7 @@
               product: product,
               option: option,
               block: block,
+              selected_size: selected_size,
               picker_type: picker_type
             %}
           {%- endif -%}
@@ -223,6 +249,7 @@
                       product: product,
                       option: option,
                       block: block,
+                      selected_size: selected_size,
                       picker_type: picker_type,
                       values: grouped_colors[forloop.index0] | join: ' '
                     %}
@@ -235,6 +262,7 @@
                   product: product,
                   option: option,
                   block: block,
+                  selected_size: selected_size,
                   picker_type: picker_type
                 %}
               </div>
@@ -251,6 +279,7 @@
               product: product,
               option: option,
               block: block,
+              selected_size: selected_size,
               picker_type: picker_type
             %}
           {%- endif -%}
@@ -277,6 +306,7 @@
                 product: product,
                 option: option,
                 block: block,
+                selected_size: selected_size,
                 picker_type: picker_type
               %}
             </select>
