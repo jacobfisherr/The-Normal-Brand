@@ -549,6 +549,23 @@
         "default": false
       },
       {
+        "type": "select",
+        "id": "badge_display_mode",
+        "label": "Badge display mode",
+        "info": "Choose where product badges appear on product cards.",
+        "options": [
+          {
+            "value": "below_image",
+            "label": "Below image"
+          },
+          {
+            "value": "on_image",
+            "label": "On image (overlay)"
+          }
+        ],
+        "default": "below_image"
+      },
+      {
         "type": "range",
         "id": "card_image_padding",
         "min": 0,
