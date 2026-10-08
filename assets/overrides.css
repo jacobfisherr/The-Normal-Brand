@@ -6,6 +6,7 @@
   --color-orange: #ef612e;
   --color-orange-darkened: #ed4d14;
   --color-light-gray: #ebebeb;
+  --color-sold-out-ink: #141413;
   --color-border: rgba(0, 0, 0, 0.1);
 
   --variant-pills-radius: 0;
@@ -586,7 +587,7 @@ summary.list-menu__item {
 .product__info-container .product-form__input--pill input[type='radio']:disabled:checked + label {
   text-decoration: none;
   cursor: pointer;
-  color: #141413;
+  color: var(--color-sold-out-ink);
 }
 
 /* Selected + sold out keeps the chip fill; only unselected sold-out pills are transparent */
@@ -607,7 +608,7 @@ summary.list-menu__item {
   position: absolute;
   height: 1px;
   width: 65%;
-  background-color: #141413;
+  background-color: var(--color-sold-out-ink);
   left: 50%;
   top: 50%;
   transform: rotate(45deg) translate(-50%);
@@ -711,7 +712,7 @@ summary.list-menu__item {
 /* Fit with no stock (for the chosen size): same slash as sold-out size pills, stays tappable */
 .tall-sizing-controls button.is-unavailable {
   position: relative;
-  color: #141413;
+  color: var(--color-sold-out-ink);
 }
 
 .tall-sizing-controls button.is-unavailable::after {
@@ -722,7 +723,7 @@ summary.list-menu__item {
   width: 32px;
   height: 1px;
   margin: -0.5px 0 0 -16px;
-  background-color: #141413;
+  background-color: var(--color-sold-out-ink);
   transform: rotate(45deg);
   pointer-events: none;
 }

@@ -1255,6 +1255,8 @@ class VariantSelects extends HTMLElement {
       });
 
       const selectedSwatchValue = container.querySelector('[data-selected-value]');
+      // Prefix a non-breaking space so the value keeps the gap after its label ("Size: XL"),
+      // matching the server-rendered markup. textContent also avoids injecting the value as HTML.
       if (selectedSwatchValue) selectedSwatchValue.textContent = `\u00A0${value}`;
     }
   }
