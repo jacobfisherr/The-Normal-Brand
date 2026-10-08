@@ -1255,7 +1255,7 @@ class VariantSelects extends HTMLElement {
       });
 
       const selectedSwatchValue = container.querySelector('[data-selected-value]');
-      if (selectedSwatchValue) selectedSwatchValue.innerHTML = value;
+      if (selectedSwatchValue) selectedSwatchValue.textContent = `\u00A0${value}`;
     }
   }
 

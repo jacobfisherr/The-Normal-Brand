@@ -582,11 +582,23 @@ summary.list-menu__item {
 
 .product__info-container .product-form__input--pill input[type='radio']:disabled + label,
 .product__info-container .product-form__input--pill input[type='radio'].disabled + label,
-.product__info-container .product-form__input--pill input[type='radio'].disabled:checked + label {
+.product__info-container .product-form__input--pill input[type='radio'].disabled:checked + label,
+.product__info-container .product-form__input--pill input[type='radio']:disabled:checked + label {
   text-decoration: none;
-  cursor: initial;
-  color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  color: #141413;
+}
+
+/* Selected + sold out keeps the chip fill; only unselected sold-out pills are transparent */
+.product__info-container .product-form__input--pill input[type='radio']:disabled:not(:checked) + label,
+.product__info-container .product-form__input--pill input[type='radio'].disabled:not(:checked) + label {
   background-color: transparent;
+}
+
+@media (hover: hover) {
+  .product__info-container .size-variant-picker input[type='radio']:not(:checked) + label:hover {
+    background-color: rgba(235, 235, 235, 0.5);
+  }
 }
 
 .product__info-container .product-form__input--pill input[type='radio']:disabled + label:after,
@@ -595,11 +607,60 @@ summary.list-menu__item {
   position: absolute;
   height: 1px;
   width: 65%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: #141413;
   left: 50%;
   top: 50%;
   transform: rotate(45deg) translate(-50%);
   transform-origin: 1px 1px;
+}
+
+/* Marked swatch: sold out in the selected/chosen size (server-rendered .visually-disabled, plus .is-unavailable set by product-info.js).
+   Stays in place and tappable. */
+.product__info-container .swatch-input__input.is-unavailable + .swatch-input__label,
+.product__info-container .swatch-input__input.visually-disabled + .swatch-input__label {
+  position: relative;
+  overflow: hidden;
+}
+
+.product__info-container .swatch-input__input.is-unavailable + .swatch-input__label > .swatch,
+.product__info-container .swatch-input__input.visually-disabled + .swatch-input__label > .swatch {
+  opacity: 0.4;
+}
+
+/* Replace the sold-out slash with the 45° slash that stays at full strength above the faded swatch */
+.product__info-container .swatch-input__input.is-unavailable + .swatch-input__label > .swatch::after,
+.product__info-container .swatch-input__input.visually-disabled + .swatch-input__label > .swatch::after {
+  content: none;
+}
+
+.product__info-container .swatch-input__input.is-unavailable + .swatch-input__label::after,
+.product__info-container .swatch-input__input.visually-disabled + .swatch-input__label::after {
+  content: '';
+  position: absolute;
+  left: -25%;
+  top: 50%;
+  width: 150%;
+  height: 1.5px;
+  margin-top: -0.75px;
+  background: rgb(var(--color-foreground));
+  box-shadow: 0 0 0 1.25px rgb(var(--color-background));
+  transform: rotate(45deg);
+  pointer-events: none;
+}
+
+.size-notify-note {
+  margin: 1.2rem 0 0;
+  font-size: 1.3rem;
+  line-height: 1.4;
+  color: rgba(var(--color-foreground), 0.75);
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.size-notify-note__icon {
+  flex: none;
+  color: rgb(var(--color-foreground));
 }
 
 .product .product-form__input {
@@ -639,8 +700,37 @@ summary.list-menu__item {
   background: rgb(var(--color-background));
 }
 
+.tall-sizing-controls button:not(.inactive) {
+  background-color: var(--color-light-gray);
+}
+
 .tall-sizing-controls button.inactive {
   background-color: transparent;
+}
+
+/* Fit with no stock (for the chosen size): same slash as sold-out size pills, stays tappable */
+.tall-sizing-controls button.is-unavailable {
+  position: relative;
+  color: #141413;
+}
+
+.tall-sizing-controls button.is-unavailable::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 32px;
+  height: 1px;
+  margin: -0.5px 0 0 -16px;
+  background-color: #141413;
+  transform: rotate(45deg);
+  pointer-events: none;
+}
+
+@media (hover: hover) {
+  .tall-sizing-controls button.inactive:hover {
+    background-color: rgba(235, 235, 235, 0.5);
+  }
 }
 
 .color-category {

@@ -12,6 +12,8 @@
   <variant-selects
     id="variant-selects-{{ section.id }}"
     data-section="{{ section.id }}"
+    data-marked-text="{{ 'products.product.variant_unavailable_in_size' | t: size: '__SIZE__' | escape }}"
+    data-sold-out-text="{{ 'products.product.variant_sold_out_or_unavailable' | t | escape }}"
     {{ block.shopify_attributes }}
 
     {% comment %}
@@ -185,12 +187,12 @@
         <fieldset class="js product-form__input product-form__input--pill {%- if option_is_color -%}product-form__input--color{%- endif -%} {% if option_is_size %} size-variant-picker{% endif %}">
           <legend class="form__label {% if option_is_size %}form__label--flex{% endif %}">
             {{ option.name }}:
-            {%- if color_categories.size == 0 -%}
+            {%- unless option_is_color and color_categories_array.size > 0 -%}
               <span class="option-name-label" data-selected-value
                 >&nbsp;
                 {{- option.selected_value -}}
               </span>
-            {%- endif -%}
+            {%- endunless -%}
             {% if option_is_size %}
               <div class="urgency-message urgency-message--selected">Only a few left!</div>
               <button
@@ -253,6 +255,26 @@
               block: block,
               picker_type: picker_type
             %}
+
+            {%- if option_is_size
+              and product.tags contains 'BIS'
+              and product.selected_or_first_available_variant.available == false
+            -%}
+              <p class="size-notify-note">
+                <svg
+                  class="size-notify-note__icon"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path d="M12 22a2.5 2.5 0 0 0 2.45-2h-4.9A2.5 2.5 0 0 0 12 22Zm7-6.5V11a7 7 0 0 0-5.5-6.84V3.5a1.5 1.5 0 0 0-3 0v.66A7 7 0 0 0 5 11v4.5l-2 2V19h18v-1.5l-2-2Z"/>
+                </svg>
+                {{ 'products.product.notify_note' | t }}
+              </p>
+            {%- endif -%}
           {%- endif -%}
         </fieldset>
       {%- else -%}

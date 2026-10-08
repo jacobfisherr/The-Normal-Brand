@@ -11,6 +11,9 @@ if (!customElements.get('product-info')) {
       preProcessHtmlCallbacks = [];
       postProcessHtmlCallbacks = [];
 
+      static productJsonCache = new Map();
+      markedSwatchesRun = 0;
+
       constructor() {
         super();
 
@@ -29,6 +32,8 @@ if (!customElements.get('product-info')) {
 
         this.initQuantityHandlers();
         this.initUrgencyMessaging();
+        this.updateMarkedSwatches();
+        this.updateFitToggles();
         this.dispatchEvent(new CustomEvent('product-info:loaded', { bubbles: true }));
       }
 
@@ -74,6 +79,13 @@ if (!customElements.get('product-info')) {
         if (!this.contains(event.target)) return;
 
         this.resetProductFormState();
+
+        // A size counts as chosen only after the shopper taps it; it survives color swaps (separate products)
+        if (target.type === 'radio' && target.closest('.size-variant-picker')) {
+          window.tnbChosenSize = target.value;
+          this.updateMarkedSwatches();
+          this.updateFitToggles();
+        }
 
         const productUrl = target.dataset.productUrl || this.pendingRequestUrl || this.dataset.url;
         this.pendingRequestUrl = productUrl;
@@ -148,6 +160,8 @@ if (!customElements.get('product-info')) {
 
             // Reinitialize urgency messaging after product info is updated
             this.initUrgencyMessaging();
+            this.updateMarkedSwatches();
+            this.updateFitToggles();
           })
           .catch((error) => {
             if (error.name === 'AbortError') {
@@ -479,6 +493,94 @@ if (!customElements.get('product-info')) {
 
       get sectionId() {
         return this.dataset.originalSection || this.dataset.section;
+      }
+
+      // Marked swatches: colors are separate products, so ask each one whether it has the chosen size.
+      fetchProductJson(productUrl) {
+        const path = new URL(productUrl, window.location.origin).pathname.replace(/^\/collections\/[^/]+/, '');
+        const cache = ProductInfo.productJsonCache;
+
+        if (!cache.has(path)) {
+          cache.set(
+            path,
+            fetch(`${path}.js`)
+              .then((response) => (response.ok ? response.json() : null))
+              .catch(() => null)
+              .then((json) => {
+                if (!json) cache.delete(path);
+                return json;
+              }),
+          );
+        }
+
+        return cache.get(path);
+      }
+
+      isMarkedForSize(product, size) {
+        if (!product) return false;
+
+        const sizeIndex = (product.options || []).findIndex(
+          (option) => (option.name ?? option).toLowerCase() === 'size',
+        );
+
+        // No size chosen (or product has no size option): mark only colors sold out in every size
+        if (!size || sizeIndex === -1) return product.available === false;
+
+        return !product.variants.some((variant) => variant.available && variant[`option${sizeIndex + 1}`] === size);
+      }
+
+      async updateMarkedSwatches() {
+        const inputs = this.querySelectorAll('.product-form__input--swatch .swatch-input__input[data-product-url]');
+        if (!inputs.length) return;
+
+        const run = ++this.markedSwatchesRun;
+        const size = window.tnbChosenSize || null;
+        const products = await Promise.all(Array.from(inputs, (input) => this.fetchProductJson(input.dataset.productUrl)));
+        if (run !== this.markedSwatchesRun) return;
+
+        inputs.forEach((input, index) => {
+          if (!input.isConnected) return;
+
+          const marked = this.isMarkedForSize(products[index], size);
+          input.classList.toggle('is-unavailable', marked);
+
+          const label = input.nextElementSibling;
+          let note = label?.querySelector('.label-marked');
+          if (marked && label && !note) {
+            note = document.createElement('span');
+            note.className = 'visually-hidden label-marked';
+            label.append(note);
+          }
+          if (note) {
+            const { markedText = '', soldOutText = '' } = input.closest('variant-selects')?.dataset || {};
+            note.textContent = marked ? (size ? markedText.replace('__SIZE__', size) : soldOutText) : '';
+          }
+        });
+      }
+
+      // Regular / Tall toggle: mark a fit with no stock, using the size pills already rendered for this color
+      updateFitToggles() {
+        const baseSize = (value) => value.replace(/-tall$/i, '').toLowerCase();
+        const chosenBase = window.tnbChosenSize ? baseSize(window.tnbChosenSize) : null;
+
+        this.querySelectorAll('.tall-sizing-controls').forEach((controls) => {
+          const inputs = Array.from(controls.parentNode.querySelectorAll('input[type="radio"]'));
+          const isSoldOut = (input) => input.classList.contains('disabled') || input.disabled;
+
+          [
+            ['[data-button-regular]', (input) => !input.hasAttribute('data-tall-size')],
+            ['[data-button-tall]', (input) => input.hasAttribute('data-tall-size')],
+          ].forEach(([selector, isFit]) => {
+            let fitInputs = inputs.filter(isFit);
+            if (chosenBase) {
+              const sameSize = fitInputs.filter((input) => baseSize(input.value) === chosenBase);
+              if (sameSize.length) fitInputs = sameSize;
+            }
+            controls
+              .querySelector(selector)
+              ?.classList.toggle('is-unavailable', !fitInputs.length || fitInputs.every(isSoldOut));
+          });
+        });
       }
 
       // Urgency Messaging Methods

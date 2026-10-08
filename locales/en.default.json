@@ -170,6 +170,8 @@
       "vendor": "Vendor",
       "value_unavailable": "{{ option_value }} - Unavailable",
       "variant_sold_out_or_unavailable": "Variant sold out or unavailable",
+      "variant_unavailable_in_size": "Sold out in size {{ size }}",
+      "notify_note": "Tap a sold-out size to get notified when it's back.",
       "video_exit_message": "{{ title }} opens full screen video in same window.",
       "view_full_details": "View full details",
       "xr_button": "View in your space",
