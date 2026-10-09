@@ -7,6 +7,7 @@
   --color-orange-darkened: #ed4d14;
   --color-light-gray: #ebebeb;
   --color-sold-out-ink: #141413;
+  --color-light-gray-hover: rgba(235, 235, 235, 0.5);
   --color-border: rgba(0, 0, 0, 0.1);
 
   --variant-pills-radius: 0;
@@ -598,7 +599,7 @@ summary.list-menu__item {
 
 @media (hover: hover) {
   .product__info-container .size-variant-picker input[type='radio']:not(:checked) + label:hover {
-    background-color: rgba(235, 235, 235, 0.5);
+    background-color: var(--color-light-gray-hover);
   }
 }
 
@@ -733,7 +734,7 @@ summary.list-menu__item {
 
 @media (hover: hover) {
   .tall-sizing-controls button.inactive:hover {
-    background-color: rgba(235, 235, 235, 0.5);
+    background-color: var(--color-light-gray-hover);
   }
 }
 
