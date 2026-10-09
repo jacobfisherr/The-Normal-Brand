@@ -709,13 +709,16 @@ summary.list-menu__item {
   background-color: transparent;
 }
 
-/* Fit with no stock (for the chosen size): same slash as sold-out size pills, stays tappable */
-.tall-sizing-controls button.is-unavailable {
+/* Fit with no stock: CSS-only, based on the sold-out pills the server already rendered.
+   Same slash as sold-out size pills; the button stays tappable. */
+.product-form__input--pill:not(:has(input[data-tall-size]:not(.disabled))) [data-button-tall],
+.product-form__input--pill:not(:has(input[type='radio']:not([data-tall-size]):not(.disabled))) [data-button-regular] {
   position: relative;
   color: var(--color-sold-out-ink);
 }
 
-.tall-sizing-controls button.is-unavailable::after {
+.product-form__input--pill:not(:has(input[data-tall-size]:not(.disabled))) [data-button-tall]::after,
+.product-form__input--pill:not(:has(input[type='radio']:not([data-tall-size]):not(.disabled))) [data-button-regular]::after {
   content: '';
   position: absolute;
   left: 50%;

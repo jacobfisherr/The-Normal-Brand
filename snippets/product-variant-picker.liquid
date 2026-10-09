@@ -12,8 +12,6 @@
   <variant-selects
     id="variant-selects-{{ section.id }}"
     data-section="{{ section.id }}"
-    data-marked-text="{{ 'products.product.variant_unavailable_in_size' | t: size: '__SIZE__' | escape }}"
-    data-sold-out-text="{{ 'products.product.variant_sold_out_or_unavailable' | t | escape }}"
     {{ block.shopify_attributes }}
 
     {% comment %}
