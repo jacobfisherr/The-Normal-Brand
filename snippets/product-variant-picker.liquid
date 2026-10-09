@@ -93,7 +93,7 @@
       {%- endcapture -%}
       {%- assign grouped_colors = grouped_colors | split: '|' -%}
 
-      {%- capture ungrouped_colors = '' -%}
+      {%- capture ungrouped_colors -%}
         {%- for value in option.values -%}
           {%- assign color_is_grouped = false -%}
           {%- for category in color_categories_array -%}
@@ -128,14 +128,7 @@
                 </div>
 
                 <div class="product-form-colors">
-                  {%
-                    render 'product-variant-options',
-                    product: product,
-                    option: option,
-                    block: block,
-                    picker_type: picker_type,
-                    values: grouped_colors[forloop.index0] | join: ' '
-                  %}
+                  {% render 'product-variant-options', product: product, option: option, block: block, picker_type: picker_type, values: grouped_colors[forloop.index0], join: ' ' %}
                 </div>
               </div>
             {%- endfor -%}
@@ -155,14 +148,7 @@
                   </span>
                 </div>
                 <div class="product-form-colors">
-                  {%
-                    render 'product-variant-options',
-                    product: product,
-                    option: option,
-                    block: block,
-                    picker_type: picker_type,
-                    values: ungrouped_colors_array | join: ' '
-                  %}
+                  {% render 'product-variant-options', product: product, option: option, block: block, picker_type: picker_type, values: ungrouped_colors_array, join: ' ' %}
                 </div>
               </div>
             {% endif %}
@@ -218,14 +204,7 @@
                     {%- endif -%}
                   </div>
                   <div class="product-form-colors">
-                    {%
-                      render 'product-variant-options',
-                      product: product,
-                      option: option,
-                      block: block,
-                      picker_type: picker_type,
-                      values: grouped_colors[forloop.index0] | join: ' '
-                    %}
+                    {% render 'product-variant-options', product: product, option: option, block: block, picker_type: picker_type, values: grouped_colors[forloop.index0], join: ' ' %}
                   </div>
                 </div>
               {%- endfor -%}
@@ -291,3 +270,51 @@
     </script>
   </variant-selects>
 {%- endunless -%}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{%- capture ungrouped_colors = '' -%}"
+  to: "{%- capture ungrouped_colors -%}"
+  position: 3475..3507
+- from: |-
+    {%
+                        render 'product-variant-options',
+                        product: product,
+                        option: option,
+                        block: block,
+                        picker_type: picker_type,
+                        values: grouped_colors[forloop.index0] | join: ' '
+                      %}
+  to: "{% render 'product-variant-options', product: product, option: option, block:
+    block, picker_type: picker_type, values: grouped_colors[forloop.index0], join:
+    ' ' %}"
+  position: 5007..5170
+- from: |-
+    {%
+                        render 'product-variant-options',
+                        product: product,
+                        option: option,
+                        block: block,
+                        picker_type: picker_type,
+                        values: ungrouped_colors_array | join: ' '
+                      %}
+  to: "{% render 'product-variant-options', product: product, option: option, block:
+    block, picker_type: picker_type, values: ungrouped_colors_array, join: ' ' %}"
+  position: 5941..6096
+- from: |-
+    {%
+                          render 'product-variant-options',
+                          product: product,
+                          option: option,
+                          block: block,
+                          picker_type: picker_type,
+                          values: grouped_colors[forloop.index0] | join: ' '
+                        %}
+  to: "{% render 'product-variant-options', product: product, option: option, block:
+    block, picker_type: picker_type, values: grouped_colors[forloop.index0], join:
+    ' ' %}"
+  position: 8545..8708
+{% endcomment %}
